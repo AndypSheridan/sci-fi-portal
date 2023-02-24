@@ -5,14 +5,8 @@ from cloudinary.models import CloudinaryField
 STATUS = ((0, 'Draft'), (1, 'Published'))
 RATING = ((1, 'Avoid'), (2, 'Poor'), (3, 'Average'), (4, 'Good'), (5, 'Great'))
 SUBGENRES = (
-    (1, 'Horror'), (2, 'Fantasy'), (3, 'Hard Sci-Fi'), (4, 'Space Opera'), (5, 'Comedy'))
-
-
-class SubGenre(models.Model):
-    name = models.IntegerField(choices=SUBGENRES, blank=True)
-
-    def __str__(self):
-        return self.name
+    (1, 'Horror'), (2, 'Fantasy'), (3, 'Hard Sci-Fi'), (
+        4, 'Space Opera'), (5, 'Comedy'), (6, 'Other'))
 
 
 class Book(models.Model):
@@ -27,7 +21,7 @@ class Book(models.Model):
     review_content = models.TextField()
     cover_image = CloudinaryField('image', default='placeholder')
     rating = models.IntegerField(choices=RATING, default=3)
-    sub_genre = models.ForeignKey(SubGenre, on_delete=models.CASCADE)
+    sub_genre = models.IntegerField(choices=SUBGENRES, blank=True)
     status = models.IntegerField(choices=STATUS, default=0)
     likes = models.ManyToManyField(
         User, related_name='bookpost_like', blank=True)
