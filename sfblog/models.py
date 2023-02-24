@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
 STATUS = ((0, 'Draft'), (1, 'Published'))
-RATING = ((1, 'Avoid'), (2, 'Poor'), (3, 'Average'), (4, 'Good'), (5, 'Great'))
+RATING = ((1, '1'), (2, '2'), (3, '3'), (4, '4'), (5, '5'))
 SUBGENRES = (
     (1, 'Horror'), (2, 'Fantasy'), (3, 'Hard Sci-Fi'), (
         4, 'Space Opera'), (5, 'Comedy'), (6, 'Other'))
