@@ -31,7 +31,7 @@ class Book(models.Model):
         User, related_name='bookpost_like', blank=True)
 
     class Meta:
-        ordering = [-'created_on']
+        ordering = ['-created_on']
 
     def __str__(self):
         return self.title
@@ -43,7 +43,7 @@ class Book(models.Model):
 class Comment(models.Model):
     book = models.ForeignKey(
         Book, on_delete=models.CASCADE, related_name="comments")
-    name = models.Charfield(max_length=60)
+    name = models.CharField(max_length=60)
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     approved = models.BooleanField(default=False)
