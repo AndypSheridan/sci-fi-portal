@@ -7,4 +7,5 @@ from django_summernote.admin import SummernoteModelAdmin
 class BookAdmin(SummernoteModelAdmin):
 
     prepopulated_fields = {'slug': ('title',)}
+    list_filter = ('status', 'created_on')
     summernote_fields = ('review_content',)
