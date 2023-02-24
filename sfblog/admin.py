@@ -1,4 +1,9 @@
 from django.contrib import admin
 from .models import Book, Comment, SubGenre
+from django_summernote.admin import SummernoteModelAdmin
 
-admin.site.register(Book)
+
+@admin.register(Book)
+class BookAdmin(SummernoteModelAdmin):
+
+    summernote_fields = ('content')
