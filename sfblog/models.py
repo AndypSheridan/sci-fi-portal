@@ -4,10 +4,12 @@ from cloudinary.models import CloudinaryField
 
 STATUS = ((0, 'Draft'), (1, 'Published'))
 RATING = ((1, 'Avoid'), (2, 'Poor'), (3, 'Average'), (4, 'Good'), (5, 'Great'))
+SUBGENRES = (
+    (1, 'Horror'), (2, 'Fantasy'), (3, 'Hard Sci-Fi'), (4, 'Space Opera'), (5, 'Comedy'))
 
 
 class SubGenre(models.Model):
-    name = models.CharField(max_length=30, unique=True)
+    name = models.IntegerField(choices=SUBGENRES, blank=True)
 
     def __str__(self):
         return self.name

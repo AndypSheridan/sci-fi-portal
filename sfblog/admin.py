@@ -6,4 +6,4 @@ from django_summernote.admin import SummernoteModelAdmin
 @admin.register(Book)
 class BookAdmin(SummernoteModelAdmin):
 
-    summernote_fields = ('content')
+    summernote_fields = ('review_content',)
