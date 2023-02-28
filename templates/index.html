@@ -1,5 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
+<div>
+    Hello World
+{% for book in book_list %}
+
+<!-- {% if forloop.counter|divisible by:4 %}
+{% endif %} -->
+
+{% endfor %}
+</div>
 
 {% endblock %}
