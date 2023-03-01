@@ -1,3 +1,15 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.space-mono {
+    font-family: 'Space Mono', sans-serif;
+}
+
 .navbar {
     background-color: #b030b0;
 }
