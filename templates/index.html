@@ -1,7 +1,9 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
-<div>
+<body id="home-bg-image">
+<div class="home-background">
     Hello World
 {% for book in book_list %}
 
@@ -9,5 +11,5 @@
 
 {% endfor %}
 </div>
-
+</body>
 {% endblock %}

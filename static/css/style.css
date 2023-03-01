@@ -13,3 +13,19 @@
 a.nav-link.active {
     color: #FFF;
 }
+
+.navbar-text {
+    color: #FFF;
+}
+
+#home-bg-image {
+    background-image: url('/static/images/sfportal.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#footer {
+    background-color: rgba(108, 145, 191, 0.4);
+}
