@@ -1,0 +1,15 @@
+.navbar {
+    background-color: #b030b0;
+}
+
+.navbar-brand {
+    color: #FFF;
+}
+
+.nav-item > a.nav-link {
+    color: #FFF;
+}
+
+a.nav-link.active {
+    color: #FFF;
+}
