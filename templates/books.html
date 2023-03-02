@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<body id="books-bg-image">
+    
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 mt-3 left">
+            <div class="row">
+                {% for book in book_list %}
+
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+{% endblock %}
