@@ -44,7 +44,7 @@ a.nav-link.active {
 
 .fixed-row-bottom {
     position: fixed;
-    bottom: 10rem;
+    bottom: 6rem;
 }
 
 .text-white {
@@ -53,4 +53,8 @@ a.nav-link.active {
 
 .button-margin {
     margin: 0.5rem;
+}
+
+h4 {
+    font-family: "roboto";
 }
