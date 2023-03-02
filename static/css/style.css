@@ -74,3 +74,8 @@ a.nav-link.active {
 h4 {
     font-family: "roboto";
 }
+
+.book-img {
+    width: 20%;
+    height: auto;
+}

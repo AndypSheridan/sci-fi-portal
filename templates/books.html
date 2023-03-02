@@ -15,9 +15,9 @@
                             <div class="card-body">
                                 <div class="image-container">
                                     {% if "placeholder" in book.cover_image.url %}
-                                    <img src="/static/favicon.ico" alt="Default Image">
+                                    <img class="book-img" src="/static/favicon.ico" alt="Default Image">
                                     {% else %}
-                                    <img class="card-img-top" src="{{ book.cover_image.url }}" alt="Book Image">
+                                    <img class="card-img-top book-img" src="{{ book.cover_image.url }}" alt="Book Image">
                                     {% endif %}
                                     <div class="image-flash">
                                         <p class="author">Author: {{ book.author }}</p>
@@ -54,6 +54,7 @@
             </ul>
         </nav>
         {% endif %}
+
     </div>
 
 </body>
