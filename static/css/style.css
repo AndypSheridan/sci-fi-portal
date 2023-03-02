@@ -46,6 +46,14 @@ a.nav-link.active {
     background-attachment: fixed;
 }
 
+#authors-bg-image {
+    background-image: url('/static/images/sf-portal-stars.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
 #footer {
     background-color: rgba(108, 145, 191, 0.4);
 }
