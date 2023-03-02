@@ -41,3 +41,16 @@ a.nav-link.active {
 #footer {
     background-color: rgba(108, 145, 191, 0.4);
 }
+
+.fixed-row-bottom {
+    position: fixed;
+    bottom: 10rem;
+}
+
+.text-white {
+    color: #FFF;
+}
+
+.button-margin {
+    margin: 0.5rem;
+}

@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Space+Mono&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1f96aaee4c.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,11 +20,11 @@
     </script>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>Sci-Fi Portal</title>
-    
+
 </head>
 
 <body>
-
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-red">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'home' %}"><span>SF Portal</span></a>
@@ -63,29 +63,33 @@
         {% endblock content %}
     </main>
 
-    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <!-- Footer  -->
     <footer id="footer" class="text-center text-sm-start fixed-bottom">
-      <div class="container d-flex justify-content-center py-2">
-        <button type="button" class="btn btn-outline-light btn-sm btn-floating mx-2" style="background-color: transparent;">
-          <i class="fab fa-facebook-f"></i>
-        </button>
-        <button type="button" class="btn btn-outline-light btn-sm btn-floating mx-2" style="background-color: transparent;">
-          <i class="fab fa-youtube"></i>
-        </button>
-        <button type="button" class="btn btn-outline-light btn-sm btn-floating mx-2" style="background-color: transparent;">
-          <i class="fab fa-instagram"></i>
-        </button>
-        <button type="button" class="btn btn-outline-light btn-sm btn-floating mx-2" style="background-color: transparent;">
-          <i class="fab fa-twitter"></i>
-        </button>
-      </div>
-  
-      <!-- Copyright -->
-      <!-- <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <div class="container d-flex justify-content-center py-2">
+            <button type="button" class="btn btn-outline-light btn-sm btn-floating mx-2"
+                style="background-color: transparent;">
+                <i class="fa-regular fa-envelope"></i>
+            </button>
+            <button type="button" class="btn btn-outline-light btn-sm btn-floating mx-2"
+                style="background-color: transparent;">
+                <i class="fab fa-facebook-f"></i>
+            </button>
+            <button type="button" class="btn btn-outline-light btn-sm btn-floating mx-2"
+                style="background-color: transparent;">
+                <i class="fab fa-instagram"></i>
+            </button>
+            <button type="button" class="btn btn-outline-light btn-sm btn-floating mx-2"
+                style="background-color: transparent;">
+                <i class="fab fa-twitter"></i>
+            </button>
+        </div>
+
+        <!-- Copyright -->
+        <!-- <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
         © 2020 Copyright:
         <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
       </div> -->
-      <!-- Copyright -->
+        <!-- Copyright -->
     </footer>
 </body>
 

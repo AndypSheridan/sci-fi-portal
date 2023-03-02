@@ -2,13 +2,17 @@
 {% load static %}
 
 {% block content %}
-<body id="home-bg-image" class="space-mono">
-<div class="home-background">
-{% for book in book_list %}
 
-
-
-{% endfor %}
-</div>
+<body id="home-bg-image" class="space-mono home-background">
+    <div class="container">
+        <div class="row text-white text-center fixed-bottom fixed-row-bottom">
+            <div class="col">
+                <h1>Welcome to the Sci-Fi Portal</h1>
+                <h4>An online community devoted to science fiction literature</h4>
+                <button type="button" class="btn btn-primary btn-sm button-margin"> Log In </button>
+                <button type="button" class="btn btn-light btn-sm button-margin">Register</button>
+            </div>
+        </div>
+    </div>
 </body>
 {% endblock %}
