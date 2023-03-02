@@ -19,9 +19,9 @@
                                     {% else %}
                                     <img class="card-img-top book-img" src="{{ book.cover_image.url }}" alt="Book Image">
                                     {% endif %}
-                                    <div class="image-flash">
-                                        <p class="author">Author: {{ book.author }}</p>
-                                    </div>
+                                    <!-- <div class="image-flash"> -->
+                                        <span class="author">Author: {{ book.author }}</span>
+                                    <!-- </div> -->
                                 </div>
                                 <a href="#" class="book-link">
                                     <h2 class="card-title">{{ book.title }}</h2>
