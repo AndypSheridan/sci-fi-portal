@@ -83,3 +83,11 @@ h4 {
 .image-container {
     width: 60%;
 }
+
+#about-bg-image {
+    background-image: url('/static/images/sf-portal-about.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}

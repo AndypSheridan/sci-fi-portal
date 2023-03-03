@@ -7,6 +7,10 @@ def index(request):
     return render(request, 'index.html')
 
 
+def about(request):
+    return render(request, 'about.html')
+
+
 class BookList(generic.ListView):
     """
     Uses Book model, only shows Book reviews which are published
