@@ -46,7 +46,7 @@ a.nav-link.active {
     background-attachment: fixed;
 }
 
-#authors-bg-image {
+#stars-bg-image {
     background-image: url('/static/images/sf-portal-stars.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -86,14 +86,6 @@ h4 {
 
 #about-bg-image {
     background-image: url('/static/images/sf-portal-about.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-}
-
-#authors-bg-image {
-    background-image: url('/static/images/sf-portal-stars.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
