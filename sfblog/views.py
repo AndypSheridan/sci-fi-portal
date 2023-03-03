@@ -11,6 +11,10 @@ def about(request):
     return render(request, 'about.html')
 
 
+def authors(request):
+    return render(request, 'authors.html')
+
+
 class BookList(generic.ListView):
     """
     Uses Book model, only shows Book reviews which are published
