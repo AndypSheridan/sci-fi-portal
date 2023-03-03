@@ -18,6 +18,10 @@ class BookList(generic.ListView):
     paginate_by = 6
 
 
+class BookDetail(View):
+    
+
+
 def about(request):
     return render(request, 'about.html')
 
