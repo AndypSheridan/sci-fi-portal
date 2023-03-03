@@ -1,18 +1,10 @@
 from django.shortcuts import render
-from django.views import generic
+from django.views import generic, View
 from .models import Book, Comment
 
 
 def index(request):
     return render(request, 'index.html')
-
-
-def about(request):
-    return render(request, 'about.html')
-
-
-def authors(request):
-    return render(request, 'authors.html')
 
 
 class BookList(generic.ListView):
@@ -24,3 +16,14 @@ class BookList(generic.ListView):
     queryset = Book.objects.filter(status=1).order_by('-created_on')
     template_name = 'books.html'
     paginate_by = 6
+
+
+def about(request):
+    return render(request, 'about.html')
+
+
+def authors(request):
+    return render(request, 'authors.html')
+
+
+
