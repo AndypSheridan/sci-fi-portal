@@ -91,3 +91,11 @@ h4 {
     background-position: center center;
     background-attachment: fixed;
 }
+
+#authors-bg-image {
+    background-image: url('/static/images/sf-portal-stars.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
