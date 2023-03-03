@@ -13,9 +13,9 @@
                 </div>
                 <div class="d-none d-md-block col-md-6 masthead-image">
                     {% if "placeholder" in book.featured_image.url %}
-                    <img src="../static/favicon.ico" width="100%">
+                    <img src="../static/favicon.ico">
                     {% else %}
-                    <img src=" {{ book.cover_image.url }}" width="100%">
+                    <img src=" {{ book.cover_image.url }}">
                     {% endif %}
                 </div>
             </div>
