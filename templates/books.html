@@ -25,7 +25,7 @@
                                         <span class="rating">Rating: {{ book.rating }}</span>
                                     <!-- </div> -->
                                 </div>
-                                <a href="#" class="book-link">
+                                <a href="{% url 'book_detail' book.slug %}" class="book-link">
                                     <h2 class="card-title">{{ book.title }}</h2>
                                     <p class="card-text">{{ book.synopsis }}</p>
                                 </a>
