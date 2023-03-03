@@ -20,7 +20,7 @@ class BookList(generic.ListView):
 
 class BookDetail(View):
 
-    def get(self, rerquest, slug, *args, **kwargs):
+    def get(self, request, slug, *args, **kwargs):
         queryset = Book.objects.filter(status=1)
         book = get_object_or_404(queryset, slug=slug)
         comments = book.comments.filter(approved=True).order_by('created_on')
@@ -45,6 +45,3 @@ def about(request):
 
 def authors(request):
     return render(request, 'authors.html')
-
-
-
