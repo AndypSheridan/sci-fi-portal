@@ -19,7 +19,24 @@ class BookList(generic.ListView):
 
 
 class BookDetail(View):
-    
+
+    def get(self, rerquest, slug, *args, **kwargs):
+        queryset = Book.objects.filter(status=1)
+        book = get_object_or_404(queryset, slug=slug)
+        comments = book.comments.filter(approved=True).order_by('created_on')
+        liked = False
+        if book.likes.filter(id=self.request.user.id).exists():
+            liked = True
+
+        return render(
+            request,
+            "book_detail.html",
+            {
+                "book": book,
+                "comments": comments,
+                "liked": liked
+            },
+        )
 
 
 def about(request):
