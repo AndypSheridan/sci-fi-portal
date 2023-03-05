@@ -10,20 +10,37 @@ body {
     font-family: 'Space Mono', sans-serif;
 }
 
+.text-white {
+    color: #FFF;
+}
+
 .navbar {
-    background-color: rgba(176,48,176, 0.8);
+    background-color: rgba(176, 48, 176, 0.8);
 }
 
 .navbar-brand {
     color: #FFF;
 }
 
-.nav-item > a.nav-link {
+.nav-item>a.nav-link {
     color: #FFF;
 }
 
 a.nav-link.active {
     color: #FFF;
+}
+
+nav a {
+    box-shadow: inset 0 0 0 0 #6C91BF;
+    color: #6C91BF;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+nav a:hover {
+    box-shadow: inset 100px 0 0 0 #6C91BF;
+    color: white;
 }
 
 .navbar-text {
