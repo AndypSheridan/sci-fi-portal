@@ -9,8 +9,8 @@
             <div class="col">
                 <h1>Welcome to the Sci-Fi Portal</h1>
                 <h4>An online community devoted to science fiction literature</h4>
-                <button type="button" class="btn btn-primary btn-sm button-margin">Register</button>
-                <button type="button" class="btn btn-light btn-sm button-margin"> Log In </button>
+                <a href="{% url 'account_signup' %}"><button type="button" class="btn btn-primary btn-sm button-margin">Register</button></a>
+                <a href="{% url 'account_login' %}"><button type="button" class="btn btn-light btn-sm button-margin"> Log In </button></a>
             </div>
         </div>
     </div>
