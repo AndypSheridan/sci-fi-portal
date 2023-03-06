@@ -5,46 +5,47 @@
 {% load crispy_forms_tags %}
 
 <body id="stars-bg-image">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 book-detail-img">
-                    {% if "placeholder" in book.featured_image.url %}
-                    <img src="../static/favicon.ico" class="img-fluid img-responsive">
-                    {% else %}
-                    <img src=" {{ book.cover_image.url }}" class="img-fluid img-responsive book-detail-img">
-                    {% endif %}
-                </div>
-                <div class="col-md-8 text-white">
-                    <h1 class="book-title">{{ book.title }}</h1>
-                    <h2 class="book-subtitle">Author: {{ book.author }} </h2>
-                    <h3> Rating: {{ book.rating }} Stars</h3>
-                    <hr>
-                    <h4>Synopsis</h4>
-                    <p class="card-text ">
-                        {{ book.synopsis }}
-                    </p>
-                </div>
-                
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 book-detail-img">
+                {% if "placeholder" in book.featured_image.url %}
+                <img src="../static/favicon.ico" class="img-fluid img-responsive">
+                {% else %}
+                <img src=" {{ book.cover_image.url }}" class="img-fluid img-responsive book-detail-img">
+                {% endif %}
             </div>
+            <div class="col-md-8 text-white">
+                <h1 class="book-title">{{ book.title }}</h1>
+                <h2 class="book-subtitle">Author: {{ book.author }} </h2>
+                <h3> Rating: {{ book.rating }} Stars</h3>
+                <hr>
+                <h4>Synopsis</h4>
+                <p class="card-text ">
+                    {{ book.synopsis }}
+                </p>
+            </div>
+
         </div>
-    
+    </div>
+
     <div class="container">
         <div class="row">
             <div class="col card mb-4  mt-3 left  top bg-opacity text-white">
                 <div class="card-body">
                     <!-- The post content goes inside the card-text. -->
                     <!-- Use the | safe filter inside the template tags -->
-                    
+
                     <h4>Review</h4>
                     <p>Review by {{ book.created_by }} | Created on: {{ book.created_on }}</p>
                     <p class="card-text ">
                         {{ book.review_content | safe }}
                     </p>
                     <div class="row">
-    
+
                         <div class="col-1">
                             <!-- The number of likes goes before the closing strong tag -->
-                            <strong class="text-secondary"><i class="far fa-heart"></i> {{ book.number_of_likes }} </strong>
+                            <strong class="text-secondary"><i class="far fa-heart"></i> {{ book.number_of_likes }}
+                            </strong>
                         </div>
                         <div class="col-1">
                             {% with comments.count as total_comments %}
@@ -80,18 +81,25 @@
                         <!-- The body of the comment goes before the | -->
                         {{ comment.body | linebreaks }}
                     </div>
-                    <!-- Our for loop ends here -->
                     {% endfor %}
                 </div>
             </div>
             <div class="col-md-4 card mb-4  mt-3 ">
                 <div class="card-body">
-                    <!-- For later -->
+                    {% if user.is_autheticated %}
+                    <h4>Add a comment: </h4>
+                    <p>Posting as: {{ user.username }}</p>
+                    <form method="post" style="margin-top: 1.3em">
+                        {{ comment_form | crispy }}
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-signup btn-lg">Submit</button>
+                    </form>
+                    {% endif %}
                 </div>
             </div>
         </div>
     </div>
-    
+
 </body>
 
 {% endblock %}
