@@ -1,7 +1,8 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
 from .models import Book, Comment
-from .forms import BookForm
+from .forms import BookForm, CommentForm
+
 
 def index(request):
     return render(request, 'index.html')
@@ -37,9 +38,6 @@ class BookDetail(View):
                 "liked": liked
             },
         )
-
-
-
 
 
 def about(request):
