@@ -22,6 +22,10 @@ body {
     color: #202060;
 }
 
+.text-red {
+    color: #FF0000;
+}
+
 .navbar {
     background-color: rgba(176, 48, 176, 0.6);
 }
@@ -126,16 +130,27 @@ h4 {
 }
 
 .login-form {
-   margin-top: 15%;
+    margin-top: 15%;
 }
 
 .bg-opacity {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-.add-review {
-    
+.fa-twitter:hover {
+    color: #6C91BF;
+}
+
+.fa-facebook-f:hover {
+    color: #6C91BF;
+}
+
+.fa-instagram:hover {
+    color: #6C91BF;
+}
+
+.fa-envelope:hover {
+    color: #6C91BF;
 }
 
 /* Media Queries */
-

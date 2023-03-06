@@ -6,7 +6,8 @@ STATUS = ((0, 'Draft'), (1, 'Published'))
 RATING = ((1, '1'), (2, '2'), (3, '3'), (4, '4'), (5, '5'))
 SUBGENRES = (
     (1, 'Horror'), (2, 'Fantasy'), (3, 'Hard Sci-Fi'), (
-        4, 'Space Opera'), (5, 'Comedy'), (6, 'Other'))
+        4, 'Space Opera'), (5, 'Comedy'), (7, 'Cyberpunk'), (
+            8, 'Apocalyptic'), (9, 'Other'))
 
 
 class Book(models.Model):
