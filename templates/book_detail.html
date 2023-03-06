@@ -7,12 +7,12 @@
 
 <body id="stars-bg-image">
     <div class="container">
-        <div class="row">
+        <div class="row d-flex flex-wrap align-items-center mt-3 mb-3">
             <div class="col-md-4 book-detail-img">
                 {% if "placeholder" in book.featured_image.url %}
                 <img src="../static/favicon.ico" class="img-fluid img-responsive">
                 {% else %}
-                <img src=" {{ book.cover_image.url }}" class="img-fluid img-responsive book-detail-img">
+                <img src=" {{ book.cover_image.url }}" class="img-fluid mx-auto d-block book-detail-img">
                 {% endif %}
             </div>
             <div class="col-md-8 text-white">
@@ -80,7 +80,7 @@
                     {% if user.is_authenticated %}
                     <h4>Add a comment: </h4>
                     <p>Posting as: {{ user.username }}</p>
-                    <form method="post" style="margin-top: 1.3em">
+                    <form method="post" style="margin-top: 1.3em" class="bg-opacity">
                         {{ comment_form | crispy }}
                         {% csrf_token %}
                         <button type="submit" class="btn btn-signup btn-lg">Submit</button>
