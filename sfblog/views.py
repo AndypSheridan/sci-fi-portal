@@ -41,6 +41,30 @@ class BookDetail(View):
             },
         )
 
+    def post(self, request, slug, *args, **kwargs):
+        queryset = Book.objects.filter(status=1)
+        book = get_object_or_404(queryset, slug=slug)
+        comments = book.comments.filter(approved=True).order_by('created_on')
+        liked = False
+        if book.likes.filter(id=self.request.user.id).exists():
+            liked = True
+
+        comment_form = CommentForm(data=request.POST)
+
+        
+
+        return render(
+            request,
+            "book_detail.html",
+            {
+                "book": book,
+                "comments": comments,
+                "commented": False,
+                "liked": liked,
+                "comment_form": CommentForm()
+            },
+        )
+
 
 def about(request):
     return render(request, 'about.html')
