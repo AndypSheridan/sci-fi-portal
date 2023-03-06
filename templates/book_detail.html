@@ -49,12 +49,14 @@
                                             class="fas fa-heart"></i></button>
                                     {% else %}
                                     <button type="submit" name="bookpost_id" value="{{post.slug}}" class="btn-like"><i
-                                        class="far fa-heart"></i></button>
+                                            class="far fa-heart"></i></button>
                                     {% endif %}
                                 </form>
+                                {% else %}
+                                <span class="text-secondary"><i class="far fa-heart"></i></span>
+                                {% endif %}
                             </strong>
-                            <strong class="text-secondary"><i class="far fa-heart"></i> {{ book.number_of_likes }}
-                            </strong>
+                            <span class="text-secondary"> {{ book.number_of_likes }} </span>
                         </div>
                         <div class="col-1">
                             {% with comments.count as total_comments %}
