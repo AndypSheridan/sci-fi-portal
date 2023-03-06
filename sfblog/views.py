@@ -84,6 +84,8 @@ class BookLike(View):
         else:
             book.likes.add(request.user)
 
+        return HttpResponseRedirect(reverse('book_detail', args=[slug]))
+
 
 def about(request):
     return render(request, 'about.html')
