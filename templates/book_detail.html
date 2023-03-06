@@ -16,7 +16,7 @@
                 </div>
                 <div class="col-md-6 masthead-text text-white">
                     <h1 class="book-title">{{ book.title }}</h1>
-                    <p class="book-subtitle">{{ book.author }} | {{ book.created_on }}</p>
+                    <p class="book-subtitle">Author: {{ book.author }} </p>
                 </div>
                 
             </div>
@@ -35,7 +35,7 @@
                     </p>
                     <hr>
                     <h4>Review</h4>
-                    <p>Review by {{ book.User }}</p>
+                    <p>Review by {{ book.User }} | Created on: {{ book.created_on }}</p>
                     <p class="card-text ">
                         {{ book.review_content | safe }}
                     </p>
