@@ -76,7 +76,7 @@ class BookDetail(View):
 
 class BookLike(View):
 
-    def book(self, request, slug):
+    def post(self, request, slug, *args, **kwargs):
         book = get_object_or_404(Book, slug=slug)
 
         if book.likes.filter(id=request.user.id).exists():
