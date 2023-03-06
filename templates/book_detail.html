@@ -7,17 +7,18 @@
     <div class="masthead">
         <div class="container">
             <div class="row g-0">
-                <div class="col-md-6 masthead-text">
-                    <h1 class="book-title">{{ book.title }}</h1>
-                    <p class="book-subtitle">{{ book.author }} | {{ book.created_on }}</p>
-                </div>
-                <div class="d-none d-md-block col-md-6 masthead-image">
+                <div class="d-none d-md-block col-md-6 masthead-image img-left">
                     {% if "placeholder" in book.featured_image.url %}
                     <img src="../static/favicon.ico">
                     {% else %}
                     <img src=" {{ book.cover_image.url }}">
                     {% endif %}
                 </div>
+                <div class="col-md-6 masthead-text text-white">
+                    <h1 class="book-title">{{ book.title }}</h1>
+                    <p class="book-subtitle">{{ book.author }} | {{ book.created_on }}</p>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -34,7 +35,7 @@
                     </p>
                     <hr>
                     <h4>Review</h4>
-                    <p>Review by {{ book.user }}</p>
+                    <p>Review by {{ book.User }}</p>
                     <p class="card-text ">
                         {{ book.review_content | safe }}
                     </p>
