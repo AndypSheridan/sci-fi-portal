@@ -35,7 +35,7 @@
                     <!-- Use the | safe filter inside the template tags -->
                     
                     <h4>Review</h4>
-                    <p>Review by {{ book.User }} | Created on: {{ book.created_on }}</p>
+                    <p>Review by {{ book.created_by }} | Created on: {{ book.created_on }}</p>
                     <p class="card-text ">
                         {{ book.review_content | safe }}
                     </p>
