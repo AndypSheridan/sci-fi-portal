@@ -36,7 +36,7 @@
                     <h4>Review</h4>
                     <p>Review by {{ book.user }}</p>
                     <p class="card-text ">
-                        {{ book.review_content }}
+                        {{ book.review_content | safe }}
                     </p>
                     <div class="row">
     
