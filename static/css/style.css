@@ -153,4 +153,9 @@ h4 {
     color: #6C91BF;
 }
 
+.add-review:hover {
+    color: #202060;
+    background-color: #6C91BF;
+}
+
 /* Media Queries */

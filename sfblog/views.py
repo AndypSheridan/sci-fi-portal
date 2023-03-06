@@ -73,6 +73,17 @@ class BookDetail(View):
         )
 
 
+class BookLike(View):
+
+    def book(self, request, slug):
+        book = get_object_or_404(Book, slug=slug)
+
+        if book.likes.filter(id=request.user.id).exists():
+            book.likes.remove(request.user)
+        else:
+            book.likes.add(request.user)
+
+
 def about(request):
     return render(request, 'about.html')
 
