@@ -35,6 +35,7 @@ class BookDetail(View):
             {
                 "book": book,
                 "comments": comments,
+                "commented": False,
                 "liked": liked,
                 "comment_form": CommentForm()
             },

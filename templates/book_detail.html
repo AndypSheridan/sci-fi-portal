@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block content %}
+
 {% load crispy_forms_tags %}
 
 <body id="stars-bg-image">
@@ -24,7 +25,6 @@
                     {{ book.synopsis }}
                 </p>
             </div>
-
         </div>
     </div>
 
@@ -32,9 +32,6 @@
         <div class="row">
             <div class="col card mb-4  mt-3 left  top bg-opacity text-white">
                 <div class="card-body">
-                    <!-- The post content goes inside the card-text. -->
-                    <!-- Use the | safe filter inside the template tags -->
-
                     <h4>Review</h4>
                     <p>Review by {{ book.created_by }} | Created on: {{ book.created_on }}</p>
                     <p class="card-text ">
@@ -43,14 +40,12 @@
                     <div class="row">
 
                         <div class="col-1">
-                            <!-- The number of likes goes before the closing strong tag -->
                             <strong class="text-secondary"><i class="far fa-heart"></i> {{ book.number_of_likes }}
                             </strong>
                         </div>
                         <div class="col-1">
                             {% with comments.count as total_comments %}
                             <strong class="text-secondary"><i class="far fa-comments"></i>
-                                <!-- Our total_comments variable goes before the closing strong tag -->
                                 {{ total_comments }}</strong>
                             {% endwith %}
                         </div>
@@ -67,18 +62,14 @@
             <div class="col-md-8 card mb-4  mt-3 bg-opacity text-white">
                 <h4>Comments:</h4>
                 <div class="card-body">
-                    <!-- We want a for loop inside the empty control tags to iterate through each comment in comments -->
                     {% for comment in comments %}
                     <div class="comments" style="padding: 10px;">
                         <p class="font-weight-bold">
-                            <!-- The commenter's name goes here. Check the model if you're not sure what that is -->
                             {{ comment.name }}
                             <span class=" text-muted font-weight-normal">
-                                <!-- The comment's created date goes here -->
                                 {{ comment.created_on }}
                             </span> wrote:
                         </p>
-                        <!-- The body of the comment goes before the | -->
                         {{ comment.body | linebreaks }}
                     </div>
                     {% endfor %}
@@ -86,7 +77,7 @@
             </div>
             <div class="col-md-4 card mb-4  mt-3 ">
                 <div class="card-body">
-                    {% if user.is_autheticated %}
+                    {% if user.is_authenticated %}
                     <h4>Add a comment: </h4>
                     <p>Posting as: {{ user.username }}</p>
                     <form method="post" style="margin-top: 1.3em">
