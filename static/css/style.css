@@ -23,7 +23,7 @@ body {
 }
 
 .navbar {
-    background-color: rgba(176, 48, 176, 0.8);
+    background-color: rgba(176, 48, 176, 0.6);
 }
 
 .navbar-brand {
@@ -123,4 +123,8 @@ h4 {
 
 .login-form {
    margin-top: 15%;
+}
+
+.bg-opacity {
+    background-color: rgba(255, 255, 255, 0.5);
 }
