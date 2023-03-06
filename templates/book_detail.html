@@ -40,6 +40,17 @@
                     <div class="row">
 
                         <div class="col-1">
+                            <strong>
+                                {% if user.is_authenticated %}
+                                <form action="{% url 'book_like' book.slug %}" method="POST" class="d-inline">
+                                    {% csrf_token %}
+                                    {% if liked %}
+
+                                    {% else %}
+
+                                    {% endif %}
+                                </form>
+                            </strong>
                             <strong class="text-secondary"><i class="far fa-heart"></i> {{ book.number_of_likes }}
                             </strong>
                         </div>
