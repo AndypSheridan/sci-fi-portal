@@ -60,6 +60,8 @@ SITE_ID = 1
 LOGIN_REDIRECT_URL = '/books/'
 LOGOUT_REDIRECT_URL = '/'
 
+CRISPY_TEMPLATE = 'bootstrap4'
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
