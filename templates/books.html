@@ -17,17 +17,16 @@
                                     {% if "placeholder" in book.cover_image.url %}
                                     <img class="book-img" src="/static/favicon.ico" alt="Default Image">
                                     {% else %}
-                                    <img class="card-img-top book-img" src="{{ book.cover_image.url }}" alt="Book Image">
+                                    <img class="card-img-left book-img" src="{{ book.cover_image.url }}" alt="Book Image">
                                     {% endif %}
-                                    <!-- <div class="image-flash"> -->
+                                    <div class="image-flash">
                                         <span class="author">Author: {{ book.author }}</span>
                                         <br>
                                         <span class="rating">Rating: {{ book.rating }}</span>
-                                    <!-- </div> -->
+                                    </div>
                                 </div>
                                 <a href="{% url 'book_detail' book.slug %}" class="book-link">
                                     <h2 class="card-title">{{ book.title }}</h2>
-                                    <p class="card-text">{{ book.synopsis }}</p>
                                 </a>
                                 <hr>
                                 <p class="card-text text-muted h6">{{ book.created_on }}<i
