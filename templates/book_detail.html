@@ -4,24 +4,28 @@
 {% block content %}
 
 <body id="stars-bg-image">
-    <div class="masthead">
         <div class="container">
-            <div class="row g-0">
-                <div class="d-none d-md-block col-md-6 masthead-image img-left">
+            <div class="row">
+                <div class="col-md-4 book-detail-img">
                     {% if "placeholder" in book.featured_image.url %}
-                    <img src="../static/favicon.ico">
+                    <img src="../static/favicon.ico" class="img-fluid img-responsive">
                     {% else %}
-                    <img src=" {{ book.cover_image.url }}">
+                    <img src=" {{ book.cover_image.url }}" class="img-fluid img-responsive book-detail-img">
                     {% endif %}
                 </div>
-                <div class="col-md-6 masthead-text text-white">
+                <div class="col-md-8 text-white">
                     <h1 class="book-title">{{ book.title }}</h1>
-                    <p class="book-subtitle">Author: {{ book.author }} </p>
+                    <h2 class="book-subtitle">Author: {{ book.author }} </h2>
+                    <h3> Rating: {{ book.rating }} Stars</h3>
+                    <hr>
+                    <h4>Synopsis</h4>
+                    <p class="card-text ">
+                        {{ book.synopsis }}
+                    </p>
                 </div>
                 
             </div>
         </div>
-    </div>
     
     <div class="container">
         <div class="row">
@@ -29,11 +33,7 @@
                 <div class="card-body">
                     <!-- The post content goes inside the card-text. -->
                     <!-- Use the | safe filter inside the template tags -->
-                    <h4>Synopsis</h4>
-                    <p class="card-text ">
-                        {{ book.synopsis }}
-                    </p>
-                    <hr>
+                    
                     <h4>Review</h4>
                     <p>Review by {{ book.User }} | Created on: {{ book.created_on }}</p>
                     <p class="card-text ">
