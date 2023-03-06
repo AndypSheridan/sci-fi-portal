@@ -15,9 +15,9 @@
                             <div class="card-body">
                                 <div class="image-container">
                                     {% if "placeholder" in book.cover_image.url %}
-                                    <img class="book-img" src="/static/favicon.ico" alt="Default Image">
+                                    <img class="book-img img-fluid img-responsive" src="/static/favicon.ico" alt="Default Image">
                                     {% else %}
-                                    <img class="card-img-left book-img" src="{{ book.cover_image.url }}" alt="Book Image">
+                                    <img class="card-img-left img-fluid img-responsive book-img" src="{{ book.cover_image.url }}" alt="Book Image">
                                     {% endif %}
                                     <div class="image-flash">
                                         <span class="author">Author: {{ book.author }}</span>
@@ -25,8 +25,8 @@
                                         <span class="rating">Rating: {{ book.rating }}</span>
                                     </div>
                                 </div>
-                                <a href="{% url 'book_detail' book.slug %}" class="book-link">
-                                    <h2 class="card-title">{{ book.title }}</h2>
+                                <a href="{% url 'book_detail' book.slug %}" class="book-link text-dark-blue">
+                                    <h2 class="card-title text-dark-blue">{{ book.title }}</h2>
                                 </a>
                                 <hr>
                                 <p>Review created by: {{ book.created_by }}  |  <i

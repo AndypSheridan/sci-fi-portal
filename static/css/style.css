@@ -30,6 +30,10 @@ body {
     color: #FFF;
 }
 
+.navbar-toggler {
+    color: #FFF;
+}
+
 a.nav-link.active {
     color: #FFF;
 }

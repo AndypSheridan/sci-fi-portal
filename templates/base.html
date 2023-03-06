@@ -25,7 +25,7 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-red">
+    <nav class="navbar navbar-expand-md navbar-light bg-red">
         <div class="container-fluid">
             {% if user.is_authenticated %}
             <a class="navbar-brand roboto" href="{% url 'books' %}">SF|Portal</a>
@@ -60,9 +60,27 @@
                     </li>
                     {% endif %}
                 </ul>
-                <span class="navbar-text">
-                    Science Fiction Book Review Site
-                </span>
+                <div class="container d-flex justify-content-end py-2 navbar-text">
+                    <button type="button" class="btn btn-outline-light btn-sm btn-floating mx-2"
+                        style="background-color: transparent;">
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-light btn-sm btn-floating mx-2"
+                        style="background-color: transparent;">
+                        <i class="fab fa-facebook-f"></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-light btn-sm btn-floating mx-2"
+                        style="background-color: transparent;">
+                        <i class="fab fa-instagram"></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-light btn-sm btn-floating mx-2"
+                        style="background-color: transparent;">
+                        <i class="fab fa-twitter"></i>
+                    </button>
+                </div>
+                <!-- <span class="navbar-text">
+                    
+                </span> -->
             </div>
         </div>
     </nav>
@@ -74,33 +92,16 @@
     </main>
 
     <!-- Footer  -->
-    <footer id="footer" class="text-center text-sm-start fixed-bottom">
-        <div class="container d-flex justify-content-center py-2">
-            <button type="button" class="btn btn-outline-light btn-sm btn-floating mx-2"
-                style="background-color: transparent;">
-                <i class="fa-regular fa-envelope"></i>
-            </button>
-            <button type="button" class="btn btn-outline-light btn-sm btn-floating mx-2"
-                style="background-color: transparent;">
-                <i class="fab fa-facebook-f"></i>
-            </button>
-            <button type="button" class="btn btn-outline-light btn-sm btn-floating mx-2"
-                style="background-color: transparent;">
-                <i class="fab fa-instagram"></i>
-            </button>
-            <button type="button" class="btn btn-outline-light btn-sm btn-floating mx-2"
-                style="background-color: transparent;">
-                <i class="fab fa-twitter"></i>
-            </button>
-        </div>
+    <!-- <footer id="footer" class="text-center text-sm-start fixed-bottom"> -->
+        
 
         <!-- Copyright -->
         <!-- <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2020 Copyright:
-        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        
+        <a class="text-white"</a>
       </div> -->
         <!-- Copyright -->
-    </footer>
+    <!-- </footer> -->
 </body>
 
 </html>
