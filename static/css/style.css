@@ -91,6 +91,14 @@ nav a:hover {
     background-attachment: fixed;
 }
 
+#about-bg-image {
+    background-image: url('/static/images/sf-portal-about-min.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
 #footer {
     background-color: rgba(108, 145, 191, 0.4);
 }
@@ -119,14 +127,6 @@ h4 {
 
 .image-container {
     width: 60%;
-}
-
-#about-bg-image {
-    background-image: url('/static/images/sf-portal-about.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
 }
 
 .login-form {
