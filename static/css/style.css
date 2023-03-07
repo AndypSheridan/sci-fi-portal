@@ -60,7 +60,7 @@ nav a:hover {
 }
 
 #home-bg-image {
-    background-image: url('/static/images/sfportal.jpg');
+    background-image: url('/static/images/sfportal-min.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -68,7 +68,7 @@ nav a:hover {
 }
 
 #books-bg-image {
-    background-image: url('/static/images/sf-portal-stars.jpg');
+    background-image: url('/static/images/sf-portal-stars-min.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -76,7 +76,7 @@ nav a:hover {
 }
 
 #stars-bg-image {
-    background-image: url('/static/images/sf-portal-stars.jpg');
+    background-image: url('/static/images/sf-portal-stars-min.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -84,7 +84,7 @@ nav a:hover {
 }
 
 #account-bg-image {
-    background-image: url('/static/images/enter-portal.jpg');
+    background-image: url('/static/images/enter-portal-min.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
