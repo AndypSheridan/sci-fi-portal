@@ -13,7 +13,7 @@ SUBGENRES = (
 
 class Book(models.Model):
     title = models.CharField(max_length=100, unique=True)
-    slug = models.SlugField(max_length=100, unique=True, null=True)
+    slug = models.SlugField(max_length=100, unique=True)
     author = models.CharField(max_length=50)
     synopsis = models.TextField(blank=True)
     created_by = models.ForeignKey(
