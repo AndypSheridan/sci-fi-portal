@@ -2,6 +2,8 @@ from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 from django.urls import reverse
+from django.utils.text import slugify
+
 
 STATUS = ((0, 'Draft'), (1, 'Published'))
 RATING = ((1, '1'), (2, '2'), (3, '3'), (4, '4'), (5, '5'))
@@ -13,7 +15,7 @@ SUBGENRES = (
 
 class Book(models.Model):
     title = models.CharField(max_length=100, unique=True)
-    slug = models.SlugField(max_length=100, unique=True)
+    slug = models.SlugField(max_length=100, unique=True, null=True)
     author = models.CharField(max_length=50)
     synopsis = models.TextField(blank=True)
     created_by = models.ForeignKey(
@@ -39,6 +41,11 @@ class Book(models.Model):
 
     def get_absolute_url(self):
         return reverse('books')
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify(self.title)
+        return super().save(*args, **kwargs)
 
 
 class Comment(models.Model):

@@ -91,7 +91,8 @@ class BookLike(View):
 class AddBook(CreateView):
     model = Book
     template_name = 'add_book.html'
-    fields = '__all__'
+    fields = (
+        'title', 'author', 'synopsis', 'review_content', 'cover_image', 'rating', 'sub_genre', 'created_by')
 
 
 def about(request):
