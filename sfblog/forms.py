@@ -14,13 +14,12 @@ class BookForm(forms.ModelForm):
         fields = (
             'title', 'author', 'synopsis', 'review_content', 'cover_image', 'rating', 'sub_genre', 'created_by')
 
-        widget = {
-            'title': form.TextInput(attrs={'class': 'form-control'}),
-            'author': form.TextInput(attrs={'class': 'form-control'}),
-            'synopsis': form.TextInput(attrs={'class': 'form-control'}),
-            'review_content': form.TextInput(attrs={'class': 'form-control'}),
-            'cover_image': form.TextInput(attrs={'class': 'form-control'}),
-            'sub_genre': form.TextInput(attrs={'class': 'form-control'}),
-            'created_by': form.TextInput(attrs={'class': 'form-control'}),
+        widgets = {
+            'title': forms.TextInput(
+                attrs={'class': 'form-control', 'placeholder': 'Book Title'}),
+            'author': forms.TextInput(attrs={'class': 'form-control'}),
+            'synopsis': forms.Textarea(attrs={'class': 'form-control'}),
+            'review_content': forms.Textarea(attrs={'class': 'form-control'}),
+            'sub_genre': forms.Select(attrs={'class': 'form-control'}),
+            'created_by': forms.Select(attrs={'class': 'form-control'}),
         }
-        

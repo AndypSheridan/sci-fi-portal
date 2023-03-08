@@ -9,10 +9,15 @@ Submit a Review
 
 <body id="add-book-bg-image" class="text-white">
     <h3>Submit a New Book Review in the form below...</h3>
+    <div class="form-group">
         <form method="POST">
             {% csrf_token %}
             {{ form.as_p }}
             <button class="btn btn-light">Submit review</button>
+
+    </div>
+
+
 </body>
 
 {% endblock %}
