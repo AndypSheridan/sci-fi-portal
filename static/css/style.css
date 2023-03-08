@@ -84,7 +84,7 @@ nav a:hover {
 }
 
 #account-bg-image {
-    background-image: url('/static/images/enter-portal-min.jpg');
+    background-image: url('/static/images/sf-portal-enter-portal-min.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -93,6 +93,14 @@ nav a:hover {
 
 #about-bg-image {
     background-image: url('/static/images/sf-portal-about-min.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#about-bg-image {
+    background-image: url('/static/images/sf-portal-add-book-min.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
