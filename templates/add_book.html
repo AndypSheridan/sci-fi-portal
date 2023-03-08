@@ -15,7 +15,7 @@ Submit a Review
         <div class="row justify-content-center">
             <div class="col col-md-8 mt-3 mb-3">
                 <div class="form-group">
-                    <form method="POST">
+                    <form method="POST" class="form-control bg-opacity">
                         {% csrf_token %}
                         {{ form | crispy }}
                         <button class="btn btn-light">Submit review</button>
