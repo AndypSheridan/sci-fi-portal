@@ -13,7 +13,7 @@ SUBGENRES = (
 
 class Book(models.Model):
     title = models.CharField(max_length=100, unique=True)
-    slug = models.SlugField(max_length=100, unique=True)
+    slug = models.SlugField(max_length=100, unique=True, null=True)
     author = models.CharField(max_length=50)
     synopsis = models.TextField(blank=True)
     created_by = models.ForeignKey(
@@ -38,7 +38,7 @@ class Book(models.Model):
         return self.likes.count()
 
     def get_absolute_url(self):
-        return reverse()
+        return reverse('books')
 
 
 class Comment(models.Model):
