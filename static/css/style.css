@@ -99,7 +99,7 @@ nav a:hover {
     background-attachment: fixed;
 }
 
-#about-bg-image {
+#add-book-bg-image {
     background-image: url('/static/images/sf-portal-add-book-min.jpg');
     background-size: cover;
     background-repeat: no-repeat;
