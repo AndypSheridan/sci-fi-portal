@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
-from views.generic import CreateView
+from django.views.generic import CreateView
 from django.http import HttpResponseRedirect
 from .models import Book, Comment
 from .forms import BookForm, CommentForm
@@ -88,7 +88,10 @@ class BookLike(View):
         return HttpResponseRedirect(reverse('book_detail', args=[slug]))
 
 
-class AddBook(CreateView)
+class AddBook(CreateView):
+    model = Book
+    template_name = 'add_book.html'
+    fields = '__all__'
 
 
 def about(request):
