@@ -33,8 +33,8 @@
             <div class="col card mb-4  mt-3 left  top bg-opacity text-white">
                 <div class="card-body">
                     <h4>Review</h4>
-                    <p>Review by {{ book.created_by }} | Created on: {{ book.created_on }}</p>
                     <a href="{% url 'edit_book' book.pk %}" class="text-dark-blue roboto">Edit</a>
+                    <p>Review by {{ book.created_by }} | Created on: {{ book.created_on }}</p>
                     <p class="card-text ">
                         {{ book.review_content | safe }}
                     </p>
