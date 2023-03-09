@@ -12,6 +12,10 @@ class BookAdmin(SummernoteModelAdmin):
     search_fields = ['title', 'review_content', 'author']
     search_fields = ['User__username']
     summernote_fields = ('review_content',)
+    actions = ['approve_books']
+
+    def approve_books(self, request, queryset):
+        queryset.update(approved=True)
 
 
 @admin.register(Comment)

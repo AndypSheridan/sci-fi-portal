@@ -27,6 +27,7 @@ class Book(models.Model):
     rating = models.IntegerField(choices=RATING, default=3)
     sub_genre = models.IntegerField(choices=SUBGENRES, blank=True)
     status = models.IntegerField(choices=STATUS, default=0)
+    approved = models.BooleanField(default=False)
     likes = models.ManyToManyField(
         User, related_name='bookpost_like', blank=True)
 

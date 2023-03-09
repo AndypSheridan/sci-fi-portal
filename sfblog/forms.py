@@ -18,7 +18,7 @@ class BookForm(forms.ModelForm):
             'title': forms.TextInput(
                 attrs={'class': 'form-control', 'placeholder': 'Book Title', }),
             'author': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Author Name',}),
-            'created_by': forms.TextInput(attrs={'class': 'form-control'}),
+            'created_by': forms.TextInput(attrs={'class': 'form-control', 'value': '', 'id': 'user', 'type': 'hidden'}),
             'synopsis': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'What happens?',}),
             'review_content': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'Tell us what you think!',}),
             'sub_genre': forms.Select(attrs={'class': 'form-control'}),

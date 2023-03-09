@@ -95,7 +95,6 @@ class EditBook(UpdateView):
     model = Book
     template_name = "edit_book.html"
     form_class = BookForm
-    success_message = "Your review was edited successfully"
 
 
 class AddBook(CreateView):
@@ -125,7 +124,6 @@ class SuccessMessageMixin:
 class DeleteBook(DeleteView):
     model = Book
     template_name = 'delete_book.html'
-    success_message = "Your review was deleted successfully"
     success_url = reverse_lazy('books')
 
 
