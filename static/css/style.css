@@ -166,4 +166,14 @@ h4 {
     background-color: #6C91BF;
 }
 
+.form-control {
+    color: white;
+    background-color: rgba(108, 145, 191, 0.4);
+}
+
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
 /* Media Queries */
