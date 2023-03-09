@@ -149,19 +149,7 @@ h4 {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-.fa-twitter:hover {
-    color: rgba(176, 48, 176, 0.6);
-}
-
-.fa-facebook-f:hover {
-    color: rgba(176, 48, 176, 0.6);
-}
-
-.fa-instagram:hover {
-    color: rgba(176, 48, 176, 0.6);
-}
-
-.fa-envelope:hover {
+.social:hover {
     color: rgba(176, 48, 176, 0.6);
 }
 
