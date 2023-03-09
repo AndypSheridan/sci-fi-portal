@@ -24,7 +24,7 @@ Delete Review
                         <hr>
                         <div class="col text-center mb-2">
                             <form>
-                                <input type="button" class="btn btn-light text-dark-blue mb-2 roboto" value="Go back!"
+                                <input type="button" class="btn btn-light text-dark-blue mb-2 roboto" value="Cancel"
                                     onclick="history.back()">
                                 <button class="btn btn-light text-dark-blue mb-2 roboto">Delete Post</button>
                             </form>
@@ -32,6 +32,7 @@ Delete Review
                 </div>
                 {% else %}
                 <h3 class="text-center text-white">You do not have permission too delete this post</h3>
+                {% endif %}
                 {% else %}
                 <h3 class="text-center text-white">You must be logged in to delete a post</h3>
                 {% endif %}
