@@ -91,8 +91,8 @@ class BookLike(View):
 class EditBook(UpdateView):
     model = Book
     template_name = "edit_book.html"
-    fields = (
-            'title', 'author', 'synopsis', 'review_content', 'cover_image', 'rating', 'sub_genre', 'created_by')
+    fields = [
+            'title', 'author', 'synopsis', 'review_content', 'cover_image', 'rating', 'sub_genre', 'created_by']
 
 
 class AddBook(CreateView):

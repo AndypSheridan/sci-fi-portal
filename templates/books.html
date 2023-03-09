@@ -34,7 +34,7 @@
                                         <span class="rating">Rating: {{ book.rating }}</span>
                                     </div>
                                 </div>
-                                
+                                <a href="{% url 'edit_book' book.pk %}">Edit</a>
                                 <hr>
                                 <p>Review created by: {{ book.created_by }}  |  <i
                                     class="far fa-heart text-red"></i> {{ book.number_of_likes }} </p>
