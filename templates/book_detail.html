@@ -9,8 +9,8 @@
     <div class="container">
         <div class="row d-flex flex-wrap align-items-center mt-3 mb-3">
             <div class="col-md-4 book-detail-img">
-                {% if "placeholder" in book.featured_image.url %}
-                <img src="../static/favicon.ico" class="img-fluid img-responsive">
+                {% if "placeholder" in book.cover_image.url %}
+                <img class="book-img img-fluid img-responsive" src="/static/favicon.ico" alt="Default Image">
                 {% else %}
                 <img src=" {{ book.cover_image.url }}" class="img-fluid mx-auto d-block book-detail-img">
                 {% endif %}
