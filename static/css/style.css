@@ -51,7 +51,7 @@ a {
 }
 
 a:hover {
-    box-shadow: inset 100px 0 0 0 #6C91BF;
+    box-shadow: inset 100px 0 0 0 rgba(176, 48, 176, 0.6);
     color: #FFF;
 }
 
