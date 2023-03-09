@@ -191,6 +191,8 @@ h4 {
     border: none;
 }
 
-
+.logout-button {
+    margin: 0.6rem;
+}
 
 /* Media Queries */

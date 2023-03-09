@@ -11,7 +11,7 @@
 
   <div class="d-flex justify-content-center login-form text-white">
     <div>
-      <h1>{% trans "Sign Out" %}</h1>
+      <h1 class="text-center">{% trans "Sign Out" %}</h1>
 
       <p>{% trans 'Are you sure you want to sign out?' %}</p>
 
@@ -20,9 +20,9 @@
         {% if redirect_field_value %}
         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
         {% endif %}
-        <input type="button" class="btn btn-light text-dark-blue mb-2 roboto" value="Go back!"
+        <input type="button" class="btn btn-light text-dark-blue mb-2 roboto logout-button" value="Cancel"
                                     onclick="history.back()">
-        <button type="submit" class="btn btn-light text-dark-blue mb-2 roboto">{% trans 'Sign Out' %}</button>
+        <button type="submit" class="btn btn-primary text-white mb-2 roboto logout-button">{% trans 'Sign Out' %}</button>
       </form>
     </div>
   </div>

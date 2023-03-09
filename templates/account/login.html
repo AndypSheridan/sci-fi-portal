@@ -13,7 +13,7 @@
 
   <div class="d-flex justify-content-center login-form">
     <div>
-        <h2>{% trans "Sign In" %}</h2>
+        <h2 class="text-center">{% trans "Sign In" %}</h2>
 
         {% get_providers as socialaccount_providers %}
 
@@ -36,7 +36,7 @@
 
         {% else %}
         <p>{% blocktrans %}If you have not created an account yet, then please
-          <a href="{{ signup_url }}">sign in</a> first.{% endblocktrans %}</p>
+          <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
         {% endif %}
 
         <form class="login form-control" method="POST" action="{% url 'account_login' %}">
