@@ -15,6 +15,7 @@ Delete Review
         <div class="row h-100 justify-content-center">
             <div class="col col-md-8 mt-3 mb-3 align-self-center">
                 <div class="form-group">
+                    {% if user.is_authenticated %}
                     <form method="POST" class="form-control bg-opacity text-center">
                         {% csrf_token %}
                         <strong>Are you sure?? If you click the button, there is no going back!</strong>
@@ -28,6 +29,9 @@ Delete Review
                             </form>
                         </div>
                 </div>
+                {% else %}
+                <h3 class="text-center text-white">You must be logged in to delete a post</h3>
+                {% endif %}
             </div>
         </div>
     </div>
