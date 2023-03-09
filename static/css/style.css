@@ -185,4 +185,12 @@ h4 {
     color: #FFF;
 }
 
+.sign-out-form {
+    text-align: center;
+    background: transparent;
+    border: none;
+}
+
+
+
 /* Media Queries */

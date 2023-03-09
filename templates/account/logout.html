@@ -15,12 +15,14 @@
 
       <p>{% trans 'Are you sure you want to sign out?' %}</p>
 
-      <form method="post" action="{% url 'account_logout' %}">
+      <form class="form-control sign-out-form" method="post" action="{% url 'account_logout' %}">
         {% csrf_token %}
         {% if redirect_field_value %}
         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
         {% endif %}
-        <button type="submit">{% trans 'Sign Out' %}</button>
+        <input type="button" class="btn btn-light text-dark-blue mb-2 roboto" value="Go back!"
+                                    onclick="history.back()">
+        <button type="submit" class="btn btn-light text-dark-blue mb-2 roboto">{% trans 'Sign Out' %}</button>
       </form>
     </div>
   </div>
