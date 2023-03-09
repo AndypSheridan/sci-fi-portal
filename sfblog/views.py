@@ -5,6 +5,7 @@ from django.http import HttpResponseRedirect
 from .models import Book, Comment
 from .forms import BookForm, CommentForm
 from django.urls import reverse_lazy
+from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 
 
@@ -94,6 +95,7 @@ class EditBook(UpdateView):
     model = Book
     template_name = "edit_book.html"
     form_class = BookForm
+    success_message = "Your review was edited successfully"
 
 
 class AddBook(CreateView):
@@ -102,9 +104,28 @@ class AddBook(CreateView):
     template_name = 'add_book.html'
 
 
+class SuccessMessageMixin:
+    """
+    Add a success message on successful form submission.
+    """
+
+    success_message = ""
+
+    def form_valid(self, form):
+        response = super().form_valid(form)
+        success_message = self.get_success_message(form.cleaned_data)
+        if success_message:
+            messages.success(self.request, success_message)
+        return response
+
+    def get_success_message(self, cleaned_data):
+        return self.success_message % cleaned_data
+
+
 class DeleteBook(DeleteView):
     model = Book
     template_name = 'delete_book.html'
+    success_message = "Your review was deleted successfully"
     success_url = reverse_lazy('books')
 
 

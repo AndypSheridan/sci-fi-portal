@@ -15,6 +15,13 @@ Edit Review
         <div class="row justify-content-center">
             <div class="col col-md-8 mt-3 mb-3">
                 <div class="form-group">
+                    {% if messages %}
+                    {% for message in messages %}
+                    <div class="text-center alert alert-{{ message.tags }}">
+                        {{ message|safe }}
+                    </div>
+                    {% endfor %}
+                    {% endif %}
                     <form method="POST" class="form-control bg-opacity">
                         {% csrf_token %}
                         {{ form.as_p }}
