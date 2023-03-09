@@ -4,6 +4,7 @@ from django.views.generic import CreateView, UpdateView, DeleteView
 from django.http import HttpResponseRedirect
 from .models import Book, Comment
 from .forms import BookForm, CommentForm
+from django.urls import reverse_lazy
 
 
 def index(request):
