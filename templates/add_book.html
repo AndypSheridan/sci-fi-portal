@@ -17,7 +17,6 @@ Submit a Review
             <div class="col col-md-8 mt-3 mb-3">
                 <div class="form-group">
                     <form method="POST" class="form-control bg-opacity">
-                        {% include 'messages.html' %}
                         {% csrf_token %}
                         {{ form.as_p }}
                         <div class="col text-center">
