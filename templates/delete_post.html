@@ -10,17 +10,23 @@ Delete Review
 {% load crispy_forms_tags %}
 
 <body id="add-book-bg-image" class="text-white roboto">
-    <h3 class="text-center mt-3">Delete Review...</h3>
-    <h4 class="text-center mt-3">Delete {{ book.title }}</h4>
+    <h3 class="text-center mt-3">Delete {{ book.title }}?</h3>
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col col-md-8 mt-3 mb-3">
+        <div class="row h-100 justify-content-center">
+            <div class="col col-md-8 mt-3 mb-3 align-self-center">
                 <div class="form-group">
-                    <form method="POST" class="form-control bg-opacity">
+                    <form method="POST" class="form-control bg-opacity text-center">
+                        
                         {% csrf_token %}
-                        <strong>Are you sure??</strong>
-                        <div class="col text-center">
-                            <button class="btn btn-light text-dark-blue mb-2">Delete Post</button>
+                        <strong>Are you sure?? If you click the button, there is no return!</strong>
+                        <br>
+                        <hr>
+                        <div class="col text-center mb-2">
+                            <form>
+                                <input type="button" class="btn btn-light text-dark-blue mb-2 roboto" value="Go back!"
+                                    onclick="history.back()">
+                                <button class="btn btn-light text-dark-blue mb-2 roboto">Delete Post</button>
+                            </form>
                         </div>
                 </div>
             </div>
