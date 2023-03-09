@@ -100,6 +100,11 @@ class AddBook(CreateView):
     template_name = 'add_book.html'
 
 
+class DeleteBook(DeleteView):
+    model = Book
+    template_name = 'delete_post.html'
+
+
 def about(request):
     return render(request, 'about.html')
 
