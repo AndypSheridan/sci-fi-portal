@@ -42,7 +42,7 @@ a.nav-link.active {
     color: #FFF;
 }
 
-nav a {
+a {
     box-shadow: inset 0 0 0 0 #6C91BF;
     color: #6C91BF;
     margin: 0 -.25rem;
@@ -50,7 +50,7 @@ nav a {
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
-nav a:hover {
+a:hover {
     box-shadow: inset 100px 0 0 0 #6C91BF;
     color: #FFF;
 }
