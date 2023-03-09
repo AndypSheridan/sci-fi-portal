@@ -88,6 +88,13 @@ class BookLike(View):
         return HttpResponseRedirect(reverse('book_detail', args=[slug]))
 
 
+class EditBook(UpdateView):
+    model = Book
+    template_name = "edit_book.html"
+    fields = (
+            'title', 'author', 'synopsis', 'review_content', 'cover_image', 'rating', 'sub_genre', 'created_by')
+
+
 class AddBook(CreateView):
     model = Book
     form_class = BookForm
