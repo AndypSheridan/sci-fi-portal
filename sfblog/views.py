@@ -103,7 +103,7 @@ class AddBook(CreateView):
 
 class DeleteBook(DeleteView):
     model = Book
-    template_name = 'delete_post.html'
+    template_name = 'delete_book.html'
     success_url = reverse_lazy('books')
 
 
