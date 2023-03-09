@@ -5,6 +5,7 @@ from django.http import HttpResponseRedirect
 from .models import Book, Comment
 from .forms import BookForm, CommentForm
 from django.urls import reverse_lazy
+from django.contrib.messages.views import SuccessMessageMixin
 
 
 def index(request):
