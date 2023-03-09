@@ -22,12 +22,14 @@ Edit Review
                     </div>
                     {% endfor %}
                     {% endif %}
+                    {% if user.is_authenticated %}
                     <form method="POST" class="form-control bg-opacity">
                         {% csrf_token %}
                         {{ form.as_p }}
                         <div class="col text-center">
                             <button class="btn btn-light text-dark-blue mb-2">Update</button>
                         </div>
+                        {% endif %}
                 </div>
             </div>
         </div>
