@@ -34,8 +34,10 @@
                                         <span class="rating">Rating: {{ book.rating }}</span>
                                     </div>
                                 </div>
+                                {% if user.is_authenticated %}
                                 <a href="{% url 'edit_book' book.pk %}" class="text-dark-blue roboto">Edit</a>
                                 <a href="{% url 'delete_book' book.pk %}" class="text-dark-blue roboto">Delete</a>
+                                {% endif %}
                                 <hr>
                                 <p>Review created by: {{ book.created_by }}  |  <i
                                     class="far fa-heart text-red"></i> {{ book.number_of_likes }} </p>
