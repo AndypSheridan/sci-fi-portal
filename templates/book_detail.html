@@ -6,9 +6,6 @@
 {% load crispy_forms_tags %}
 
 <body id="stars-bg-image">
-    <p class="text-white">current user: {{ user.id }}
-        book reviewer: {{ book.created_by.id }}
-    </p>
     <div class="container">
         <div class="row d-flex flex-wrap align-items-center mt-3 mb-3">
             <div class="col-md-4 book-detail-img">
@@ -36,10 +33,11 @@
             <div class="col card mb-4  mt-3 left  top bg-opacity text-white">
                 <div class="card-body">
                     <h4>Review</h4>
-                    <p>Review by {{ book.created_by }} |
+                    <p>Review by {{ book.created_by }}
                         {% if user.is_authenticated %}
                         {% if user.id == book.created_by.id %}
-                        <a href="{% url 'edit_book' book.pk %}" class="text-dark-blue roboto">Edit</a> | <a
+                        <span class="text-white">|</span>
+                        <a href="{% url 'edit_book' book.pk %}" class="text-dark-blue roboto">  Edit</a> | <a
                             href="{% url 'delete_book' book.pk %}" class="text-dark-blue roboto">Delete</a> |Created on:
                         {{ book.created_on }}</p>
                     {% endif %}
