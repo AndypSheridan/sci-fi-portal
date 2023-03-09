@@ -11,6 +11,7 @@ Edit Review
 
 <body id="add-book-bg-image" class="text-white roboto">
     {% if user.is_authenticated %}
+    {% if user.id == book.created_by.id %}
     <h3 class="text-center mt-3">Edit Review...</h3>
     <div class="container">
         <div class="row justify-content-center">
@@ -22,6 +23,9 @@ Edit Review
                         <div class="col text-center">
                             <button class="btn btn-light text-dark-blue mb-2">Update</button>
                         </div>
+                        {% else %}
+                        <h3 class="text-center text-white">You do not have permission to edit this review</h3>
+                        {% endif %}
                         {% else %}
                         <h3 class="text-center text-white">You must be logged in to edit a review</h3>
                         {% endif %}

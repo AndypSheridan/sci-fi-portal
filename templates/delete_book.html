@@ -11,6 +11,7 @@ Delete Review
 
 <body id="add-book-bg-image" class="text-white roboto">
     {% if user.is_authenticated %}
+    {% if user.id == book.created_by.id %}
     <h3 class="text-center mt-3">Delete {{ book.title }}?</h3>
     <div class="container">
         <div class="row h-100 justify-content-center">
@@ -29,6 +30,8 @@ Delete Review
                             </form>
                         </div>
                 </div>
+                {% else %}
+                <h3 class="text-center text-white">You do not have permission too delete this post</h3>
                 {% else %}
                 <h3 class="text-center text-white">You must be logged in to delete a post</h3>
                 {% endif %}

@@ -38,8 +38,10 @@
                                     </div>
                                 </div>
                                 {% if user.is_authenticated %}
+                                {% if user.id == book.created_by.id %}
                                 <a href="{% url 'edit_book' book.pk %}" class="text-dark-blue roboto">Edit</a>
                                 <a href="{% url 'delete_book' book.pk %}" class="text-dark-blue roboto">Delete</a>
+                                {% endif %}
                                 {% endif %}
                                 <hr>
                                 <p>Reviewed by: {{ book.created_by }} | <i class="far fa-heart text-red"></i>
