@@ -192,4 +192,9 @@ h4 {
     border: none !important;
 }
 
+button {
+    background: transparent;
+    border: none;
+}
+
 /* Media Queries */
