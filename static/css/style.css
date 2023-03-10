@@ -165,7 +165,7 @@ h4 {
 
 /* Chrome, Firefox, Opera, Safari 10.1+ */
 .form-control::placeholder { 
-    color: #FFF;
+    color: #000;
     opacity: 1; /* Firefox */
 }
 

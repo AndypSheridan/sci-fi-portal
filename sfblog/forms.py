@@ -30,3 +30,18 @@ class BookForm(forms.ModelForm):
             # 'created_by': forms.Select(attrs={'class': 'form-control'}),
         }
 
+        def clean(self):
+
+            super(BookForm, self).clean()
+            title = self.cleaned_data.get('title')
+            author = self.cleaned_data.get('author')
+
+            if not form.data:
+                self._errors['title'] = self.error_class([
+                    'This field is required'
+                ])
+            if not form.data:
+                self._errors['author'] = self.error_class([
+                    'This field is required'
+                    ])
+            return self.cleaned_data
