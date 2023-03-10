@@ -3,7 +3,7 @@ from django.views import generic, View
 from django.views.generic import CreateView, UpdateView, DeleteView
 from django.http import HttpResponseRedirect
 from .models import Author, Book, Comment
-from .forms import BookForm, BookCoverImageForm, CommentForm
+from .forms import BookForm, CommentForm
 from django.urls import reverse_lazy
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
@@ -119,7 +119,7 @@ class AddBook(SuccessMessageMixin, CreateView):
 class EditBook(SuccessMessageMixin, UpdateView):
     model = Book
     template_name = "edit_book.html"
-    form_class = BookForm, 
+    form_class = BookForm
     success_message = "Your review has been updated successfully"
 
 
@@ -140,3 +140,15 @@ def about(request):
 
 def authors(request):
     return render(request, 'authors.html')
+
+
+def upload(request):
+    context = dict(backend_form=BookForm())
+
+    if request.method == 'POST':
+        form = BookForm(request.POST, request.FILES)
+        context['posted'] = form.instance
+    if form.is_valid():
+        form.save()
+
+    return render(request, 'books.html', context)

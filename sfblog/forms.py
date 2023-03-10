@@ -15,6 +15,10 @@ class BookForm(forms.ModelForm):
         fields = (
             'title', 'author', 'synopsis', 'review_content', 'cover_image', 'rating', 'sub_genre', 'created_by')
 
+        cover_image = CloudinaryFileField(
+            options={"folder": "home"}
+        )
+
         widgets = {
             'title': forms.TextInput(
                 attrs={'class': 'form-control', 'placeholder': 'Book Title', }),
@@ -26,7 +30,3 @@ class BookForm(forms.ModelForm):
             # 'created_by': forms.Select(attrs={'class': 'form-control'}),
         }
 
-
-    class Meta:
-        model = Book
-        fields = ('cover_image',)
