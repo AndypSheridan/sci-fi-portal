@@ -115,10 +115,11 @@ class EditBook(UpdateView):
     form_class = BookForm
 
 
-class AddBook(CreateView):
+class AddBook(SuccessMessageMixin, CreateView):
     model = Book
     form_class = BookForm
     template_name = 'add_book.html'
+    success_message = "Your review has been added and is awaiting approval by the admin team"
 
 
 class DeleteBook(DeleteView):
