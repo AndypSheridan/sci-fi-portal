@@ -64,12 +64,12 @@
                                 <span class="text-secondary"><i class="far fa-heart"></i></span>
                                 {% endif %}
                             </strong>
-                            <span class="text-secondary"> {{ book.number_of_likes }} </span>
+                            <span class="text-secondary text-white"> {{ book.number_of_likes }} </span>
                         </div>
                         <div class="col-1">
                             {% with comments.count as total_comments %}
-                            <strong class="text-secondary"><i class="far fa-comments"></i>
-                                {{ total_comments }}</strong>
+                            <span class="text-secondary"><i class="far fa-comments text-white"></i></span>
+                            <span class="text-secondary text-white">{{ total_comments }}</span>
                             {% endwith %}
                         </div>
                     </div>
