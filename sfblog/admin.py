@@ -1,6 +1,16 @@
 from django.contrib import admin
-from .models import Book, Comment
+from .models import Author, Book, Comment
 from django_summernote.admin import SummernoteModelAdmin
+
+
+@admin.register(Author)
+class AuthorAdmin(SummernoteModelAdmin):
+
+    prepopulated_fields = {'slug': ('name',)}
+    list_filter = ('name', 'famous_books')
+    list_display = ('name', 'residence')
+    summernote_fields = ('bio')
+    actions = ['delete_author']
 
 
 @admin.register(Book)
