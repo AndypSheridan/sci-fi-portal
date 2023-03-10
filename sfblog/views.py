@@ -109,17 +109,18 @@ class BookLike(View):
         return HttpResponseRedirect(reverse('book_detail', args=[slug]))
 
 
-class EditBook(UpdateView):
-    model = Book
-    template_name = "edit_book.html"
-    form_class = BookForm
-
-
 class AddBook(SuccessMessageMixin, CreateView):
     model = Book
     form_class = BookForm
     template_name = 'add_book.html'
     success_message = "Your review has been added and is awaiting approval by the admin team"
+
+
+class EditBook(SuccessMessageMixin, UpdateView):
+    model = Book
+    template_name = "edit_book.html"
+    form_class = BookForm
+    success_message = "Your review has been updated successfully"
 
 
 class DeleteBook(DeleteView):

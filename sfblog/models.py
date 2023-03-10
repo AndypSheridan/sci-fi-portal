@@ -13,6 +13,21 @@ SUBGENRES = (
             8, 'Apocalyptic'), (9, 'Other'))
 
 
+class Author(models.Model):
+    name = models.CharField(max_length=60, unique=True)
+    slug = models.SlugField(max_length=60, unique=True)
+    residence = models.CharField(max_length=60)
+    bio = models.TextField()
+    famous_books = models.CharField(max_length=200)
+    author_image = CloudinaryField('image', default='default_image')
+
+    class Meta:
+        ordering = ['name']
+
+    def __str__(self):
+        return self.name
+
+
 class Book(models.Model):
     title = models.CharField(max_length=100, unique=True)
     slug = models.SlugField(max_length=100, unique=True, null=True)
