@@ -19,6 +19,8 @@ class Author(models.Model):
     residence = models.CharField(max_length=60)
     bio = models.TextField()
     famous_books = models.CharField(max_length=200)
+    date_of_birth = models.DateField(null=True, blank=True)
+    date_of_death = models.DateField('Died', null=True, blank=True)
     author_image = CloudinaryField('image', default='default_image')
 
     class Meta:
