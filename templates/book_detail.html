@@ -54,10 +54,10 @@
                                     {% csrf_token %}
                                     {% if liked %}
                                     <button type="submit" name="bookpost_id" value="{{post.slug}}" class="btn-like"><i
-                                            class="fas fa-heart"></i></button>
+                                            class="fas fa-heart text-red"></i></button>
                                     {% else %}
                                     <button type="submit" name="bookpost_id" value="{{post.slug}}" class="btn-like"><i
-                                            class="far fa-heart"></i></button>
+                                            class="far fa-heart text-red"></i></button>
                                     {% endif %}
                                 </form>
                                 {% else %}
