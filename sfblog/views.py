@@ -2,8 +2,8 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.views.generic import CreateView, UpdateView, DeleteView
 from django.http import HttpResponseRedirect
-from .models import Book, Comment
-from .forms import BookForm, CommentForm
+from .models import Author, Book, Comment
+from .forms import BookForm, BookCoverImageForm, CommentForm
 from django.urls import reverse_lazy
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
@@ -119,7 +119,7 @@ class AddBook(SuccessMessageMixin, CreateView):
 class EditBook(SuccessMessageMixin, UpdateView):
     model = Book
     template_name = "edit_book.html"
-    form_class = BookForm
+    form_class = BookForm, 
     success_message = "Your review has been updated successfully"
 
 

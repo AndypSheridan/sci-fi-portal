@@ -1,5 +1,6 @@
 from .models import Book, Comment
 from django import forms
+from cloudinary.forms import CloudinaryFileField
 
 
 class CommentForm(forms.ModelForm):
@@ -24,3 +25,8 @@ class BookForm(forms.ModelForm):
             'sub_genre': forms.Select(attrs={'class': 'form-control'}),
             # 'created_by': forms.Select(attrs={'class': 'form-control'}),
         }
+
+
+    class Meta:
+        model = Book
+        fields = ('cover_image',)
