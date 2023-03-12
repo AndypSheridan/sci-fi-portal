@@ -38,16 +38,9 @@ class AuthorList(generic.ListView):
     paginate_by = 6
 
 
-# class AuthorDetail(View):
-
-#     def get(self, request, slug, *args, **kwargs):
-#         queryset = Author.objects
-#         author = get_object_or_404(queryset, slug=slug)
-
-#         return render(
-#             request,
-#             "author_detail.html"
-#         )
+class AuthorDetail(DetailView):
+    model = Author
+    template_name = 'author_detail.html'
 
 
 class BookList(generic.ListView):

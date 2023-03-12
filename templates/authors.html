@@ -40,7 +40,7 @@
                                         src="{{ author.author_image.url }}" alt="Book Image">
                                     {% endif %}
                                     <div class="image-flash">
-                                        <a href="#" class="book-link text-dark-blue">
+                                        <a href="{% url 'author_detail' author.slug %}" class="book-link text-dark-blue">
                                             <h2 class="card-title text-dark-blue text-align-right">{{ author.name }}</h2>
                                         </a>
                                         <span class="author">Date of birth: {{ author.date_of_birth }}</span>

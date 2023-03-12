@@ -9,7 +9,7 @@
     <div class="container">
         <div class="row d-flex flex-wrap align-items-center mt-3 mb-3">
             <div class="col-md-4 book-detail-img">
-                {% if "placeholder" in book.cover_image.url %}
+                {% if "placeholder" in author.author_image.url %}
                 <img class="book-img img-fluid img-responsive" src="/static/images/blank-profile-picture.png" alt="Default Image">
                 {% else %}
                 <img src=" {{ author.author_image.url }}" class="img-fluid mx-auto d-block book-detail-img">
@@ -33,9 +33,7 @@
             <div class="col card mb-4  mt-3 left  top bg-opacity text-white">
                 <div class="card-body">
                     <h4>Bio</h4>
-                    <p> {{ author.bio }}
-                        <span class="text-white">|</span>
-                    <p class="card-text ">
+                    <p class="card-text text-white">
                         {{ author.bio | safe }}
                     </p>
                     <div class="row">
