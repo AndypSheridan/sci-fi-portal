@@ -40,24 +40,15 @@
                                         src="{{ author.author_image.url }}" alt="Book Image">
                                     {% endif %}
                                     <div class="image-flash">
-                                        <!-- <a href="#" class="book-link text-dark-blue">
-                                            <h2 class="card-title text-dark-blue text-align-right">{{ book.title }}</h2>
+                                        <a href="#" class="book-link text-dark-blue">
+                                            <h2 class="card-title text-dark-blue text-align-right">{{ author.name }}</h2>
                                         </a>
-                                        <span class="author">Author: {{ book.author }}</span> -->
+                                        <span class="author">Date of birth: {{ author.date_of_birth }}</span>
                                         <br>
-                                        <span class="rating">Rating: {{ book.rating }}</span>
+                                        <span class="rating">Lives in: {{ author.residence }}</span>
                                     </div>
                                 </div>
-                                {% if user.is_authenticated %}
-                                {% if user.id == book.created_by.id %}
-                                <a href="{% url 'edit_book' book.pk %}" class="text-dark-blue roboto">Edit</a>
-                                <a href="{% url 'delete_book' book.pk %}" class="text-dark-blue roboto">Delete</a>
-                                {% endif %}
-                                {% endif %}
-                                <hr>
-                                <p>Reviewed by: {{ book.created_by }} | <i class="far fa-heart text-red"></i>
-                                    {{ book.number_of_likes }} | <i class="fa-regular fa-comment text-white"></i>
-                                    {{ book.comments.count }}</p>
+                                
                             </div>
                         </div>
                     </div>
