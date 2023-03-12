@@ -32,12 +32,12 @@
                         <div class="card mb-4 bg-opacity text-white">
                             <div class="card-body">
                                 <div class="image-container">
-                                    {% if "placeholder" in author.cover_image.url %}
-                                    <img class="book-img img-fluid img-responsive" src="/static/images/blank-profile-picture-973460_640.png"
+                                    {% if "placeholder" in author.author_image.url %}
+                                    <img class="book-img img-fluid img-responsive" src="/static/images/blank-profile-picture.png"
                                         alt="Default Image">
                                     {% else %}
                                     <img class="card-img-left img-fluid img-responsive book-img"
-                                        src="{{ book.cover_image.url }}" alt="Book Image">
+                                        src="{{ author.author_image.url }}" alt="Book Image">
                                     {% endif %}
                                     <div class="image-flash">
                                         <!-- <a href="#" class="book-link text-dark-blue">
