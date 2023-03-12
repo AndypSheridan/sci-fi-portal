@@ -22,6 +22,8 @@ class Author(models.Model):
     date_of_birth = models.DateField(null=True, blank=True)
     date_of_death = models.DateField('Died', null=True, blank=True)
     author_image = CloudinaryField('image', default='placeholder')
+    likes = models.ManyToManyField(
+        User, related_name='author_like', blank=True)
 
     class Meta:
         ordering = ['name']
