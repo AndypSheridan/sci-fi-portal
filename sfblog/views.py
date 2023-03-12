@@ -31,6 +31,13 @@ class SuccessMessageMixin:
         return self.success_message % cleaned_data
 
 
+class AuthorList(generic.ListView):
+    model = Author
+    queryset = Author.objects.order_by('name')
+    template_name = 'authors.html'
+    paginate_by = 6
+
+
 class BookList(generic.ListView):
     """
     Uses Book model, only shows Book reviews which are published
