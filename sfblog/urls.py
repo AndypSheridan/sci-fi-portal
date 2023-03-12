@@ -15,3 +15,6 @@ urlpatterns = [
     path('book_detail/edit_book/<int:pk>', views.EditBook.as_view(), name="edit_book"),
     path('book_detail/<int:pk>/delete', views.DeleteBook.as_view(), name="delete_book"),
 ]
+
+handler404 = 'sfblog.views.handler404'
+handler500 = 'sfblog.views.handler500'
