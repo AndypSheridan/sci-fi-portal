@@ -45,10 +45,11 @@
                                         </a>
                                         <span class="author">Date of birth: {{ author.date_of_birth }}</span>
                                         <br>
-                                        <span class="rating">Lives in: {{ author.residence }}</span>
+                                        <span class="rating">Lives in: {{ author.residence }} | <i class="far fa-heart text-red"></i>
+                                            {{ book.number_of_likes }} | <i class="fa-regular fa-comment text-white"></i>
+                                            {{ book.comments.count }}</span>
                                     </div>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
