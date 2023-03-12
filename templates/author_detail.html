@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+{% load crispy_forms_tags %}
+
+<body id="stars-bg-image">
+    <div class="container">
+        <div class="row d-flex flex-wrap align-items-center mt-3 mb-3">
+            <div class="col-md-4 book-detail-img">
+                {% if "placeholder" in book.cover_image.url %}
+                <img class="book-img img-fluid img-responsive" src="/static/images/blank-profile-picture.png" alt="Default Image">
+                {% else %}
+                <img src=" {{ author.author_image.url }}" class="img-fluid mx-auto d-block book-detail-img">
+                {% endif %}
+            </div>
+            <div class="col-md-8 text-white">
+                <h1 class="book-title">{{ author.name }}</h1>
+                <h2 class="book-subtitle">Residence: {{ author.residence }} </h2>
+                <h3> Rating:  Stars</h3>
+                <hr>
+                <h4>Synopsis</h4>
+                <p class="card-text ">
+                    {{ author.date_of_birth }}
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col card mb-4  mt-3 left  top bg-opacity text-white">
+                <div class="card-body">
+                    <h4>Bio</h4>
+                    <p> {{ author.bio }}
+                        <span class="text-white">|</span>
+                    <p class="card-text ">
+                        {{ author.bio | safe }}
+                    </p>
+                    <div class="row">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 card mb-4  mt-1 bg-opacity text-white">
+                    <a href="" class="text-dark-blue roboto">Edit</a>
+                    
+                </div>
+            </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+{% endblock %}

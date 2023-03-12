@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
-from django.views.generic import CreateView, UpdateView, DeleteView
+from django.views.generic import CreateView, UpdateView, DeleteView, DetailView
 from django.http import HttpResponseRedirect
 from .models import Author, Book, Comment
 from .forms import BookForm, CommentForm
@@ -38,58 +38,16 @@ class AuthorList(generic.ListView):
     paginate_by = 6
 
 
-class AuthorDetail(View):
+# class AuthorDetail(View):
 
-    def get(self, request, slug, *args, **kwargs):
-        queryset = Author.objects
-        author = get_object_or_404(queryset, slug=slug)
-        comments = author.comments.filter(approved=True).order_by('created_on')
-        liked = False
-        if author.likes.filter(id=self.request.user.id).exists():
-            liked = True
+#     def get(self, request, slug, *args, **kwargs):
+#         queryset = Author.objects
+#         author = get_object_or_404(queryset, slug=slug)
 
-        return render(
-            request,
-            "author_detail.html",
-            {
-                "author": author,
-                "comments": comments,
-                "commented": False,
-                "liked": liked,
-                "comment_form": CommentForm()
-            },
-        )
-
-    def post(self, request, slug, *args, **kwargs):
-        queryset = Author.objects
-        author = get_object_or_404(queryset, slug=slug)
-        comments = author.comments.filter(approved=True).order_by('created_on')
-        liked = False
-        if author.likes.filter(id=self.request.user.id).exists():
-            liked = True
-
-        comment_form = CommentForm(data=request.POST)
-
-        if comment_form.is_valid():
-            comment_form.instance.email = request.user.email
-            comment_form.instance.name = request.user.username
-            comment = comment_form.save(commit=False)
-            comment.author = author
-            comment.save()
-        else:
-            comment_form = CommentForm()
-
-        return render(
-            request,
-            "author_detail.html",
-            {
-                "author": book,
-                "comments": comments,
-                "commented": True,
-                "liked": liked,
-                "comment_form": CommentForm()
-            },
-        )
+#         return render(
+#             request,
+#             "author_detail.html"
+#         )
 
 
 class BookList(generic.ListView):
