@@ -21,7 +21,7 @@ class Author(models.Model):
     famous_books = models.CharField(max_length=200)
     date_of_birth = models.DateField(null=True, blank=True)
     date_of_death = models.DateField('Died', null=True, blank=True)
-    author_image = CloudinaryField('image', default='default_image')
+    author_image = CloudinaryField('image', default='placeholder')
 
     class Meta:
         ordering = ['name']
