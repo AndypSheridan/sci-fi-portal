@@ -2,6 +2,18 @@ from .models import Book, Comment, User, UserProfile
 from django import forms
 from cloudinary.forms import CloudinaryFileField
 from django.contrib.auth import get_user_model
+from allauth.account.forms import SignupForm
+
+
+class CustomSignupForm(SignupForm):
+    def __init__(self, *args, **kwargs):
+        super(MyCustomSignupForm, self).__init__(*args, **kwargs)
+        self.fields['first_name'] = forms.CharField(required=True)
+    
+    def save(self, request):
+        organization = self.cleaned_data.pop('first_name')
+        ...
+        user = super(MyCustomSignupForm, self).save(request)
 
 
 class CommentForm(forms.ModelForm):
