@@ -28,7 +28,8 @@ class BookForm(forms.ModelForm):
     class Meta:
         model = Book
         fields = (
-            'title', 'author', 'synopsis', 'review_content', 'cover_image', 'rating', 'sub_genre', 'created_by')
+            'title', 'author', 'synopsis', 'review_content',
+            'cover_image', 'rating', 'sub_genre', 'created_by')
 
         cover_image = CloudinaryFileField(
             options={"folder": "home"}
@@ -36,11 +37,18 @@ class BookForm(forms.ModelForm):
 
         widgets = {
             'title': forms.TextInput(
-                attrs={'class': 'form-control', 'placeholder': 'Book Title', }),
-            'author': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Author Name',}),
-            'created_by': forms.TextInput(attrs={'class': 'form-control', 'value': '', 'id': 'user', 'type': 'hidden'}),
-            'synopsis': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'What happens?',}),
-            'review_content': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'Tell us what you think!',}),
+                attrs={'class': 'form-control',
+                       'placeholder': 'Book Title', }),
+            'author': forms.TextInput(attrs={'class': 'form-control',
+                                             'placeholder': 'Author Name'}),
+            'created_by': forms.TextInput(attrs={'class': 'form-control',
+                                                 'value': '', 'id': 'user',
+                                                 'type': 'hidden'}),
+            'synopsis': forms.Textarea(attrs={'class': 'form-control',
+                                              'placeholder': 'What happens?'}),
+            'review_content': forms.Textarea(
+                attrs={'class': 'form-control',
+                       'placeholder': 'Tell us what you think!'}),
             'sub_genre': forms.Select(attrs={'class': 'form-control'}),
             # 'created_by': forms.Select(attrs={'class': 'form-control'}),
         }

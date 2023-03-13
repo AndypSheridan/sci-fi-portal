@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.views.generic import CreateView, UpdateView, DeleteView, DetailView
 from django.http import HttpResponse, HttpResponseRedirect
@@ -127,7 +127,8 @@ class AddBook(SuccessMessageMixin, CreateView):
     model = Book
     form_class = BookForm
     template_name = 'add_book.html'
-    success_message = "Your review has been added and is awaiting approval by the admin team"
+    success_message = "Your review has been added and \
+        is awaiting approval by the admin team"
 
 
 class EditBook(SuccessMessageMixin, UpdateView):
@@ -169,8 +170,18 @@ def upload(request):
 
 
 def profile(request):
-    user_form = UserEditForm(instance=request.user)
-    profile_form = ProfileEditForm(instance=request.user.userprofile)
+    if request.method == 'POST':
+        user_form = UserEditForm(request.POST, instance=request.user)
+        profile_form = ProfileEditForm(
+            request.POST, request.FILES, instance=request.user.userprofile)
+        if user_form.is_valid() and profile_form.is_valid():
+            user_form.save()
+            profile_form.save()
+            messages.success(request, f"Your profile has been updated!")
+            return redirect('profile')
+    else:
+        user_form = UserEditForm(instance=request.user)
+        profile_form = ProfileEditForm(instance=request.user.userprofile)
 
     context = {
         'user_form': user_form,

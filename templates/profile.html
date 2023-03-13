@@ -4,7 +4,16 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-
+{% if messages %}
+    {% for message in messages %}
+    <div class="alert alert-success roboto text-dark-blue alert-dismissible fade text-center show" role="alert">
+        <strong>{{message}}</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    {% endfor %}
+    {% endif %}
 
 <body id="add-book-bg-image" class="text-white roboto">
     {% if user.is_authenticated %}
