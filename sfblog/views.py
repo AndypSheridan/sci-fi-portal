@@ -177,8 +177,7 @@ class EditProfile(SuccessMessageMixin, UpdateView):
     model = User
     template_name = "edit_profile.html"
     form_class = EditProfileForm
-    success_message = "Your rofile has been updated successfully"
-
+    success_message = "Your profile has been updated successfully"
 
 
 def handler404(request, *args, **argv):

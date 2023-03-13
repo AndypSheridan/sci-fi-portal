@@ -1,20 +1,18 @@
 {% extends "base.html" %}
-{% load static %}
 {% load cloudinary %}
+{% load static %}
+
+{% block title %}
+Edit Review
+{% endblock %}
 
 {% block content %}
 
+{% load crispy_forms_tags %}
 
 <body id="add-book-bg-image" class="text-white roboto">
     {% if user.is_authenticated %}
-    <h2 class="text-white">Username: {{user.username}} </h2>
-    <div>User Image: <img src="{{ user.userprofile.user_image.url }}" alt="user image"></div>
-    <p>Email Address: {{user.email}}</p>
-    <p>First Name: {{user.first_name}}</p>
-    <p>Last Name: {{user.last_name}}</p>
-    <p>Date Joined: {{user.date_joined}}</p>
-
-
+    <h3 class="text-center mt-3">Edit Profile...</h3>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col col-md-8 mt-3 mb-3">
@@ -23,14 +21,18 @@
                         {% csrf_token %}
                         {{ form.as_p }}
                         <div class="col text-center">
-                        <a href="#"><button class="btn btn-light text-dark-blue mb-2">Update</button></a>
+                            <button class="btn btn-light text-dark-blue mb-2">Update</button>
                         </div>
                         {% else %}
-                        <h3 class="text-center text-white">You must be logged in to edit this profile/h3>
-                            {% endif %}
+                        <h3 class="text-center text-white">You do not have permission to edit this review</h3>
+                        <h3 class="text-center text-white">You must be logged in to edit a review</h3>
+                        {% endif %}
                 </div>
             </div>
         </div>
     </div>
 
-    {% endblock %}
+
+</body>
+
+{% endblock %}
