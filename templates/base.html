@@ -28,7 +28,7 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-red">
         <div class="container-fluid">
             {% if user.is_authenticated %}
-            <a class="navbar-brand roboto" href="{% url 'books' %}">SF|Portal</a>
+            <a class="navbar-brand roboto" href="{% url 'home' %}">SF|Portal</a>
             {% else %}
             <a class="navbar-brand roboto" href="{% url 'home' %}">SF|Portal</a>
             {% endif %}
