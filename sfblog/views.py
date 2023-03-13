@@ -168,9 +168,16 @@ def upload(request):
     return render(request, 'books.html', context)
 
 
-class Profile(View):
-    def get(self, request):
-        return render(request, 'profile.html')
+def profile(request):
+    user_form = UserEditForm()
+    profile_form = ProfileEditForm()
+
+    context = {
+        'user_form': user_form,
+        'profile_form': profile_form
+    }
+
+    return render(request, 'profile.html', context)
 
 
 def handler404(request, *args, **argv):
