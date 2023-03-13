@@ -12,7 +12,7 @@
   <div class="row d-flex justify-content-center text-white">
     <div class="col col-md-6 signup-form">
       <h3 class="text-center">{% trans "Sign Up" %}</h1>
-      <p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}
+      <p class="text-center">{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}" class="text-white">sign in</a>.{% endblocktrans %}
       </p>
       <form class="signup form-control" id="signup_form" method="post" action="{% url 'account_signup' %}">
         {% csrf_token %}
