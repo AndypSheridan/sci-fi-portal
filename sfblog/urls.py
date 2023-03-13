@@ -5,6 +5,7 @@ from django.utils.translation import ugettext_lazy as _
 
 urlpatterns = [
     path('', views.index, name='home'),
+    path('profile/', views.Profile.as_view(), name='profile'),
     path('books/', views.BookList.as_view(), name='books'),
     path('about/', views.about, name='about'),
     path('authors/', views.AuthorList.as_view(), name='authors'),
@@ -14,7 +15,6 @@ urlpatterns = [
     path('add_book/', views.AddBook.as_view(), name='add_book'),
     path('book_detail/edit_book/<int:pk>', views.EditBook.as_view(), name="edit_book"),
     path('book_detail/<int:pk>/delete', views.DeleteBook.as_view(), name="delete_book"),
-    path('profile/', views.profile, name='profile')
 ]
 
 handler404 = 'sfblog.views.handler404'
