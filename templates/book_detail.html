@@ -19,11 +19,11 @@
                 <h1 class="book-title">{{ book.title }}</h1>
                 <h2 class="book-subtitle">Author: {{ book.author }} </h2>
                 {% if user.is_authenticated %}
-                                {% if user.id == book.created_by.id %}
-                                <a href="{% url 'edit_book' book.pk %}" class="text-white roboto">Edit</a>
-                                <a href="{% url 'delete_book' book.pk %}" class="text-white roboto">Delete</a>
-                                {% endif %}
-                                {% endif %}
+                {% if user.id == book.created_by.id %}
+                <a href="{% url 'edit_book' book.pk %}" class="text-white roboto">Edit</a>
+                <a href="{% url 'delete_book' book.pk %}" class="text-white roboto">Delete</a>
+                {% endif %}
+                {% endif %}
                 <h3> Rating: {{ book.rating }} Stars</h3>
                 <hr>
                 <h4>Synopsis</h4>
@@ -42,40 +42,42 @@
                     <p>Review by {{ book.created_by }}
                         {% if user.is_authenticated %}
                         {% if user.id == book.created_by.id %}
-                        <span class="text-white">|</span>
-                    {% endif %}
-                    {% endif %}
-                    <p class="card-text ">
-                        {{ book.review_content | safe }}
-                    </p>
-                    <div class="row">
+                        <span class="text-white"><a href="{% url 'edit_book' book.pk %}"
+                                class="text-white roboto">Edit</a>|<a href="{% url 'delete_book' book.pk %}"
+                                class="text-white roboto">Delete</a></span>
+                        {% endif %}
+                        {% endif %}
+                        <p class="card-text ">
+                            {{ book.review_content | safe }}
+                        </p>
+                        <div class="row">
 
-                        <div class="col-1">
-                            <strong>
-                                {% if user.is_authenticated %}
-                                <form action="{% url 'book_like' book.slug %}" method="POST" class="d-inline">
-                                    {% csrf_token %}
-                                    {% if liked %}
-                                    <button type="submit" name="bookpost_id" value="{{post.slug}}" class="btn-like"><i
-                                            class="fas fa-heart text-red"></i></button>
+                            <div class="col-1">
+                                <strong>
+                                    {% if user.is_authenticated %}
+                                    <form action="{% url 'book_like' book.slug %}" method="POST" class="d-inline">
+                                        {% csrf_token %}
+                                        {% if liked %}
+                                        <button type="submit" name="bookpost_id" value="{{post.slug}}"
+                                            class="btn-like"><i class="fas fa-heart text-red"></i></button>
+                                        {% else %}
+                                        <button type="submit" name="bookpost_id" value="{{post.slug}}"
+                                            class="btn-like"><i class="far fa-heart text-red"></i></button>
+                                        {% endif %}
+                                    </form>
                                     {% else %}
-                                    <button type="submit" name="bookpost_id" value="{{post.slug}}" class="btn-like"><i
-                                            class="far fa-heart text-red"></i></button>
+                                    <span class="text-secondary"><i class="far fa-heart"></i></span>
                                     {% endif %}
-                                </form>
-                                {% else %}
-                                <span class="text-secondary"><i class="far fa-heart"></i></span>
-                                {% endif %}
-                            </strong>
-                            <span class="text-secondary text-white"> {{ book.number_of_likes }} </span>
+                                </strong>
+                                <span class="text-secondary text-white"> {{ book.number_of_likes }} </span>
+                            </div>
+                            <div class="col-1">
+                                {% with comments.count as total_comments %}
+                                <span class="text-secondary"><i class="far fa-comments text-white"></i></span>
+                                <span class="text-secondary text-white">{{ total_comments }}</span>
+                                {% endwith %}
+                            </div>
                         </div>
-                        <div class="col-1">
-                            {% with comments.count as total_comments %}
-                            <span class="text-secondary"><i class="far fa-comments text-white"></i></span>
-                            <span class="text-secondary text-white">{{ total_comments }}</span>
-                            {% endwith %}
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
