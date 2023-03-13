@@ -167,6 +167,11 @@ def upload(request):
     return render(request, 'books.html', context)
 
 
+@login_required
+def profile(request):
+    return render(request, 'profile.html')
+
+
 def handler404(request, *args, **argv):
     response = render_to_response(
         '404.html', {}, context_instance=RequestContext(request))
