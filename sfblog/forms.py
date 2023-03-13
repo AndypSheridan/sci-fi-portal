@@ -13,7 +13,7 @@ class CustomSignupForm(SignupForm):
 
     def save(self, request):
         organization = self.cleaned_data.pop('first_name')
-        organization = self.cleaned_data.pop('first_name')
+        organization = self.cleaned_data.pop('last_name')
         ...
         user = super(CustomSignupForm, self).save(request)
 
