@@ -1,21 +1,21 @@
 from .models import Book, Comment, User, UserProfile
 from django import forms
 from cloudinary.forms import CloudinaryFileField
-from django.contrib.auth import get_user_model
+from django.contrib.auth.models import User
 from allauth.account.forms import SignupForm
 
 
-class CustomSignupForm(SignupForm):
-    def __init__(self, *args, **kwargs):
-        super(CustomSignupForm, self).__init__(*args, **kwargs)
-        self.fields['first_name'] = forms.CharField(required=True)
-        self.fields['last_name'] = forms.CharField(required=True)
+# class CustomSignupForm(SignupForm):
+#     def __init__(self, *args, **kwargs):
+#         super(CustomSignupForm, self).__init__(*args, **kwargs)
+#         self.fields['first_name'] = forms.CharField(required=False)
+#         self.fields['last_name'] = forms.CharField(required=False)
 
-    def save(self, request):
-        organization = self.cleaned_data.pop('first_name')
-        organization = self.cleaned_data.pop('last_name')
-        ...
-        user = super(CustomSignupForm, self).save(request)
+#     def save(self, request):
+#         organization = self.cleaned_data.pop('first_name')
+#         organization = self.cleaned_data.pop('last_name')
+#         ...
+#         user = super(CustomSignupForm, self).save(request)
 
 
 class CommentForm(forms.ModelForm):
@@ -62,28 +62,23 @@ class BookForm(forms.ModelForm):
             return self.cleaned_data
 
 
-class EditProfileForm(forms.ModelForm):
+class UserEditForm(forms.ModelForm):
     username = forms.CharField(required=True)
     email = forms.EmailField(required=True)
     first_name = forms.CharField(required=False)
     last_name = forms.CharField(required=False)
-    date_joined = forms.DateField(required=False)
-
-    user_image = CloudinaryFileField(
-            options={"folder": "home"}
-    )
 
     class Meta:
-        model = get_user_model()
-        fields = ('username', 'user_image', 'email', 'first_name', 'last_name')
+        model = User
+        fields = ('username', 'email', 'first_name', 'last_name')
 
 
-# class EditProfileForm(forms.ModelForm):
-#     class Meta:
-#         model = User
-#         fields = (
-#             'username', 'email', 'first_name', 'last_name', 'date_joined')
+class ProfileEditForm(forms.ModelForm):
 
-#         user_image = CloudinaryFileField(
-#             options={"folder": "home"}
-#         )
+    class Meta:
+        model = UserProfile
+        field = ['user_image']
+
+        user_image = CloudinaryFileField(
+            options={"folder": "home"}
+        )
