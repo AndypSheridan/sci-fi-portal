@@ -3,7 +3,7 @@ from django.views import generic, View
 from django.views.generic import CreateView, UpdateView, DeleteView, DetailView
 from django.http import HttpResponse, HttpResponseRedirect
 from .models import Author, Book, Comment, User, UserProfile
-from .forms import BookForm, CommentForm
+from .forms import BookForm, CommentForm, EditProfileForm
 from django.urls import reverse_lazy
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
@@ -174,6 +174,11 @@ class Profile(View):
 
 
 class EditProfile(SuccessMessageMixin, UpdateView):
+    model = User
+    template_name = "edit_profile.html"
+    form_class = EditProfileForm
+    success_message = "Your rofile has been updated successfully"
+
 
 
 def handler404(request, *args, **argv):

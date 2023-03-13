@@ -1,4 +1,4 @@
-from .models import Book, Comment
+from .models import Book, Comment, User, UserProfile
 from django import forms
 from cloudinary.forms import CloudinaryFileField
 
@@ -45,3 +45,14 @@ class BookForm(forms.ModelForm):
                     'This field is required'
                     ])
             return self.cleaned_data
+
+
+class EditProfileForm(forms.ModelForm):
+    class Meta:
+        model = User
+        fields = (
+            'username', 'email', 'first_name', 'last_name', 'date_joined')
+
+        user_image = CloudinaryFileField(
+            options={"folder": "home"}
+        )
