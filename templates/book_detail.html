@@ -18,6 +18,12 @@
             <div class="col-md-8 text-white">
                 <h1 class="book-title">{{ book.title }}</h1>
                 <h2 class="book-subtitle">Author: {{ book.author }} </h2>
+                {% if user.is_authenticated %}
+                                {% if user.id == book.created_by.id %}
+                                <a href="{% url 'edit_book' book.pk %}" class="text-white roboto">Edit</a>
+                                <a href="{% url 'delete_book' book.pk %}" class="text-white roboto">Delete</a>
+                                {% endif %}
+                                {% endif %}
                 <h3> Rating: {{ book.rating }} Stars</h3>
                 <hr>
                 <h4>Synopsis</h4>

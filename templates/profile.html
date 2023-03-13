@@ -23,7 +23,7 @@
                         {% csrf_token %}
                         {{ form.as_p }}
                         <div class="col text-center">
-                        <a href="#"><button class="btn btn-light text-dark-blue mb-2">Update</button></a>
+                        <a href="{% url 'edit_profile' %}"><button class="btn btn-light text-dark-blue mb-2">Update</button></a>
                         </div>
                         {% else %}
                         <h3 class="text-center text-white">You must be logged in to edit this profile/h3>
