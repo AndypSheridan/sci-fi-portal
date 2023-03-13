@@ -2,12 +2,13 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.views.generic import CreateView, UpdateView, DeleteView, DetailView
 from django.http import HttpResponseRedirect
-from .models import Author, Book, Comment
+from .models import Author, Book, Comment, User, UserProfile
 from .forms import BookForm, CommentForm
 from django.urls import reverse_lazy
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 from django.template import RequestContext
+from django.contrib.auth.decorators import login_required
 
 
 def index(request):
@@ -167,7 +168,6 @@ def upload(request):
     return render(request, 'books.html', context)
 
 
-@login_required
 def profile(request):
     return render(request, 'profile.html')
 

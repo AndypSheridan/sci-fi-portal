@@ -1,7 +1,10 @@
 {% extends "base.html" %}
+{% load static %}
+{% load cloudinary %}
 
 {% block content %}
 
 <h2 class="text-dark-blue"> {{user.username}} </h2>
+<div><img src="{{ user.userprofile.user_image.url }}" alt="user image"></div>
 
 {% endblock %}

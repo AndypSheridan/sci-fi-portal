@@ -14,6 +14,7 @@ urlpatterns = [
     path('add_book/', views.AddBook.as_view(), name='add_book'),
     path('book_detail/edit_book/<int:pk>', views.EditBook.as_view(), name="edit_book"),
     path('book_detail/<int:pk>/delete', views.DeleteBook.as_view(), name="delete_book"),
+    path('profile/', views.profile, name='profile')
 ]
 
 handler404 = 'sfblog.views.handler404'

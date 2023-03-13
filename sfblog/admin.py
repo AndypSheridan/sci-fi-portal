@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Author, Book, Comment, UserProfile
+from .models import Author, Book, Comment, User, UserProfile
 from django_summernote.admin import SummernoteModelAdmin
 
 
