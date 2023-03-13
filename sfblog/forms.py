@@ -1,6 +1,7 @@
 from .models import Book, Comment, User, UserProfile
 from django import forms
 from cloudinary.forms import CloudinaryFileField
+from django.contrib.auth import get_user_model
 
 
 class CommentForm(forms.ModelForm):
@@ -48,11 +49,27 @@ class BookForm(forms.ModelForm):
 
 
 class EditProfileForm(forms.ModelForm):
-    class Meta:
-        model = User
-        fields = (
-            'username', 'email', 'first_name', 'last_name', 'date_joined')
+    username = forms.CharField(required=True)
+    email = forms.EmailField(required=True)
+    first_name = forms.CharField(required=False)
+    last_name = forms.CharField(required=False)
+    date_joined = forms.DateField(required=False)
 
-        user_image = CloudinaryFileField(
+    user_image = CloudinaryFileField(
             options={"folder": "home"}
-        )
+    )
+
+    class Meta:
+        model = get_user_model()
+        fields = ('username', 'user_image', 'email', 'first_name', 'last_name')
+
+
+# class EditProfileForm(forms.ModelForm):
+#     class Meta:
+#         model = User
+#         fields = (
+#             'username', 'email', 'first_name', 'last_name', 'date_joined')
+
+#         user_image = CloudinaryFileField(
+#             options={"folder": "home"}
+#         )

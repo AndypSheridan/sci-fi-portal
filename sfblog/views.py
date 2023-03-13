@@ -173,13 +173,6 @@ class Profile(View):
         return render(request, 'profile.html')
 
 
-class EditProfile(SuccessMessageMixin, UpdateView):
-    model = User
-    template_name = "edit_profile.html"
-    # form_class = EditProfileForm
-    # success_message = "Your profile has been updated successfully"
-
-
 def handler404(request, *args, **argv):
     response = render_to_response(
         '404.html', {}, context_instance=RequestContext(request))
