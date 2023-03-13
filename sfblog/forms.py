@@ -7,13 +7,15 @@ from allauth.account.forms import SignupForm
 
 class CustomSignupForm(SignupForm):
     def __init__(self, *args, **kwargs):
-        super(MyCustomSignupForm, self).__init__(*args, **kwargs)
+        super(CustomSignupForm, self).__init__(*args, **kwargs)
         self.fields['first_name'] = forms.CharField(required=True)
-    
+        self.fields['last_name'] = forms.CharField(required=True)
+
     def save(self, request):
         organization = self.cleaned_data.pop('first_name')
+        organization = self.cleaned_data.pop('first_name')
         ...
-        user = super(MyCustomSignupForm, self).save(request)
+        user = super(CustomSignupForm, self).save(request)
 
 
 class CommentForm(forms.ModelForm):
