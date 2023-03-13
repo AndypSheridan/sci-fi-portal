@@ -169,8 +169,8 @@ def upload(request):
 
 
 def profile(request):
-    user_form = UserEditForm()
-    profile_form = ProfileEditForm()
+    user_form = UserEditForm(instance=request.user)
+    profile_form = ProfileEditForm(instance=request.user.userprofile)
 
     context = {
         'user_form': user_form,
