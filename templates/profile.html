@@ -22,9 +22,10 @@
                 <div class="form-group">
                     <form method="POST" enctype="multipart/form-data" class="form-control bg-opacity">
                         {% csrf_token %}
-                        {{ form.as_p }}
+                        {{ user_form.as_p }}
+                        {{ profile_form.as_p }}
                         <div class="col text-center">
-                        <a href="#">Update</a>
+                        <a href="#"><button class="btn btn-outline btn-light text-white" type="submit">Update Profile</button></a>
                         </div>
                         {% else %}
                         <h3 class="text-center text-white">You must be logged in to edit this profile/h3>
