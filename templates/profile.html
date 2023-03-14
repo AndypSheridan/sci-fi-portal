@@ -19,11 +19,6 @@
     {% if user.is_authenticated %}
     <h2 class="text-white">Username: {{user.username}} </h2>
     <div>User Image: <img src="{{ user.userprofile.user_image.url }}" alt="user image"></div>
-    <p>Email Address: {{user.email}}</p>
-    <p>First Name: {{user.first_name}}</p>
-    <p>Last Name: {{user.last_name}}</p>
-    <p>Date Joined: {{user.date_joined}}</p>
-
 
     <div class="container">
         <div class="row justify-content-center">
