@@ -23,17 +23,19 @@
                 <div class="container">
 
                     <div class="row height d-flex justify-content-center align-items-center">
-            
+
                         <div class="col-md-8">
-            
+
                             <div class="search justify-content-center align-items-center">
-                                
-                                <input type="text" class="form-control text-center text-white search-field" placeholder="Search books">
-                                <button class="btn btn-light btn-outline search-btn"><i class="fa fa-search"></i></button>
+                                <form action="{% url 'search_results' %}" method="get">
+                                    <input name="q" type="text" class="form-control text-center text-white search-field"
+                                        placeholder="Search books">
+                                    <button class="btn btn-light btn-outline search-btn"><i
+                                            class="fa fa-search"></i></button>
+                                </form>
                             </div>
-            
                         </div>
-            
+
                     </div>
                 </div>
                 {% else %}
@@ -43,7 +45,7 @@
             </div>
         </div>
     </div>
-    
+
 </body>
 
 {% endblock %}
