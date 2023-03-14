@@ -197,4 +197,8 @@ button {
     border: none;
 }
 
+.fa-user {
+    padding-right: 0.7rem;
+}
+
 /* Media Queries */
