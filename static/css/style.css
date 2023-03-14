@@ -213,7 +213,8 @@ input {
 }
 
 .search-field {
-    margin: 0.5rem;
+    width: 80%;
+    margin: auto;
 }
 
 /* Media Queries */

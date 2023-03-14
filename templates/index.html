@@ -20,16 +20,15 @@
                 <h1>Welcome to the Sci-Fi Portal</h1>
                 <h4>An online community devoted to science fiction literature</h4>
                 {% if user.is_authenticated %}
-                <h5>Welcome back {{user.username}}</h5>
                 <div class="container">
 
                     <div class="row height d-flex justify-content-center align-items-center">
             
                         <div class="col-md-8">
             
-                            <div class="search">
+                            <div class="search justify-content-center align-items-center">
                                 
-                                <input type="text" class="form-control text-center text-white search-field" placeholder="Search for a book or author">
+                                <input type="text" class="form-control text-center text-white search-field" placeholder="Search books or authors">
                                 <button class="btn btn-light btn-outline search-btn"><i class="fa fa-search"></i></button>
                             </div>
             
