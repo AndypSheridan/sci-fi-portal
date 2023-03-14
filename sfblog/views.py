@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
-from django.views.generic import CreateView, UpdateView, DeleteView, DetailView, TemplateView
+from django.views.generic import CreateView, UpdateView, DeleteView, DetailView, TemplateView, ListView
 from django.http import HttpResponse, HttpResponseRedirect
 from .models import Author, Book, Comment, User, UserProfile
 from .forms import BookForm, CommentForm, ProfileEditForm, UserEditForm
@@ -17,6 +17,10 @@ from django.contrib.auth.forms import UserChangeForm
 class HomePage(TemplateView):
     template_name = 'index.html'
 
+
+class SearchResults(ListView):
+    model = Book
+    template_name = 'search_results.html'
 
 
 class SuccessMessageMixin:
