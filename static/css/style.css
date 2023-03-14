@@ -165,7 +165,7 @@ h4 {
 
 /* Chrome, Firefox, Opera, Safari 10.1+ */
 .form-control::placeholder { 
-    color: #000;
+    color: #FFF;
     opacity: 1; /* Firefox */
 }
 
@@ -198,7 +198,14 @@ button {
 }
 
 .fa-user {
-    padding-right: 0.7rem;
+    padding-right: 0.8rem;
+}
+
+.search-btn {
+    margin-top: 0.8rem;
+    background: rgba(176, 48, 176, 0.6);
+    color: white;
+    border: none;
 }
 
 /* Media Queries */
