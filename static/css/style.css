@@ -208,4 +208,12 @@ button {
     border: none;
 }
 
+input {
+    width: 20%;
+}
+
+.search-field {
+    margin: 0.5rem;
+}
+
 /* Media Queries */
