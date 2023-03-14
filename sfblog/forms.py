@@ -85,7 +85,7 @@ class ProfileEditForm(forms.ModelForm):
 
     class Meta:
         model = UserProfile
-        fields = ['user_image']
+        fields = ['bio', 'user_image']
 
         user_image = CloudinaryFileField(
             options={"folder": "home"}
