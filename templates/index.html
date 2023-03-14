@@ -5,15 +5,15 @@
 
 <body id="home-bg-image" class="space-mono home-background">
     {% if messages %}
-  {% for message in messages %}
+    {% for message in messages %}
     <div class="alert alert-dismissible alert-success roboto text-dark-blue text-center" role="alert">
-      <strong>{{message}}</strong>
-      <button class="close alert-button" data-dismiss="alert">
-        ×
+        <strong>{{message}}</strong>
+        <button class="close alert-button" data-dismiss="alert">
+            ×
         </button>
     </div>
- {% endfor %}
-{% endif %}
+    {% endfor %}
+    {% endif %}
     <div class="container-fluid">
         <div class="row text-white text-center fixed-bottom fixed-row-bottom">
             <div class="col">
@@ -21,6 +21,22 @@
                 <h4>An online community devoted to science fiction literature</h4>
                 {% if user.is_authenticated %}
                 <h5>Welcome back {{user.username}}</h5>
+                <div class="container">
+
+                    <div class="row height d-flex justify-content-center align-items-center">
+            
+                        <div class="col-md-8">
+            
+                            <div class="search">
+                                <i class="fa fa-search"></i>
+                                <input type="text" class="form-control text-white" placeholder="Search the Portal">
+                                <button class="btn btn-light btn-outline">Find Book</button>
+                            </div>
+            
+                        </div>
+            
+                    </div>
+                </div>
                 {% else %}
                 <a href="{% url 'account_signup' %}" class="btn btn-primary btn-sm button-margin">Register</a>
                 <a href="{% url 'account_login' %}" class="btn btn-light btn-sm button-margin"> Log In </a>
@@ -28,6 +44,7 @@
             </div>
         </div>
     </div>
+    
 </body>
 
 {% endblock %}
