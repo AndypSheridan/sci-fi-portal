@@ -18,7 +18,12 @@
 <body id="add-book-bg-image" class="text-white roboto">
     {% if user.is_authenticated %}
     <h2 class="text-white">Username: {{user.username}} </h2>
-    <div>Current Image: <img src="{{ user.userprofile.user_image.url }}" alt="user image"></div>
+    <div>Current Image: 
+        {% if "placeholder" in user.userprofile.user_image.url %}
+                <img class="book-img img-fluid img-responsive" src="/static/images/blank-profile-picture.png" alt="Default Image">
+                {% else %}
+                <img src=" {{ user.userprofile.user_image.url }}" class="img-fluid mx-auto d-block book-detail-img">
+                {% endif %}
 
     <div class="container">
         <div class="row justify-content-center">
