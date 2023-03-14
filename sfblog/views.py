@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.views.generic import CreateView, UpdateView, DeleteView, DetailView, TemplateView, ListView
 from django.http import HttpResponse, HttpResponseRedirect
+from django.db.models import Q
 from .models import Author, Book, Comment, User, UserProfile
 from .forms import BookForm, CommentForm, ProfileEditForm, UserEditForm
 from django.urls import reverse_lazy
@@ -21,6 +22,13 @@ class HomePage(TemplateView):
 class SearchResults(ListView):
     model = Book
     template_name = 'search_results.html'
+
+    def get_queryset(self):  # new
+        query = self.request.GET.get("q")
+        object_list = Book.objects.filter(
+            Q(title__icontains=query) | Q(author__icontains=query)
+        )
+        return object_list
 
 
 class SuccessMessageMixin:

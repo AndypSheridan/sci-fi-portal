@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Search Results</h1>
+
+<ul>
+    {% for book in object_list %}
+    <li>
+        {{ book.title }}, {{ book.author }}
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
