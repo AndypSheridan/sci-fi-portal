@@ -2,14 +2,18 @@
 
 {% block content %}
 
+<body id="add-book-bg-image" class="text-white">
 <h1>Search Results</h1>
 
-<ul>
+<ul class="search-results">
     {% for book in object_list %}
     <li>
-        {{ book.title }}, {{ book.author }}
+        <a href="{% url 'book_detail' book.slug %}" class="search-results">{{ book.title }} by {{ book.author }}</a>
     </li>
     {% endfor %}
 </ul>
+<input type="button" class="btn btn-light text-dark-blue mb-2 roboto" value="Back"
+                                    onclick="history.back()">
+</body>
 
 {% endblock %}

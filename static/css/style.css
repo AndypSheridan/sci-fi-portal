@@ -55,6 +55,11 @@ a:hover {
     color: #FFF;
 }
 
+.search-results {
+    color: white;
+    list-style: none;
+}
+
 .navbar-text {
     color: #FFF;
 }
