@@ -17,9 +17,12 @@
 <body id="stars-bg-image" class="text-white roboto">
     {% if user.is_authenticated %}
 
-    <div class="container">
+    <br>
+    <h2 class="text-center">My profile</h2>
+    <br>
+    <!-- <div class="container">
         <div class="row d-flex flex-wrap align-items-center justify-content-center mt-3 mb-3">
-            <div class="col-md-4 col-md-offset-2 col-sm-offset-0">
+            <div class="col-md-3 col-sm-offset-0">
                 {% if "placeholder" in user.userprofile.user_image.url %}
                 <img class="book-img img-fluid img-responsive author-default"
                     src="/static/images/blank-profile-picture.png" alt="Default Image">
@@ -27,9 +30,8 @@
                 <img src=" {{ user.userprofile.user_image.url }}" class="img-fluid mx-auto d-block profile-img">
                 {% endif %}
             </div>
-            <div class="col-md-4 text-white">
+            <div class="col-md-3 text-white">
                 <br>
-                <h2 class="book-title">My profile</h1>
                     <hr>
                     <h3 class="book-title">Username: {{ user.username }}</h1>
                         <h3 class="book-subtitle">Name: {{ user.first_name }} {{user.last_name}}
@@ -40,7 +42,14 @@
                     <hr>
             </div>
         </div>
-    </div>
+    </div> -->
+
+    <div class="card flex-row bg-opacity"><img class="card-img-left example-card-img-responsive" src=" {{ user.userprofile.user_image.url }}"/>
+        <div class="card-body">
+          <h4 class="card-title h5 h4-sm">Left image</h4>
+          <p class="card-text">Example text</p>
+        </div>
+      </div>
 
     <div class="container">
         <div class="row justify-content-center">
