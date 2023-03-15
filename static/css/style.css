@@ -259,6 +259,10 @@ form input {
     width: fit-content;
 }
 
+.delete-cancel {
+    width: fit-content;
+}
+
 .alert-button {
     background: transparent !important;
     border: none !important;
