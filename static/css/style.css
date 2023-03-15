@@ -184,7 +184,7 @@ h4 {
     background-color: rgba(108, 145, 191, 0.4);
 }
 
-input {
+form input {
     width: 100%;
 }
 
@@ -256,6 +256,7 @@ input {
 
 .logout-button {
     margin: 0.6rem;
+    width: fit-content;
 }
 
 .alert-button {
