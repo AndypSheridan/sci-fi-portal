@@ -222,4 +222,8 @@ input {
     margin: auto;
 }
 
+.search-back {
+    width: min-content;
+}
+
 /* Media Queries */
