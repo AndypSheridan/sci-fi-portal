@@ -1,19 +1,18 @@
 {% extends "base.html" %}
 {% load static %}
 {% load cloudinary %}
-{% load crispy_forms_tags %}
 
 {% block content %}
 {% if messages %}
-    {% for message in messages %}
-    <div class="alert alert-success roboto text-dark-blue alert-dismissible fade text-center show" role="alert">
-        <strong>{{message}}</strong>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-    </div>
-    {% endfor %}
-    {% endif %}
+{% for message in messages %}
+<div class="alert alert-success roboto text-dark-blue alert-dismissible fade text-center show" role="alert">
+    <strong>{{message}}</strong>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+{% endfor %}
+{% endif %}
 
 <body id="stars-bg-image" class="text-white roboto">
     {% if user.is_authenticated %}
@@ -22,7 +21,8 @@
         <div class="row d-flex flex-wrap align-items-center justify-content-center mt-3 mb-3">
             <div class="col-md-4 col-md-offset-2 col-sm-offset-0">
                 {% if "placeholder" in user.userprofile.user_image.url %}
-                <img class="book-img img-fluid img-responsive author-default" src="/static/images/blank-profile-picture.png" alt="Default Image">
+                <img class="book-img img-fluid img-responsive author-default"
+                    src="/static/images/blank-profile-picture.png" alt="Default Image">
                 {% else %}
                 <img src=" {{ user.userprofile.user_image.url }}" class="img-fluid mx-auto d-block profile-img">
                 {% endif %}
@@ -30,13 +30,14 @@
             <div class="col-md-4 text-white">
                 <br>
                 <h2 class="book-title">My profile</h1>
-                <hr>
-                <h3 class="book-title">Username: {{ user.username }}</h1>
-                <h3 class="book-subtitle">Name: {{ user.first_name }} {{user.last_name}} </h2>
+                    <hr>
+                    <h3 class="book-title">Username: {{ user.username }}</h1>
+                        <h3 class="book-subtitle">Name: {{ user.first_name }} {{user.last_name}}
+                </h2>
                 <hr>
                 <h4>Bio:</h3>
-                <p>{{ user.userprofile.bio }}</p>
-                <hr>
+                    <p>{{ user.userprofile.bio }}</p>
+                    <hr>
             </div>
         </div>
     </div>
@@ -52,7 +53,8 @@
                         {{ user_form.as_p }}
                         {{ profile_form.as_p }}
                         <div class="col text-center">
-                        <button class="btn btn-outline btn-light text-dark-blue update-profile-btn" type="submit">Update Profile</button>
+                            <button class="btn btn-outline btn-light text-dark-blue update-profile-btn"
+                                type="submit">Update Profile</button>
                         </div>
                         {% else %}
                         <h3 class="text-center text-white">You must be logged in to edit this profile/h3>
