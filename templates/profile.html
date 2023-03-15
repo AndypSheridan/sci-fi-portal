@@ -19,15 +19,16 @@
     {% if user.is_authenticated %}
 
     <div class="container">
-        <div class="row d-flex flex-wrap align-items-center mt-3 mb-3">
-            <div class="col-md-4 book-detail-img">
+        <div class="row d-flex flex-wrap align-items-center justify-content-center mt-3 mb-3">
+            <div class="col-md-4 col-md-offset-2 col-sm-offset-0">
                 {% if "placeholder" in user.userprofile.user_image.url %}
                 <img class="book-img img-fluid img-responsive author-default" src="/static/images/blank-profile-picture.png" alt="Default Image">
                 {% else %}
                 <img src=" {{ user.userprofile.user_image.url }}" class="img-fluid mx-auto d-block profile-img">
                 {% endif %}
             </div>
-            <div class="col-md-8 text-white">
+            <div class="col-md-4 text-white">
+                <br>
                 <h2 class="book-title">My profile</h1>
                 <hr>
                 <h3 class="book-title">Username: {{ user.username }}</h1>
@@ -42,7 +43,7 @@
 
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col col-md-12 mt-3 mb-3">
+            <div class="col col-md-8 mt-3 mb-3">
                 <div class="form-group">
                     <h2 class="text-white text-center">You can update your details below...</h2>
                     <br>
@@ -51,7 +52,7 @@
                         {{ user_form.as_p }}
                         {{ profile_form.as_p }}
                         <div class="col text-center">
-                        <button class="btn btn-outline btn-light text-dark-blue" type="submit">Update Profile</button>
+                        <button class="btn btn-outline btn-light text-dark-blue update-profile-btn" type="submit">Update Profile</button>
                         </div>
                         {% else %}
                         <h3 class="text-center text-white">You must be logged in to edit this profile/h3>

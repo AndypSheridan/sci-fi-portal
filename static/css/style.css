@@ -146,7 +146,7 @@ h4 {
 .profile-img {
     width: 300px;
     height: auto;
-    border: 1px solid white;
+    margin: auto;
 }
 
 .author-default {
@@ -286,6 +286,10 @@ button {
 
 .search-back {
     width: min-content;
+}
+
+.update-profile-btn {
+    margin-bottom: 0.7rem;
 }
 
 
