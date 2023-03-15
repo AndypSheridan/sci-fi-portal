@@ -90,3 +90,8 @@ class ProfileEditForm(forms.ModelForm):
         user_image = CloudinaryFileField(
             options={"folder": "home"}
         )
+
+        widgets = {
+            'bio': forms.Textarea(
+                attrs={'class': 'form-control'})
+        }

@@ -10,7 +10,7 @@
         <div class="row d-flex flex-wrap align-items-center mt-3 mb-3">
             <div class="col-md-4 book-detail-img">
                 {% if "placeholder" in author.author_image.url %}
-                <img class="book-img img-fluid img-responsive" src="/static/images/blank-profile-picture.png" alt="Default Image">
+                <img class="book-img img-fluid img-responsive author-default" src="/static/images/blank-profile-picture.png" alt="Default Image">
                 {% else %}
                 <img src=" {{ author.author_image.url }}" class="img-fluid mx-auto d-block book-detail-img">
                 {% endif %}
@@ -46,13 +46,6 @@
                 <hr>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-8 card mb-4  mt-1 bg-opacity text-white">
-                    <a href="" class="text-dark-blue roboto">Edit</a>
-                    
-                </div>
-            </div>
-                    
                 </div>
             </div>
         </div>
