@@ -15,7 +15,7 @@
     {% endfor %}
     {% endif %}
 
-<body id="add-book-bg-image" class="text-white roboto">
+<body id="stars-bg-image" class="text-white roboto">
     {% if user.is_authenticated %}
 
     <div class="container">
@@ -24,7 +24,7 @@
                 {% if "placeholder" in user.userprofile.user_image.url %}
                 <img class="book-img img-fluid img-responsive author-default" src="/static/images/blank-profile-picture.png" alt="Default Image">
                 {% else %}
-                <img src=" {{ user.userprofile.user_image.url }}" class="img-fluid mx-auto d-block book-detail-img">
+                <img src=" {{ user.userprofile.user_image.url }}" class="img-fluid mx-auto d-block profile-img">
                 {% endif %}
             </div>
             <div class="col-md-8 text-white">
@@ -42,9 +42,10 @@
 
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col col-md-8 mt-3 mb-3">
+            <div class="col col-md-12 mt-3 mb-3">
                 <div class="form-group">
                     <h2 class="text-white text-center">You can update your details below...</h2>
+                    <br>
                     <form method="POST" enctype="multipart/form-data" class="form-control bg-opacity profile-form">
                         {% csrf_token %}
                         {{ user_form.as_p }}
