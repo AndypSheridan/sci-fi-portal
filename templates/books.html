@@ -28,16 +28,19 @@
                 <div class="row">
                     {% for book in book_list %}
                     <div class="col-md-4">
+                        
                         <div class="card mb-4 bg-opacity text-white">
                             <div class="card-body">
-                                <!-- <div class="image-container"> -->
+                                test
+                                <!-- <div class="image-container">
                                     {% if "placeholder" in book.cover_image.url %}
-                                    <img class="book-img img-fluid img-responsive" src="/static/favicon.ico"
+                                    <img class="book-img card-img-left img-fluid img-responsive" src="/static/images/default-book-image.jpeg"
                                         alt="Default Image">
                                     {% else %}
                                     <img class="card-img-left img-fluid img-responsive book-img"
                                         src="{{ book.cover_image.url }}" alt="Book Image">
                                     {% endif %}
+                                </div>
                                     <div class="image-flash">
                                         <a href="{% url 'book_detail' book.slug %}" class="book-link text-dark-blue">
                                             <h4 class="card-title text-dark-blue text-align-right">{{ book.title }}</h4>
@@ -45,8 +48,7 @@
                                         <span class="author">Author: {{ book.author }}</span>
                                         <br>
                                         <span class="rating">Rating: {{ book.rating }}</span>
-                                    </div>
-                                <!-- </div> -->
+                                </div>
                                 {% if user.is_authenticated %}
                                 {% if user.id == book.created_by.id %}
                                 <a href="{% url 'edit_book' book.pk %}" class="text-dark-blue roboto">Edit</a>
@@ -54,9 +56,9 @@
                                 {% endif %}
                                 {% endif %}
                                 <hr>
-                                <p>Reviewed by: {{ book.created_by }} | <i class="far fa-heart text-red"></i>
+                                <p class="text-small">Reviewed by: {{ book.created_by }} | <i class="far fa-heart text-red"></i>
                                     {{ book.number_of_likes }} | <i class="fa-regular fa-comment text-white"></i>
-                                    {{ book.comments.count }}</p>
+                                    {{ book.comments.count }}</p> -->
                             </div>
                         </div>
                     </div>

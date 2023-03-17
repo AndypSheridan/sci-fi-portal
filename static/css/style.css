@@ -28,6 +28,10 @@ body {
     color: #FF0000;
 }
 
+.text-small {
+    font-size: 85%;
+}
+
 /* Navbar styling */
 
 .navbar {
@@ -143,7 +147,7 @@ h4 {
 
 .book-img {
     width: 100px;
-    height: auto;
+    height: 150px;
 }
 
 .book-detail-img {
