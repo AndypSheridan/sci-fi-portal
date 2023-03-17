@@ -22,7 +22,7 @@ class HomePage(TemplateView):
 # def about(request):
 #     return render(request, 'about.html')
 
-class About(View):
+class About(TemplateView):
     template_name = 'about.html'
 
 

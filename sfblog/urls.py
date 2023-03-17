@@ -9,7 +9,7 @@ urlpatterns = [
     path("search/", views.SearchResults.as_view(), name="search_results"),
     path('profile/', views.profile, name='profile'),
     path('books/', views.BookList.as_view(), name='books'),
-    path('about/', views.about, name='about'),
+    path('about/', views.About.as_view(), name='about'),
     path('authors/', views.AuthorList.as_view(), name='authors'),
     path('<slug:slug>', views.BookDetail.as_view(), name='book_detail'),
     path(
