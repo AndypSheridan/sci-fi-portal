@@ -131,10 +131,6 @@ a:hover {
     bottom: 6rem;
 }
 
-.text-white {
-    color: #FFF;
-}
-
 .button-margin {
     margin: 0.5rem;
 }
@@ -142,6 +138,8 @@ a:hover {
 h4 {
     font-family: "roboto";
 }
+
+/* Images */
 
 .book-img {
     width: 100px;
@@ -167,6 +165,8 @@ h4 {
 .image-container {
     width: 60%;
 }
+
+/* Forms */
 
 .login-form {
     margin-top: 15%;
