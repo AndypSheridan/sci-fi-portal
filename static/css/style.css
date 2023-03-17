@@ -146,8 +146,9 @@ h4 {
 /* Images */
 
 .book-img {
-    width: 100px;
-    height: 150px;
+    width: 200px;
+    height: auto;
+    border-radius: 3%;
 }
 
 .book-detail-img {
