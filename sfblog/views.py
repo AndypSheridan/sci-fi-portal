@@ -12,25 +12,28 @@ from django.template import RequestContext
 from django.contrib.auth.forms import UserChangeForm
 
 
-# def index(request):
-#     return render(request, 'index.html')
-
 class HomePage(TemplateView):
+    """
+    Renders home page
+    """
     template_name = 'index.html'
 
 
-# def about(request):
-#     return render(request, 'about.html')
-
 class About(TemplateView):
+    """
+    Renders about page
+    """
     template_name = 'about.html'
 
 
 class SearchResults(ListView):
+    """
+    Renders search results as a list
+    """
     model = Book
     template_name = 'search_results.html'
 
-    def get_queryset(self):  # new
+    def get_queryset(self):
         query = self.request.GET.get("q")
         object_list = Book.objects.filter(
             Q(title__icontains=query) | Q(author__icontains=query)
@@ -40,9 +43,8 @@ class SearchResults(ListView):
 
 class SuccessMessageMixin:
     """
-    Add a success message on successful form submission.
+    Add success message on successful form submission
     """
-
     success_message = ""
 
     def form_valid(self, form):
@@ -57,6 +59,10 @@ class SuccessMessageMixin:
 
 
 class AuthorList(generic.ListView):
+    """
+    Renders authors as a list
+    Uses Author model
+    """
     model = Author
     queryset = Author.objects.order_by('name')
     template_name = 'authors.html'
@@ -64,6 +70,10 @@ class AuthorList(generic.ListView):
 
 
 class AuthorDetail(DetailView):
+    """
+    Renders Author detail page
+    Uses Author model
+    """
     model = Author
     template_name = 'author_detail.html'
 
@@ -80,7 +90,11 @@ class BookList(generic.ListView):
 
 
 class BookDetail(View):
-
+    """
+    Renders book detail page
+    Shows comments and likes
+    Allows user to post comments
+    """
     def get(self, request, slug, *args, **kwargs):
         queryset = Book.objects.filter(status=1)
         book = get_object_or_404(queryset, slug=slug)
@@ -134,7 +148,9 @@ class BookDetail(View):
 
 
 class BookLike(View):
-
+    """
+    Class allows user to like a review
+    """
     def post(self, request, slug, *args, **kwargs):
         book = get_object_or_404(Book, slug=slug)
 
@@ -147,6 +163,12 @@ class BookLike(View):
 
 
 class AddBook(SuccessMessageMixin, CreateView):
+    """
+    Renders form so user can add a review
+    Uses Book model
+    Adds success message on submission
+    Review must be approved by admin
+    """
     model = Book
     form_class = BookForm
     template_name = 'add_book.html'
@@ -155,6 +177,10 @@ class AddBook(SuccessMessageMixin, CreateView):
 
 
 class EditBook(SuccessMessageMixin, UpdateView):
+    """
+    Allows user to update a review
+    Shows success message on submission
+    """
     model = Book
     template_name = "edit_book.html"
     form_class = BookForm
@@ -162,6 +188,11 @@ class EditBook(SuccessMessageMixin, UpdateView):
 
 
 class DeleteBook(DeleteView):
+    """
+    Allows user to delete a review
+    Shows success message on deletion
+    Redirects to books page
+    """
     model = Book
     template_name = 'delete_book.html'
     success_url = reverse_lazy('books')
@@ -170,10 +201,6 @@ class DeleteBook(DeleteView):
     def delete(self, request, *args, **kwargs):
         messages.success(self.request, self.success_message)
         return super(DeleteBook, self).delete(request, *args, **kwargs)
-
-
-def authors(request):
-    return render(request, 'authors.html')
 
 
 def upload(request):
