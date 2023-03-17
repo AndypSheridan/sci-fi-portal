@@ -2,6 +2,8 @@
     font-family: 'Space Mono';
 }
 
+/* Fonts and text color */
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -26,6 +28,8 @@ body {
     color: #FF0000;
 }
 
+/* Navbar styling */
+
 .navbar {
     background-color: rgba(176, 48, 176, 0.6);
 }
@@ -42,7 +46,7 @@ a.nav-link.active {
     color: #FFF;
 }
 
-a {
+nav a {
     box-shadow: inset 0 0 0 0 #FFF;
     color: #FFF;
     margin: 0 -.25rem;
@@ -63,6 +67,8 @@ a:hover {
 .navbar-text {
     color: #FFF;
 }
+
+/* Background images */
 
 #home-bg-image {
     background-image: url('/static/images/sfportal-min.jpg');
@@ -118,10 +124,6 @@ a:hover {
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-}
-
-#footer {
-    background-color: rgba(108, 145, 191, 0.4);
 }
 
 .fixed-row-bottom {
@@ -304,6 +306,8 @@ button {
 
 .update-profile-btn {
     margin-bottom: 0.7rem;
+    color: #FFF;
+    background-color: rgba(176, 48, 176, 0.6);
 }
 
 
