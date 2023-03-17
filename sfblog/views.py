@@ -19,6 +19,13 @@ class HomePage(TemplateView):
     template_name = 'index.html'
 
 
+# def about(request):
+#     return render(request, 'about.html')
+
+class About(View):
+    template_name = 'about.html'
+
+
 class SearchResults(ListView):
     model = Book
     template_name = 'search_results.html'
@@ -163,10 +170,6 @@ class DeleteBook(DeleteView):
     def delete(self, request, *args, **kwargs):
         messages.success(self.request, self.success_message)
         return super(DeleteBook, self).delete(request, *args, **kwargs)
-
-
-def about(request):
-    return render(request, 'about.html')
 
 
 def authors(request):
