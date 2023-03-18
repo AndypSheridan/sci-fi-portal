@@ -29,7 +29,7 @@
                 <h3> Rating: {{ book.rating }} Stars</h3>
                 <hr>
                 <h4>Synopsis</h4>
-                <p class="card-text ">
+                <p class="card-text text-white">
                     {{ book.synopsis }}
                 </p>
             </div>
@@ -38,7 +38,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col card mb-4  mt-3 left top bg-opacity text-white">
+            <div class="col card mb-4  mt-3 left top bg-opacity-light text-white">
                 <div class="card-body">
                     <h4>Review</h4>
                     <p>Review by {{ book.created_by }}
@@ -89,7 +89,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-8 card mb-4  mt-1 bg-opacity text-white">
+            <div class="col-md-8 card mb-4  mt-1 bg-opacity-light text-white">
                 <h4>Comments:</h4>
                 <div class="card-body">
                     {% for comment in comments %}
