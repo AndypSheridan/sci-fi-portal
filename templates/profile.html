@@ -46,18 +46,26 @@
 
     <div class="container d-flex justify-content-center">
     <div class="card flex-row bg-opacity">
-        <img class="card-img-left"
-            src=" {{ user.userprofile.user_image.url }}" />
-        <div class="col-md-8">
+        {% if "placeholder" in user.userprofile.user_image.url %}
+        <img class="book-img img-fluid img-responsive author-default"
+            src="/static/images/blank-profile-picture.png" alt="Default Image">
+        {% else %}
+        <img src="{{ user.userprofile.user_image.url }}" class="img-fluid mx-auto d-block profile-img">
+        {% endif %}
             <div class="card-body">
+                <h4 class="book-title">Username: {{ user.username }}</h4>
                 <h4 class="card-title h5 h4-sm">Left image</h4>
-                <p class="card-text">Example text ggggggggggggg</p>
+                <h5 class="book-subtitle">Name: {{ user.first_name }} {{user.last_name}}</h5>
+                <h5 class="book-subtitle">Email: {{ user.email}}</h5>
+                <p class="text-white">{{ user.userprofile.bio }}</p>
+
+                <p class="card-text"></p>
             </div>
         </div>
     </div>
 </div>
 
-    <div class="container">
+    <div class="container mt-3">
         <div class="row justify-content-center">
             <div class="col col-md-8 mt-3 mb-3">
                 <div class="card bg-opacity">
