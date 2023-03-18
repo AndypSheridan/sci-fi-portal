@@ -17,41 +17,16 @@
 <body id="profile-bg-image" class="text-white roboto">
     {% if user.is_authenticated %}
 
-    <br>
-    <h2 class="text-center">My profile</h2>
-    <br>
-    <!-- <div class="container">
-        <div class="row d-flex flex-wrap align-items-center justify-content-center mt-3 mb-3">
-            <div class="col-md-3 col-sm-offset-0">
-                {% if "placeholder" in user.userprofile.user_image.url %}
-                <img class="book-img img-fluid img-responsive author-default"
-                    src="/static/images/blank-profile-picture.png" alt="Default Image">
-                {% else %}
-                <img src=" {{ user.userprofile.user_image.url }}" class="img-fluid mx-auto d-block profile-img">
-                {% endif %}
-            </div>
-            <div class="col-md-3 text-white">
-                <br>
-                    <hr>
-                    <h3 class="book-title">Username: {{ user.username }}</h1>
-                        <h3 class="book-subtitle">Name: {{ user.first_name }} {{user.last_name}}
-                </h2>
-                <hr>
-                <h4>Bio:</h3>
-                    <p>{{ user.userprofile.bio }}</p>
-                    <hr>
-            </div>
-        </div>
-    </div> -->
+    <h2 class="text-center my-3">My profile</h2>
 
-    <div class="container d-flex justify-content-center">
-    <div class="card flex-row bg-opacity">
-        {% if "placeholder" in user.userprofile.user_image.url %}
-        <img class="book-img img-fluid img-responsive rounded author-default"
-            src="/static/images/blank-profile-picture.png" alt="Default Image">
-        {% else %}
-        <img src="{{ user.userprofile.user_image.url }}" class="img-fluid rounded mx-auto d-block profile-img">
-        {% endif %}
+    <!-- <div class="container d-flex justify-content-center">
+        <div class="card flex-row bg-opacity">
+            {% if "placeholder" in user.userprofile.user_image.url %}
+            <img class="book-img img-fluid img-responsive rounded author-default"
+                src="/static/images/blank-profile-picture.png" alt="Default Image">
+            {% else %}
+            <img src="{{ user.userprofile.user_image.url }}" class="img-fluid rounded mx-auto d-block profile-img">
+            {% endif %}
             <div class="card-body">
                 <h4 class="book-title">Username: {{ user.username }}</h4>
                 <h5 class="book-subtitle">Name: {{ user.first_name }} {{user.last_name}}</h5>
@@ -62,29 +37,51 @@
                 <p class="card-text"></p>
             </div>
         </div>
+    </div> -->
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card profile-card mb-3">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="{{ user.userprofile.user_image.url }}" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                            <h4 class="book-title">Username: {{ user.username }}</h4>
+                            <h5 class="book-subtitle">Name: {{ user.first_name }} {{user.last_name}}</h5>
+                            <h5 class="book-subtitle">Email: {{ user.email}}</h5>
+                            <p class="text-white">{{ user.userprofile.bio }}</p>
+                            <p class="text-white">Joined: {{ user.date_joined }}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
     </div>
-</div>
 
     <div class="container mt-3">
         <div class="row justify-content-center">
             <div class="col col-md-8 mt-3 mb-3">
                 <div class="card bg-opacity">
-                <div class="form-group">
-                    <h2 class="text-white text-center">You can update your details below...</h2>
-                    <br>
-                    <form method="POST" enctype="multipart/form-data" class="form-control bg-opacity profile-form">
-                        {% csrf_token %}
-                        {{ user_form.as_p }}
-                        {{ profile_form.as_p }}
-                        <div class="col text-center">
-                            <button class="btn btn-outline btn-light text-dark-blue update-profile-btn"
-                                type="submit">Update Profile</button>
-                        </div>
-                        {% else %}
-                        <h3 class="text-center text-white">You must be logged in to edit this profile/h3>
-                            {% endif %}
+                    <div class="form-group">
+                        <h2 class="text-white text-center mt-3">You can update your details below...</h2>
+                        <br>
+                        <form method="POST" enctype="multipart/form-data" class="form-control bg-opacity profile-form">
+                            {% csrf_token %}
+                            {{ user_form.as_p }}
+                            {{ profile_form.as_p }}
+                            <div class="col text-center">
+                                <button class="btn btn-outline btn-light text-dark-blue update-profile-btn"
+                                    type="submit">Update Profile</button>
+                            </div>
+                            {% else %}
+                            <h3 class="text-center text-white">You must be logged in to edit this profile/h3>
+                                {% endif %}
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
     </div>
