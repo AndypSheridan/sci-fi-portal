@@ -3,17 +3,33 @@
 {% block content %}
 
 <body id="add-book-bg-image" class="text-white">
-<h1>Search Results</h1>
 
-<ul class="search-results">
-    {% for book in object_list %}
-    <li>
-        <a href="{% url 'book_detail' book.slug %}" class="search-results">{{ book.title }} by {{ book.author }}</a>
-    </li>
-    {% endfor %}
-</ul>
-<input type="button" class="btn btn-light text-dark-blue mb-2 roboto search-back" value="Back"
-                                    onclick="history.back()">
+    <div class="container">
+        <div class="row mb-3 mt-3 justify-content-center">
+            <div class="col-md-8 text-center">
+                <h1>Search Results</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mb-3 mt-3 justify-content-center">
+            <div class="col-md-8">
+                <div class="card bg-opacity">
+                    <ul class="search-results mt-3 mb-3">
+                        {% for book in object_list %}
+                        <li>
+                            <a href="{% url 'book_detail' book.slug %}" class="search-results">{{ book.title }} by
+                                {{ book.author }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    <input type="button" class="btn btn-light text-dark-blue mb-3 roboto search-back" value="Back"
+                        onclick="history.back()">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 {% endblock %}
