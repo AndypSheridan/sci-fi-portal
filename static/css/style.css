@@ -331,11 +331,13 @@ button {
     padding-right: 0.8rem;
 }
 
+
 .search-btn {
     margin-top: 0.8rem;
     background: rgba(176, 48, 176, 0.6);
     color: white;
-    border: none;
+    margin-bottom: 0.8rem;
+    border: 1px solid;
 }
 
 .search-field {
