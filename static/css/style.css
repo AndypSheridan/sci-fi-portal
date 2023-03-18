@@ -149,20 +149,24 @@ h4 {
 
 /* Images */
 
+.books-container {
+    display: table;
+}
+
+.book-col {
+    display: table-cell;
+}
+
 .book-img {
     width: 200px;
     height: auto;
+    object-fit: cover;
     
 }
 
 .book-detail-img {
-    width: 100%;
-    height: 15vw;
-    object-fit: cover;
-}
-
-.book-link {
-    text-decoration: none;
+    width: 300px;
+    height: auto;
 }
 
 .profile-img {
