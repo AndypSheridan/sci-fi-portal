@@ -6,6 +6,7 @@
 {% load crispy_forms_tags %}
 
 <body id="stars-bg-image">
+    {% if user.is_authenticated %}
     <div class="container">
         <div class="row d-flex flex-wrap align-items-center mt-3 mb-3">
             <div class="col-md-4 book-detail-img">
@@ -38,14 +39,9 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-                <hr>
-            </div>
-        </div>
-                </div>
-            </div>
-        </div>
+        {% else %}
+        <h2 class="text-white text-center mt-3">You must be logged in to view this content...</h2>
+    {% endif %}
     </div>
 
 </body>

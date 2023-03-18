@@ -5,7 +5,9 @@
 
 {% load crispy_forms_tags %}
 
+
 <body id="stars-bg-image">
+    {% if user.is_authenticated %}
     <div class="container">
         <div class="row d-flex flex-wrap align-items-center mt-3 mb-3">
             <div class="col-md-4 book-detail-img">
@@ -100,7 +102,6 @@
                         </p>
                         {{ comment.content | linebreaks }}
                     </div>
-                    <a href="" class="text-dark-blue roboto">Edit</a>
                     {% endfor %}
                 </div>
             </div>
@@ -113,12 +114,12 @@
                     {% else %}
 
                     {% if user.is_authenticated %}
-                    <h4>Add a comment: </h4>
-                    <p>Posting as: {{ user.username }}</p>
-                    <form method="post" style="margin-top: 1.3em" class="bg-opacity">
+                    <h4 class="text-white">Add a comment: </h4>
+                    <p class="text-purple">Posting as: {{ user.username }}</p>
+                    <form method="post" style="margin-top: 1.3em" class="bg-opacity text-white">
                         {{ comment_form | crispy }}
                         {% csrf_token %}
-                        <button type="submit" class="btn btn-signup btn-lg">Submit</button>
+                        <button type="submit" class="btn btn-signup btn-light text-purple btn-lg">Submit</button>
                     </form>
                     {% endif %}
                     {% endif %}
@@ -126,7 +127,9 @@
             </div>
         </div>
     </div>
-
+    {% else %}
+    <h2 class="text-white text-center mt-3">You must be logged in to view this content...</h2>
+    {% endif %}
 </body>
 
 {% endblock %}
