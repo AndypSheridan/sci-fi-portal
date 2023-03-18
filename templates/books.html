@@ -43,7 +43,7 @@
                                             src="{{ book.cover_image.url }}" alt="Book Image"></a>
                                     {% endif %}
                                 </div>
-                                <div class="col-lg-8 col-md-9 col-sm-8 col-xs-6">
+                                <div class="col-lg-8 col-md- col-sm-8 col-xs-6">
                                     <div class="card-body">
                                         <a href="{% url 'book_detail' book.slug %}" class="book-link text-dark-blue">
                                             <h4 class="card-title text-dark-blue roboto">
@@ -71,7 +71,7 @@
 
                                 </div>
                                 <div class="card-footer h-25 text-muted text-white">
-                                    <p class="text-white"><span class="text-dark-blue">Synopsis:</span> {{ book.synopsis|slice:150 }} ...<a
+                                    <p class="text-white"><span class="text-dark-blue">Synopsis:</span> {{ book.synopsis|slice:200|safe }} ...<a
                                             href="{% url 'book_detail' book.slug %}"
                                             class="text-dark-blue read-more-link"> Read more</a></p>
                                 </div>
