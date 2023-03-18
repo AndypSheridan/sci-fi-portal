@@ -23,13 +23,13 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid author-container">
         <div class="row">
             <div class="col-12 mt-3 left">
                 <div class="row">
                     {% for author in author_list %}
-                    <div class="col-md-4">
-                        <div class="card mb-4 bg-opacity text-white">
+                    <div class="col-md-4 mb-3 mt-3 author-col">
+                        <div class="card h-100 mb-4 bg-opacity text-white">
                             <div class="card-body">
                                 <div class="image-container">
                                     {% if "placeholder" in author.author_image.url %}

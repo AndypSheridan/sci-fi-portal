@@ -170,6 +170,14 @@ h4 {
     display: table-cell;
 }
 
+.author-container {
+    display: table;
+}
+
+.author-col {
+    display: table-cell;
+}
+
 .book-img {
     width: 200px;
     height: auto;
