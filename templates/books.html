@@ -44,11 +44,24 @@
                                 <div class="col-lg-7 col-md-12 col-sm-8 col-xs-6">
                                   <div class="card-body">
                                     <a href="{% url 'book_detail' book.slug %}" class="book-link text-dark-blue">
-                                        <h5 class="card-title text-dark-blue text-align-right">{{ book.title }}</h5>
+                                        <h5 class="card-title text-dark-blue roboto"><strong>{{ book.title }}</strong></h5>
                                     </a>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text author">Author: {{ book.author }}"</p>
+                                    
+                                    <p class="rating">Rating: {{ book.rating }} <i class="fa-solid fa-star"></i></p>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    {% if user.is_authenticated %}
+                                {% if user.id == book.created_by.id %}
+                                <a href="{% url 'edit_book' book.pk %}" class="text-dark-blue roboto">Edit</a>
+                                <a href="{% url 'delete_book' book.pk %}" class="text-dark-blue roboto">Delete</a>
+                                {% endif %}
+                                {% endif %}
+                                <hr>
+                                <p class="text-small">Reviewed by: {{ book.created_by }}</p> 
+                                <p><i class="far fa-heart text-red"></i>
+                                    {{ book.number_of_likes }} | <i class="fa-regular fa-comment text-white"></i>
+                                    {{ book.comments.count }}</p>
                                   </div>
                                 </div>
                               </div>
