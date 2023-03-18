@@ -149,6 +149,19 @@ h4 {
 
 /* Images */
 
+.book-card {
+    height: 90%;
+}
+
+.book-link {
+    text-decoration: none;
+}
+
+.read-more-link {
+    text-decoration: none;
+    font-weight: 700;
+}
+
 .books-container {
     display: table;
 }

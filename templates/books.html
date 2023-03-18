@@ -30,7 +30,7 @@
                     {% for book in book_list %}
                     <div class="col-md-4 mb-3 mt-3 book-col">
 
-                        <div class="card h-100 mb-4 bg-opacity text-white">
+                        <div class="card h-100 mb-4 bg-opacity text-white book-card">
                             <div class="row row-no-gutters">
                                 <div class="col-lg-5 col-md-12 col-sm-4 col-xs-6">
                                     {% if "placeholder" in book.cover_image.url %}
@@ -45,11 +45,11 @@
                                 <div class="col-lg-7 col-md-12 col-sm-8 col-xs-6">
                                   <div class="card-body">
                                     <a href="{% url 'book_detail' book.slug %}" class="book-link text-dark-blue">
-                                        <h5 class="card-title text-dark-blue roboto"><strong>{{ book.title }}</strong></h5>
+                                        <h4 class="card-title text-dark-blue roboto"><strong>{{ book.title }}</strong></h4>
                                     </a>
-                                    <p class="card-text author">Author: {{ book.author }}"</p>
-                                    
-                                    <p class="rating">Rating: {{ book.rating }} <i class="fa-solid fa-star"></i></p>
+                                    <h5 class="card-text author">Author: {{ book.author }}"</h5>
+                                    <hr>
+                                    <h6 class="rating">Rating: {{ book.rating }} <i class="fa-solid fa-star"></i></h6>
                                     {% if user.is_authenticated %}
                                 {% if user.id == book.created_by.id %}
                                 <a href="{% url 'edit_book' book.pk %}" class="text-dark-blue roboto">Edit</a>
@@ -61,8 +61,12 @@
                                 <p><i class="far fa-heart text-red"></i>
                                     {{ book.number_of_likes }} | <i class="fa-regular fa-comment text-white"></i>
                                     {{ book.comments.count }}</p>
-                                  </div>
                                 </div>
+                                
+                                </div>
+                                <div class="card-footer h-25 text-muted text-white">
+                                <p class="text-white">Synopsis: {{ book.synopsis|slice:200 }} ...<a href="{% url 'book_detail' book.slug %}" class="text-dark-blue read-more-link"> Read more</a></p>
+                                  </div>
                               </div>
                             <!-- <div class="card-body">
                                 <div class="image-container">
