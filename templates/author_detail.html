@@ -16,14 +16,11 @@
                 {% endif %}
             </div>
             <div class="col-md-8 text-white">
-                <h1 class="book-title">{{ author.name }}</h1>
-                <h2 class="book-subtitle">Residence: {{ author.residence }} </h2>
-                <h3> Rating:  Stars</h3>
+                <h2 class="book-title">{{ author.name }}</h1>
+                <h3 class="book-subtitle">Residence: {{ author.residence }} </h2>
+                <h3>Born: {{ author.date_of_birth }} </h3>
                 <hr>
-                <h4>Synopsis</h4>
-                <p class="card-text ">
-                    {{ author.date_of_birth }}
-                </p>
+                <h4>Famous works: {{ author.famous_books }}</h4>
             </div>
         </div>
     </div>
@@ -33,7 +30,7 @@
             <div class="col card mb-4  mt-3 left  top bg-opacity text-white">
                 <div class="card-body">
                     <h4>Bio</h4>
-                    <p class="card-text text-white">
+                    <p class="card-text text-white roboto author-bio">
                         {{ author.bio | safe }}
                     </p>
                     <div class="row">

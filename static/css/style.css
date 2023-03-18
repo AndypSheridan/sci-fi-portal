@@ -331,6 +331,13 @@ button {
     padding-right: 0.8rem;
 }
 
+.card-body p {
+    color:white; 
+}
+
+.author-bio {
+    color: white !important;
+}
 
 .search-btn {
     margin-top: 0.8rem;
