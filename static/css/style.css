@@ -28,6 +28,10 @@ body {
     color: #FF0000;
 }
 
+.text-purple {
+    color: #b030b0;
+}
+
 .text-small {
     font-size: 85%;
 }
@@ -361,6 +365,10 @@ button {
     margin-bottom: 0.7rem;
     color: #FFF;
     background-color: rgba(176, 48, 176, 0.6);
+}
+
+.card {
+    border: 1px solid #FFF;
 }
 
 

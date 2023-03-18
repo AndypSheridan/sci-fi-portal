@@ -44,16 +44,16 @@
                                 <div class="col-lg-6">
                                     <div class="card-body">
                                         <a href="{% url 'author_detail' author.slug %}"
-                                            class="book-link text-dark-blue">
+                                            class="book-link text-purple">
                                             <h4 class="card-title text-white text-align-right">{{ author.name }}
                                             </h4>
                                         </a>
-                                        <p class="author text-dark-blue">Born: <span
+                                        <p class="author text-white">Born: <span
                                                 class="text-white">{{ author.date_of_birth }}</span></p>
-                                        <p class="text-dark-blue"><strong>Famous works: </strong><span
+                                        <p class="text-purple"><strong>Famous works: </strong><span
                                                 class="text-white">{{ author.famous_books }}</span></p>
                                         <p><a href="{% url 'author_detail' author.slug %}"
-                                                class="text-dark-blue roboto">View full bio</a></p>
+                                                class="text-purple roboto">View full bio</a></p>
                                     </div>
 
                                 </div>

@@ -46,7 +46,7 @@
                                 <div class="col-lg-8 col-md- col-sm-8 col-xs-6">
                                     <div class="card-body">
                                         <a href="{% url 'book_detail' book.slug %}" class="book-link text-dark-blue">
-                                            <h4 class="card-title text-dark-blue roboto">
+                                            <h4 class="card-title text-white roboto">
                                                 <strong>{{ book.title }}</strong></h4>
                                         </a>
                                         <h5 class="card-text author">Author: {{ book.author }}"</h5>
@@ -57,9 +57,9 @@
                                         <p class="text-small">Reviewed by: {{ book.created_by }}</p>
                                         {% if user.is_authenticated %}
                                         {% if user.id == book.created_by.id %}
-                                        <a href="{% url 'edit_book' book.pk %}" class="text-dark-blue roboto">Edit</a>
+                                        <a href="{% url 'edit_book' book.pk %}" class="text-purple roboto">Edit</a>
                                         <a href="{% url 'delete_book' book.pk %}"
-                                            class="text-dark-blue roboto">Delete</a>
+                                            class="text-purple roboto">Delete</a>
                                             <hr>
                                         {% endif %}
                                         {% endif %}
@@ -73,7 +73,7 @@
                                 <div class="card-footer h-25 text-muted text-white">
                                     <p class="text-white"><span class="text-dark-blue">Synopsis:</span> {{ book.synopsis|slice:200|safe }} ...<a
                                             href="{% url 'book_detail' book.slug %}"
-                                            class="text-dark-blue read-more-link"> Read more</a></p>
+                                            class="text-purple read-more-link"> Read more</a></p>
                                 </div>
                             </div>
                             <!-- <div class="card-body">
