@@ -354,7 +354,7 @@ button {
 
 .search-back {
     width: min-content;
-    margin-left: 2rem;
+    margin: auto;
 }
 
 .update-profile-btn {
