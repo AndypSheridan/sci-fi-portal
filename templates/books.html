@@ -14,6 +14,7 @@
     </div>
     {% endfor %}
     {% endif %}
+    <h2 class="text-center text-white mt-3 mb-3">Reviews by our community</h2>
     <div class="container">
         <div class="row mt-3 ">
             <div class="col col-md-12 d-flex justify-content-center text-white">
@@ -33,16 +34,18 @@
                             <div class="row row-no-gutters">
                                 <div class="col-lg-5 col-md-12 col-sm-4 col-xs-6">
                                     {% if "placeholder" in book.cover_image.url %}
-                                    <img class="img-fluid img-responsive book-img"
+                                    <img class="img-fluid img-responsive card-img-left book-img"
                                         src="/static/images/default-book-image.jpeg" alt="Default Image">
                                     {% else %}
-                                    <img class="img-fluid img-responsive book-img"
+                                    <img class="img-fluid img-responsive book-img card-img-left"
                                         src="{{ book.cover_image.url }}" alt="Book Image">
                                     {% endif %}
                                 </div>
                                 <div class="col-lg-7 col-md-12 col-sm-8 col-xs-6">
                                   <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
+                                    <a href="{% url 'book_detail' book.slug %}" class="book-link text-dark-blue">
+                                        <h5 class="card-title text-dark-blue text-align-right">{{ book.title }}</h5>
+                                    </a>
                                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
