@@ -197,12 +197,13 @@ h4 {
 }
 
 .author-default {
-    width: 300px;
+    width: 250px;
     height: auto;
 }
 
 .author-image {
-    
+    width: 250px;
+    height: auto;
 }
 
 .image-container {

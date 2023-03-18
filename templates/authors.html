@@ -31,7 +31,7 @@
                     <div class="col-md-4 mb-3 mt-3 author-col">
                         <div class="card h-100 mb-4 bg-opacity text-white">
                             <div class="row row-no-gutters">
-                                    <div class="col-md-6">
+                                    <div class="col-lg-6">
                                         {% if "placeholder" in author.author_image.url %}
                                         <a href="{% url 'author_detail' author.slug %}"><img class="author-img img-fluid" src="/static/images/blank-profile-picture.png"
                                             alt="Default Image"></a>
@@ -40,7 +40,7 @@
                                             src="{{ author.author_image.url }}" alt="Author Image"></a>
                                         {% endif %}
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-lg-6">
                                         <div class="card-body">
                                         <a href="{% url 'author_detail' author.slug %}"
                                             class="book-link text-dark-blue">
@@ -50,13 +50,15 @@
                                         <p class="author">Born: {{ author.date_of_birth }}</p>
                                         <p>Famous works: {{ author.famous_books }}</p>
                                         <br>
-                                        
+                                        <p><a href="{url 'author_detail' author.slug}" class="text-white roboto">View full bio</a></p>
                                     </div>
                                     
                                 </div>
                                 
                             </div>
+                            
                         </div>
+                        
                     </div>
                     {% if forloop.counter|divisibleby:3 %}
                 </div>
