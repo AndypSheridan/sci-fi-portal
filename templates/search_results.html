@@ -18,10 +18,12 @@
                 <div class="card bg-opacity text-center">
                     <ul class="search-results mt-3 mb-3">
                         {% for book in object_list %}
+                        {% if book.status == 1 %}
                         <li class="mb-1">
                             <a href="{% url 'book_detail' book.slug %}" class="search-results">{{ book.title }} by
                                 {{ book.author }}</a>
                         </li>
+                        {% endif %}
                         {% endfor %}
                     </ul>
                     <input type="button" class="btn btn-light text-center text-dark-blue mb-3 roboto search-back" value="Back"
