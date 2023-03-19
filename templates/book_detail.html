@@ -114,7 +114,7 @@
                     {% if user.is_authenticated %}
                     <h4 class="text-white">Add a comment: </h4>
                     <p class="text-purple">Posting as: {{ user.username }}</p>
-                    <form method="post" style="margin-top: 1.3em" class="bg-opacity text-white">
+                    <form method="post" style="margin-top: 1.3em" class="text-white text-center">
                         {{ comment_form | crispy }}
                         {% csrf_token %}
                         <button type="submit" class="btn btn-signup btn-light text-purple btn-lg">Submit</button>

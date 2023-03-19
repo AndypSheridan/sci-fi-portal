@@ -372,6 +372,11 @@ button {
     background-color: rgba(176, 48, 176, 0.6);
 }
 
+.btn-signup {
+    color: #FFF;
+    background-color: rgba(176, 48, 176, 0.6);
+}
+
 .card {
     border: 1px solid #FFF;
 }
