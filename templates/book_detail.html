@@ -51,7 +51,7 @@
                                 class="text-white roboto">Delete</a></span>
                         {% endif %}
                         {% endif %}
-                        <p class="card-text ">
+                        <p class="card-text text-white">
                             {{ book.review_content | safe }}
                         </p>
                         <div class="row">
@@ -93,10 +93,7 @@
                     {% for comment in comments %}
                     <div class="comments" style="padding: 10px;">
                         <p class="font-weight-bold">
-                            {{ comment.name }}
-                            <span class=" text-muted font-weight-normal">
-                                {{ comment.created_on }}
-                            </span> wrote:
+                            {{ comment.name }} | {{ comment.created_on }}
                         </p>
                         {{ comment.content | linebreaks }}
                     </div>
