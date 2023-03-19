@@ -17,7 +17,7 @@
                 <img src=" {{ book.cover_image.url }}" class="img-fluid mx-auto d-block book-detail-img">
                 {% endif %}
             </div>
-            <div class="col-md-8 text-white">
+            <div class="col-md-8 text-white g-0">
                 <h1 class="book-title">{{ book.title }}</h1>
                 <h2 class="book-subtitle">Author: {{ book.author }} </h2>
                 {% if user.is_authenticated %}
@@ -28,17 +28,19 @@
                 {% endif %}
                 <h3> Rating: {{ book.rating }} Stars</h3>
                 <hr>
+                <div class="card bg-opacity px-3 py-3">
                 <h4>Synopsis</h4>
                 <p class="card-text text-white">
                     {{ book.synopsis }}
                 </p>
+            </div>
             </div>
         </div>
     </div>
 
     <div class="container">
         <div class="row">
-            <div class="col card mb-4  mt-3 left top bg-opacity-light text-white">
+            <div class="col card mb-3 left top bg-opacity text-white">
                 <div class="card-body">
                     <h4>Review</h4>
                     <p>Review by {{ book.created_by }}
@@ -83,13 +85,9 @@
                 </div>
             </div>
         </div>
+
         <div class="row">
-            <div class="col">
-                <hr>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-8 card mb-4  mt-1 bg-opacity-light text-white">
+            <div class="col-md-8 card mb-4  mt-1 bg-opacity text-white">
                 <h4>Comments:</h4>
                 <div class="card-body">
                     {% for comment in comments %}
