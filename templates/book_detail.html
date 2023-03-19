@@ -56,29 +56,28 @@
                         </p>
                         <div class="row">
 
-                            <div class="col-1">
-                                <strong>
+                            <div class="col-2">
+                               <strong>
                                     {% if user.is_authenticated %}
                                     <form action="{% url 'book_like' book.slug %}" method="POST" class="d-inline">
                                         {% csrf_token %}
                                         {% if liked %}
                                         <button type="submit" name="bookpost_id" value="{{post.slug}}"
-                                            class="btn-like"><i class="fas fa-heart text-red"></i></button>
+                                            class="btn-like"><i class="fas fa-heart text-red"></i></button>{{ book.number_of_likes}}
                                         {% else %}
                                         <button type="submit" name="bookpost_id" value="{{post.slug}}"
-                                            class="btn-like"><i class="far fa-heart text-red"></i></button>
+                                            class="btn-like"><i class="far fa-heart text-red"></i></button>{{ book.number_of_likes}}
                                         {% endif %}
                                     </form>
                                     {% else %}
-                                    <span class="text-secondary"><i class="far fa-heart"></i></span>
+                                    <span class="text-secondary text-white"><i class="far fa-heart"></i> {{ book.number_of_likes }} </span>
                                     {% endif %}
                                 </strong>
-                                <span class="text-secondary text-white"> {{ book.number_of_likes }} </span>
+                                <!-- <span class="text-secondary text-white"> </span> -->
                             </div>
-                            <div class="col-1">
+                            <div class="col-2">
                                 {% with comments.count as total_comments %}
-                                <span class="text-secondary"><i class="far fa-comments text-white"></i></span>
-                                <span class="text-secondary text-white">{{ total_comments }}</span>
+                                <span class="text-white"><i class="far fa-comments text-white"></i> {{ total_comments }}</span>
                                 {% endwith %}
                             </div>
                         </div>
@@ -87,7 +86,7 @@
         </div>
 
         <div class="row">
-            <div class="col-md-8 card mb-4  mt-1 bg-opacity text-white">
+            <div class="col-md-8 card mb-4 mt-1 bg-opacity text-white px-2 py-2">
                 <h4>Comments:</h4>
                 <div class="card-body">
                     {% for comment in comments %}
