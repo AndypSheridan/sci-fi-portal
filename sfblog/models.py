@@ -33,7 +33,7 @@ class Author(models.Model):
 
 
 class Book(models.Model):
-    title = models.CharField(max_length=100, unique=True)
+    title = models.CharField(max_length=100)
     slug = models.SlugField(max_length=100, unique=True, null=True)
     author = models.CharField(max_length=50)
     synopsis = models.TextField()
