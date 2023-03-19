@@ -6,8 +6,8 @@ function changeStyle() {
 }
 
 // Automatically assigns user when adding a book review
-let name = "{{ user.id }}";
-document.getElementById("user").value = name;
+let user = "{{ user.id }}";
+document.getElementById("user").value = user;
 
 // 
 function addClass() {
