@@ -56,7 +56,7 @@
                         </p>
                         <div class="row">
 
-                            <div class="col-2">
+                           <div class="col-2">
                                <strong>
                                     {% if user.is_authenticated %}
                                     <form action="{% url 'book_like' book.slug %}" method="POST" class="d-inline">
@@ -73,7 +73,6 @@
                                     <span class="text-secondary text-white"><i class="far fa-heart"></i> {{ book.number_of_likes }} </span>
                                     {% endif %}
                                 </strong>
-                                <!-- <span class="text-secondary text-white"> </span> -->
                             </div>
                             <div class="col-2">
                                 {% with comments.count as total_comments %}
