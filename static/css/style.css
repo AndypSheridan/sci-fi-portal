@@ -325,6 +325,13 @@ form input {
 .logout-button {
     margin: 0.6rem;
     width: fit-content;
+    border: 1px solid #FFF;
+    color: #FFF;
+    background-color: rgba(176, 48, 176, 0.6);
+}
+
+.logout-button:hover {
+    background-color: #6C91BF;
 }
 
 .delete-cancel {
@@ -363,6 +370,13 @@ button {
     border: 1px solid;
 }
 
+.cancel-btn {
+    color: #202060;
+    background-color: #F8F9FA;
+    margin: 0.6rem;
+    width: fit-content;
+}
+
 .search-field {
     width: 80%;
     margin: auto;
@@ -378,6 +392,11 @@ button {
 .edit-profile-btn {
     color: #FFF;
     background-color: rgba(176, 48, 176, 0.6);
+}
+.login-btn {
+    color: #FFF;
+    background-color: rgba(176, 48, 176, 0.6);
+    border: 1px solid #FFF;
 }
 
 .update-profile-btn {
