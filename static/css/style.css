@@ -329,6 +329,8 @@ form input {
 
 .delete-cancel {
     width: fit-content;
+    color: #FFF;
+    background-color: rgba(176, 48, 176, 0.6);
 }
 
 .alert-button {
@@ -369,6 +371,8 @@ button {
 .search-back {
     width: min-content;
     margin: auto;
+    color: #FFF;
+    background-color: rgba(176, 48, 176, 0.6);
 }
 
 .edit-profile-btn {
@@ -400,6 +404,12 @@ button {
 } */
 
 .submit-review-btn {
+    color: #FFF;
+    background-color: rgba(176, 48, 176, 0.6);
+    border: 1px solid #FFF;
+}
+
+.next {
     color: #FFF;
     background-color: rgba(176, 48, 176, 0.6);
 }
