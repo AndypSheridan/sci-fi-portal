@@ -8,6 +8,7 @@ Books
 {% block content %}
 
 <body id="stars-bg-image">
+
     {% if messages %}
     {% for message in messages %}
     <div class="alert alert-success roboto text-dark-blue alert-dismissible fade text-center show" role="alert">
@@ -18,6 +19,7 @@ Books
     </div>
     {% endfor %}
     {% endif %}
+
     <div class="container rounded border my-3 bg-opacity">
         <div class="row mt-3">
             <div class="col col-md-12 d-flex justify-content-center text-center text-white">
@@ -34,12 +36,7 @@ Books
             </div>
         </div>
     </div>
-    
-    <div class="container">
-        <div class="row mt-3">
-            
-        </div>
-    </div>
+
     <div class="container-fluid books-container">
         <div class="row">
             <div class="col-12 left book-col">
@@ -71,57 +68,28 @@ Books
                                         </h6>
                                         <hr>
                                         <p class="text-small">Reviewed by: {{ book.created_by }}</p>
+                                        
                                         {% if user.is_authenticated %}
                                         {% if user.id == book.created_by.id %}
                                         <a href="{% url 'edit_book' book.pk %}" class="text-purple roboto">Edit</a>
-                                        <a href="{% url 'delete_book' book.pk %}"
-                                            class="text-purple roboto">Delete</a>
-                                            <hr>
+                                        <a href="{% url 'delete_book' book.pk %}" class="text-purple roboto">Delete</a>
+                                        <hr>
                                         {% endif %}
                                         {% endif %}
+
                                         <p><i class="far fa-heart text-red"></i>
                                             {{ book.number_of_likes }} | <i
                                                 class="fa-regular fa-comment text-white"></i>
                                             {{ book.comments.count }}</p>
                                     </div>
-
                                 </div>
                                 <div class="card-footer h-25 text-muted text-white">
-                                    <p class="text-white"><span class="text-purple">Synopsis:</span> {{ book.synopsis|slice:200|safe }} ...<a
-                                            href="{% url 'book_detail' book.slug %}"
-                                            class="text-purple read-more-link"> Read more</a></p>
+                                    <p class="text-white"><span class="text-purple">Synopsis:</span>
+                                        {{ book.synopsis|slice:200|safe }} ...<a
+                                            href="{% url 'book_detail' book.slug %}" class="text-purple read-more-link">
+                                            Read more</a></p>
                                 </div>
                             </div>
-                            <!-- <div class="card-body">
-                                <div class="image-container">
-                                    {% if "placeholder" in book.cover_image.url %}
-                                    <img class="book-img card-img-left img-fluid img-responsive"
-                                        src="/static/images/default-book-image.jpeg" alt="Default Image">
-                                    {% else %}
-                                    <img class="card-img-left img-fluid img-responsive book-img"
-                                        src="{{ book.cover_image.url }}" alt="Book Image">
-                                    {% endif %}
-                                </div>
-                                <div class="image-flash">
-                                    <a href="{% url 'book_detail' book.slug %}" class="book-link text-dark-blue">
-                                        <h4 class="card-title text-dark-blue text-align-right">{{ book.title }}</h4>
-                                    </a>
-                                    <span class="author">Author: {{ book.author }}</span>
-                                    <br>
-                                    <span class="rating">Rating: {{ book.rating }}</span>
-                                </div>
-                                {% if user.is_authenticated %}
-                                {% if user.id == book.created_by.id %}
-                                <a href="{% url 'edit_book' book.pk %}" class="text-dark-blue roboto">Edit</a>
-                                <a href="{% url 'delete_book' book.pk %}" class="text-dark-blue roboto">Delete</a>
-                                {% endif %}
-                                {% endif %}
-                                <hr>
-                                <p class="text-small">Reviewed by: {{ book.created_by }} | <i
-                                        class="far fa-heart text-red"></i>
-                                    {{ book.number_of_likes }} | <i class="fa-regular fa-comment text-white"></i>
-                                    {{ book.comments.count }}</p>
-                            </div> -->
                         </div>
                     </div>
                     {% if forloop.counter|divisibleby:3 %}
@@ -142,20 +110,11 @@ Books
                 {% if page_obj.has_next %}
                 <li><a href="?page={{ page_obj.next_page_number }}"
                         class="btn btn-md btn-outline-light add-review text-white roboto next">Next &raquo;</a></li>
-
                 {% endif %}
             </ul>
         </nav>
         {% endif %}
-
     </div>
-
-    <script>
-        function addClass() {
-            var elem = document.getElementByClassName("close");
-            elem.classList.add("alert-button");
-        }
-    </script>
 
 </body>
 
