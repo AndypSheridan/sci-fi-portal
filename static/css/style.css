@@ -386,6 +386,7 @@ button {
     text-align: center;
 }
 
+/* Targets and styles form fields */
 #id_password1 {
     background-color: rgba(108, 145, 191, 0.4);
     border: 1px solid white;
@@ -393,11 +394,33 @@ button {
     text-align: center;
 }
 
+/* Targets and styles form fields */
 #id_password2 {
     background-color: rgba(108, 145, 191, 0.4);
     border: 1px solid white;
     color: #FFF;
     text-align: center;
+}
+
+/* Targets and styles form fields */
+#id_login {
+    background-color: rgba(108, 145, 191, 0.4);
+    border: 1px solid white;
+    color: #202060;
+    text-align: center;
+}
+
+/* Targets and styles form fields */
+#id_password {
+    background-color: rgba(108, 145, 191, 0.4);
+    border: 1px solid white;
+    color: #202060;
+    text-align: center;
+}
+
+/* Targets and styles form fields */
+#div_id_remember {
+    text-align: left !important;
 }
 
 /* Targets and styles form fields */
@@ -435,11 +458,11 @@ button {
 }
 
 .login-form {
-    margin-top: 15%;
+    margin: 10%;
 }
 
 .signup-form {
-    margin-top: 3%;
+    margin: 10%;
 }
 
 .form-control {

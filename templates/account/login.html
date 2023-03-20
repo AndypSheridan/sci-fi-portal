@@ -16,7 +16,7 @@
       <h2 class="text-center">{% trans "Sign In" %}</h2>
       <p class="roboto">{% blocktrans %}If you have not created an account yet, then please
         <a class="text-white" href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
-      <form class="login form-control" method="POST" action="{% url 'account_login' %}">
+      <form class="login form-control text-center" method="POST" action="{% url 'account_login' %}">
         {% csrf_token %}
         {{ form | crispy }}
 
