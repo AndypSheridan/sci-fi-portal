@@ -66,13 +66,9 @@ Authors
                                         <p><a href="{% url 'author_detail' author.slug %}"
                                                 class="text-purple roboto">View full bio</a></p>
                                     </div>
-
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
                     {% if forloop.counter|divisibleby:3 %}
                 </div>
@@ -100,13 +96,6 @@ Authors
         </nav>
         {% endif %}
     </div>
-
-    <script>
-        function addClass() {
-            var elem = document.getElementByClassName("close");
-            elem.classList.add("alert-button");
-        }
-    </script>
 
 </body>
 
