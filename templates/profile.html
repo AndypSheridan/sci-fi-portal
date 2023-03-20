@@ -19,34 +19,15 @@ Profile
 {% endif %}
 
 <body id="profile-bg-image" class="text-white roboto">
+
     {% if user.is_authenticated %}
 
     <h2 class="text-center my-3">My profile</h2>
 
-    <!-- <div class="container d-flex justify-content-center">
-        <div class="card flex-row bg-opacity">
-            {% if "placeholder" in user.userprofile.user_image.url %}
-            <img class="book-img img-fluid img-responsive rounded author-default"
-                src="/static/images/blank-profile-picture.png" alt="Default Image">
-            {% else %}
-            <img src="{{ user.userprofile.user_image.url }}" class="img-fluid rounded mx-auto d-block profile-img">
-            {% endif %}
-            <div class="card-body">
-                <h4 class="book-title">Username: {{ user.username }}</h4>
-                <h5 class="book-subtitle">Name: {{ user.first_name }} {{user.last_name}}</h5>
-                <h5 class="book-subtitle">Email: {{ user.email}}</h5>
-                <p class="text-white">{{ user.userprofile.bio }}</p>
-                <p class="text-white">Joined: {{ user.date_joined }}</p>
-
-                <p class="card-text"></p>
-            </div>
-        </div>
-    </div> -->
-
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card h-100 bg-opacity profile-card">
+            <div class="col-lg-8">
+                <div class="card mt-3 bg-opacity profile-card">
                     <div class="row g-0">
                         <div class="col-md-4">
                             <img src="{{ user.userprofile.user_image.url }}" class="img-fluid profile-img rounded-start"
@@ -67,13 +48,10 @@ Profile
         </div>
     </div>
 
-
     <div class="container">
         <div class="row">
-            <div class="col text-center md-8">
-
-
-                <h2 class="text-white text-center mt-3">You can update your details below...</h2>
+            <div class="col text-center mt-3">
+                <h3 class="text-white text-center mt-3">Update your details below...</h3>
                 <button type="button" onclick="changeStyle()"
                     class="btn btn-outline btn-light text-center bg-opacity text-dark-blue mt-3 edit-profile-btn">Edit
                     Profile</button>
@@ -83,10 +61,7 @@ Profile
 
     <div id="profile-form" class="container" style="display: none;">
         <div class="row justify-content-center">
-            <div class="col col-md-8 mt-3 mb-3">
-                <!-- <div class="card bg-opacity"> -->
-                <!-- <div class="form-group"> -->
-
+            <div class="col col-lg-8 mt-3 mb-3">
                 <br>
                 <form method="POST" enctype="multipart/form-data" class="form-control bg-opacity profile-form">
                     {% csrf_token %}
@@ -96,11 +71,11 @@ Profile
                         <button class="btn btn-outline btn-light text-dark-blue update-profile-btn" type="submit">Update
                             Profile</button>
                     </div>
+
                     {% else %}
-                    <h3 class="text-center text-white">You must be logged in to edit this profile/h3>
-                        {% endif %}
-                        <!-- </div> -->
-                        <!-- </div> -->
+                    <h3 class="text-center text-white">You must be logged in to edit this profile</h3>
+                        
+                    {% endif %}
             </div>
         </div>
     </div>
