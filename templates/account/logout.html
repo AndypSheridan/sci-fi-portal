@@ -9,11 +9,11 @@
 
 <div id="account-bg-image" class="body-div">
   <div class="d-flex justify-content-center login-form text-white">
-    <div>
+    <div  class="logout-page">
       <h1 class="text-center">{% trans "Sign Out" %}</h1>
       <p>{% trans 'Are you sure you want to sign out?' %}</p>
 
-      <form class="form-control sign-out-form" method="post" action="{% url 'account_logout' %}">
+      <form class="form-control sign-out-form bg-transparent" method="post" action="{% url 'account_logout' %}">
         {% csrf_token %}
         {% if redirect_field_value %}
         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />

@@ -50,6 +50,10 @@ h4 {
     color: #FFFF00;
 }
 
+.bg-transparent {
+    background: transparent;
+}
+
 /* Standard border for buttons, forms and cards */
 
 .border {
@@ -94,6 +98,10 @@ h4 {
 
 .add-book-container {
     margin-top: 5rem;
+}
+
+.logout-page {
+    margin-top: 6rem;
 }
 
 .body-div {
