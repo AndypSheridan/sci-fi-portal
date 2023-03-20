@@ -7,8 +7,6 @@ Home
 
 {% block content %}
 
-<body id="home-bg-image" class="space-mono home-background">
-
     {% if messages %}
     {% for message in messages %}
     <div class="alert alert-dismissible alert-success roboto text-dark-blue text-center" role="alert">
@@ -19,6 +17,10 @@ Home
     </div>
     {% endfor %}
     {% endif %}
+
+    <!-- <body id="home-bg-image" class="space-mono home-background"> -->
+
+<div id="home-bg-image" class="body-div">
 
     <div class="container-fluid">
         <div class="row text-white text-center fixed-bottom fixed-row-bottom">
@@ -52,6 +54,7 @@ Home
         </div>
     </div>
 
-</body>
+</div>
+<!-- </body> -->
 
 {% endblock %}
