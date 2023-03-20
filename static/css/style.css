@@ -190,6 +190,7 @@ h4 {
     width: 200px;
     height: auto;
     object-fit: cover;
+    border-top-left-radius: 3%;
     
 }
 
