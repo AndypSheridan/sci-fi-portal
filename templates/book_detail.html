@@ -23,15 +23,16 @@ Book Detail
                 <img class="book-img img-fluid img-responsive" src="/static/images/default-book-image.jpeg"
                     alt="Default Book Image">
                 {% else %}
-                <img src=" {{ book.cover_image.url }}" class="img-fluid mx-auto d-block book-detail-img">
-                
+                <img src=" {{ book.cover_image.url }}" class="img-fluid mx-auto d-block book-detail-img"
+                    alt="Book Detail Image">
+
                 {% endif %}
 
             </div>
             <div class="col-md-8 text-white g-0">
                 <h1 class="book-title">{{ book.title }}</h1>
                 <h2 class="book-subtitle">Author: {{ book.author }} </h2>
-                
+
                 {% if user.is_authenticated %}
                 {% if user.id == book.created_by.id %}
                 <a href="{% url 'edit_book' book.pk %}" class="text-white roboto">Edit</a>
@@ -57,7 +58,7 @@ Book Detail
                 <div class="card-body">
                     <h4>Review</h4>
                     <p>Review by {{ book.created_by }}
-                        
+
                         {% if user.is_authenticated %}
                         {% if user.id == book.created_by.id %}
                         <span class="text-white"><a href="{% url 'edit_book' book.pk %}"
@@ -76,10 +77,12 @@ Book Detail
                                 <form action="{% url 'book_like' book.slug %}" method="POST" class="d-inline">
                                     {% csrf_token %}
                                     {% if liked %}
-                                    <button type="submit" name="bookpost_id" value="{{post.slug}}" class="btn-like" aria-label="like"><i
+                                    <button type="submit" name="bookpost_id" value="{{post.slug}}" class="btn-like"
+                                        aria-label="like"><i
                                             class="fas fa-heart text-red"></i></button>{{ book.number_of_likes}}
                                     {% else %}
-                                    <button type="submit" name="bookpost_id" value="{{post.slug}}" class="btn-like" aria-label="like"><i
+                                    <button type="submit" name="bookpost_id" value="{{post.slug}}" class="btn-like"
+                                        aria-label="like"><i
                                             class="far fa-heart text-red"></i></button>{{ book.number_of_likes}}
                                     {% endif %}
                                 </form>
@@ -87,7 +90,7 @@ Book Detail
                                 <span class="text-secondary text-white"><i class="far fa-heart"></i>
                                     {{ book.number_of_likes }} </span>
                                 {% endif %}
-                                
+
                                 {% with comments.count as total_comments %}
                                 <span class="text-white"><i class="far fa-comments text-white"></i>
                                     {{ total_comments }}</span>
