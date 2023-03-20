@@ -24,7 +24,7 @@ Edit Review
                         {% csrf_token %}
                         {{ form.as_p }}
                         <div class="col text-center">
-                            <button class="btn btn-light text-dark-blue mb-2">Update</button>
+                            <button class="btn btn-action text-dark-blue mb-2">Update</button>
                         </div>
                         {% else %}
                         <h3 class="text-center text-white">You do not have permission to edit this review</h3>
@@ -37,7 +37,6 @@ Edit Review
             </div>
         </div>
     </div>
-
 
 </body>
 
