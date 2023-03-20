@@ -7,7 +7,9 @@ Search Results
 {% block content %}
 
 <body id="add-book-bg-image" class="text-white">
-{% if user.is_authenticated %}
+
+    {% if user.is_authenticated %}
+
     <div class="container">
         <div class="row mb-3 mt-3 justify-content-center">
             <div class="col-md-8 text-center">
@@ -21,6 +23,7 @@ Search Results
             <div class="col-md-8 text-center">
                 <div class="card bg-opacity text-center">
                     <ul class="search-results mt-3 mb-3">
+
                         {% for book in object_list %}
                         {% if book.status == 1 %}
                         <li class="mb-1">
@@ -29,16 +32,19 @@ Search Results
                         </li>
                         {% endif %}
                         {% endfor %}
+
                     </ul>
-                    <input type="button" class="btn btn-light text-center text-dark-blue mb-3 roboto search-back" value="Back"
-                        onclick="history.back()">
+                    <input type="button" class="btn btn-light text-center text-dark-blue mb-3 roboto search-back"
+                        value="Back" onclick="history.back()">
                 </div>
             </div>
         </div>
     </div>
+
     {% else %}
     <h2 class="text-white text-center mt-3">You must be logged in to view this content...</h2>
     {% endif %}
+
 </body>
 
 {% endblock %}
