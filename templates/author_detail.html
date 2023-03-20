@@ -15,9 +15,9 @@ Author Bio
         <div class="row d-flex flex-wrap align-items-center mt-3 mb-3">
             <div class="col-md-4 book-detail-img">
                 {% if "placeholder" in author.author_image.url %}
-                <img class="book-img img-fluid img-responsive author-default" src="/static/images/blank-profile-picture.png" alt="Default Image">
+                <img class="book-img img-fluid img-responsive rounded-start author-detail-img" src="/static/images/blank-profile-picture.png" alt="Default Image">
                 {% else %}
-                <img src=" {{ author.author_image.url }}" class="img-fluid mx-auto d-block book-detail-img">
+                <img src=" {{ author.author_image.url }}" class="img-fluid rounded-start mx-auto d-block author-detail-img">
                 {% endif %}
             </div>
             <div class="col-md-8 text-white">
@@ -32,7 +32,7 @@ Author Bio
 
     <div class="container">
         <div class="row">
-            <div class="col card mb-4  mt-3 left bg-opacity-light text-white">
+            <div class="col card mb-4  mt-3 left bg-opacity text-white">
                 <div class="card-body">
                     <h4>Bio</h4>
                     <p class="card-text text-white roboto author-bio">

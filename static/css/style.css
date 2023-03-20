@@ -205,8 +205,13 @@ h4 {
     height: auto;
 }
 
-.author-image {
+.author-img {
     width: 250px;
+    height: auto;
+}
+
+.author-detail-img {
+    width: 300px;
     height: auto;
 }
 

@@ -14,17 +14,17 @@
   <div class="d-flex justify-content-center login-form">
     <div>
       <h2 class="text-center">{% trans "Sign In" %}</h2>
-      <p>{% blocktrans %}If you have not created an account yet, then please
-        <a class="text-purple" href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
+      <p class="roboto">{% blocktrans %}If you have not created an account yet, then please
+        <a class="text-white" href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
       <form class="login form-control" method="POST" action="{% url 'account_login' %}">
         {% csrf_token %}
         {{ form | crispy }}
-        
+
         {% if redirect_field_value %}
         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
         {% endif %}
 
-        <button class="primaryAction btn btn-light text-dark-blue mb-2 roboto"
+        <button class="primaryAction btn btn-signup mb-2 roboto"
           type="submit">{% trans "Sign In" %}</button>
       </form>
     </div>
