@@ -2,7 +2,7 @@
     font-family: 'Space Mono';
 }
 
-/* Fonts and text color */
+/* Fonts */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -15,6 +15,16 @@ body {
 .space-mono {
     font-family: 'Space Mono', sans-serif;
 }
+
+.bg-opacity {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+h4 {
+    font-family: "roboto";
+}
+
+/* Text and Font Awesome colours */
 
 .text-white {
     color: #FFF;
@@ -40,11 +50,13 @@ body {
     color: #FFFF00;
 }
 
+/* Standard border for buttons, forms and cards */
+
 .border {
     border: 1px solid #FFF;
 }
 
-/* Navbar styling */
+/* Navbar elements */
 
 .navbar {
     background-color: rgba(176, 48, 176, 0.6);
@@ -84,7 +96,120 @@ a:hover {
     color: #FFF;
 }
 
-/* Background images */
+/* Link styling and effects */
+
+.book-link {
+    text-decoration: none;
+}
+
+.read-more-link {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.about-link {
+    text-decoration: none;
+}
+
+.social:hover {
+    color: rgba(176, 48, 176, 0.6);
+}
+
+.add-review:hover {
+    color: #202060;
+    background-color: #6C91BF;
+}
+
+
+/* Button styling and effects */
+
+.button-margin {
+    margin: 0.5rem;
+}
+
+.logout-button {
+    margin: 0.6rem;
+    width: fit-content;
+    border: 1px solid #FFF;
+    color: #FFF;
+    background-color: rgba(176, 48, 176, 0.6);
+}
+
+.logout-button:hover {
+    background-color: #6C91BF;
+}
+
+.delete-cancel {
+    width: fit-content;
+    color: #FFF;
+    background-color: rgba(176, 48, 176, 0.6);
+}
+
+.alert-button {
+    background: transparent !important;
+    border: none !important;
+}
+
+button {
+    background: transparent;
+    border: none;
+}
+
+.search-btn {
+    margin-top: 0.8rem;
+    background: rgba(176, 48, 176, 0.6);
+    color: white;
+    margin-bottom: 0.8rem;
+    border: 1px solid;
+}
+
+.cancel-btn {
+    color: #202060;
+    background-color: #F8F9FA;
+    margin: 0.6rem;
+    width: fit-content;
+}
+
+.search-back {
+    width: min-content;
+    margin: auto;
+    color: #FFF;
+    background-color: rgba(176, 48, 176, 0.6);
+}
+
+.edit-profile-btn {
+    color: #FFF;
+    background-color: rgba(176, 48, 176, 0.6);
+}
+.login-btn {
+    color: #FFF;
+    background-color: rgba(176, 48, 176, 0.6);
+    border: 1px solid #FFF;
+}
+
+.update-profile-btn {
+    margin-bottom: 0.7rem;
+    color: #FFF;
+    background-color: rgba(176, 48, 176, 0.6);
+}
+
+.btn-signup {
+    color: #FFF;
+    background-color: rgba(176, 48, 176, 0.6);
+}
+
+.submit-review-btn {
+    color: #FFF;
+    background-color: rgba(176, 48, 176, 0.6);
+    border: 1px solid #FFF;
+}
+
+.next {
+    color: #FFF;
+    background-color: rgba(176, 48, 176, 0.6);
+}
+
+/* Background images for HTML templates */
 
 #home-bg-image {
     background-image: url('/static/images/sfportal-min.jpg');
@@ -142,33 +267,7 @@ a:hover {
     background-attachment: fixed;
 }
 
-.fixed-row-bottom {
-    position: fixed;
-    bottom: 6rem;
-}
-
-.button-margin {
-    margin: 0.5rem;
-}
-
-h4 {
-    font-family: "roboto";
-}
-
-/* Images */
-
-.book-card {
-    height: 90%;
-}
-
-.book-link {
-    text-decoration: none;
-}
-
-.read-more-link {
-    text-decoration: none;
-    font-weight: 700;
-}
+/* Formatting for Book and Author layouts */
 
 .books-container {
     display: table;
@@ -185,6 +284,13 @@ h4 {
 .author-col {
     display: table-cell;
 }
+
+.fixed-row-bottom {
+    position: fixed;
+    bottom: 6rem;
+}
+
+/* Images for books, authors and profile pages */
 
 .book-img {
     width: 200px;
@@ -226,36 +332,7 @@ h4 {
 
 /* Forms */
 
-.login-form {
-    margin-top: 15%;
-}
-
-.signup-form {
-    margin-top: 3%;
-}
-
-.bg-opacity {
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-.social:hover {
-    color: rgba(176, 48, 176, 0.6);
-}
-
-.add-review:hover {
-    color: #202060;
-    background-color: #6C91BF;
-}
-
-.form-control {
-    color: #FFF;
-    background-color: rgba(108, 145, 191, 0.4);
-}
-
-form input {
-    width: 100%;
-}
-
+/* Targets and styles form fields */
 #id_username {
     background-color: rgba(108, 145, 191, 0.4);
     border: 1px solid white;
@@ -263,6 +340,7 @@ form input {
     text-align: center;
 }
 
+/* Targets and styles form fields */
 #id_email {
     background-color: rgba(108, 145, 191, 0.4);
     border: 1px solid white;
@@ -270,6 +348,7 @@ form input {
     text-align: center;
 }
 
+/* Targets and styles form fields */
 #id_first_name {
     background-color: rgba(108, 145, 191, 0.4);
     border: 1px solid white;
@@ -277,6 +356,7 @@ form input {
     text-align: center;
 }
 
+/* Targets and styles form fields */
 #id_last_name {
     background-color: rgba(108, 145, 191, 0.4);
     border: 1px solid white;
@@ -284,6 +364,7 @@ form input {
     text-align: center;
 }
 
+/* Targets and styles form fields */
 #id_bio {
     background-color: rgba(108, 145, 191, 0.4);
     border: 1px solid white;
@@ -291,6 +372,7 @@ form input {
     text-align: center;
 }
 
+/* Targets and styles form fields */
 #id_user_image {
     background-color: rgba(108, 145, 191, 0.4);
     border: 1px solid white;
@@ -304,10 +386,12 @@ form input {
     opacity: 1; /* Firefox */
 }
 
-.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+/* Internet Explorer 10-11 */
+.form-control:-ms-input-placeholder {
     color: #FFF;
 }
 
+/* Internet Explorer 10-11 */
 .form-control::-ms-input-placeholder { /* Microsoft Edge */
     color: #FFF;
 }
@@ -322,32 +406,21 @@ form input {
     text-align: center;
 }
 
-.logout-button {
-    margin: 0.6rem;
-    width: fit-content;
-    border: 1px solid #FFF;
+.login-form {
+    margin-top: 15%;
+}
+
+.signup-form {
+    margin-top: 3%;
+}
+
+.form-control {
     color: #FFF;
-    background-color: rgba(176, 48, 176, 0.6);
+    background-color: rgba(108, 145, 191, 0.4);
 }
 
-.logout-button:hover {
-    background-color: #6C91BF;
-}
-
-.delete-cancel {
-    width: fit-content;
-    color: #FFF;
-    background-color: rgba(176, 48, 176, 0.6);
-}
-
-.alert-button {
-    background: transparent !important;
-    border: none !important;
-}
-
-button {
-    background: transparent;
-    border: none;
+form input {
+    width: 100%;
 }
 
 /* .fa-user {
@@ -362,53 +435,12 @@ button {
     color: white !important;
 }
 
-.search-btn {
-    margin-top: 0.8rem;
-    background: rgba(176, 48, 176, 0.6);
-    color: white;
-    margin-bottom: 0.8rem;
-    border: 1px solid;
-}
-
-.cancel-btn {
-    color: #202060;
-    background-color: #F8F9FA;
-    margin: 0.6rem;
-    width: fit-content;
-}
-
 .search-field {
     width: 80%;
     margin: auto;
 }
 
-.search-back {
-    width: min-content;
-    margin: auto;
-    color: #FFF;
-    background-color: rgba(176, 48, 176, 0.6);
-}
 
-.edit-profile-btn {
-    color: #FFF;
-    background-color: rgba(176, 48, 176, 0.6);
-}
-.login-btn {
-    color: #FFF;
-    background-color: rgba(176, 48, 176, 0.6);
-    border: 1px solid #FFF;
-}
-
-.update-profile-btn {
-    margin-bottom: 0.7rem;
-    color: #FFF;
-    background-color: rgba(176, 48, 176, 0.6);
-}
-
-.btn-signup {
-    color: #FFF;
-    background-color: rgba(176, 48, 176, 0.6);
-}
 
 .card {
     border: 1px solid #FFF;
@@ -416,25 +448,6 @@ button {
 
 .bg-opacity-light {
     background-color: rgba(255, 255, 255, 0.6);
-}
-
-/* .profile-card {
-    background: transparent;
-} */
-
-.submit-review-btn {
-    color: #FFF;
-    background-color: rgba(176, 48, 176, 0.6);
-    border: 1px solid #FFF;
-}
-
-.next {
-    color: #FFF;
-    background-color: rgba(176, 48, 176, 0.6);
-}
-
-.about-link {
-    text-decoration: none;
 }
 
 /* Media Queries */
