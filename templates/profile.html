@@ -30,8 +30,13 @@ Profile
                 <div class="card mt-3 bg-opacity profile-card">
                     <div class="row g-0">
                         <div class="col-md-4">
+                            {% if "placeholder" in user.userprofile.user_image.url %}
+                            <img src="/static/images/blank-profile-picture.png" class="img-fluid h-100 rounded-start"
+                                alt="default profile image">
+                            {% else %}
                             <img src="{{ user.userprofile.user_image.url }}" class="img-fluid profile-img rounded-start"
                                 alt="...">
+                            {% endif %}
                         </div>
                         <div class="col-md-8 text-align-left">
                             <div class="card-body h-100">
