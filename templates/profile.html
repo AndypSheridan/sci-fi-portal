@@ -7,6 +7,7 @@ Profile
 {% endblock %}
 
 {% block content %}
+
 {% if messages %}
 {% for message in messages %}
 <div class="alert alert-success roboto text-dark-blue alert-dismissible fade text-center show" role="alert">
@@ -18,15 +19,14 @@ Profile
 {% endfor %}
 {% endif %}
 
-<body id="profile-bg-image" class="text-white roboto">
+<div id="profile-bg-image" class="text-white roboto body-div">
 
     {% if user.is_authenticated %}
 
-    <h2 class="text-center my-3">My profile</h2>
-
-    <div class="container">
+    <div class="container profile-page-container">
         <div class="row justify-content-center">
             <div class="col-lg-8">
+                <h2 class="text-center my-3">My profile</h2>
                 <div class="card mt-3 bg-opacity profile-card">
                     <div class="row g-0">
                         <div class="col-md-4">

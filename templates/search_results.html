@@ -6,11 +6,11 @@ Search Results
 
 {% block content %}
 
-<body id="add-book-bg-image" class="text-white">
+<div id="add-book-bg-image" class="text-white body-div">
 
     {% if user.is_authenticated %}
 
-    <div class="container">
+    <div class="container search-container">
         <div class="row mb-3 mt-3 justify-content-center">
             <div class="col-md-8 text-center">
                 <h1>Search Results</h1>
@@ -45,6 +45,6 @@ Search Results
     <h2 class="text-white text-center mt-3">You must be logged in to view this content...</h2>
     {% endif %}
 
-</body>
+</div>
 
 {% endblock %}

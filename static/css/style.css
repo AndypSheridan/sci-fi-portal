@@ -80,6 +80,22 @@ h4 {
     margin-top: 6rem;
 }
 
+.edit-book-container {
+    margin-top: 5rem;
+}
+
+.profile-page-container {
+    margin-top: 5rem;
+}
+
+.search-container {
+    margin-top: 5rem;
+}
+
+.add-book-container {
+    margin-top: 5rem;
+}
+
 .body-div {
     font-family: 'Space Mono';
     position: fixed;
