@@ -7,8 +7,6 @@ Authors
 
 {% block content %}
 
-<body id="stars-bg-image">
-
     {% if messages %}
     {% for message in messages %}
     <div class="alert alert-success roboto text-dark-blue alert-dismissible fade text-center show" role="alert">
@@ -20,9 +18,11 @@ Authors
     {% endfor %}
     {% endif %}
 
-    <div class="container rounded border mt-3 bg-opacity">
-        <div class="row mt-3 ">
-            <div class="col col-md-12 d-flex justify-content-center text-white">
+    <div id="stars-bg-image" class="body-div">
+
+    <div class="container rounded border author-page-container bg-opacity">
+        <div class="row">
+            <div class="col col-md-12 d-flex mt-3 justify-content-center text-white">
                 <h2>Featured Authors</h2>
             </div>
         </div>
@@ -97,6 +97,6 @@ Authors
         {% endif %}
     </div>
 
-</body>
+</div>
 
 {% endblock%}

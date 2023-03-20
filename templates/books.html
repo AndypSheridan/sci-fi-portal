@@ -7,8 +7,6 @@ Books
 
 {% block content %}
 
-<body id="stars-bg-image">
-
     {% if messages %}
     {% for message in messages %}
     <div class="alert alert-success roboto text-dark-blue alert-dismissible fade text-center show" role="alert">
@@ -20,7 +18,9 @@ Books
     {% endfor %}
     {% endif %}
 
-    <div class="container rounded border my-3 bg-opacity">
+    <div id="stars-bg-image" class="body-div">
+
+    <div class="container rounded border mb-3 bg-opacity book-page-container">
         <div class="row mt-3">
             <div class="col col-md-12 d-flex justify-content-center text-center text-white">
                 <h2>Reviews from our community</h2>
@@ -116,6 +116,6 @@ Books
         {% endif %}
     </div>
 
-</body>
+</div>
 
 {% endblock %}

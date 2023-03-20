@@ -10,11 +10,11 @@ Book Detail
 {% load crispy_forms_tags %}
 
 
-<body id="stars-bg-image">
+<div id="stars-bg-image" class="body-div">
 
     {% if user.is_authenticated %}
 
-    <div class="container">
+    <div class="container book-detail-page-container">
         <div class="row d-flex flex-wrap align-items-center mt-3 mb-3">
             <div class="col-md-4 book-detail-img">
 
@@ -140,6 +140,6 @@ Book Detail
     {% else %}
     <h2 class="text-white text-center mt-3">You must be logged in to view this content...</h2>
     {% endif %}
-</body>
+</div>
 
 {% endblock %}

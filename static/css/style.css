@@ -60,6 +60,22 @@ h4 {
     margin-top: 6rem;
 }
 
+.book-page-container {
+    margin-top: 6rem;
+}
+
+.author-page-container {
+    margin-top: 6rem;
+}
+
+.book-detail-page-container {
+    margin-top: 6rem;
+}
+
+.author-detail-page-container {
+    margin-top: 6rem;
+}
+
 .body-div {
     font-family: 'Space Mono';
     position: fixed;
