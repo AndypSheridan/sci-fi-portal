@@ -9,17 +9,17 @@ Delete Review
 
 {% load crispy_forms_tags %}
 
-<body id="add-book-bg-image" class="text-white roboto">
+<div id="add-book-bg-image" class="text-white roboto body-div">
 
     {% if user.is_authenticated %}
     {% if user.id == book.created_by.id %}
 
-    <h3 class="text-center mt-3">Delete {{ book.title }}?</h3>
-    <div class="container">
+    <div class="container delete-book-container">
         <div class="row h-100 justify-content-center">
             <div class="col col-md-8 mt-3 mb-3 align-self-center">
+                <h3 class="text-center my-3">Delete {{ book.title }}?</h3>
                 <div class="form-group">
-                    <form method="POST" class="form-control bg-opacity text-center">
+                    <form method="POST" class="form-control mt-3 bg-opacity text-center">
                         {% csrf_token %}
                         <strong>Are you sure?? If you click delete, there is no going back!</strong>
                         <br>
@@ -45,7 +45,6 @@ Delete Review
     </div>
     </div>
 
-
-</body>
+</div>
 
 {% endblock %}

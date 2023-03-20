@@ -9,9 +9,9 @@ Author Bio
 
 {% load crispy_forms_tags %}
 
-<body id="stars-bg-image">
+<div id="stars-bg-image" class="body-div">
     {% if user.is_authenticated %}
-    <div class="container">
+    <div class="container author-detail-page-container">
         <div class="row d-flex flex-wrap align-items-center mt-3 mb-3">
             <div class="col-md-4 book-detail-img">
                 {% if "placeholder" in author.author_image.url %}
@@ -48,6 +48,6 @@ Author Bio
     {% endif %}
     </div>
 
-</body>
+</div>
 
 {% endblock %}
