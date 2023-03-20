@@ -509,21 +509,4 @@ form input {
 
 @media only screen and (max-width: 768px) {
 
-    #stars-bg-image:after{
-
-        content: url('/static/images/sf-portal-stars-min.jpg');
-        
-        position: fixed;
-        
-        height: 100vh;
-        
-        right: 0;
-        
-        top: 0;
-        
-        left: 0;
-        
-        z-index: -1;
-        
-        }
     }
