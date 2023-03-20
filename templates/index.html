@@ -8,6 +8,7 @@ Home
 {% block content %}
 
 <body id="home-bg-image" class="space-mono home-background">
+
     {% if messages %}
     {% for message in messages %}
     <div class="alert alert-dismissible alert-success roboto text-dark-blue text-center" role="alert">
@@ -30,7 +31,8 @@ Home
                         <div class="col-md-4">
                             <div class="search justify-content-center align-items-center">
                                 <form action="{% url 'search_results' %}" method="get" class="input-group">
-                                    <input name="q" type="text" class="form-control text-center text-dark-blue search-field"
+                                    <input name="q" type="text"
+                                        class="form-control text-center text-dark-blue search-field"
                                         placeholder="Search the portal">
                                     <button class="btn btn-light btn-outline search-btn"><i
                                             class="fa fa-search"></i></button>
