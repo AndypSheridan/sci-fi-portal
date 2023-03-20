@@ -12,16 +12,19 @@
   <div class="row d-flex justify-content-center text-white">
     <div class="col col-md-6 signup-form">
       <h3 class="text-center">{% trans "Sign Up" %}</h1>
-      <p class="text-center">{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}" class="text-white">sign in</a>.{% endblocktrans %}
-      </p>
-      <form class="signup form-control" id="signup_form" method="post" action="{% url 'account_signup' %}">
-        {% csrf_token %}
-        {{ form | crispy }}
-        {% if redirect_field_value %}
-        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-        {% endif %}
-        <button type="submit" class="btn btn-light text-dark-blue mb-2 roboto">{% trans "Sign Up" %} &raquo;</button>
-      </form>
+        <p class="text-center">{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}"
+            class="text-white">sign in</a>.{% endblocktrans %}
+        </p>
+        <form class="signup form-control" id="signup_form" method="post" action="{% url 'account_signup' %}">
+          {% csrf_token %}
+          {{ form | crispy }}
+
+          {% if redirect_field_value %}
+          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+          {% endif %}
+          
+          <button type="submit" class="btn btn-light text-dark-blue mb-2 roboto">{% trans "Sign Up" %} &raquo;</button>
+        </form>
     </div>
   </div>
 </body>
