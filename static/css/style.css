@@ -228,6 +228,7 @@ button {
 /* Background images for HTML templates */
 
 .body-div {
+    font-family: 'Space Mono';
     position: fixed;
     padding: 0;
     margin: 0;
