@@ -76,10 +76,10 @@ Book Detail
                                 <form action="{% url 'book_like' book.slug %}" method="POST" class="d-inline">
                                     {% csrf_token %}
                                     {% if liked %}
-                                    <button type="submit" name="bookpost_id" value="{{post.slug}}" class="btn-like"><i
+                                    <button type="submit" name="bookpost_id" value="{{post.slug}}" class="btn-like" aria-label="like"><i
                                             class="fas fa-heart text-red"></i></button>{{ book.number_of_likes}}
                                     {% else %}
-                                    <button type="submit" name="bookpost_id" value="{{post.slug}}" class="btn-like"><i
+                                    <button type="submit" name="bookpost_id" value="{{post.slug}}" class="btn-like" aria-label="like"><i
                                             class="far fa-heart text-red"></i></button>{{ book.number_of_likes}}
                                     {% endif %}
                                 </form>

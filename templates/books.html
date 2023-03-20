@@ -68,7 +68,7 @@ Books
                                         </h6>
                                         <hr>
                                         <p class="text-small">Reviewed by: {{ book.created_by }}</p>
-                                        
+
                                         {% if user.is_authenticated %}
                                         {% if user.id == book.created_by.id %}
                                         <a href="{% url 'edit_book' book.pk %}" class="text-purple roboto">Edit</a>
@@ -87,7 +87,7 @@ Books
                                     <p class="text-white"><span class="text-purple">Synopsis:</span>
                                         {{ book.synopsis|slice:200|safe }} ...<a
                                             href="{% url 'book_detail' book.slug %}" class="text-purple read-more-link">
-                                            Read more</a></p>
+                                            Read more here</a></p>
                                 </div>
                             </div>
                         </div>
