@@ -509,7 +509,7 @@ form input {
 
 @media only screen and (max-width: 768px) {
 
-    body:after{
+    #stars-bg-image:after{
 
         content: url('/static/images/sf-portal-stars-min.jpg');
         
