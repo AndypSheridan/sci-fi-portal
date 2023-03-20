@@ -18,6 +18,7 @@ Home
     </div>
     {% endfor %}
     {% endif %}
+
     <div class="container-fluid">
         <div class="row text-white text-center fixed-bottom fixed-row-bottom">
             <div class="col">
@@ -25,11 +26,8 @@ Home
                 <h4>An online community devoted to science fiction literature</h4>
                 {% if user.is_authenticated %}
                 <div class="container">
-
                     <div class="row height d-flex justify-content-center align-items-center">
-
                         <div class="col-md-4">
-
                             <div class="search justify-content-center align-items-center">
                                 <form action="{% url 'search_results' %}" method="get" class="input-group">
                                     <input name="q" type="text" class="form-control text-center text-dark-blue search-field"
