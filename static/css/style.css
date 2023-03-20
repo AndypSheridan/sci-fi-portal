@@ -386,6 +386,20 @@ button {
     text-align: center;
 }
 
+#id_password1 {
+    background-color: rgba(108, 145, 191, 0.4);
+    border: 1px solid white;
+    color: #FFF;
+    text-align: center;
+}
+
+#id_password2 {
+    background-color: rgba(108, 145, 191, 0.4);
+    border: 1px solid white;
+    color: #FFF;
+    text-align: center;
+}
+
 /* Targets and styles form fields */
 #id_user_image {
     background-color: rgba(108, 145, 191, 0.4);
