@@ -191,7 +191,6 @@ h4 {
     height: auto;
     object-fit: cover;
     border-top-left-radius: 3%;
-    
 }
 
 .book-detail-img {
@@ -213,6 +212,7 @@ h4 {
 .author-img {
     width: 250px;
     height: auto;
+    border-top-left-radius: 3%;
 }
 
 .author-detail-img {
