@@ -11,26 +11,34 @@ Book Detail
 
 
 <body id="stars-bg-image">
+
     {% if user.is_authenticated %}
+
     <div class="container">
         <div class="row d-flex flex-wrap align-items-center mt-3 mb-3">
             <div class="col-md-4 book-detail-img">
+
                 {% if "placeholder" in book.cover_image.url %}
+
                 <img class="book-img img-fluid img-responsive" src="/static/images/default-book-image.jpeg"
                     alt="Default Book Image">
                 {% else %}
                 <img src=" {{ book.cover_image.url }}" class="img-fluid mx-auto d-block book-detail-img">
+                
                 {% endif %}
+
             </div>
             <div class="col-md-8 text-white g-0">
                 <h1 class="book-title">{{ book.title }}</h1>
                 <h2 class="book-subtitle">Author: {{ book.author }} </h2>
+                
                 {% if user.is_authenticated %}
                 {% if user.id == book.created_by.id %}
                 <a href="{% url 'edit_book' book.pk %}" class="text-white roboto">Edit</a>
                 <a href="{% url 'delete_book' book.pk %}" class="text-white roboto">Delete</a>
                 {% endif %}
                 {% endif %}
+
                 <h3> Rating: {{ book.rating }} Stars</h3>
                 <hr>
                 <div class="card bg-opacity px-3 py-3">
@@ -49,6 +57,7 @@ Book Detail
                 <div class="card-body">
                     <h4>Review</h4>
                     <p>Review by {{ book.created_by }}
+                        
                         {% if user.is_authenticated %}
                         {% if user.id == book.created_by.id %}
                         <span class="text-white"><a href="{% url 'edit_book' book.pk %}"
@@ -56,12 +65,13 @@ Book Detail
                                 class="text-purple roboto">Delete</a></span>
                         {% endif %}
                         {% endif %}
+
                         <p class="card-text text-white">
                             {{ book.review_content|safe }}
                         </p>
                         <div class="row">
-
                             <div class="col-4">
+
                                 {% if user.is_authenticated %}
                                 <form action="{% url 'book_like' book.slug %}" method="POST" class="d-inline">
                                     {% csrf_token %}
@@ -77,6 +87,7 @@ Book Detail
                                 <span class="text-secondary text-white"><i class="far fa-heart"></i>
                                     {{ book.number_of_likes }} </span>
                                 {% endif %}
+                                
                                 {% with comments.count as total_comments %}
                                 <span class="text-white"><i class="far fa-comments text-white"></i>
                                     {{ total_comments }}</span>
