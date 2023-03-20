@@ -414,6 +414,10 @@ button {
     background-color: rgba(176, 48, 176, 0.6);
 }
 
+.about-link {
+    text-decoration: none;
+}
+
 /* Media Queries */
 
 @media only screen and (max-width: 768px) {
