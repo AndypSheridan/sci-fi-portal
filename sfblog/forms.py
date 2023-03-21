@@ -12,12 +12,16 @@ class CommentForm(forms.ModelForm):
 
 
 class BookForm(forms.ModelForm):
+    """
+    Form for User to submit a book review.
+    """
     class Meta:
         model = Book
         fields = (
             'title', 'author', 'synopsis', 'review_content',
             'cover_image', 'rating', 'sub_genre', 'created_by')
 
+# Uses cloudinary storage for book image upload
         cover_image = CloudinaryFileField(
             options={"folder": "home"}
         )
@@ -57,6 +61,9 @@ class BookForm(forms.ModelForm):
 
 
 class UserEditForm(forms.ModelForm):
+    """
+    Sets fields for edit profile form in profile.html
+    """
     username = forms.CharField(required=True)
     email = forms.EmailField(required=True)
     first_name = forms.CharField(required=False)
@@ -76,6 +83,7 @@ class ProfileEditForm(forms.ModelForm):
         model = UserProfile
         fields = ['bio', 'user_image']
 
+# Uses Cloudinary storage for UserProfile image upload
         user_image = CloudinaryFileField(
             options={"folder": "home"}
         )
