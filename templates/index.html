@@ -25,7 +25,7 @@ Home
             <div class="col">
                 <h2>Welcome to the Sci-Fi Portal</h2>
                 <h4>An online community devoted to science fiction literature</h4>
-                <!-- {% if user.is_authenticated %} -->
+                {% if user.is_authenticated %}
                 <div class="container">
                     <div class="row height d-flex justify-content-center align-items-center">
                         <div class="col-md-4">
@@ -42,10 +42,10 @@ Home
                     </div>
                 </div>
 
-                <!-- {% else %}
+                {% else %}
                 <a href="{% url 'account_signup' %}" class="btn btn-cancel border btn-sm button-margin">Register</a>
                 <a href="{% url 'account_login' %}" class="btn btn-action btn-sm button-margin"> Log In </a>
-                {% endif %} -->
+                {% endif %}
 
             </div>
         </div>
