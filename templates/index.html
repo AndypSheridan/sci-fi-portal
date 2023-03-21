@@ -7,21 +7,19 @@ Home
 
 {% block content %}
 
-    {% if messages %}
-    {% for message in messages %}
-    <div class="alert alert-dismissible alert-success roboto text-dark-blue text-center" role="alert">
-        <strong>{{message}}</strong>
-        <button class="close alert-button" data-dismiss="alert">
-            ×
-        </button>
-    </div>
-    {% endfor %}
-    {% endif %}
+{% if messages %}
+{% for message in messages %}
+<div class="alert alert-dismissible alert-success roboto text-dark-blue text-center" role="alert">
+    <strong>{{message}}</strong>
+    <button class="close alert-button" data-dismiss="alert">
+        ×
+    </button>
+</div>
+{% endfor %}
+{% endif %}
 
-    <!-- <body id="home-bg-image" class="space-mono home-background"> -->
 
 <div id="home-bg-image" class="body-div">
-
     <div class="container-fluid">
         <div class="row text-white text-center fixed-bottom fixed-row-bottom">
             <div class="col">
@@ -41,7 +39,6 @@ Home
                                 </form>
                             </div>
                         </div>
-
                     </div>
                 </div>
 
@@ -53,8 +50,6 @@ Home
             </div>
         </div>
     </div>
-
 </div>
-<!-- </body> -->
 
 {% endblock %}
