@@ -5,19 +5,6 @@ from django.contrib.auth.models import User
 from allauth.account.forms import SignupForm
 
 
-# class CustomSignupForm(SignupForm):
-#     def __init__(self, *args, **kwargs):
-#         super(CustomSignupForm, self).__init__(*args, **kwargs)
-#         self.fields['first_name'] = forms.CharField(required=False)
-#         self.fields['last_name'] = forms.CharField(required=False)
-
-#     def save(self, request):
-#         organization = self.cleaned_data.pop('first_name')
-#         organization = self.cleaned_data.pop('last_name')
-#         ...
-#         user = super(CustomSignupForm, self).save(request)
-
-
 class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
@@ -50,7 +37,6 @@ class BookForm(forms.ModelForm):
                 attrs={'class': 'form-control',
                        'placeholder': 'Tell us what you think!'}),
             'sub_genre': forms.Select(attrs={'class': 'form-control'}),
-            # 'created_by': forms.Select(attrs={'class': 'form-control'}),
         }
 
         def clean(self):
@@ -82,7 +68,10 @@ class UserEditForm(forms.ModelForm):
 
 
 class ProfileEditForm(forms.ModelForm):
-
+    """
+    Used to edit profile with UserEditForm.
+    Both used in same form in profile.html
+    """
     class Meta:
         model = UserProfile
         fields = ['bio', 'user_image']
