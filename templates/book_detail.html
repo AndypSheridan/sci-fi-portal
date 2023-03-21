@@ -18,6 +18,7 @@ Book Detail
         <div class="row d-flex flex-wrap align-items-center mt-3 mb-3">
             <div class="col-md-4 book-detail-img">
 
+                <!-- Book detail image -->
                 {% if "placeholder" in book.cover_image.url %}
 
                 <img class="book-img img-fluid img-responsive" src="/static/images/default-book-image.jpeg"
@@ -33,6 +34,7 @@ Book Detail
                 <h1 class="book-title">{{ book.title }}</h1>
                 <h2 class="book-subtitle">Author: {{ book.author }} </h2>
 
+                <!-- Edit and delete buttons if logged in as that user -->
                 {% if user.is_authenticated %}
                 {% if user.id == book.created_by.id %}
                 <a href="{% url 'edit_book' book.pk %}" class="text-white roboto">Edit</a>
@@ -101,6 +103,7 @@ Book Detail
             </div>
         </div>
 
+        <!-- Comments -->
         <div class="row">
             <div class="col-md-8 card mb-4 mt-1 bg-opacity text-white px-2 py-2">
                 <h4>Comments:</h4>
@@ -115,6 +118,7 @@ Book Detail
                     {% endfor %}
                 </div>
             </div>
+            <!-- Comment alert -->
             <div class="col-md-4 card mb-4  mt-1 bg bg-opacity">
                 <div class="card-body">
                     {% if commented %}
