@@ -8,6 +8,7 @@ Profile
 
 {% block content %}
 
+<!-- Code for Bootstrap messages displayed on successful profile edit -->
 {% if messages %}
 {% for message in messages %}
 <div class="alert alert-success roboto text-dark-blue alert-dismissible fade text-center show" role="alert">
@@ -19,6 +20,7 @@ Profile
 {% endfor %}
 {% endif %}
 
+<!-- Profile card -->
 <div id="profile-bg-image" class="text-white roboto body-div">
     <div class="container profile-page-container">
         <div class="row justify-content-center">
@@ -51,6 +53,7 @@ Profile
         </div>
     </div>
 
+    <!-- Button shows edit profile form on click -->
     <div class="container">
         <div class="row">
             <div class="col text-center mt-3">
@@ -62,6 +65,7 @@ Profile
         </div>
     </div>
 
+    <!-- Edit profile form -->
     <div id="profile-form" class="container" style="display: none;">
         <div class="row justify-content-center">
             <div class="col col-lg-8 mt-3 mb-3">
