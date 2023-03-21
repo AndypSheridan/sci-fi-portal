@@ -7,6 +7,7 @@ Home
 
 {% block content %}
 
+<!-- Code for bootstrap messages / alerts -->
 {% if messages %}
 {% for message in messages %}
 <div class="alert alert-dismissible alert-success roboto text-dark-blue text-center" role="alert">
@@ -25,6 +26,7 @@ Home
             <div class="col">
                 <h2>Welcome to the Sci-Fi Portal</h2>
                 <h4>An online community devoted to science fiction literature</h4>
+                <!-- Code for search bar which user can view and access if logged in -->
                 {% if user.is_authenticated %}
                 <div class="container">
                     <div class="row height d-flex justify-content-center align-items-center">
