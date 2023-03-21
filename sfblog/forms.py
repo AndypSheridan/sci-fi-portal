@@ -71,15 +71,14 @@ class BookForm(forms.ModelForm):
 
 
 class UserEditForm(forms.ModelForm):
-
-    class Meta:
-        model = User
-        fields = ('username', 'email', 'first_name', 'last_name')
-
     username = forms.CharField(required=True)
     email = forms.EmailField(required=True)
     first_name = forms.CharField(required=False)
     last_name = forms.CharField(required=False)
+
+    class Meta:
+        model = User
+        fields = ('username', 'email', 'first_name', 'last_name')
 
 
 class ProfileEditForm(forms.ModelForm):
