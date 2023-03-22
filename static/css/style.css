@@ -140,6 +140,7 @@ h4 {
 
 a.nav-link.active {
     color: #FFF;
+    margin: 0 0.15rem;
 }
 
 .nav-link,
