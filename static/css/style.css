@@ -69,19 +69,19 @@ h4 {
 }
 
 .author-page-container {
-    margin-top: 6rem;
+    margin-top: 8rem;
 }
 
 .book-detail-page-container {
-    margin-top: 6rem;
+    margin-top: 8rem;
 }
 
 .author-detail-page-container {
-    margin-top: 6rem;
+    margin-top: 8rem;
 }
 
 .delete-book-container {
-    margin-top: 6rem;
+    margin-top: 8rem;
 }
 
 .edit-book-container {
@@ -93,11 +93,11 @@ h4 {
 }
 
 .search-container {
-    margin-top: 5rem;
+    margin-top: 8rem;
 }
 
 .add-book-container {
-    margin-top: 5rem;
+    margin-top: 8rem;
 }
 
 .logout-page {
