@@ -78,8 +78,8 @@ Books
 
                                         {% if user.is_authenticated %}
                                         {% if user.id == book.created_by.id %}
-                                        <a href="{% url 'edit_book' book.pk %}" class="text-purple roboto">Edit</a>
-                                        <a href="{% url 'delete_book' book.pk %}" class="text-purple roboto">Delete</a>
+                                        <a href="{% url 'edit_book' book.pk %}" class=" btn btn-primary text-white roboto">Edit</a>
+                                        <a href="{% url 'delete_book' book.pk %}" class="btn btn-danger text-white roboto">Delete</a>
                                         <hr>
                                         {% endif %}
                                         {% endif %}
