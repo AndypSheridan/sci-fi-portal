@@ -306,7 +306,7 @@ button {
 /* Background images for HTML templates */
 
 #home-bg-image {
-    background-image: url('/static/images/sfportal-min.jpg');
+    background-image: url('/media/images/sfportal-min.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
