@@ -384,7 +384,7 @@ button {
 }
 
 .profile-img {
-    width: 200px;
+    width: auto;
     height: auto;
     margin: auto;
 }
