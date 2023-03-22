@@ -19,7 +19,7 @@ Edit Review
         <div class="row justify-content-center">
             <div class="col col-md-8 mb-3">
                 <h3 class="text-center mb-3">Edit Review...</h3>
-                <div class="form-group">
+                <div class="form-group mt-3">
                     <form method="POST" enctype="multipart/form-data" class="form-control bg-opacity mt-3">
                         {% csrf_token %}
                         {{ form.as_p }}
@@ -29,9 +29,6 @@ Edit Review
                         {% else %}
                         <h3 class="text-center text-white">You do not have permission to edit this review</h3>
                         {% endif %}
-                        {% else %}
-                        <h3 class="text-center text-white">You must be logged in to edit a review</h3>
-                        
                         {% endif %}
                 </div>
             </div>
