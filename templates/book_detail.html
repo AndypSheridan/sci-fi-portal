@@ -32,16 +32,8 @@ Book Detail
             </div>
             <div class="col-md-8 text-white g-0">
                 <h1 class="book-title">{{ book.title }}</h1>
+                <hr>
                 <h2 class="book-subtitle">Author: {{ book.author }} </h2>
-
-                <!-- Edit and delete buttons if logged in as that user -->
-                {% if user.is_authenticated %}
-                {% if user.id == book.created_by.id %}
-                <a href="{% url 'edit_book' book.pk %}" class="text-white roboto">Edit</a>
-                <a href="{% url 'delete_book' book.pk %}" class="text-white roboto">Delete</a>
-                {% endif %}
-                {% endif %}
-
                 <h3> Rating: {{ book.rating }} <i class="fa-solid fa-star"></i></h3>
                 <hr>
                 <div class="card bg-opacity px-3 py-3">
@@ -61,11 +53,12 @@ Book Detail
                     <h4>Review</h4>
                     <p>Review by {{ book.created_by }}
 
+                        <!-- Edit and delete buttons if logged in as that user -->
                         {% if user.is_authenticated %}
                         {% if user.id == book.created_by.id %}
                         <span class="text-white"><a href="{% url 'edit_book' book.pk %}"
-                                class="text-purple roboto">Edit</a>|<a href="{% url 'delete_book' book.pk %}"
-                                class="text-purple roboto">Delete</a></span>
+                                class="btn btn-primary text-white roboto">Edit</a> <a href="{% url 'delete_book' book.pk %}"
+                                class="btn btn-danger text-white roboto">Delete</a></span>
                         {% endif %}
                         {% endif %}
 
