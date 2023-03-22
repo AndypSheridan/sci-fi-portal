@@ -1,0 +1,590 @@
+* {
+    font-family: 'Space Mono';
+}
+
+/* Fonts and headings */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.space-mono {
+    font-family: 'Space Mono', sans-serif;
+}
+
+.bg-opacity {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+h4 {
+    font-family: "roboto";
+}
+
+/* Text and Font Awesome colours */
+
+.text-white {
+    color: #FFF;
+}
+
+.text-dark-blue {
+    color: #202060;
+}
+
+.text-red {
+    color: #FF0000;
+}
+
+.text-purple {
+    color: #f13bf1;
+}
+
+.text-purple-large {
+    color: #f13bf1;
+    font-size: larger;
+}
+
+.text-small {
+    font-size: 85%;
+}
+
+.fa-star {
+    color: #FFFF00;
+}
+
+.bg-transparent {
+    background: transparent;
+}
+
+/* Standard border for buttons, forms and cards */
+
+.border {
+    border: 1px solid #FFF;
+}
+
+.about-container {
+    margin-top: 8rem;
+}
+
+.book-page-container {
+    margin-top: 8rem;
+}
+
+.author-page-container {
+    margin-top: 8rem;
+}
+
+.book-detail-page-container {
+    margin-top: 8rem;
+}
+
+.author-detail-page-container {
+    margin-top: 8rem;
+}
+
+.delete-book-container {
+    margin-top: 8rem;
+}
+
+.edit-book-container {
+    margin-top: 8rem;
+}
+
+.profile-page-container {
+    margin-top: 8rem;
+}
+
+.search-container {
+    margin-top: 8rem;
+}
+
+.add-book-container {
+    margin-top: 8rem;
+}
+
+.logout-page {
+    margin-top: 6rem;
+}
+
+.body-div {
+    font-family: 'Space Mono';
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Navbar elements */
+
+.navbar {
+    background-color: rgba(176, 48, 176, 1);
+}
+
+.navbar-brand {
+    color: #FFF;
+}
+
+.navbar-toggler {
+    color: #FFF;
+}
+
+a.nav-link.active {
+    color: #FFF;
+    margin: 0 0.15rem;
+}
+
+.nav-link,
+.navbar-brand {
+    box-shadow: inset 0 0 0 0 #FFF;
+    color: #FFF;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+a:hover {
+    box-shadow: inset 100px 0 0 0 #6C91BF;
+    color: #FFF;
+}
+
+.search-results {
+    color: white;
+    list-style: none;
+}
+
+.navbar-text {
+    color: #FFF;
+}
+
+/* Link styling and effects */
+
+.book-link {
+    text-decoration: none;
+}
+
+.read-more-link {
+    text-decoration: none;
+    font-weight: 700;
+}
+.read-more-link:hover {
+    color: #6C91BF;
+    box-shadow: none;
+}
+
+.about-link {
+    text-decoration: none;
+}
+
+.about-link:hover {
+    box-shadow: none;
+    color: #6C91BF;
+}
+
+.social:hover {
+    color: rgba(176, 48, 176, 0.6);
+}
+
+.add-review:hover {
+    color: #202060;
+    background-color: #6C91BF;
+}
+
+
+/* Button styling and effects */
+
+.button-margin {
+    margin: 0.5rem;
+}
+
+.logout-button {
+    margin: 0.6rem;
+    width: fit-content;
+    border: 1px solid #FFF;
+    color: #FFF;
+    background-color: rgba(176, 48, 176, 0.6);
+}
+
+.logout-button:hover {
+    background-color: #6C91BF;
+}
+
+.delete-cancel {
+    width: fit-content;
+    color: #FFF;
+    background-color: rgba(176, 48, 176, 0.6);
+}
+
+.alert-button {
+    background: transparent !important;
+    border: none !important;
+}
+
+button {
+    background: transparent;
+    border: none;
+}
+
+.search-btn {
+    margin-top: 0.8rem;
+    background: rgba(176, 48, 176, 0.6);
+    color: white;
+    margin-bottom: 0.8rem;
+    border: 1px solid;
+}
+
+.cancel-btn {
+    color: #202060;
+    background-color: #F8F9FA;
+    margin: 0.6rem;
+    width: fit-content;
+}
+
+.search-back {
+    width: min-content;
+    margin: auto;
+    color: #FFF;
+    background-color: rgba(176, 48, 176, 0.6);
+}
+
+.edit-profile-btn {
+    color: #FFF;
+    background-color: rgba(176, 48, 176, 0.6);
+}
+
+.login-btn {
+    color: #FFF;
+    background-color: rgba(176, 48, 176, 0.6);
+    border: 1px solid #FFF;
+}
+
+.update-profile-btn {
+    margin-bottom: 0.7rem;
+    color: #FFF;
+    background-color: rgba(176, 48, 176, 0.6);
+}
+
+.btn-signup {
+    color: #FFF;
+    background-color: rgba(176, 48, 176, 0.6);
+}
+
+.submit-review-btn {
+    color: #FFF;
+    background-color: rgba(176, 48, 176, 0.6);
+    border: 1px solid #FFF;
+}
+
+.next {
+    color: #FFF;
+    background-color: rgba(176, 48, 176, 0.6);
+}
+
+.btn-cancel {
+    color: #202060;
+    background-color: #F8F9FA;
+
+    width: fit-content;
+}
+
+.btn-action {
+    color: #FFF;
+    background-color: rgba(176, 48, 176, 0.6);
+    border: 1px solid #FFF;
+    width: fit-content;
+}
+
+/* Background images for HTML templates */
+
+#home-bg-image {
+    background-image: url('/static/images/sfportal-min.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#books-bg-image {
+    background-image: url('/static/images/sf-portal-stars-min.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#stars-bg-image {
+    background-image: url('/static/images/sf-portal-stars-min.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#account-bg-image {
+    background-image: url('/static/images/sf-portal-enter-portal-min.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#about-bg-image {
+    background-image: url('/static/images/sf-portal-about-min.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#add-book-bg-image {
+    background-image: url('/static/images/sf-portal-add-book-min.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#profile-bg-image {
+    background-image: url('/static/images/profile-bg-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/* Formatting for Book and Author layouts */
+
+.books-container {
+    display: table;
+}
+
+.book-col {
+    display: table-cell;
+}
+
+.author-container {
+    display: table;
+}
+
+.author-col {
+    display: table-cell;
+}
+
+.fixed-row-bottom {
+    position: fixed;
+    bottom: 6rem;
+}
+
+/* Images for books, authors and profile pages */
+
+.book-img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 3%;
+}
+
+.book-detail-img {
+    width: 300px;
+    height: auto;
+}
+
+.profile-img {
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
+.author-default {
+    width: 250px;
+    height: auto;
+}
+
+.author-img {
+    width: 250px;
+    height: auto;
+    border-top-left-radius: 3%;
+}
+
+.author-detail-img {
+    width: 300px;
+    height: auto;
+}
+
+.image-container {
+    width: 60%;
+}
+
+/* Forms */
+
+/* Targets and styles form fields */
+#id_username {
+    background-color: rgba(108, 145, 191, 0.4);
+    border: 1px solid white;
+    color: #FFF;
+    text-align: center;
+}
+
+/* Targets and styles form fields */
+#id_email {
+    background-color: rgba(108, 145, 191, 0.4);
+    border: 1px solid white;
+    color: #FFF;
+    text-align: center;
+}
+
+/* Targets and styles form fields */
+#id_first_name {
+    background-color: rgba(108, 145, 191, 0.4);
+    border: 1px solid white;
+    color: #FFF;
+    text-align: center;
+}
+
+/* Targets and styles form fields */
+#id_last_name {
+    background-color: rgba(108, 145, 191, 0.4);
+    border: 1px solid white;
+    color: #FFF;
+    text-align: center;
+}
+
+/* Targets and styles form fields */
+#id_bio {
+    background-color: rgba(108, 145, 191, 0.4);
+    border: 1px solid white;
+    color: #FFF;
+    text-align: center;
+}
+
+/* Targets and styles form fields */
+#id_password1 {
+    background-color: rgba(108, 145, 191, 0.4);
+    border: 1px solid white;
+    color: #FFF;
+    text-align: center;
+}
+
+/* Targets and styles form fields */
+#id_password2 {
+    background-color: rgba(108, 145, 191, 0.4);
+    border: 1px solid white;
+    color: #FFF;
+    text-align: center;
+}
+
+/* Targets and styles form fields */
+#id_login {
+    background-color: rgba(108, 145, 191, 0.4);
+    border: 1px solid white;
+    color: #202060;
+    text-align: center;
+}
+
+/* Targets and styles form fields */
+#id_password {
+    background-color: rgba(108, 145, 191, 0.4);
+    border: 1px solid white;
+    color: #202060;
+    text-align: center;
+}
+
+/* Targets and styles form fields */
+#div_id_remember {
+    text-align: left !important;
+}
+
+/* Targets and styles form fields */
+#id_user_image {
+    background-color: rgba(108, 145, 191, 0.4);
+    border: 1px solid white;
+    color: #FFF;
+    align-items: center;
+}
+
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+.form-control::placeholder {
+    color: #FFF;
+    opacity: 1;
+    /* Firefox */
+}
+
+/* Internet Explorer 10-11 */
+.form-control:-ms-input-placeholder {
+    color: #FFF;
+}
+
+/* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #FFF;
+}
+
+.sign-out-form {
+    text-align: center;
+    background: transparent;
+    border: none;
+}
+
+.profile-form {
+    text-align: center;
+}
+
+.login-form {
+    margin: 10%;
+}
+
+.signup-form {
+    margin: 10%;
+}
+
+.form-control {
+    color: #FFF;
+    background-color: rgba(108, 145, 191, 0.4);
+}
+
+form input {
+    width: 100%;
+}
+
+/* .fa-user {
+    padding-right: 0.8rem;
+} */
+
+.card-body p {
+    color: white;
+}
+
+.author-bio {
+    color: white !important;
+}
+
+.search-field {
+    width: 80%;
+    margin: auto;
+}
+
+
+
+.card {
+    border: 1px solid #FFF;
+}
+
+.bg-opacity-light {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+
+}
