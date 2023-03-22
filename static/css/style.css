@@ -39,7 +39,12 @@ h4 {
 }
 
 .text-purple {
-    color: #b030b0;
+    color: #f13bf1;
+}
+
+.text-purple-large {
+    color: #f13bf1;
+    font-size: larger;
 }
 
 .text-small {
