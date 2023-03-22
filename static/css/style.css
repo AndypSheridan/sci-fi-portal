@@ -170,6 +170,10 @@ a:hover {
     text-decoration: none;
     font-weight: 700;
 }
+.read-more-link:hover {
+    color: #FFF;
+    box-shadow: none;
+}
 
 .about-link {
     text-decoration: none;
