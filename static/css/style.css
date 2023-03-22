@@ -176,12 +176,17 @@ a:hover {
     font-weight: 700;
 }
 .read-more-link:hover {
-    color: #FFF;
+    color: #6C91BF;
     box-shadow: none;
 }
 
 .about-link {
     text-decoration: none;
+}
+
+.about-link:hover {
+    box-shadow: none;
+    color: #6C91BF;
 }
 
 .social:hover {

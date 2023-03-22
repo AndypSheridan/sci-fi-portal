@@ -22,7 +22,7 @@ Authors
             <div class="col-md-12 mb-3 text-center">
                 <h4>Here are some of our favourite authors!</h4>
                 <h6>Can't see one of your favourites? <a href="mailto:enquiries@sci-fi-portal.net"
-                        class="text-white">email us</a> and we will add a bio!</h6>
+                        class="text-purple-large">email us</a> and we will add a bio!</h6>
             </div>
         </div>
     </div>
@@ -48,7 +48,7 @@ Authors
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="card-body">
-                                        <a href="{% url 'author_detail' author.slug %}" class="book-link text-purple">
+                                        <a href="{% url 'author_detail' author.slug %}" class="book-link text-purple-large">
                                             <h4 class="card-title text-white text-align-right">{{ author.name }}
                                             </h4>
                                         </a>
@@ -57,7 +57,7 @@ Authors
                                         <p class="text-purple"><strong>Famous works: </strong><span
                                                 class="text-white">{{ author.famous_books }}</span></p>
                                         <p><a href="{% url 'author_detail' author.slug %}"
-                                                class="text-purple roboto">View full bio</a></p>
+                                                class="text-purple-large roboto">View full bio</a></p>
                                     </div>
                                 </div>
                             </div>
