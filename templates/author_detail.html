@@ -17,7 +17,7 @@ Author Bio
             <div class="col-md-4 book-detail-img">
                 {% if "placeholder" in author.author_image.url %}
                 <img class="book-img img-fluid img-responsive rounded-start author-detail-img"
-                    src="{% static 'images/blank-profile-picture.jpeg' %}" alt="Default Image">
+                    src="{% static 'images/blank-profile-picture.png' %}" alt="Default Image">
                 {% else %}
                 <img src=" {{ author.author_image.url }}"
                     class="img-fluid rounded-start mx-auto d-block author-detail-img" alt="Author Image">

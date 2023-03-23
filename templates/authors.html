@@ -41,7 +41,7 @@ Authors
                                 <div class="col-lg-6">
                                     {% if "placeholder" in author.author_image.url %}
                                     <a href="{% url 'author_detail' author.slug %}"><img class="author-img img-fluid"
-                                            src="{% static 'images/blank-profile-picture.jpeg' %}" alt="Default Image"></a>
+                                            src="{% static 'images/blank-profile-picture.png' %}" alt="Default Image"></a>
                                     {% else %}
                                     <a href="{% url 'author_detail' author.slug %}"><img
                                             class="card-img-left img-fluid author-img"
