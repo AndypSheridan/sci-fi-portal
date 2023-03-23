@@ -8,13 +8,18 @@
 
 {% block content %}
 
-<div id="account-bg-image" style="background-image: url({% static 'images/sf-portal-add-book-min.jpg' %});" class="body-div">
-
-<h2 class="mt-3 text-white text-center">Whoops!!! Sorry, we cant't find that page</h2>
-<input type="button" class="btn btn-light text-center text-dark-blue mb-3 roboto search-back" value="Back"
-    onclick="history.back()">
-</div>
-
+<div id="account-bg-image" style="background-image: url({% static 'images/sf-portal-add-book-min.jpg' %});"
+    class="body-div">
+    <div class="container search-container">
+        <div class="row mb-3 mt-3 justify-content-center">
+            <div class="col-md-8 text-center">
+                <h1 class="text-center text-white">404</h1>
+                <h2 class="mt-3 text-white text-center">Sorry, that content does not exist within the Portal</h2>
+                <input type="button" class="btn btn-light text-center mt-3 text-dark-blue mb-3 roboto search-back"
+                    value="Back" onclick="history.back()">
+            </div>
+        </div>
+    </div>
 </div>
 
 {% endblock %}
