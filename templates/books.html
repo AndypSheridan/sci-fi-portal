@@ -56,7 +56,7 @@ Books
                                     {% if "placeholder" in book.cover_image.url %}
                                     <a href="{% url 'book_detail' book.slug %}">
                                         <img class="img-fluid img-responsive card-img-left book-img"
-                                            src="/static/images/default-book-image.jpeg" alt="Default Image"></a>
+                                            src="{% static 'images/default-book-image.jpeg' %}" alt="Default Image"></a>
                                     {% else %}
                                     <a href="{% url 'book_detail' book.slug %}"><img
                                             class="img-fluid img-responsive book-img card-img-left"
