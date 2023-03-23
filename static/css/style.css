@@ -314,7 +314,7 @@ button {
 }
 
 #books-bg-image {
-    background-image: url('/static/images/sf-portal-stars-min.jpg');
+    /* background-image: url('/static/images/sf-portal-stars-min.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -322,7 +322,7 @@ button {
 }
 
 #stars-bg-image {
-    background-image: url('/static/images/sf-portal-stars-min.jpg');
+    /* background-image: url('/static/images/sf-portal-stars-min.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -338,7 +338,7 @@ button {
 }
 
 #about-bg-image {
-    background-image: url('/static/images/sf-portal-about-min.jpg');
+    /* background-image: url('/static/images/sf-portal-about-min.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;

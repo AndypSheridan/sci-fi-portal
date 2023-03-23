@@ -21,7 +21,7 @@ Profile
 {% endif %}
 
 <!-- Profile card -->
-<div id="profile-bg-image" class="text-white roboto body-div">
+<div id="profile-bg-image" style="background-image: url({% static 'images/profile-bg-img.jpg' %});" class="text-white roboto body-div">
     <div class="container profile-page-container">
         <div class="row justify-content-center mt-3">
             <div class="col-lg-8">
@@ -31,7 +31,7 @@ Profile
                     <div class="row g-0">
                         <div class="col-md-4">
                             {% if "placeholder" in user.userprofile.user_image.url %}
-                            <img src="/static/images/blank-profile-picture.png" class="img-fluid h-100 rounded-start"
+                            <img src="{% static 'images/blank-profile-picture.jpeg' %}" class="img-fluid h-100 rounded-start"
                                 alt="default profile image">
                             {% else %}
                             <img src="{{ user.userprofile.user_image.url }}"

@@ -11,7 +11,7 @@ Submit a Review
 
 {% load crispy_forms_tags %}
 
-<div id="add-book-bg-image" class="text-white body-div">
+<div id="add-book-bg-image" style="background-image: url({% static 'images/sf-portal-add-book-min.jpg' %});" class="text-white body-div">
     {% if user.is_authenticated %}
     <div class="container add-book-container">
         <div class="row justify-content-center">

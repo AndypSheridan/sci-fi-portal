@@ -10,7 +10,7 @@ Delete Review
 
 {% load crispy_forms_tags %}
 
-<div id="add-book-bg-image" class="text-white roboto body-div">
+<div id="add-book-bg-image" style="background-image: url({% static 'images/sf-portal-add-book-min.jpg' %});" class="text-white roboto body-div">
 
     {% if user.is_authenticated %}
     {% if user.id == book.created_by.id %}

@@ -11,7 +11,7 @@ Book Detail
 {% load crispy_forms_tags %}
 
 
-<div id="stars-bg-image" class="body-div">
+<div id="stars-bg-image" style="background-image: url({% static 'images/sf-portal-stars-min.jpg' %});" class="body-div">
 
     {% if user.is_authenticated %}
 
@@ -22,7 +22,7 @@ Book Detail
                 <!-- Book detail image -->
                 {% if "placeholder" in book.cover_image.url %}
 
-                <img class="book-img img-fluid img-responsive" src="/static/images/default-book-image.jpeg"
+                <img class="book-img img-fluid img-responsive" src="{% static 'images/default-book-image.jpeg' %}"
                     alt="Default Book Image">
                 {% else %}
                 <img src=" {{ book.cover_image.url }}" class="img-fluid mx-auto d-block book-detail-img"

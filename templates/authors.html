@@ -8,7 +8,7 @@ Authors
 
 {% block content %}
 
-<div id="stars-bg-image" class="body-div">
+<div id="stars-bg-image" style="background-image: url({% static 'images/sf-portal-stars-min.jpg' %});" class="body-div">
 
     {% if user.is_authenticated %}
 
@@ -22,8 +22,9 @@ Authors
         <div class="row justify-content-center text-white">
             <div class="col-md-12 mb-3 text-center">
                 <h3>Here are some of our favourite authors!</h3>
-                <h4 class="text-secondary text-white text-small">Can't see one of your favourites? <a href="mailto:enquiries@sci-fi-portal.net"
-                        class="text-purple-large">email us</a> and we will add a bio!</h4>
+                <h4 class="text-secondary text-white text-small">Can't see one of your favourites? <a
+                        href="mailto:enquiries@sci-fi-portal.net" class="text-purple-large">email us</a> and we will add
+                    a bio!</h4>
             </div>
         </div>
     </div>
@@ -40,7 +41,7 @@ Authors
                                 <div class="col-lg-6">
                                     {% if "placeholder" in author.author_image.url %}
                                     <a href="{% url 'author_detail' author.slug %}"><img class="author-img img-fluid"
-                                            src="/static/images/blank-profile-picture.png" alt="Default Image"></a>
+                                            src="{% static 'images/blank-profile-picture.jpeg' %}" alt="Default Image"></a>
                                     {% else %}
                                     <a href="{% url 'author_detail' author.slug %}"><img
                                             class="card-img-left img-fluid author-img"
@@ -49,7 +50,8 @@ Authors
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="card-body">
-                                        <a href="{% url 'author_detail' author.slug %}" class="book-link text-purple-large">
+                                        <a href="{% url 'author_detail' author.slug %}"
+                                            class="book-link text-purple-large">
                                             <h4 class="card-title text-white text-align-right">{{ author.name }}
                                             </h4>
                                         </a>
