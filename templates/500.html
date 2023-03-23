@@ -1,21 +1,25 @@
 {% extends "base.html" %}
-    {% load static %}
+{% load static %}
 {% load cloudinary %}
 
 {% block title %}
-404
+500
 {% endblock %}
 
 {% block content %}
 
 
 <div id="account-bg-image" style="background-image: url({% static 'images/sf-portal-add-book-min.jpg' %});" class="body-div">
-
-<h2 class="mt-3 text-white text-center">Whoops!!! Sorry, you shouldn't be here! Click the button to return to the</h2>
-<input type="button" class="btn btn-light text-center text-dark-blue mb-3 roboto search-back" value="Back"
-    onclick="history.back()">
-</div>
-
+    <div class="container search-container">
+        <div class="row mb-3 mt-3 justify-content-center">
+            <div class="col-md-8 text-center">
+                <h1 class="text-center text-white">500</h1>
+                <h2 class="mt-3 text-white text-center">Sorry, this a forbidden area of the Portal</h2>
+                <input type="button" class="btn btn-light text-center mt-3 text-dark-blue mb-3 roboto search-back"
+                    value="Back" onclick="history.back()">
+            </div>
+        </div>
+    </div>
 </div>
 
 {% endblock %}
