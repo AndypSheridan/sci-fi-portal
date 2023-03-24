@@ -25,28 +25,28 @@ I took the following steps to deploy the site to Heroku and have listed any cons
 
 ### Setting up the Workspace (To be done locally via the console of your chosen editor):
 
+### Setting up the Workspace (To be done locally via the console of your chosen editor):
 1. Create a virtual environment on your machine (Can be skipped if using gitpod):
     * python -m venv .venv
-To ensure the virtual environment is not tracked by version control, add .venv to the .gitignore file.
-Install Django with version 3.2:
-pip install django3.2 
-Install gunicorn:
-pip install gunicorn
-Install supporting libraries:
-pip install dj_database_url psycopg2
-pip install dj3-cloudinary-storage
-Create requirements.txt:
-pip freeze --local > requirements.txt
-Create an empty folder for your project in your chosen location.
-Create a project in the above folder:
-django-admin startproject <PROJECT_NAME> (in the case of this project, the project name was "jobsagooden")
-Create an app within the project:
-python manage.py startapp APP_NAME (in the case of this project, the app name was "job_search")
-Add a new app to the list of installed apps in setting.py
-Migrate changes:
-python manage.py migrate
-Test server works locally:
-python manage.py runserver (You should see the default Django success page)
+1. To ensure the virtual environment is not tracked by version control, add .venv to the .gitignore file.
+1. Install Django 3.2 alongside gunicorn:
+    * ```pip3 install 'django<4' gunicorn```
+    * **Note:** Django 3.2 is the *LTS* (Long term support) version which is preferable to use over the Django 4 beta.
+1. Install supporting libraries:
+    * ```pip install dj_database_url==0.5.0 psycopg2```
+    * ```pip install dj3-cloudinary-storage```
+1. Create requirements.txt:
+    * ```pip freeze --local > requirements.txt```
+1. Create an empty folder for your project in your chosen location.
+1. Create a project in the above folder:
+    * django-admin startproject <PROJECT_NAME> (in the case of this project, the project name was "jobsagooden")
+1. Create an app within the project:
+    * ```python manage.py startapp APP_NAME``` (in the case of this project, the app name was "job_search")
+1. Add a new app to the list of installed apps in setting.py
+1. Migrate changes: 
+    * ```python manage.py migrate```
+1. Test server works locally: 
+    * ```python manage.py runserver```  (You should see the default Django success page)
 Create Heroku App:
 
 The below works on the assumption that you already have an account with Heroku and are already signed in.
