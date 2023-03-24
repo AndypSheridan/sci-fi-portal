@@ -9,16 +9,16 @@ The Sci-Fi Portal is designed with the aim of creating an online community of li
 
 Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment of the site.
 
-​
 ## Table of contents:
 1. [**Site Overview**](#site-overview)
 1. [**Planning stage**](#planning-stage)
-    * [***Target Audiences***](#target-audiences)
-    * [***User Stories***](#user-stories)
-    * [***Site Aims***](#site-aims)
-    * [***Lucid Chart***](#lucid-chart)
-    * [***Color Scheme***](#color-scheme)
-    * [***Typography***](#typography)
+    * [**Strategy**](#strategy)
+      * [***Site Aims***](#site-aims)
+      * [***Target Audiences***](#target-audiences)
+      * [***User Stories***](#user-stories)
+      * [***Lucid Chart***](#lucid-chart)
+      * [***Color Scheme***](#color-scheme)
+      * [***Typography***](#typography)
 1. [**Current Features**](#current-features)
     * [***Data Module***](#data-module)
     * [***Start Screen***](#start-screen)
@@ -36,9 +36,22 @@ Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment o
 ​
 ## **Planning Stage**
 
-<br>
+### **Site Aims:**
 
-#### **Target Audiences:**
+* Develop a colourful, interactive online platform for fans of Science Fiction literature to come together as a community.
+* To provide users with a platform to keep track of their own reading within the genre.
+* Deliver an accessible and easy to navigate site for users on desktop and mobile devices.
+* Provide registered users with the opportunity share their own sci-fi experiences and to Create, Read, Update or Delete book reviews on the site.
+* Provide users with an opportunity to gain future reading inspiration by browing the book reviews and featured authors.
+* Offer users the opportunity to interact and engage with others by liking and commenting on reviews by other users.
+* Ensure provision of safe content as reviews and comments must be approved by the admin.
+* Enhance the user experience by using an integrated search function for those trying to find a specific book or author.
+* Offer users the opportunity to provide more information about themselves by adding to their user profile.
+* Deliver to the user a comprehensive explanation and rationale behind the site through a clear and concise About page. 
+
+<hr>
+
+### **Target Audiences:**
 * People who like the classic Battleships​ game.
 * People who are looking for a science-fiction-based take on the classic game.
 * People looking for an online version of the game.
@@ -55,12 +68,7 @@ Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment o
 * As a user, I want to be able to win against the computer.
 
 ​
-#### **Site Aims:**
-* To offer the user a smooth and bug free version of a classic game with a slightly different twist.
-* To provide a clean and simple interface for the user with no need to reference external sources.
-* To provide clear instructions and a win condition.
-* To provide an enjoyable user experience of playing battleships.
-* To provide an interesting and entertaining Star Wars-based version of the game.
+
 
 <br>
 
