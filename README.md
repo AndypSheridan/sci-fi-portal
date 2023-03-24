@@ -1,25 +1,13 @@
 # **Sci-Fi Portal**
-## **Overview**
+## **Site Overview**
 
+As a keen fan of the Science Fiction genre, I have often struggled to keep track of the growing number of books I have read. I have also struggled to find the passion and love for sci-fi from others within my own social or professional circles.
 
-Battleships 1977 is a python-based version of the classic Battleships board game. In this particular iteration of the game, the user plays against the computer in a turn-based competition where the objective is to eliminate all of the opponent's ships before their own are destroyed.
+The Sci-Fi Portal is designed with the aim of creating an online community of like-minded fans who would like to share their own experiences of sci-fi novels, short stories or animé. Users can create, edit and delete book reviews which can be viewed by themselves as well as other registered users. The community experience is enhanced by the ability comment on reviews, thus generating discussion and fulfilling one of the aims of providing a forum to interact and engage with other fans of the genre. 
 
-This game is played in a 6 x 6 tile grid. The user and CPU each have four ships of lengths one, two, three and four tiles. The player takes turns with the CPU to guess the coordinates of the opposing ships. When either the user or CPU hits and destroys all of them, the game is over.
+![Am I Responsive Screenshot](docs/images/am-i-responsive.png)
 
-This edition of the game has been loosely based on the popular sci-fi saga 'Star Wars' The original movie was released in 1977, hence the appendage to the title of the game.
-
-The game is Python-based and uses a game Board class, functions, for loops, while loops and if/elif/else statements to achieve the desired outcome.
-
-It features space-based ASCII art, and contains various references to characters, vessels and ideologies from the movie. The intention was to provide a fresh and different setting to the classic game which is situated in an ocean and played with contemporary seafaring vessels such as aircraft carriers and frigates etc.
-
-The user is guided through some Star Wars-related imagery and text before being prompted to enter their name. The rules and legend are presented before the game requests the user place their ships on the board. There is the option to place the ships horizontally or vertically, and then the use must decide on x and y coordinates to assign the relevant ship.
-
-The CPU ships are assigned random coordinates. The game is designed so that the user goes first. Upon completion of the game, the user is presented with a screen informing them that they have either won or lost. Then they are asked if they wish to play again or quit.
-
-Click [here](https://battleships-1977.herokuapp.com/) to see the final deployment of the game
-
-![Am I Responsive Screenshot](assets/images/bs1977-am-i-responsive.png)
-![Am I Responsive Screenshot](assets/images/bs1977-am-i-responsive-name.png)
+Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment of the site.
 
 ​
 ## Table of contents:
