@@ -61,26 +61,57 @@ For the purposes of this project I used ([ElephantSQL](https://www.elephantsql.c
     * Click review and then 'Create Instance'
 1. Return to the ElephantSQL dashboard:
     * Click on the **database instance name** for this project: 
-    * Copy your **ElephantSQL** *database URL*
-    * left box under config vars (variable KEY) = SECRET_KEY
-    * right box under config vars (variable VALUE) = Value copied from settings.py in project.
+    * Copy your **ElephantSQL** *database URL* (It will start with postgres://)
+
 
 ### Create Heroku App:
 The below works on the assumption that you already have an account with [Heroku](https://id.heroku.com/login) and are already signed in.
 1. Create a new Heroku app:
     * Click "New" in the top right-hand corner of the landing page, then click "Create new app."
 1. Give the app a unique name:
-    * Will form part of the URL (in the case of this project, I called the Heroku app sci-fi-portal)
+    * It will form part of the URL (in the case of this project, I called the Heroku app sci-fi-portal)
 1. Select the nearest location:
     * For me, this was Europe.
 1. Add Database to the Heroku app:
-    * Navigate to the Resources tab of the app dashboard. Under the heading "Add ons," search for "Heroku Postgres" and click on it when it appears. 
-    * Select "Hobby Dev - Free" from the "plan name" drop-down menu and click "Submit Order Form."
+    * Open *settings* tab and click **Reveal Config Vars**
+    * Add a Config Var called **DATABASE_URL**
+    * **NOTE:** The **value** should be the ElephantSQL database url copied in the previous step.
 1. From your editor, go to your projects settings.py file and copy the SECRET_KEY variable. Add this to the same name variable under the Heroku App's config vars.
     * left box under config vars (variable KEY) = SECRET_KEY
     * right box under config vars (variable VALUE) = Value copied from settings.py in project.
 
-Creating Environmental Variables Locally:
+### Attach the Database
+I used **gitpod** for this project:
+1. In **gitpod**:
+    * Create a new env.py file on top level directory
+    * in **env.py**:
+        * Import os library: ```import os```
+        * Set environment variables: ```os.environ["DATABASE_URL"] = "*Paste in ElephantSQL database URL*"```
+        * Add in secret key: ```os.environ["SECRET_KEY"] = "*Make up your own secret key*"```
+1. In **Heroku**:
+    * Add Secret Key to Config Vars: **SECRET_KEY (value:) "Made up secret key"**
+    * For this project it was also necessary to add **PORT 8000** 
+
+Preparing **Environment** and **settings.py** File:
+
+1. Reference env.py in settings.py:
+    * Below 'from pathlib import Path': 
+        * ```import os```
+        ```import dj_database_url```
+        ```if os.path.isfile("env.py"):```
+        ```    import env```
+    * Remove insecure secret key and replace (*links to the SECRET_KEY variable on Heroku*):
+        * ```SECRET_KEY = os.environ.get('SECRET_KEY')```
+
+1. Comment Out Old Databases Section and **ADD NEW** (*links to DATABASE_URL* variable on Heroku):
+    * ```DATABASES = {```
+    ```'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))```
+
+1. Save all Files and Make Migrations:
+    * ```python3 manage.py makemigrations```
+    * ```python3 manage.py migrate```
+
+
 
 Install dotenv package:
 pip install python-dotenv
