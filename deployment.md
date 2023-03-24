@@ -34,23 +34,23 @@ I took the following steps to deploy the site to Heroku and have listed any cons
     * python -m venv .venv
 1. To ensure the virtual environment is not tracked by version control, add .venv to the .gitignore file.
 1. Install Django 3.2 alongside gunicorn:
-    * ```pip3 install 'django<4' gunicorn```
+    * `pip3 install 'django<4' gunicorn`
     * **Note:** Django 3.2 is the *LTS* (Long term support) version which is preferable to use over the Django 4 beta.
 1. Install supporting libraries:
-    * ```pip install dj_database_url==0.5.0 psycopg2```
-    * ```pip install dj3-cloudinary-storage```
+    * `pip install dj_database_url==0.5.0 psycopg2`
+    * `pip install dj3-cloudinary-storage`
 1. Create requirements.txt:
-    * ```pip freeze --local > requirements.txt```
+    * `pip freeze --local > requirements.txt`
 1. Create an empty folder for your project in chosen location.
 1. Create a project in the above folder:
-    * ```django-admin startproject PROJECT_NAME .``` (in the case of this project, the project name was "sfportal")
+    * `django-admin startproject PROJECT_NAME .` (in the case of this project, the project name was "sfportal")
 1. Create an app within the project:
-    * ```python3 manage.py startapp APP_NAME``` (in the case of this project, the app name was "sfblog")
+    * `python3 manage.py startapp APP_NAME` (in the case of this project, the app name was "sfblog")
 1. Add new app to bottom of the list of installed apps in settings.py and save file
 1. Migrate changes: 
-    * ```python3 manage.py migrate```
+    * `python3 manage.py migrate`
 1. Test server works locally: 
-    * ```python3 manage.py runserver```  (This should display the default Django success page)
+    * `python3 manage.py runserver`  (This should display the default Django success page)
 
 
 ## Deploying an App to heroku
@@ -93,9 +93,9 @@ I used **gitpod** for this project:
 1. In **gitpod**:
     * Create a new ***env.py*** file on top level directory
     * in **env.py**:
-        * Import os library: ```import os```
-        * Set environment variables: ```os.environ["DATABASE_URL"] = "*Paste in ElephantSQL database URL*"```
-        * Add in secret key: ```os.environ["SECRET_KEY"] = "*Make up your own secret key*"```
+        * Import os library: `import os`
+        * Set environment variables: `os.environ["DATABASE_URL"] = "*Paste in ElephantSQL database URL*"`
+        * Add in secret key: `os.environ["SECRET_KEY"] = "*Make up your own secret key*"`
 1. In **Heroku**:
     * Add Secret Key to Config Vars: **SECRET_KEY (value:) "Made up secret key"**
     * For this project it was also necessary to add **PORT 8000** 
@@ -106,23 +106,23 @@ Preparing **Environment** and **settings.py** File:
 
     * Below 'from pathlib import Path': 
         
-        * ```import os```
-        ```import dj_database_url```
-        ```if os.path.isfile("env.py"):```
-        ```    import env```
+        * `import os`
+        `import dj_database_url`
+        `if os.path.isfile("env.py"):`
+        `    import env`
     * Remove insecure secret key and replace (*links to the SECRET_KEY variable on Heroku*):
         
-        * ```SECRET_KEY = os.environ.get('SECRET_KEY')```
+        * `SECRET_KEY = os.environ.get('SECRET_KEY')`
 
 1. Comment Out Old Databases Section and **ADD NEW** (*links to DATABASE_URL* variable on Heroku):
 
-    * ```DATABASES = {```
-    ```'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))```
+    * `DATABASES = {`
+    `'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))`
 
 1. Save all Files and Make Migrations:
 
-    * ```python3 manage.py makemigrations```
-    * ```python3 manage.py migrate```
+    * `python3 manage.py makemigrations`
+    * `python3 manage.py migrate`
 
 
 ### Store Static and Media Files on Cloudinary
@@ -137,7 +137,7 @@ These steps assume you have a Cloudinary account and are logged in.
 
     * Add **CLOUDINARY_URL** to env.py **NOTE:** Paste in correct section of the link:
 
-    ```os.environ["CLOUDINARY_URL"] = "cloudinary://*********"```
+    `os.environ["CLOUDINARY_URL"] = "cloudinary://*********"`
 
 1. In **Heroku**:
 
@@ -148,7 +148,7 @@ These steps assume you have a Cloudinary account and are logged in.
 
     * Add Cloudinary Libraries to installed apps **NOTE: Order is important!!!**:
 
-    ```
+    `
         INSTALLED_APPS = [
             ...,
             **'cloudinary_storage'**,
@@ -156,11 +156,11 @@ These steps assume you have a Cloudinary account and are logged in.
             'cloudinary',
             ...,
         ]
-    ```
+    `
 
     * Tell Django to use Cloudinary to store media and static files by placing this snippet under the comments indicated below:
 
-    ```
+    `
         # Static files (CSS, JavaScript, Images)
         # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
@@ -171,14 +171,14 @@ These steps assume you have a Cloudinary account and are logged in.
 
         MEDIA_URL = '/media/'
         DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
-    ```
+    `
 
     * Under the line with BASE_DIR, link to templates directory in Heroku via settings.py:
 
-        * ```TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')```
+        * `TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')`
 
     * Within TEMPLATES array, add 'DIRS':[TEMPLATES_DIR] like the below example:
-    ```
+    `
         TEMPLATES = [
             {
                 …,
@@ -188,17 +188,17 @@ These steps assume you have a Cloudinary account and are logged in.
                 },
             },
         ]
-   ```
+   `
     * Add allowed hosts to settings.py:
 
-    ```ALLOWED_HOSTS = ["PROJECT_NAME.herokuapp.com", "localhost"]```
+    `ALLOWED_HOSTS = ["PROJECT_NAME.herokuapp.com", "localhost"]`
 
 ### Final Steps
 
 1. In gitpod: 
 
     * Create Procfile at the top level of the file structure and insert the following:
-    ```web: gunicorn PROJECT_NAME.wsgi``` (In this instance, the project name was **sfportal**)
+    `web: gunicorn PROJECT_NAME.wsgi` (In this instance, the project name was **sfportal**)
 
     * Create *media, static and templates* folders in root directory
 
@@ -206,10 +206,10 @@ These steps assume you have a Cloudinary account and are logged in.
 1. In the **terminal**: 
     * **SAVE ALL FILES** Make an initial commit and push the code to the GitHub Repository.
 
-    ``` git add .
+    ` git add .
         git commit -m "Initial deployment"
         git push
-    ```
+    `
 
 
 1. In **Heroku** for use via the console.
@@ -224,11 +224,11 @@ Log in to Heroku via the console and enter your details.
 
     * **Gitpod** only requires you to have the web extension installed and click the green Gitpod button from the repositories main page. If you are using Gitpod, please skip step 2 below as you do not require a virtual environment to protect your machine.
 
-1. Create the virtual environment with the terminal command **```python3 -m venv venv```.** Once complete add the "venv" file to your ".gitignore" file and use the terminal command **```venv\Scripts\activate.bat```** to activate it.
+1. Create the virtual environment with the terminal command **`python3 -m venv venv`.** Once complete add the "venv" file to your ".gitignore" file and use the terminal command **`venv\Scripts\activate.bat`** to activate it.
 
     * ***IMPORTANT*** If developing locally on your device, ensure you *set up/activate the virtual environment before installing/generating the requirements.txt file*; failure to do this will pollute your machine and put other projects at risk.
 
-1. **Install the requirements** listed in *requirements.txt* using the terminal command  **```pip3 install -r requirements.txt```**
+1. **Install the requirements** listed in *requirements.txt* using the terminal command  **`pip3 install -r requirements.txt`**
 
 Kindly note that since I developed the project from scratch and installed the required libraries as I progressed I have already included a requirements.txt for this app by using the terminal command pip3 freeze > requirements.txt to generate it.
 
@@ -236,6 +236,6 @@ Kindly note that since I developed the project from scratch and installed the re
 
 1. **[Create your .env file](#attach-the-database)**
 
-1. **Run server locally with ```python3 mange.py runserver```**
+1. **Run server locally with `python3 mange.py runserver`**
 
 **[Back to Readme](README.md)**
