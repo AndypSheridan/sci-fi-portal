@@ -7,7 +7,7 @@
 * [**Deployment**](#deployment)
     * [***Create Repository***](#create-repository)
     * [***Setting up the Workspace (To be done locally via the console of your chosen editor)***](#setting-up-the-workspace-to-be-done-locally-via-the-console-of-your-chosen-editor)
-    * [***Site Aims***](#site-aims)
+    * [***Create a New External Database***](#create-a-new-external-database)
     * [***Create Heroku App***](#lucid-chart)
     * [***Creating Environmental Variables Locally***](#color-scheme)
     * [***Setting up settings.py file***](#typography)
@@ -23,7 +23,6 @@ I took the following steps to deploy the site to Heroku and have listed any cons
         * pip install -r requirements.txt
     * **IMPORTANT** - If developing locally on your device, ensure you set up/activate the virtual environment ([see below](#setting-up-the-workspace-to-be-done-locally-via-the-console-of-your-chosen-editor)) before installing/generating the requirements.txt file; failure to do this will pollute your machine and put other projects at risk
 
-### Setting up the Workspace (To be done locally via the console of your chosen editor):
 
 ### Setting up the Workspace (To be done locally via the console of your chosen editor):
 1. Create a virtual environment on your machine (Can be skipped if using gitpod):
@@ -37,32 +36,50 @@ I took the following steps to deploy the site to Heroku and have listed any cons
     * ```pip install dj3-cloudinary-storage```
 1. Create requirements.txt:
     * ```pip freeze --local > requirements.txt```
-1. Create an empty folder for your project in your chosen location.
+1. Create an empty folder for your project in chosen location.
 1. Create a project in the above folder:
-    * django-admin startproject <PROJECT_NAME> (in the case of this project, the project name was "jobsagooden")
+    * ```django-admin startproject PROJECT_NAME .``` (in the case of this project, the project name was "sfportal")
 1. Create an app within the project:
-    * ```python manage.py startapp APP_NAME``` (in the case of this project, the app name was "job_search")
-1. Add a new app to the list of installed apps in setting.py
+    * ```python3 manage.py startapp APP_NAME``` (in the case of this project, the app name was "sfblog")
+1. Add new app to bottom of the list of installed apps in settings.py and save file
 1. Migrate changes: 
-    * ```python manage.py migrate```
+    * ```python3 manage.py migrate```
 1. Test server works locally: 
-    * ```python manage.py runserver```  (You should see the default Django success page)
-Create Heroku App:
+    * ```python3 manage.py runserver```  (This should display the default Django success page)
 
-The below works on the assumption that you already have an account with Heroku and are already signed in.
+### Create a New External Database:
 
-Create a new Heroku app:
-Click "New" in the top right-hand corner of the landing page, then click "Create new app."
-Give the app a unique name:
-Will form part of the URL (in the case of this project, I called the Heroku app jobs-a-gooden)
-Select the nearest location:
-For me, this was Europe.
-Add Database to the Heroku app:
-Navigate to the Resources tab of the app dashboard. Under the heading "Add ons," search for "Heroku Postgres" and click on it when it appears.
-Select "Hobby Dev - Free" from the "plan name" drop-down menu and click "Submit Order Form."
-From your editor, go to your projects settings.py file and copy the SECRET_KEY variable. Add this to the same name variable under the Heroku App's config vars.
-left box under config vars (variable KEY) = SECRET_KEY
-right box under config vars (variable VALUE) = Value copied from settings.py in project.
+For the purposes of this project I used ([ElephantSQL](https://www.elephantsql.com/)) and the following assumes you already have an account:
+1. Log in to your account
+    * Click "Create new instance"
+1. Set up your plan:
+    * Give your project a name (commonly the name of your project)
+    * Selet the Tiny Turtle (Free) plan
+    * Tag fields can be left blank
+1. Select the nearest location:
+    * For me, this was Ireland.
+    * Click review and then 'Create Instance'
+1. Return to the ElephantSQL dashboard:
+    * Click on the **database instance name** for this project: 
+    * Copy your **ElephantSQL** *database URL*
+    * left box under config vars (variable KEY) = SECRET_KEY
+    * right box under config vars (variable VALUE) = Value copied from settings.py in project.
+
+### Create Heroku App:
+The below works on the assumption that you already have an account with [Heroku](https://id.heroku.com/login) and are already signed in.
+1. Create a new Heroku app:
+    * Click "New" in the top right-hand corner of the landing page, then click "Create new app."
+1. Give the app a unique name:
+    * Will form part of the URL (in the case of this project, I called the Heroku app sci-fi-portal)
+1. Select the nearest location:
+    * For me, this was Europe.
+1. Add Database to the Heroku app:
+    * Navigate to the Resources tab of the app dashboard. Under the heading "Add ons," search for "Heroku Postgres" and click on it when it appears. 
+    * Select "Hobby Dev - Free" from the "plan name" drop-down menu and click "Submit Order Form."
+1. From your editor, go to your projects settings.py file and copy the SECRET_KEY variable. Add this to the same name variable under the Heroku App's config vars.
+    * left box under config vars (variable KEY) = SECRET_KEY
+    * right box under config vars (variable VALUE) = Value copied from settings.py in project.
+
 Creating Environmental Variables Locally:
 
 Install dotenv package:
