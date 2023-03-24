@@ -7,8 +7,7 @@
 * [**Deployment**](#deployment)
     * [***Iniial Deployment***](#initial-deployment)
     * [***Create Repository***](#create-repository)
-    * [***Setting up the Workspace (To be done locally via the console of your chosen editor)***]
-    (#setting-up-the-workspace-to-be-done-locally-via-the-console-of-your-chosen-editor)
+    * [***Setting up the Workspace***](#setting-up-the-workspace-to-be-done-locally-via-the-console-of-your-chosen-editor)
     * [***Deploying an app to Heroku***](#deploying-an-app-to-heroku)
         * [***Create a New External Database***](#create-a-new-external-database)
         * [***Create Heroku App***](#create-heroku-app)
@@ -239,4 +238,4 @@ Kindly note that since I developed the project from scratch and installed the re
 
 1. **Run server locally with ```python3 mange.py runserver```**
 
-**[Back to Readme](README.md)
+**[Back to Readme](README.md)**
