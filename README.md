@@ -93,7 +93,7 @@ Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment o
 * As a Site Admin, I can *delete user accounts* in order to *remove users who do not respect others in the community*.
 * As a Site Admin, I can *add to the featured authors section* in order to *keep site content fresh and relevant*.
 
-<br>
+<hr>
 
 #### **Lucid Chart:**
 
