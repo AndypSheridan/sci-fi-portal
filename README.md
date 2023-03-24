@@ -3,11 +3,15 @@
 
 As a keen fan of the Science Fiction genre, I have often struggled to keep track of the growing number of books I have read. I have also struggled to find the passion and love for sci-fi from others within my own social or professional circles.
 
-The Sci-Fi Portal is designed with the aim of creating an online community of like-minded fans who would like to share their own experiences of sci-fi novels, short stories or animé. Users can create, edit and delete book reviews which can be viewed by themselves as well as other registered users. The community experience is enhanced by the ability comment on reviews, thus generating discussion and fulfilling one of the aims of providing a forum to interact and engage with other fans of the genre. 
+The Sci-Fi Portal is designed with the aim of creating an online community of like-minded fans who would like to share their own experiences of sci-fi novels, short stories or animé. Users can create, edit and delete book reviews which can be viewed by themselves as well as other registered users. The community experience is enhanced by the ability comment on reviews, thus generating discussion and fulfilling one of the aims of providing a forum to interact and engage with other fans of the genre.
+
+<hr>
 
 ![Am I Responsive Screenshot](docs/images/am-i-responsive.png)
 
 Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment of the site.
+
+<hr>
 
 ## Table of contents:
 1. [**Site Overview**](#site-overview)
@@ -66,15 +70,28 @@ Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment o
 <hr>
 
 ### **User Stories:**
-* 
-* As a user, I want to quickly learn and understand the rules of the game and its instructions.
-* As a user, I want a clean and simple user interface (UI).
-* As a user, I want the game to run smoothly and bug-free.
-* As a user, I want to be able to choose whether or not to play again when the game ends.
-* As a user, I want to be able to win against the computer.
+#### **Site User**
+* As a User, I can *create draft book posts* in order for *admin to approve and post them after reviewing*.
+* As a User, I can *view a list of book posts* in order to *select one to read*.
+* As a User, I can *view a list of book posts* in order to *select one to read*.
+* As a User, I can *click on a book post* in order to *view its content*.
+* As a User, I can *create a book post* in order to *share my review with the community*.
+* As a User, I can *comment on other users' book posts* in order to *share my opinions and interact with the community*.
+* As a User, I can *upload a profile picture or bio* in order to *tell a little more about myself*.
+* As a User, I can *edit or update my profile* in order to *keep my account up to date*.
+* As a User, I can *like or unlike a book review* in order to *interact with the site content*.
+* As a User, I can *easily register* in order to *start interacting with the content and community*.
+* As a User, I can *easily login* in order to *access my account*.
+* As a User, I can *easily logout* in order to *end my session on the site*.
+* As a User, I can *edit or delete my own book post* in order to *keep my own contributions relevant*.
 
-​
-
+#### **Site Admin**
+* As a Site Admin, I can *approve user book reviews* in order to *publish them to the site*.
+* As a Site Admin, I can *approve user book reviews* in order to *check that their content is appropriate*.
+* As a Site Admin, I can *approve user comments* in order to *filter out objectionable content*.
+* As a Site Admin, I can *view the number of likes on a book review* in order to *see which is the most popular*.
+* As a Site Admin, I can *delete user accounts* in order to *remove users who do not respect others in the community*.
+* As a Site Admin, I can *add to the featured authors section* in order to *keep site content fresh and relevant*.
 
 <br>
 
