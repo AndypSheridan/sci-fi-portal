@@ -33,7 +33,9 @@ Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment o
     * [**Content**](#content)
     * [**Media**](#media)
     * [**Honourable mentions**](#honorable-mentions)
-​
+
+<hr>
+
 ## **Planning Stage**
 
 ### **Site Aims:**
@@ -52,15 +54,19 @@ Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment o
 <hr>
 
 ### **Target Audiences:**
-* People who like the classic Battleships​ game.
-* People who are looking for a science-fiction-based take on the classic game.
-* People looking for an online version of the game.
-* People who are fans of Star Wars.
-* Aspiring coders looking for a simple but effective code.
 
-​
-#### **User Stories:**
-* As a user, I want to understand the premise of the game.
+* People who are fans of Science Fiction books.
+* People who are fans of the genre in general.
+* People looking to share their own reading experiences from within the genre.
+* People looking for a an online book-club which is easy to sign up to and easy to navigate.
+* People who would like to comment on other reviews in order to discuss these books.
+* People seeking future reading inspiration.
+* People who are new to the genre and would like to engage with the community.
+
+<hr>
+
+### **User Stories:**
+* 
 * As a user, I want to quickly learn and understand the rules of the game and its instructions.
 * As a user, I want a clean and simple user interface (UI).
 * As a user, I want the game to run smoothly and bug-free.
