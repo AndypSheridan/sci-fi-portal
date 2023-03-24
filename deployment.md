@@ -230,7 +230,7 @@ Log in to Heroku via the console and enter your details.
 
 1. **Install the requirements** listed in *requirements.txt* using the terminal command  **`pip3 install -r requirements.txt`**
 
-Kindly note that since I developed the project from scratch and installed the required libraries as I progressed I have already included a requirements.txt for this app by using the terminal command pip3 freeze > requirements.txt to generate it.
+Please note that since the project has been developed from scratch, I have installed required libraries as the project progressed. I have already included a requirements.txt for this app by using the **terminal command** `pip3 freeze > requirements.txt` to generate it.
 
 1. **[Create your own Heroku app](create-heroku-app)** and update allowed hosts in settings.py.
 
