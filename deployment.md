@@ -47,6 +47,8 @@ I took the following steps to deploy the site to Heroku and have listed any cons
 1. Test server works locally: 
     * ```python3 manage.py runserver```  (This should display the default Django success page)
 
+
+## Deplying an App to heroku
 ### Create a New External Database:
 
 For the purposes of this project I used ([ElephantSQL](https://www.elephantsql.com/)) and the following assumes you already have an account:
@@ -65,6 +67,7 @@ For the purposes of this project I used ([ElephantSQL](https://www.elephantsql.c
 
 
 ### Create Heroku App:
+
 The below works on the assumption that you already have an account with [Heroku](https://id.heroku.com/login) and are already signed in.
 1. Create a new Heroku app:
     * Click "New" in the top right-hand corner of the landing page, then click "Create new app."
@@ -83,7 +86,7 @@ The below works on the assumption that you already have an account with [Heroku]
 ### Attach the Database
 I used **gitpod** for this project:
 1. In **gitpod**:
-    * Create a new env.py file on top level directory
+    * Create a new ***env.py*** file on top level directory
     * in **env.py**:
         * Import os library: ```import os```
         * Set environment variables: ```os.environ["DATABASE_URL"] = "*Paste in ElephantSQL database URL*"```
@@ -95,140 +98,137 @@ I used **gitpod** for this project:
 Preparing **Environment** and **settings.py** File:
 
 1. Reference env.py in settings.py:
+
     * Below 'from pathlib import Path': 
+        
         * ```import os```
         ```import dj_database_url```
         ```if os.path.isfile("env.py"):```
         ```    import env```
     * Remove insecure secret key and replace (*links to the SECRET_KEY variable on Heroku*):
+        
         * ```SECRET_KEY = os.environ.get('SECRET_KEY')```
 
 1. Comment Out Old Databases Section and **ADD NEW** (*links to DATABASE_URL* variable on Heroku):
+
     * ```DATABASES = {```
     ```'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))```
 
 1. Save all Files and Make Migrations:
+
     * ```python3 manage.py makemigrations```
     * ```python3 manage.py migrate```
 
 
+### Store Static and Media Files on Cloudinary
 
-Install dotenv package:
-pip install python-dotenv
-On your local machine, create a file called ".env" at the same level as settings.py and add this to the .gitignore file.
-From the Heroku app settings tab, click "reveal config vars" and copy the value of the variable DATABASE_URL. Add this value to a variable called DATABASE_URL in your create .env file:
-DATABASE_URL=PastedValueFromHerokuHere - (note that with the dotenv package no quotation marks are required)
-From your projects settings.py file, copy the SECRET_KEY value and assign it to a variable called SECRET_KEY in your .env file
-SECRET_KEY=PastedValueFromYourProjectsSettings.pyFile
-Add DEVELOPMENT variable to .env file:
-DEVELOPMENT=development
-Add CLOUDINARY_URL variable to .env file:
-Log into cloudinary and from the dashboard copy the API Environmental Variable.
-Add to .env file like below
-CLOUDINARY_URL=PastedApiEnvironmentalVariable
-Setting up setting.py File:
+These steps assume you have a Cloudinary account and are logged in.
 
-At the top of your settings.py file, add the following snippet immediately after the other imports:
+1. In **Cloudinary**:
 
-    import os
-    import dj_database_url
-    if os.path.isfile('jobsagooden/.env'):  
-        from dotenv import load_dotenv  
-        load_dotenv()
+    * Copy **CLOUDINARY_URL** from Cloudinary Dashboard
 
-    SECRET_KEY = os.environ.get("SECRET_KEY")
-    DEBUG = "DEVELOPMENT" in os.environ
+1. In **env.py**:
 
-Delete the value from the setting.py DATABASES section and replace it with the following snippet to link up the Heroku Postgres server:
+    * Add **CLOUDINARY_URL** to env.py **NOTE:** Paste in correct section of the link:
 
-DATABASES = {
-'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
-}
-Add Cloudinary libraries to the installed apps section of settings.py file:
+    ```os.environ["CLOUDINARY_URL"] = "cloudinary://*********"```
 
- INSTALLED_APPS = [
-…,
-'cloudinary_storage',
-'django.contrib.staticfiles',
-'cloudinary',
-…,
-]
-(note: order is important)
-Tell Django to use Cloudinary to store media and static files by placing this snippet under the comments indicated below:
+1. In **Heroku**:
 
-    # Static files (CSS, JavaScript, Images)
-    # https://docs.djangoproject.com/en/3.2/howto/static-files/
-    STATIC_URL = '/static/'
-    STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
-    STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static/')]
-    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+    * Add Cloudinary URL to Heroku Config Vars (settings tab) **NOTE:** Paste in correct section of the link: CLOUDINARY_URL, cloudinary://*********
+    * Add **DISABLE_COLLECTSTATIC** to Heroku Config Vars (*this will be removed for deployment*): DISABLE_COLLECTSTATIC, 1
 
-    MEDIA_URL = '/media/'
-    DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
-Under the line with BASE_DIR, link templates directly in Heroku via settings.py:
+1. In **settings.py**:
 
-TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
-Within TEMPLATES array, add 'DIRS':[TEMPLATES_DIR] like the below example:
+    * Add Cloudinary Libraries to installed apps **NOTE: Order is important!!!**:
 
-   TEMPLATES = [
-       {
-           …,
-           'DIRS': [TEMPLATES_DIR],
-           …,
-          
-        },
-       },
-   ]
-Add allowed hosts to settings.py:
+    ```
+        INSTALLED_APPS = [
+            ...,
+            **'cloudinary_storage'**,
+            'django.contrib.staticfiles',
+            'cloudinary',
+            ...,
+        ]
+    ```
 
-ALLOWED_HOSTS = ["PROJECT_NAME.herokuapp.com", "localhost"]
-Create Procfile at the top level of the file structure and insert the following:
+    * Tell Django to use Cloudinary to store media and static files by placing this snippet under the comments indicated below:
 
-web: gunicorn PROJECT_NAME.wsgi
-Make an initial commit and push the code to the GitHub Repository.
+    ```
+        # Static files (CSS, JavaScript, Images)
+        # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-git add .
-git commit -m "Initial deployment"
-git push
-Set up Heroku for use via the console.
+        STATIC_URL = '/static/'
+        STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+        STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static/')]
+        STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-Click on Account Settings (under the avatar menu)
+        MEDIA_URL = '/media/'
+        DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+    ```
 
-Scroll down to the API Key section and click Reveal. Copy the API key.
+    * Under the line with BASE_DIR, link to templates directory in Heroku via settings.py:
 
+        * ```TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')```
+
+    * Within TEMPLATES array, add 'DIRS':[TEMPLATES_DIR] like the below example:
+    ```
+        TEMPLATES = [
+            {
+                …,
+                'DIRS': [TEMPLATES_DIR],
+                …,
+                
+                },
+            },
+        ]
+   ```
+    * Add allowed hosts to settings.py:
+
+    ```ALLOWED_HOSTS = ["PROJECT_NAME.herokuapp.com", "localhost"]```
+
+1. In gitpod: 
+
+    * Create Procfile at the top level of the file structure and insert the following:
+    ```web: gunicorn PROJECT_NAME.wsgi``` (In this instance, the project name was **sfportal**)
+
+    * Create *media, static and templates* folders in root directory
+
+
+1. In the **terminal**: 
+    * **SAVE ALL FILES** Make an initial commit and push the code to the GitHub Repository.
+
+    ``` git add .
+        git commit -m "Initial deployment"
+        git push
+    ```
+
+
+1. In **Heroku** for use via the console.
+
+    * Deploy content manually through Heroku. In this instance the deployment method was Github on th emain branch
 Log in to Heroku via the console and enter your details.
 
-heroku login-i
-When prompted, enter your Heroku username
-Enter copied API key as the password
-Get your app name from Heroku
 
-heroku apps
-Set Heroku remote
+### Cloning on a Local machine or Via Gitpod Terminal
 
-heroku git:remote -a <app_name>
-Add, Commit, Pust to GitHub:
+1. Navigate to the GitHub repository, and follow these steps to clone the project into your IDE of choice.
 
-git add . && git commit -m "Deploy to Heroku via CLI"
-Push to GitHub and Heroku
+    * **Gitpod** only requires you to have the web extension installed and click the green Gitpod button from the repositories main page. If you are using Gitpod, please skip step 2 below as you do not require a virtual environment to protect your machine.
 
-git push origin main
-git push heroku main 
-Cloning on a Local machine or Via Gitpod Terminal
+1. Create the virtual environment with the terminal command **```python3 -m venv venv```.** Once complete add the "venv" file to your ".gitignore" file and use the terminal command **```venv\Scripts\activate.bat```** to activate it.
 
-Navigate to the GitHub repository, and follow these steps to clone the project into your IDE of choice.
+    * ***IMPORTANT*** If developing locally on your device, ensure you *set up/activate the virtual environment before installing/generating the requirements.txt file*; failure to do this will pollute your machine and put other projects at risk.
 
-Gitpod only requires you to have the web extension installed and click the green Gitpod button from the repositories main page. If you are using Gitpod, please skip step 2 below as you do not require a virtual environment to protect your machine.
-Create the virtual environment with the terminal command python3 -m venv venv. Once complete add the "venv" file to you're ".gitignore" file and use the terminal command venv\Scripts\activate.bat to activate it.
-
-IMPORTANT If developing locally on your device, ensure you set up/activate the virtual environment before installing/generating the requirements.txt file; failure to do this will pollute your machine and put other projects at risk.
-Install the requirements listed in requirements.txt using the terminal command  pip3 install -r requirements.txt
+1. **Install the requirements** listed in *requirements.txt* using the terminal command  **```pip3 install -r requirements.txt```**
 
 Kindly note that since I developed the project from scratch and installed the required libraries as I progressed I have already included a requirements.txt for this app by using the terminal command pip3 freeze > requirements.txt to generate it.
-Create your own Heroku app, and update allowed hosts in settings.py.
 
-**Create your .env file.
+1. **[Create your own Heroku app](create-heroku-app)** and update allowed hosts in settings.py.
 
-Run server locally with python mange.py runserver
+1. **[Create your .env file](#attach-the-database)**
 
-Back to Readme
+1. **Run server locally with ```python3 mange.py runserver```**
+
+**[Back to Readme](README.md)
