@@ -5,12 +5,18 @@
 ### Setting up a basic Django project and deploying to Heroku 
 
 * [**Deployment**](#deployment)
+    * [***Iniial Deployment***](#initial-deployment)
     * [***Create Repository***](#create-repository)
-    * [***Setting up the Workspace (To be done locally via the console of your chosen editor)***](#setting-up-the-workspace-to-be-done-locally-via-the-console-of-your-chosen-editor)
-    * [***Create a New External Database***](#create-a-new-external-database)
-    * [***Create Heroku App***](#lucid-chart)
-    * [***Creating Environmental Variables Locally***](#color-scheme)
-    * [***Setting up settings.py file***](#typography)
+    * [***Setting up the Workspace (To be done locally via the console of your chosen editor)***]
+    (#setting-up-the-workspace-to-be-done-locally-via-the-console-of-your-chosen-editor)
+    * [***Deploying an app to Heroku***](#deploying-an-app-to-heroku)
+        * [***Create a New External Database***](#create-a-new-external-database)
+        * [***Create Heroku App***](#create-heroku-app)
+        * [***Attach the Database***](#attach-the-database)
+        * [***Preparing Environment and settings.py File***](#preparing-environment-and-settings.py-file)
+        * [***Store Static and Media Files on Cloudinary***](#store-static-and-media-files-on-cloudinary)
+        * [***Final Steps***](#final-steps)
+* [***Cloning on a Local Machine or Via Gitpod Terminal***](#cloning-on-a-local-machine-or-via-gitpod-terminal)
 
 ## Initial Deployment
 
@@ -48,7 +54,7 @@ I took the following steps to deploy the site to Heroku and have listed any cons
     * ```python3 manage.py runserver```  (This should display the default Django success page)
 
 
-## Deplying an App to heroku
+## Deploying an App to heroku
 ### Create a New External Database:
 
 For the purposes of this project I used ([ElephantSQL](https://www.elephantsql.com/)) and the following assumes you already have an account:
@@ -187,6 +193,8 @@ These steps assume you have a Cloudinary account and are logged in.
     * Add allowed hosts to settings.py:
 
     ```ALLOWED_HOSTS = ["PROJECT_NAME.herokuapp.com", "localhost"]```
+
+### Final Steps
 
 1. In gitpod: 
 
