@@ -21,6 +21,8 @@ This proved instrumental in keeping me focused on tasks and creating the necessa
 
 See below for a summary of the various iterations.
 
+<hr>
+
 ### Sprint 1
 
 * February 18-19 2023
@@ -67,3 +69,7 @@ This was another week-long sprint. With all User Stories working as intended, th
 
 * March 24-30 2023
   * Final testing and complete all project documentation
+
+
+
+[Back to Readme](/README.md)
