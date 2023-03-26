@@ -102,7 +102,7 @@ As a **Site Admin** I can:
 
 <hr>
 
-#### **Wireframes**
+### **Wireframes**
 
 I used [Figma](https://www.figma.com) to help guide my design process for this project. I wanted to use a programme which would help me visualise the pages a little clearer than Balsamiq Wireframes, which I have used in the past. As images and colours are a key part of this site's look and feel, I wanted to feel happy they worked in planning before committing.
 
@@ -114,12 +114,25 @@ I used [Figma](https://www.figma.com) to help guide my design process for this p
 * [User Account Page](docs/wireframes/sfp-account-wireframe.png)
 * [Submit Review Page](docs/wireframes/sfp-submit-review-wireframe.png)
 
-<br>​
+The final site adheres fairly closely to the initial images. I dropped the fixed-bottom footer as it interfered with site content on some devices. I moved the social media and email links to the tight side of the navbar where they worked better anyway.
 
-#### **Colour Scheme:**
+The edit, delete and search result pages do not have images here as they are either simple forms or last-minute additions.
+
+<hr>
+
+### **Database Schema**
+
+I used [DrawSQL](https://drawsql.app)​ to help visualise my database tables. See the image below:
+
+![Database Schema](docs/data-model/sfportal-der-diagram.png)
+
+Unfortunately, the site did not provide adequate field type values but it was intrumental in helping create the Entity Relationship Diagram.
+
+Please [click here](docs/data-model/sfp-data-models.png) to view the models used in the project.
+
+
+### **Colour Scheme:**
 ​
-
-* Not in the scope of this project, however I used cyan text for the start screen to evoke a connection with the Star Wars theme. I then used yellow for the subsequent text for the same reason.
 
 ​
 #### **Typography**
