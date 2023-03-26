@@ -161,7 +161,7 @@ The two are used evenly throughout the site.
 
 ## Agile Development
 
-I used Github projects to create and track issues and User Stories. The Agile processes and methodologies can be viewed here
+I used Github projects to create and track issues and User Stories. The Agile processes and methodologies can be viewed [here](/AGILE.md)
 
 <hr>
 
