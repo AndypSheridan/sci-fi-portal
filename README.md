@@ -20,7 +20,8 @@ Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment o
       * [***Site Aims***](#site-aims)
       * [***Target Audiences***](#target-audiences)
       * [***User Stories***](#user-stories)
-      * [***Lucid Chart***](#lucid-chart)
+      * [***Wireframes***](#wireframes)
+      * [***Database Schema***](#database-schema)
       * [***Color Scheme***](#color-scheme)
       * [***Typography***](#typography)
 1. [**Current Features**](#current-features)
@@ -105,13 +106,13 @@ As a **Site Admin** I can:
 
 I used [Figma](https://www.figma.com) to help guide my design process for this project. I wanted to use a programme which would help me visualise the pages a little clearer than Balsamiq Wireframes, which I have used in the past. As images and colours are a key part of this site's look and feel, I wanted to feel happy they worked in planning before committing.
 
-* ![Homepage](docs/wireframes/sfp-index-wireframe.png)
-* ![About Page](docs/wireframes/sfp-about-wireframe.png)
-* ![Books Page](docs/wireframes/sfp-books-wireframe.png)
-* ![Authors Page](docs/wireframes/sfp-authors-wireframe.png)
-* ![Book / Author Detail Page](docs/wireframes/sfp-detail-wireframe.png)
-* ![User Account Page](docs/wireframes/sfp-account-wireframe.png)
-* ![Submit Review Page](docs/wireframes/sfp-submit-review-wireframe.png)
+* [Homepage](docs/wireframes/sfp-index-wireframe.png)
+* [About Page](docs/wireframes/sfp-about-wireframe.png)
+* [Books Page](docs/wireframes/sfp-books-wireframe.png)
+* [Authors Page](docs/wireframes/sfp-authors-wireframe.png)
+* [Book / Author Detail Page](docs/wireframes/sfp-detail-wireframe.png)
+* [User Account Page](docs/wireframes/sfp-account-wireframe.png)
+* [Submit Review Page](docs/wireframes/sfp-submit-review-wireframe.png)
 
 <br>​
 
