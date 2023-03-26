@@ -70,8 +70,8 @@ Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment o
 <hr>
 
 ### **User Stories:**
-#### **Site User**
 
+#### **Site User**
 As a **Registered** user I can: 
 * *create draft book posts* in order for *admin to approve and post them after reviewing*.
 * *view a list of book posts* in order to *select one to read*.
@@ -85,13 +85,13 @@ As a **Registered** user I can:
 * *easily logout* in order to *end my session on the site*.
 * *edit or delete my own book post* in order to *keep my own contributions relevant*.
 
-* As an **Unregistered** User I can:
+As an **Unregistered** User I can:
 * *easily determine the purpose of the site* in order to *see if I want to register and join*.
 * *easily register* in order to *start interacting with the content and community*.
 
+
 #### **Site Admin**
-As a Site Admin I can: 
-* *approve user book reviews* in order to *publish them to the site*.
+As a **Site Admin** I can: 
 * *approve user book reviews* in order to *publish them to the site*.
 * *approve user book reviews* in order to *check that their content is appropriate*.
 * *approve user comments* in order to *filter out objectionable content*.
@@ -101,16 +101,17 @@ As a Site Admin I can:
 
 <hr>
 
-#### **Lucid Chart:**
+#### **Wireframes**
 
-To help with the planning stages​​ of this project, I used [LucidChart](https://www.lucidchart.com)
-This proved to be very useful tool when it came to visualising the various processes involved in recreating a Battleships style game. Whilst the concept is quite simple, the logic involved proved slightly more difficult.
+I used [Figma](https://www.figma.com) to help guide my design process for this project. I wanted to use a programme which would help me visualise the pages a little clearer than Balsamiq Wireframes, which I have used in the past. As images and colours are a key part of this site's look and feel, I wanted to feel happy they worked in planning before committing.
 
-This is the flow chart which assisted the development of the game:
-
-
-![Lucid Chart](assets/images/BS1977chart.png)
-
+* ![Homepage](docs/wireframes/sfp-index-wireframe.png)
+* ![About Page](docs/wireframes/sfp-about-wireframe.png)
+* ![Books Page](docs/wireframes/sfp-books-wireframe.png)
+* ![Authors Page](docs/wireframes/sfp-authors-wireframe.png)
+* ![Book / Author Detail Page](docs/wireframes/sfp-detail-wireframe.png)
+* ![User Account Page](docs/wireframes/sfp-account-wireframe.png)
+* ![Submit Review Page](docs/wireframes/sfp-submit-review-wireframe.png)
 
 <br>​
 
