@@ -71,27 +71,33 @@ Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment o
 
 ### **User Stories:**
 #### **Site User**
-* As a User, I can *create draft book posts* in order for *admin to approve and post them after reviewing*.
-* As a User, I can *view a list of book posts* in order to *select one to read*.
-* As a User, I can *view a list of book posts* in order to *select one to read*.
-* As a User, I can *click on a book post* in order to *view its content*.
-* As a User, I can *create a book post* in order to *share my review with the community*.
-* As a User, I can *comment on other users' book posts* in order to *share my opinions and interact with the community*.
-* As a User, I can *upload a profile picture or bio* in order to *tell a little more about myself*.
-* As a User, I can *edit or update my profile* in order to *keep my account up to date*.
-* As a User, I can *like or unlike a book review* in order to *interact with the site content*.
-* As a User, I can *easily register* in order to *start interacting with the content and community*.
-* As a User, I can *easily login* in order to *access my account*.
-* As a User, I can *easily logout* in order to *end my session on the site*.
-* As a User, I can *edit or delete my own book post* in order to *keep my own contributions relevant*.
+
+As a **Registered** user I can: 
+* *create draft book posts* in order for *admin to approve and post them after reviewing*.
+* *view a list of book posts* in order to *select one to read*.
+* *click on a book post* in order to *view its content*.
+* *create a book post* in order to *share my review with the community*.
+* *comment on other users' book posts* in order to *share my opinions and interact with the community*.
+* *upload a profile picture or bio* in order to *tell a little more about myself*.
+* *edit or update my profile* in order to *keep my account up to date*.
+* *like or unlike a book review* in order to *interact with the site content*.
+* *easily login* in order to *access my account*.
+* *easily logout* in order to *end my session on the site*.
+* *edit or delete my own book post* in order to *keep my own contributions relevant*.
+
+* As an **Unregistered** User I can:
+* *easily determine the purpose of the site* in order to *see if I want to register and join*.
+* *easily register* in order to *start interacting with the content and community*.
 
 #### **Site Admin**
-* As a Site Admin, I can *approve user book reviews* in order to *publish them to the site*.
-* As a Site Admin, I can *approve user book reviews* in order to *check that their content is appropriate*.
-* As a Site Admin, I can *approve user comments* in order to *filter out objectionable content*.
-* As a Site Admin, I can *view the number of likes on a book review* in order to *see which is the most popular*.
-* As a Site Admin, I can *delete user accounts* in order to *remove users who do not respect others in the community*.
-* As a Site Admin, I can *add to the featured authors section* in order to *keep site content fresh and relevant*.
+As a Site Admin I can: 
+* *approve user book reviews* in order to *publish them to the site*.
+* *approve user book reviews* in order to *publish them to the site*.
+* *approve user book reviews* in order to *check that their content is appropriate*.
+* *approve user comments* in order to *filter out objectionable content*.
+* *view the number of likes on a book review* in order to *see which is the most popular*.
+* *delete user accounts* in order to *remove users who do not respect others in the community*.
+* *add to the featured authors section* in order to *keep site content fresh and relevant*.
 
 <hr>
 
