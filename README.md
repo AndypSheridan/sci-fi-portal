@@ -138,14 +138,27 @@ After researching various options for this project, I opted for the color scheme
 
 ![Colour Palette](docs/images/colour-palette.png)
 
+The contrast scores for the colours in this palette can be seen below. I used [contrast-grid](https://contrast-grid.eightshapes.com/) to generate this chart.
 
+![Colour Palette Contrast Scores](docs/images/contrast-checker.png)
 
-​
+<hr>​
+
 #### **Typography**
 ​
-* Not in the scope of this project.
+I researched a number of fonts that would be in keeping with the sci-fi theme of the site. I used [Font Pair](https://www.fontpair.co/inspiration/space-mono-roboto-mono) to try a number of options and eventually chose the following:
+
+* [Space Mono](https://fonts.google.com/specimen/Space+Mono)
+Chosen for its sci-fi-esque appearance.
+
+
+* [Roboto](https://fonts.google.com/specimen/Roboto)
+Chosen for its softer edges to counter the harsher appearance of Space Mono.
+
+The two are used evenly throughout the site.
 
 ​<br>
+
 
 
 ## **Features**
