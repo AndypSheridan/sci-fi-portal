@@ -157,9 +157,13 @@ Chosen for its softer edges to counter the harsher appearance of Space Mono.
 
 The two are used evenly throughout the site.
 
-​<br>
+​<hr>
 
+## Agile Development
 
+I used Github projects to create and track issues and User Stories. The Agile processes and methodologies can be viewed here
+
+<hr>
 
 ## **Features**
 
