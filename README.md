@@ -128,11 +128,17 @@ I used [DrawSQL](https://drawsql.app)​ to help visualise my database tables. S
 
 Unfortunately, the site did not provide adequate field type values but it was intrumental in helping create the Entity Relationship Diagram.
 
-Please [click here](docs/data-model/sfp-data-models.png) to view the models used in the project.
+The exact models used in the project can be viewed [here](docs/data-model/sfp-data-models.png).
 
+<hr>
 
 ### **Colour Scheme:**
 ​
+After researching various options for this project, I opted for the color scheme below:
+
+![Colour Palette](docs/images/colour-palette.png)
+
+
 
 ​
 #### **Typography**
