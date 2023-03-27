@@ -294,6 +294,7 @@ The edit-book page is responsive and scales well on smaller devices. The screens
 
 <hr>
 
+
 ### Delete Book Page
 
 If the user chooses to delete one of their book reviews, they are directed to the following page:
@@ -302,13 +303,14 @@ If the user chooses to delete one of their book reviews, they are directed to th
 
 There are only two options: the User can click cancel and return to the previous page, or confirm delete of the review and are redirected to the books page where a message displays that the message has been successfully deleted. 
 
-#### **Responsiveness
+#### **Responsiveness**
 
 Here is how the page displays on an iPhone SE:
 
 ![Screenshot of edit book page small screen](docs/images/delete-book-small.png)
 
 <hr>
+
 
 ### Authors Page
 
@@ -319,7 +321,7 @@ If the User navigates to the Authors Page they can view a list of the Featured A
 
 This is an ever-growing list which will be to added by the admin over time. The layout is similar to the books page, with a paginated list of authors displayed. Each card displays the name, date of birth, famous works and a snippet of the author's bio. If no image is available, there is a default image displayed. In this instance, it is just for test purposes that there is no image of Isaac Asimov, as there were many available. This feature is reserved for more obscure or emerging artists for whom there might not be an image. The User can click on the image, author name or 'view full bio' link to navigate to the Author Detail Page.
 
-#### **Responsiveness
+#### **Responsiveness**
 
 Here is how the page displays on an iPhone SE:
 
@@ -328,11 +330,29 @@ Here is how the page displays on an iPhone SE:
 
 ### Author Detail Page
 
+The aim of this page is to introduce the User to new authors who might appeal to fans of the genre. These will include established authors and luminaries of the science fiction field or perhaps newer, emerging writers. For the purpose of consistency Author Detail Page is similar to the Book Detail Page. The same background image fits the sci-fi theme and the layout of the page features a large image of the author, their name, date of birth, famous works and a bio:
 
+![Screenshot of author detail page 1](docs/images/author-det-1.png)
+![Screenshot of author detail page 2](docs/images/author-det-2.png)
+
+#### **Responsiveness**
+
+Here is how the page displays on an iPhone SE:
+
+![Screenshot of author detail page small screen](docs/images/author-det-small.png)
 
 ### About Page
 
+The About page displays information about the site. The text welcomes the User to the site and explains what they can do as a registered User. There are links to different areas of the site and a reminder to respect other Users in the community:
 
+![Screenshot of about page ](docs/images/about.png)
+
+
+#### **Responsiveness**
+
+Here is how the page displays on an iPhone SE:
+
+![Screenshot of about page small screen](docs/images/about-small.png)
 
 
 #### **Pre-Game**
