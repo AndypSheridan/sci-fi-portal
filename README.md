@@ -284,7 +284,16 @@ Upon submission of the form, the User will be redirected to the Books page and s
 
 ![Screenshot of successful edit book](docs/images/book-edit-success.png)
 
+#### **Responsiveness**
 
+The edit-book page is responsive and scales well on smaller devices. The screenshots below show how it renders on an iPhone SE:
+
+![Screenshot of edit book small screen](docs/images/book-edit-smaller-1.png)
+![Screenshot of edit book small screen](docs/images/book-edit-smaller-2.png)
+
+<hr>
+
+### Delete Book Page
 
 
 
