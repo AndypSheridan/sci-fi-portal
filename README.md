@@ -384,6 +384,10 @@ Here is how the page displays on an iPhone SE:
 
 <hr>
 
+### Account Pages
+
+#### Sign Up
+
 
 
 
