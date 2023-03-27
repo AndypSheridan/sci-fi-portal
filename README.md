@@ -515,8 +515,8 @@ The following software and tech was used:
 
 ## **Media:**
 
-* All background images came from a free trial subscription to [Shutterstock](https://www.shutterstock.com/)
 * All book images are from [Amazon UK](https://www.amazon.co.uk/)
+* All background images came from a free trial subscription to [Shutterstock](https://www.shutterstock.com/)
 * All author images and bios are from [Wikipedia](https://www.wikipedia.org/) other than:
   * N.K. Jemisin: bio and image from [author webiste](https://nkjemisin.com/)
   * Adrian Tchaikovsky: bio taken from [author website](https://adriantchaikovsky.com/)
@@ -545,14 +545,18 @@ The following software and tech was used:
   * Cloudinary Documentation
   * Geeks for Geeks
   * W3C School
-
-* Course material on the CodeCademy website which helped reinforce my understanding of Python.
+  * Course material on the CodeCademy website which helped reinforce my understanding of Python.
 
 <hr>
 
-### **Honourable mentions**
+## **Honourable mentions**
+
 * The biggest thank you goes to my mentor, Richard Wells, who gave a significant amount of his time to provide me with help, feedback and ideas on the project; he has been invaluable in so many ways and a genuine source of motivation for me.
 * Thanks to the Code Institute team for providing me with some basic knowledge of Python and Django.
 * Thanks to the Code Institute who helped me overcome a major bug in the final deployment of the project
 * Thanks to the Code Institute community on Slack who helped remind me that everyone has difficult days.
 * A huge thank you to my family who support my coding journey on a daily basis.
+
+<hr>
+
+Links to additional related files: [AGILE.md](/AGILE.md) | [DEPLOYMENT.md](/DEPLOYMENT.md) | [TESTING.md](/TESTING.md)
