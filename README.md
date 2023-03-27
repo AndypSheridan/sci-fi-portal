@@ -512,8 +512,11 @@ The following software and tech was used:
 - [Optimizilla](https://imagecompressor.com/) to compress background images for the site.
 - Python - Installed packages can be found in the requirements.txt file.
 - [Shutterstock](https://www.shutterstock.com/) to source the background images for the site.
+- [Summernote](https://summernote.org/) to provide a WYSIWYG text editor in the admin area.
 
-## **Media:**
+<hr>
+
+## **Media**
 
 * All book images are from [Amazon UK](https://www.amazon.co.uk/)
 * All background images came from a free trial subscription to [Shutterstock](https://www.shutterstock.com/)
@@ -524,7 +527,7 @@ The following software and tech was used:
 <hr>
 
 ## **Credits**
-​
+
 * The colour palette for the project is from [Pinterest](https://www.pinterest.co.uk/pin/204491639320145500/).
 
 * The idea to use Cloudinary to handle static and media files came from the [Code Institute](https://codeinstitute.net/) walkthrough project: 'I Think, Therefore I Blog.
