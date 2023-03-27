@@ -35,6 +35,7 @@ Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment o
     * [***Authors Page***](#authors-page)
     * [***Author Detail Page***](#author-detail-page)
     * [***About Page***](#about-page)
+    * [***Profile Page***](#profile-page)
 1. [**Future-Enhancements**](#future-enhancements)
 1. [**Testing Phase**](#testing-phase)
 1. [**Deployment**](#deployment)
