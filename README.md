@@ -355,6 +355,14 @@ Here is how the page displays on an iPhone SE:
 
 ![Screenshot of about page small screen](docs/images/about-small.png)
 
+<hr>
+
+### Profile Page
+
+When the User registers a new account, a profile is automatically created for them to edit in their own time. The purpose of this is so that the User can register and immediately start using the site rather than have to waste time completing a profile they may not wish to use. If the User wishes to, they can click on the Profile icon in the Navbar to view their Profile card:
+
+![Screenshot of Profile page](docs/images/about-small.png)
+
 
 #### **Pre-Game**
 
