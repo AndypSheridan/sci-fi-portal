@@ -543,12 +543,12 @@ button {
     text-align: center;
 }
 
-.login-form {
-    margin: 10%;
+.signup-form {
+    margin-top: 7rem;
 }
 
-.signup-form {
-    margin: 10%;
+.login-form {
+    margin-top: 7rem;
 }
 
 .form-control {
@@ -576,8 +576,6 @@ form input {
     width: 80%;
     margin: auto;
 }
-
-
 
 .card {
     border: 1px solid #FFF;

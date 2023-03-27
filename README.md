@@ -37,9 +37,9 @@ Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment o
     * [***About Page***](#about-page)
     * [***Profile Page***](#profile-page)
     * [***Account Pages***](#account-pages)
-      *[**Sign Up**](#sign-up)
-      *[**Log In**](#log-in)
-      *[**Log Out**](#log-out)
+      * [***Sign Up***](#sign-up)
+      * [***Log In***](#log-in)
+      * [***Log Out***](#log-out)
 1. [**Future-Enhancements**](#future-enhancements)
 1. [**Testing Phase**](#testing-phase)
 1. [**Deployment**](#deployment)
@@ -387,6 +387,8 @@ Here is how the page displays on an iPhone SE:
 ### Account Pages
 
 #### Sign Up
+
+
 
 
 
