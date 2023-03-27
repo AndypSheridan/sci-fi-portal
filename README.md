@@ -36,6 +36,10 @@ Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment o
     * [***Author Detail Page***](#author-detail-page)
     * [***About Page***](#about-page)
     * [***Profile Page***](#profile-page)
+    * [***Account Pages***](#account-pages)
+      *[**Sign Up**](#sign-up)
+      *[**Log In**](#log-in)
+      *[**Log Out**](#log-out)
 1. [**Future-Enhancements**](#future-enhancements)
 1. [**Testing Phase**](#testing-phase)
 1. [**Deployment**](#deployment)
@@ -361,7 +365,26 @@ Here is how the page displays on an iPhone SE:
 
 When the User registers a new account, a profile is automatically created for them to edit in their own time. The purpose of this is so that the User can register and immediately start using the site rather than have to waste time completing a profile they may not wish to use. If the User wishes to, they can click on the Profile icon in the Navbar to view their Profile card:
 
-![Screenshot of Profile page](docs/images/about-small.png)
+![Screenshot of Profile page](docs/images/profile-card.png)
+
+If the User clicks the 'Edit Profile' button, it will reveal a form which the User can use to update their details:
+
+![Screenshot of Profile page edit form](docs/images/profile-form.png)
+
+Upon clicking the 'Update' button, the form is submitted and the page reloads with the new details and a success message:
+
+![Screenshot of profile page success](docs/images/profile-form-success.png)
+
+#### **Responsiveness**
+
+Here is how the page displays on an iPhone SE:
+
+![Screenshot of profile page card small screen](docs/images/profile-card-small.png)
+![Screenshot of profile page form small screen](docs/images/profile-form-small.png)
+
+<hr>
+
+
 
 
 #### **Pre-Game**
