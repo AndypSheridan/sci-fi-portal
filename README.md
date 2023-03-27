@@ -43,7 +43,7 @@ Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment o
 1. [**Future-Enhancements**](#future-enhancements)
 1. [**Testing Phase**](#testing-phase)
 1. [**Deployment**](#deployment)
-1. [**Tech**](#tech)
+1. [**Software and Tech**](#software-and-tech)
 1. [**Credits**](#credits)
     * [**Content**](#content)
     * [**Media**](#media)
