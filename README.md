@@ -190,17 +190,37 @@ To display properly on smaller screens, I used a Bootstrap hamburger menu:
 
 The Home Page uses a background chosen to evoke sci-fi imagery and features a human figure standing in front of a Portal, thus linking neatly with the name of the site. It features some simple text outlining the purpose of the site as well as a search bar, which logged-in Users can use to search for content:
 
-![Screenshot of home page image](docs/images/sfp-home-page.png)
+![Screenshot of home page](docs/images/sfp-home-page.png)
 
 The Home Page is responsive and works well on smaller devices. This is how it looks on an iPhone SE:
 
-![Screenshot of small-screen home page image](docs/images/sfp-home-small.png)
+![Screenshot of small-screen home page](docs/images/sfp-home-small.png)
 
 Users can search for books using the search function:
 
 ![Screenshot of home page search](docs/images/sfp-search.png)
 
 ### **Books Page**
+
+The Books Page features a background image of stars which complements the overall colour palette of the site. It consists of a 'Submit Review' button and a paginated list of book reviews made by other Users or Admin. Each review is a Bootstrap card displaying the title, author and an image of the book. If no image is uploaded by the User, it is assigned a default image showing 'Image not available'. This can always be assigned by Admin or the User at a later time. The card also displays a snippet of the synopsis, a User rating, who posted the review the number of likes and comments. 
+
+There are a maximum of six reviews per screen, the User can click 'next' or 'previous' to navigate between the reviews:
+
+![Screenshot of book page](docs/images/books1.png)
+![Screenshot of book page](docs/images/books2.png)
+
+The Books page is responsive on smaller screens and the reviews will stack so they can be scrolled. The following screenshot is from an iPhone SE:
+
+![Screenshot of small-screen book page](docs/images/books-small.png)
+
+Assuming the User is logged in, they are able to edit or delete reviews they have posted directly from the Books Page:
+
+![Screenshot of edit and delete book page](docs/images/books-buttons.png)
+
+The User can click on any of the book titles or images to go to the Book Detail page and read that particular review.
+
+### **Book Detail Page**
+
 
 
 
