@@ -26,11 +26,14 @@ Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment o
       * [***Typography***](#typography)
 1. [**Agile Development**](#agile-development)
 1. [**Features**](#features)
-    * [***Data Module***](#data-module)
-    * [***Start Screen***](#start-screen)
-    * [***Pre-Game***](#pre-game)
-    * [***Gameplay***](#gameplay)
-    * [***Game Over***](#game-over)
+    * [***Navbar***](#navbar)
+    * [***Home Page***](#home-page)
+    * [***Books Page***](#books-page)
+    * [***Booke Detail Page***](#book-detail-page)
+    * [***Authors Page***](#authors-page)
+    * [***Authors Page***](#authors-page)
+    * [***Authors Page***](#authors-page)
+    * [***Authors Page***](#authors-page)
 1. [**Future-Enhancements**](#future-enhancements)
 1. [**Testing Phase**](#testing-phase)
 1. [**Deployment**](#deployment)
@@ -187,6 +190,8 @@ To display properly on smaller screens, I used a Bootstrap hamburger menu:
 ![Screenshot of small-screen navbar](docs/images/navbar-small-screen-before.png)
 ![Screenshot of small-screen navbar menu](docs/images/navbar-small-screen.png)
 
+<hr>
+
 ### **Home Page**
 
 The Home Page uses a background chosen to evoke sci-fi imagery and features a human figure standing in front of a Portal, thus linking neatly with the name of the site. It features some simple text outlining the purpose of the site as well as a search bar, which logged-in Users can use to search for content:
@@ -200,6 +205,8 @@ The Home Page is responsive and works well on smaller devices. This is how it lo
 Users can search for books using the search function:
 
 ![Screenshot of home page search](docs/images/sfp-search.png)
+
+<hr>
 
 ### **Books Page**
 
@@ -220,6 +227,8 @@ Assuming the User is logged in, they are able to edit or delete reviews they hav
 
 The User can click on any of the book titles or images to go to the Book Detail page and read that particular review.
 
+<hr>
+
 ### **Book Detail Page**
 
 Upon clicking on a review in the Books Page, the User is taken to the Book Detail page:
@@ -230,6 +239,19 @@ Upon clicking on a review in the Books Page, the User is taken to the Book Detai
 This dislays a larger image of the book - if uploaded, the book title, author, review rating and synopsis. The User review is situated below and there is also the opportunity for a User to edit or delete their own reviews. Users can also like or unlike reviews as well as see the number of both:
 
 ![Screenshot of book detail edit/delete/likes/comments page](docs/images/book-detail-likes.png)
+
+***Likes***
+
+The like button has two states: a [Font Awesome](https://fontawesome.com/) heart outline if the user has not liked the review:
+![Screenshot of unliked](docs/images/book-likes-before.png)
+
+or a solid heart if the user has liked it:
+
+![Screenshot of liked](docs/images/book-likes-after.png)
+
+The User can like or unlike a review.
+
+***Comments***
 
 Comments can be viewed below the reviews. This displays the User posting the comment, the date and time as well as the comment itself:
 
