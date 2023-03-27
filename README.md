@@ -384,11 +384,24 @@ Here is how the page displays on an iPhone SE:
 
 <hr>
 
-### Account Pages
+### Allauth Account Pages
 
 #### Sign Up
 
+I used allauth to handle the account pages for the project. In order to register, the User must complete the form on the Signup Page:
 
+![Screenshot of signup page](docs/images/signup.png)
+
+The form will display error messages in several circumstances:
+
+* The User chooses a Username that is already taken
+* The password is not long enough
+* The password is too similar to the username or too common
+* The passwords do not match
+
+See below for an example: 
+
+![Screenshot of signup page errors](docs/images/signup-errors.png)
 
 
 
