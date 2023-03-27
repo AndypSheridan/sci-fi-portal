@@ -29,11 +29,11 @@ Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment o
     * [***Navbar***](#navbar)
     * [***Home Page***](#home-page)
     * [***Books Page***](#books-page)
-    * [***Booke Detail Page***](#book-detail-page)
+    * [***Book Detail Page***](#book-detail-page)
+    * [***Edit Book Page***](#edit-book-page)
+    * [***Delete Book Page***](#delete-book-page)
     * [***Authors Page***](#authors-page)
-    * [***Authors Page***](#authors-page)
-    * [***Authors Page***](#authors-page)
-    * [***Authors Page***](#authors-page)
+    * [***About Page***](#about-page)
 1. [**Future-Enhancements**](#future-enhancements)
 1. [**Testing Phase**](#testing-phase)
 1. [**Deployment**](#deployment)
@@ -295,7 +295,23 @@ The edit-book page is responsive and scales well on smaller devices. The screens
 
 ### Delete Book Page
 
+If the user chooses to delete one of their book reviews, they are directed to the following page:
 
+![Screenshot of delete book](docs/images/delete-book.png)
+
+There are only two options: the User can click cancel and return to the previous page, or confirm delete of the review and are redirected to the books page where a message displays that the message has been successfully deleted. 
+
+#### **Responsiveness
+
+Here is how the page displays on an iPhone SE:
+
+![Screenshot of edit book small screen](docs/images/delete-book-small.png)
+
+<hr>
+
+### Authors Page
+
+### About Page
 
 
 
