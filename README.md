@@ -544,18 +544,29 @@ The following bugs were identified during user testing:
 The Deployment was a fairly lengthy process so I have detailed it in a separate file. It can be found [here](/DEPLOYMENT.md)
 
 The final deployment can be viewed [here](https://sci-fi-portal.herokuapp.com/)
-​
+
+<hr>
+
 ## **Tech**
 ​
-I used the following technologies for the Battleships 1977 project:
+I used the following technologies for the Sci-Fi Portal:
 ​
 - Python
+- Django
+- HTML
+- JavaScript
+- CSS
+- BootStrap
+- Heroku
+- Cloudinary
+
+<hr>
 
 ## **Libraries**
 
 The following libraries were used:
 
-* Random - Used to generate random numbers for CPU ship placement, CPU guessing and CPU attacks.
+* Cloudinary
 * OS - Used to clear the terminal so the user would not get overwhelmed with information.
 * RE - Used to check for valid column input.
 * Time - Used for pauses in flow of information and to simulate CPU decision making.
@@ -567,7 +578,9 @@ The following software was used:
 - Gitpod and VS Code to create, load and push my code to Github.
 - Git (Gitpod and Github) as my version control for the site.
 - Heroku to deploy the project.
-- Lucid Chart to develop the logic for the project.
+- DrawSQL to develop the logic for the project.
+- Microsoft Excel to develop the logic for the project.
+- 
 - https://patorjk.com/ to develop the ASCII art for the project
 
 ### **Media:**
