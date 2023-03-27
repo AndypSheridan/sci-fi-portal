@@ -269,6 +269,12 @@ Upon submission of the form, they are presented with the following message:
 
 When the comment has been approved by the Admin, they will appear with the other comments in the order they were posted.
 
+<hr>
+
+### Edit Book Page
+
+
+
 
 
 
