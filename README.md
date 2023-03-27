@@ -475,20 +475,6 @@ The final deployment can be viewed [here](https://sci-fi-portal.herokuapp.com/)
 
 <hr>
 
-## **Libraries**
-
-The following libraries were used:
-
-* Cloudinary
-* OS - Used to clear the terminal so the user would not get overwhelmed with information.
-* psycopg2
-* gunicorn
-* Allauth
-* crispy forms
-* Summernote
-
-<hr>
-
 ## **Software and Tech**
 
 The following software and tech was used:
