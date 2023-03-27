@@ -386,13 +386,15 @@ Here is how the page displays on an iPhone SE:
 
 ### Allauth Account Pages
 
+All Account Pages use the same background, again evoking sci-fi imagery. The image is a swirling, nebulous portal which again complements the colour palette used site-wide.
+
 #### Sign Up
 
 I used allauth to handle the account pages for the project. In order to register, the User must complete the form on the Signup Page:
 
 ![Screenshot of signup page](docs/images/signup.png)
 
-The form will display error messages in several circumstances:
+Once the User has successfully registered, they will be logged in and taken to the Home Page. The form will display error messages in several circumstances:
 
 * The User chooses a Username that is already taken
 * The password is not long enough
@@ -411,12 +413,41 @@ Here is how the page displays on an iPhone SE:
 
 #### Log In
 
+Existing Users can log in by clicking the Log In button on the Home Page. This will bring them to the Log In Page:
+
+![Screenshot of log in page](docs/images/login-page.png)
+
+If the log in details are not valid, an error message is displayed. For example: 
+
+![Screenshot of log in page errors](docs/images/login-error-message.png)
+
+#### **Responsiveness**
+
+Here is how the page displays on an iPhone SE:
+
+![Screenshot of login small screen](docs/images/login-small.png)
+![Screenshot of login error small screen](docs/images/login-error-small.png)
+
 
 #### Log Out
 
+To log out of the site and end the current session, the User can navigate to Log Out in the Navbar. This will direct them to the Log Out Page:
+
+![Screenshot of logout page](docs/images/logout.png)
+
+The User can confirm by clicking the Log Out button or click the cancel button to return to the previous page. If the User chooses to log out, they are redirected to the Home Page and a success message informs them they have been logged out:
+
+![Screenshot of home screen logout success](docs/images/home-logout-success.png)
+
+#### **Responsiveness**
+
+Here is how the pages display on an iPhone SE:
+
+![Screenshot of logout small screen](docs/images/logout-small.png)
+![Screenshot of logout success small screen](docs/images/home-logout-success-small.png)
 
 
-<br>
+<hr>
 
 ​
 ## **Future-Enhancements**
