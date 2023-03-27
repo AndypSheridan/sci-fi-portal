@@ -384,7 +384,7 @@ Here is how the page displays on an iPhone SE:
 
 <hr>
 
-### Allauth Account Pages
+## Allauth Account Pages
 
 All Account Pages use the same background, again evoking sci-fi imagery. The image is a swirling, nebulous portal which again complements the colour palette used site-wide.
 
@@ -448,7 +448,7 @@ Here is how the pages display on an iPhone SE:
 
 <hr>
 
-### **Future-Enhancements**
+## **Future-Enhancements**
 ​
 There are a number of areas with scope for future improvement. This project has been very challenging and ultimately the project deadline was looming. There is potential to add the following:
 ​
@@ -493,9 +493,10 @@ The following libraries were used:
 
 The following software and tech was used:
 
-- Python
+- Python - Installed packages can be found in the requirements.txt file.
 - [Django](https://www.djangoproject.com/) as a Python framework to develop the project.
-- HTML
+- [Django all auth](https://django-allauth.readthedocs.io/en/latest/) used to handle user authentication.
+- HTML - The base language to create templates for the site
 - JavaScript - only used twice: for the back or cancel buttons and to populate the hidden created_by field in the add_book form.
 - CSS to provide custom styling in addition to Bootstrap.
 - [BootStrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) to provide key components such as the navbar and cards.
@@ -505,11 +506,13 @@ The following software and tech was used:
 - [ElephantSQL](https://www.elephantsql.com/) to handle the PostgreSQL database.
 - [DrawSQL](https://drawsql.app/) to develop the logic for the project.
 - Microsoft Excel to develop the logic for the project.
+- [Jinja](https://jinja.palletsprojects.com/en/3.1.x/) used to implement logic from views.py and models.py.
 - [Cloudinary](https://cloudinary.com) to handle static images and files as well as to offer the User a front end method of uploading images.
 - [Figma](https://www.figma.com/) to assist with the planning phase of the project.
 - [Font Awesome](https://fontawesome.com/) to provide search, heart, profile, social media icons etc.
+- [Optimizilla](https://imagecompressor.com/) to compress background images for the site.
 
-### **Media:**
+## **Media:**
 
 * All background images came from a free trial subscription to [Shutterstock](https://www.shutterstock.com/)
 * All book images are from [Amazon UK](https://www.amazon.co.uk/)
@@ -517,20 +520,26 @@ The following software and tech was used:
   * N.K. Jemisin: bio and image from [author webiste](https://nkjemisin.com/)
   * Adrian Tchaikovsky: bio taken from [author website](https://adriantchaikovsky.com/)
 ​
-<br>
-
+<hr>
 
 ## **Credits**
 ​
-* The ANSI colour codes came from [this article](https://www.lihaoyi.com/post/BuildyourownCommandLinewithANSIescapecodes.html) on lihaoyi.com.
+* The colour palette for the project is from [Pinterest](https://www.pinterest.co.uk/pin/204491639320145500/).
 
-* The idea to use the os library to clear the screen came from [this post](https://stackoverflow.com/questions/4810537/how-to-clear-the-screen-in-python) on Stack Overflow.
+* The idea to use Cloudinary to handle static and media files came from the [Code Institute](https://codeinstitute.net/) walkthrough project: 'I Think, Therefore I Blog.
 
-* The idea to use the time library to delay the execution of the problem came from [this article](https://www.digitalocean.com/community/tutorials/python-time-sleep) on the Digital Ocean website.
+* The [Django Documentation](https://docs.djangoproject.com/en/4.1/) was immensely helpful in helping me gain a greater understanding of the project.
 
-* The code to use the re library came from [this article](https://stackoverflow.com/questions/60597167/using-regex-to-validate-user-input) on Stack Overflow.
+* The JavaScript code used to populate the hidden created-by field in the 'add book' form came from [this](https://www.youtube.com/playlist?list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi) series of videos by John Elder on YouTube.
 
-* The unicode for the bullet symbols and up and down arrow came from the [Python Docs Website](https://docs.python.org/3/howto/unicode.html)
+* General References:
+  * Stack Overflow
+  * Code Institute LMS
+  * Bootstrap Documentation
+  * Jinja Documentation
+  * Cloudinary Documentation
+  * Geeks for Geeks
+  * W3C School
 
 * I used this [online ASCII art generator](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20) for the very basic text and artwork in the game.
 
