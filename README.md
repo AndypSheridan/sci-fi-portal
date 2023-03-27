@@ -190,7 +190,11 @@ To display properly on smaller screens, I used a Bootstrap hamburger menu:
 
 The Home Page uses a background chosen to evoke sci-fi imagery and features a human figure standing in front of a Portal, thus linking neatly with the name of the site:
 
+![Screenshot of home page image](docs/images/sfp-home-page.png)
 
+The Home Page is responsive and works well on smaller devices. This is how it looks on an iPhone SE:
+
+![Screenshot of small-screen home page image](docs/images/sfp-home-small.png)
 
 #### **Pre-Game**
 
