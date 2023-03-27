@@ -493,24 +493,25 @@ The following libraries were used:
 
 The following software and tech was used:
 
-- Python - Installed packages can be found in the requirements.txt file.
+- [BootStrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) to provide key components such as the navbar and cards.
+- [Cloudinary](https://cloudinary.com) to handle static images and files as well as to offer the User a front end method of uploading images.
+- CSS to provide custom styling in addition to Bootstrap.
 - [Django](https://www.djangoproject.com/) as a Python framework to develop the project.
 - [Django all auth](https://django-allauth.readthedocs.io/en/latest/) used to handle user authentication.
-- HTML - The base language to create templates for the site
-- JavaScript - only used twice: for the back or cancel buttons and to populate the hidden created_by field in the add_book form.
-- CSS to provide custom styling in addition to Bootstrap.
-- [BootStrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) to provide key components such as the navbar and cards.
-- [Gitpod](https://gitpod.io/) and VS Code to create, load and push my code to Github.
-- Git (Gitpod and Github) as my version control for the site.
-- [Heroku](https://www.heroku.com/) to deploy the project.
-- [ElephantSQL](https://www.elephantsql.com/) to handle the PostgreSQL database.
 - [DrawSQL](https://drawsql.app/) to develop the logic for the project.
-- Microsoft Excel to develop the logic for the project.
-- [Jinja](https://jinja.palletsprojects.com/en/3.1.x/) used to implement logic from views.py and models.py.
-- [Cloudinary](https://cloudinary.com) to handle static images and files as well as to offer the User a front end method of uploading images.
+- [ElephantSQL](https://www.elephantsql.com/) to handle the PostgreSQL database.
 - [Figma](https://www.figma.com/) to assist with the planning phase of the project.
 - [Font Awesome](https://fontawesome.com/) to provide search, heart, profile, social media icons etc.
+- Git (Gitpod and Github) as my version control for the site.
+- [Gitpod](https://gitpod.io/) and VS Code to create, load and push my code to Github.
+- [Heroku](https://www.heroku.com/) to deploy the project.
+- HTML - The base language to create templates for the site
+- JavaScript - only used twice: for the back or cancel buttons and to populate the hidden created_by field in the add_book form.
+- [Jinja](https://jinja.palletsprojects.com/en/3.1.x/) used to implement logic from views.py and models.py.
+- Microsoft Excel to develop the logic for the project.
 - [Optimizilla](https://imagecompressor.com/) to compress background images for the site.
+- Python - Installed packages can be found in the requirements.txt file.
+- [Shutterstock](https://www.shutterstock.com/) to source the background images for the site.
 
 ## **Media:**
 
@@ -550,7 +551,8 @@ The following software and tech was used:
 <hr>
 
 ### **Honourable mentions**
-* Thank you to my mentor, Richard Wells, who gave a significant amount of his time to provide me with help, feedback and ideas on the project; he has been invaluable in so many ways and a genuine source of motivation for me.
-* Thanks to the Code Institute team for providing me with some basic knowledge of Python.
+* The biggest thank you goes to my mentor, Richard Wells, who gave a significant amount of his time to provide me with help, feedback and ideas on the project; he has been invaluable in so many ways and a genuine source of motivation for me.
+* Thanks to the Code Institute team for providing me with some basic knowledge of Python and Django.
+* Thanks to the Code Institute who helped me overcome a major bug in the final deployment of the project
 * Thanks to the Code Institute community on Slack who helped remind me that everyone has difficult days.
 * A huge thank you to my family who support my coding journey on a daily basis.
