@@ -47,8 +47,7 @@ Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment o
 1. [**Software and Tech**](#software-and-tech)
 1. [**Media**](#media)
 1. [**Credits**](#credits)
-    * [**Content**](#content)
-    * [**Honourable mentions**](#honorable-mentions)
+1. [**Honourable mentions**](#honorable-mentions)
 
 <hr>
 
@@ -460,7 +459,7 @@ There are a number of areas with scope for future improvement. This project has 
 * The serach function to be updated to display results in the new categories.
 * Using the Google Books API to retrieve book information. I did explore this option before the inception of the project but decided against including it due to time constraints.
 
-
+<hr>
 ​
 ## **Testing Phase**
 
