@@ -399,44 +399,21 @@ The form will display error messages in several circumstances:
 * The password is too similar to the username or too common
 * The passwords do not match
 
-See below for an example: 
+See the example below: 
 
 ![Screenshot of signup page errors](docs/images/signup-errors.png)
 
+#### **Responsiveness**
+
+Here is how the page displays on an iPhone SE:
+
+![Screenshot of signup small screen](docs/images/signup-small.png)
+
+#### Log In
 
 
+#### Log Out
 
-#### **Pre-Game**
-
-![Screenshot of ship types](assets/images/bs77-ship-types.png)
-
-* The same os function is used to clear the terminal once again. The ship_type method is called so the user is presented with the four different types of ships at their disposal, along with the size of each. The ships are displayed sequentially in descending size order, on a slight delay using the time library.
-
-![Screenshot of legend](assets/images/bs77-legend.png)
-
-* Upon pressing enter, the game_rules function is called to display the symbols which will be used on the game boards. Once the user has processed the information, they are prompted to press enter again.
-
-* The following text explains the win condition which states that ten hits will be enough to win the game. There is a final prompt to press enter.
-
-![Screenshot of win condition](assets/images/bs77-win-condition.png)
-
-
-![Screenshot of player board and prompt to enter ship direction](assets/images/bs77-choose-direction.png)
-
-* os is used to clear the screen once again and the player board is printed to the terminal. It displays the player name and the shield strength at the starting value of 10. The place_ships method is called so the player is asked to place each ship by choosing whether it will be aligned horizontally or vertically. Any input other than 'h'/'H' or 'v'/'V' will be invalid and the user will be asked to try again. The process will loop until all ships have been assigned coordinates.
-
-#### **Gameplay**
-
-![Screenshot of player hitting ship](assets/images/bs77-hit-ship.png)
-
-* The populate_boards method adds the user and CPU ships to their respective boards. The user cannot see where the CPU ships are. The game is set up so the user goes first. The player_attack method takes input from the user to guess enemy ship coordinates on the x and y axes. The first CPU guess is a random choice on the board. Upon a successful hit, the CPU will attempt to guess on an adjacent tile. Click the highlighted text to see screenshots of the player entering invalid [row](assets/images/bs77-invalid-row.png) or [column](assets/images/bs77-invalid-column.png) coordinates. The user cannot enter the same coordinates twice. Most of the game logic is in the play_game function which handles updating and appending the relevant boards. It also handles decrementing the shield counter. The game will continue to run until either the player or CPU shield counters reaches zero.
-
-
-#### **Game Over** 
-![Screenshot of play again option](assets/images/bs77-play-again.png)
-![Screenshot of choosing not to play again](assets/images/bs77-play-again-no.png)
-
-* Upon winning or losing the game, an ASCII-based message is displayed before the user is given the option of playing a new game. If this option is chosen, the game resets and starts from the beginning. If the user chooses to quit, they are presented with s short message in keeping with the theme of the game.
 
 
 <br>
