@@ -165,19 +165,23 @@ I used Github projects to create and track issues and User Stories. The Agile pr
 
 <hr>
 
-## **Features**
+# **Features**
 
-#### **Data Model**
+## **Site Navigation**
 
-* The game uses a Board class. It is used to create instances of the player and CPU and guess boards. Only the player and player_guess boards are printed to the terminal through the display_boards method. The class stores the board size, board owner and shield strength. There are methods to input ship coordinates, populate the board, logic for CPU guesses. There are also methods to check and validate user input as well as prevent any ships overlapping.
+### **Navbar**
 ​
-#### **Start Screen** 
+The Navbar is a bootstrap component which allows a registered User to navigate their way around the site with ease. When logged out, it displays just the SF|Portal logo and social media / email links:
 
-![Screenshot of start screen](assets/images/bs77-start-screen.png)
+![Screenshot of navbar](docs/images/navbar-logged-out.png)
 
-* The start screen features the iconic Star Wars introduction: "A long time ago, in a galaxy far, far away..." Beneath that is some very basic ASCII art depicting stars. There a short time delay using the time.sleep() function to allow the user to process the screen. They are then prompted to press enter.
+When the User is logged in, it offers navigation to the profile, books, authors and about pages:
 
-![Screenshot of player name input](assets/images/bs77-name-input.png)
+![Screenshot of navbar](docs/images/navbar-logged-in.png)
+
+To display properly on smaller screens, I used a Bootstrap hamburger menu:
+
+
 
 * The os.sys("clear") function is used to clear the screen and the user is then presented with ASCII text intended to emulate the Star Wars movie font. They are prompted to enter their name using the get_name function which stores the username in a variable for use in the game. They are then presented with a short welcome message and short backstory explaining enemy ships have entered the area. The user can press enter to proceed to the next screen.
 
