@@ -539,26 +539,13 @@ The following bugs were identified during user testing:
 
 * At this stage, there are no known unfixed bugs.
 
+<hr>
+
 ## **Deployment**
 
 The Deployment was a fairly lengthy process so I have detailed it in a separate file. It can be found [here](/DEPLOYMENT.md)
 
 The final deployment can be viewed [here](https://sci-fi-portal.herokuapp.com/)
-
-<hr>
-
-## **Tech**
-​
-I used the following technologies for the Sci-Fi Portal:
-​
-- Python
-- Django
-- HTML
-- JavaScript
-- CSS
-- BootStrap
-- Heroku
-- Cloudinary
 
 <hr>
 
@@ -568,24 +555,41 @@ The following libraries were used:
 
 * Cloudinary
 * OS - Used to clear the terminal so the user would not get overwhelmed with information.
-* RE - Used to check for valid column input.
-* Time - Used for pauses in flow of information and to simulate CPU decision making.
+* psycopg2
+* gunicorn
+* Allauth
+* crispy forms
+* Summernote
 
-## **Software**
+<hr>
 
-The following software was used:
+## **Software and Tech**
 
-- Gitpod and VS Code to create, load and push my code to Github.
+The following software and tech was used:
+
+- Python
+- [Django](https://www.djangoproject.com/) as a Python framework to develop the project.
+- HTML
+- JavaScript - only used twice: for the back or cancel buttons and to populate the hidden created_by field in the add_book form.
+- CSS to provide custom styling in addition to Bootstrap.
+- [BootStrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) to provide key components such as the navbar and cards.
+- [Gitpod](https://gitpod.io/) and VS Code to create, load and push my code to Github.
 - Git (Gitpod and Github) as my version control for the site.
-- Heroku to deploy the project.
-- DrawSQL to develop the logic for the project.
+- [Heroku](https://www.heroku.com/) to deploy the project.
+- [ElephantSQL](https://www.elephantsql.com/) to handle the PostgreSQL database.
+- [DrawSQL](https://drawsql.app/) to develop the logic for the project.
 - Microsoft Excel to develop the logic for the project.
-- 
-- https://patorjk.com/ to develop the ASCII art for the project
+- [Cloudinary](https://cloudinary.com) to handle static images and files as well as to offer the User a front end method of uploading images.
+- [Figma](https://www.figma.com/) to assist with the planning phase of the project.
+- [Font Awesome](https://fontawesome.com/) to provide search, heart, profile, social media icons etc.
 
 ### **Media:**
 
-* Not in the scope of this project.
+* All background images came from a free trial subscription to [Shutterstock](https://www.shutterstock.com/)
+* All book images are from [Amazon UK](https://www.amazon.co.uk/)
+* All author images and bios are from [Wikipedia](https://www.wikipedia.org/) other than:
+  * N.K. Jemisin: bio and image from [author webiste](https://nkjemisin.com/)
+  * Adrian Tchaikovsky: bio taken from [author website](https://adriantchaikovsky.com/)
 ​
 <br>
 
