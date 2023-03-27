@@ -163,7 +163,9 @@ The two are used evenly throughout the site.
 
 I used Github projects to create and track issues and User Stories. The Agile processes and methodologies can be viewed [here](/AGILE.md)
 
+<br>
 <hr>
+<br>
 
 # **Features**
 
@@ -184,7 +186,11 @@ To display properly on smaller screens, I used a Bootstrap hamburger menu:
 ![Screenshot of small-screen navbar](docs/images/navbar-small-screen-before.png)
 ![Screenshot of small-screen navbar menu](docs/images/navbar-small-screen.png)
 
-* The os.sys("clear") function is used to clear the screen and the user is then presented with ASCII text intended to emulate the Star Wars movie font. They are prompted to enter their name using the get_name function which stores the username in a variable for use in the game. They are then presented with a short welcome message and short backstory explaining enemy ships have entered the area. The user can press enter to proceed to the next screen.
+### **Home Page**
+
+The Home Page uses a background chosen to evoke sci-fi imagery and features a human figure standing in front of a Portal, thus linking neatly with the name of the site:
+
+
 
 #### **Pre-Game**
 
