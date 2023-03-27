@@ -33,6 +33,7 @@ Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment o
     * [***Edit Book Page***](#edit-book-page)
     * [***Delete Book Page***](#delete-book-page)
     * [***Authors Page***](#authors-page)
+    * [***Author Detail Page***](#author-detail-page)
     * [***About Page***](#about-page)
 1. [**Future-Enhancements**](#future-enhancements)
 1. [**Testing Phase**](#testing-phase)
@@ -305,11 +306,29 @@ There are only two options: the User can click cancel and return to the previous
 
 Here is how the page displays on an iPhone SE:
 
-![Screenshot of edit book small screen](docs/images/delete-book-small.png)
+![Screenshot of edit book page small screen](docs/images/delete-book-small.png)
 
 <hr>
 
 ### Authors Page
+
+If the User navigates to the Authors Page they can view a list of the Featured Authors:
+
+![Screenshot of authors page 1](docs/images/authors1.png)
+![Screenshot of authors page 2](docs/images/authors2.png)
+
+This is an ever-growing list which will be to added by the admin over time. The layout is similar to the books page, with a paginated list of authors displayed. Each card displays the name, date of birth, famous works and a snippet of the author's bio. If no image is available, there is a default image displayed. In this instance, it is just for test purposes that there is no image of Isaac Asimov, as there were many available. This feature is reserved for more obscure or emerging artists for whom there might not be an image. The User can click on the image, author name or 'view full bio' link to navigate to the Author Detail Page.
+
+#### **Responsiveness
+
+Here is how the page displays on an iPhone SE:
+
+![Screenshot of authors page small screen](docs/images/authors-small.png)
+
+
+### Author Detail Page
+
+
 
 ### About Page
 
