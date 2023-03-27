@@ -200,6 +200,10 @@ Users can search for books using the search function:
 
 ![Screenshot of home page search](docs/images/sfp-search.png)
 
+### **Books Page**
+
+
+
 
 
 #### **Pre-Game**
