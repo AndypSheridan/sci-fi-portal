@@ -221,6 +221,32 @@ The User can click on any of the book titles or images to go to the Book Detail 
 
 ### **Book Detail Page**
 
+Upon clicking on a review in the Books Page, the User is taken to the Book Detail page:
+
+![Screenshot of book detail page](docs/images/book-detail1.png)
+![Screenshot of book detail page](docs/images/book-detail-2.png)
+
+This dislays a larger image of the book - if uploaded, the book title, author, review rating and synopsis. The User review is situated below and there is also the opportunity for a User to edit or delete their own reviews. Users can also like or unlike reviews as well as see the number of both:
+
+![Screenshot of book detail edit/delete/likes/comments page](docs/images/book-detail-likes.png)
+
+Comments can be viewed below the reviews. This displays the User posting the comment, the date and time as well as the comment itself:
+
+![Screenshot of book detail page comments](docs/images/book-detail-comments.png)
+
+**NOTE** All comments must be approved by the Admin in order to filter out objectionable content.
+
+In order to post a comment, the User must complete the comment form at the bottom of the page:
+
+![Screenshot of book detail page comment form](docs/images/book-detail-comments-before.png)
+
+Upon submission of the form, they are presented with the following message:
+
+![Screenshot of book detail page comment submission](docs/images/book-detail-comment-after.png)
+
+When the comment has been approved by the Admin, they will appear with the other comments in the order they were posted.
+
+
 
 
 
