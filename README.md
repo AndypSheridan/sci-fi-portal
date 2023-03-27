@@ -181,7 +181,8 @@ When the User is logged in, it offers navigation to the profile, books, authors 
 
 To display properly on smaller screens, I used a Bootstrap hamburger menu:
 
-
+![Screenshot of small-screen navbar](docs/images/navbar-small-screen-before.png)
+![Screenshot of small-screen navbar menu](docs/images/navbar-small-screen.png)
 
 * The os.sys("clear") function is used to clear the screen and the user is then presented with ASCII text intended to emulate the Star Wars movie font. They are prompted to enter their name using the get_name function which stores the username in a variable for use in the game. They are then presented with a short welcome message and short backstory explaining enemy ships have entered the area. The user can press enter to proceed to the next screen.
 
