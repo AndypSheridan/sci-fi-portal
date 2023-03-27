@@ -43,7 +43,6 @@ Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment o
 1. [**Future-Enhancements**](#future-enhancements)
 1. [**Testing Phase**](#testing-phase)
 1. [**Deployment**](#deployment)
-1. [**Libraries**](#libraries)
 1. [**Software and Tech**](#software-and-tech)
 1. [**Media**](#media)
 1. [**Credits**](#credits)
@@ -460,7 +459,7 @@ There are a number of areas with scope for future improvement. This project has 
 * Using the Google Books API to retrieve book information. I did explore this option before the inception of the project but decided against including it due to time constraints.
 
 <hr>
-​
+
 ## **Testing Phase**
 
 The testing process, along with bugs, can be viewed [here](/TESTING.md)​

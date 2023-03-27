@@ -76,4 +76,13 @@ The following bugs were identified during user testing:
 
 <hr>
 
+| Checked | ...**use a text editor within the admin panel** so that **I can create a job description in a way that is clear and appeals to the eye when creating a job post** |
+|:-------:|:--------|
+| &check; | Can add a job post successfully from the admin panel using the summer note editor |
+
+| Checked | ...**Log into a user interface** so that **I can easily manage data via a user interface** |
+|:-------:|:--------|
+| &check; | Can Log in to admin panel successfully |
+| &check; | Changes to any data are reflected in the database |
+
 Back to [README](/README.md)
