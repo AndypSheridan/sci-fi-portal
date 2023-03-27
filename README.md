@@ -273,6 +273,16 @@ When the comment has been approved by the Admin, they will appear with the other
 
 ### Edit Book Page
 
+If the User clicks edit on the Books or Book Detail page then they are directed to the edit book page:
+
+![Screenshot of edit book](docs/images/book-edit-1.png)
+![Screenshot of edit book](docs/images/book-edit-2.png)
+
+A User is only allowed to edit or delete an admin-approved review that they have posted. If these conditions are met, the edit book page will display a form pre-populated with the existing data from the initial review. This can be edited or updated. The primary reason for doing so would be to edit typos pr perhaps add an image they couldn't find before.
+
+Upon submission of the form, the User will be redirected to the Books page and shown a success message:
+
+![Screenshot of successful edit book](docs/images/book-edit-success.png)
 
 
 
