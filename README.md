@@ -471,6 +471,12 @@ Here is how the pages display on an iPhone SE:
 
 <hr>
 
+## Links and Buttons
+
+### **Links**
+
+I used two different effects for the links in the project. 
+
 ## **Messages**
 
 User feedback is provided in the shape of success messages with the aim of providing a more involved User Experience. These messages are dismissable by clicking the 'x' and will be displayed in the following situations:
@@ -526,9 +532,18 @@ All pages feature User Authentication meaning that a User must be logged in to v
 
 ### **404 Page**
 
-A 404 page was added to catch instances when the User may have mis-typed a URL, or if content has been removed from the site. The 404 page features text dislaying the content is not available and features a back button:
+A custom 404 page was added to catch instances when the User may have mis-typed a URL, or if content has been removed from the site. The 404 page features text dislaying the content is not available and features a back button:
 
 ![Screenshot of 404 page](docs/images/404.png)
+
+
+<hr>
+
+### **500 Page**
+
+A custom 500 page was added to catch instances when a potentially malicious User might try to subvert the site, for example to access personal data or delete content. In this case the page below displays and features a back button to redirect them to the previous page:
+
+![Screenshot of 500 page](docs/images/500-page.png)
 
 
 <hr>
