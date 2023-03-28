@@ -316,7 +316,29 @@ Results from the validation can be seen below:
 
 #### ***Add Book Page***
 
-![Home page HTML validation](docs/validation/)
+![Add book page HTML validation](docs/validation/add-book-html-validation.png)
+
+#### ***Edit Book Page***
+
+![Edit book page HTML validation](docs/validation/edit-book-html-validation.png)
+
+#### ***Delete Book Page***
+
+![Delete book page HTML validation](docs/validation/sfp-delete-book-html-validation.png)
+
+#### ***Signup Page***
+
+![Signup page HTML validation](docs/validation/sfp-signup-html-validation.png)
+
+#### ***Login Page***
+
+![Login page HTML validation](docs/validation/sfp-login-html-validation.png)
+
+#### ***Log Out Page***
+
+![Log Out page HTML validation](docs/validation/sfp-logout-html-validation.png)
+
+
 
 
 
