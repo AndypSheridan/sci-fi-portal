@@ -1,9 +1,9 @@
 # **Sci-Fi Portal**
 ## **Site Overview**
 
-As a keen fan of the Science Fiction genre, I have often struggled to keep track of the growing number of books I have read. I have also struggled to find the passion and love for sci-fi from others within my own social or professional circles.
+As a keen fan of the Science Fiction genre, I have often found it difficult to keep track of the growing number of books I have read. I have also struggled to find the passion and love for sci-fi from others within my own social or professional circles.
 
-The Sci-Fi Portal is designed with the aim of creating an online community of like-minded fans who would like to share their own experiences of sci-fi novels, short stories or animé. Users can create, edit and delete book reviews which can be viewed by themselves as well as other registered users. The community experience is enhanced by the ability comment on reviews, thus generating discussion and fulfilling one of the aims of providing a forum to interact and engage with other fans of the genre.
+The Sci-Fi Portal is designed with the aim of creating a platform for an online community of like-minded fans who wish to share their own experiences of sci-fi novels, short stories or animé. Users can create, read, update and delete book reviews which can be viewed by themselves as well as other registered users. The community experience is enhanced by the ability to comment on reviews, thus generating discussion and fulfilling one of the aims of providing a forum to interact and engage with other fans of the genre.
 
 <hr>
 
@@ -20,10 +20,10 @@ Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment o
       * [***Site Aims***](#site-aims)
       * [***Target Audiences***](#target-audiences)
       * [***User Stories***](#user-stories)
-      * [***Wireframes***](#wireframes)
-      * [***Database Schema***](#database-schema)
-      * [***Color Scheme***](#color-scheme)
-      * [***Typography***](#typography)
+    * [***Wireframes***](#wireframes)
+    * [***Database Schema***](#database-schema)
+    * [***Color Scheme***](#color-scheme)
+    * [***Typography***](#typography)
 1. [**Agile Development**](#agile-development)
 1. [**Features**](#features)
     * [***Admin Page***](#admin-page)
