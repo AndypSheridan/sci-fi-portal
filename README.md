@@ -208,6 +208,19 @@ To display properly on smaller screens, I used a Bootstrap hamburger menu:
 ![Screenshot of small-screen navbar](docs/images/navbar-small-screen-before.png)
 ![Screenshot of small-screen navbar menu](docs/images/navbar-small-screen.png)
 
+
+<hr>
+
+### Social Media and Email Links
+
+The social media and email icons are situated on the right of the Navbar. The Social Media links are functional and will open in a new tab. 
+**NOTE:** There is no actual Social Media for this site at the time of writing.
+
+The email icon opens the default email application with the recipient being a test email address for the site.
+
+![Screenshot of social media and email links](docs/images/social-media-links.png)
+
+
 <hr>
 
 ### **Home Page**
