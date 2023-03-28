@@ -278,7 +278,49 @@ The above instance again flags issue to do with cookies and Cloudinary which I f
 <hr>
 
 
-**Validators**
+## **Validation**
+
+### **HTML**
+
+The code for all pages was run through the W3C HTML Markup Validation Service. Ultimately several pages needed to be entered as text due to the User Authentication features used across the site. This meant having to remove the Jinja templating language as it resulted in errors in any instance where it was still present in the code.
+
+Results from the validation can be seen below:
+
+#### ***Home Page***
+
+![Home page HTML validation](docs/validation/sfportal-home-html-validation.png)
+
+#### ***Books Page***
+
+![Books page HTML validation](docs/validation/sfp-books-html-validation.png)
+
+#### ***Authors Page***
+
+![Authors page HTML validation](docs/validation/sfp-authors-html-validation.png)
+
+#### ***About Page***
+
+![About page HTML validation](docs/validation/sfportal-about-html-validation.png)
+
+#### ***Profile Page***
+
+![Profile page HTML validation](docs/validation/sfp-profile-html-validation.png)
+
+#### ***Book Detail Page***
+
+![Book Detail page HTML validation](docs/validation/sfp-book-detail-html-validation.png)
+
+#### ***Author Detail Page***
+
+![Author Detail page HTML validation](docs/validation/sfp-author-detail-html-validation.png)
+
+#### ***Add Book Page***
+
+![Home page HTML validation](docs/validation/)
+
+
+
+
 
 * The PEP8 Online Validator was down when creating this project, however I added a PEP8 validator to my workspace by running the command: "pip3 install pycodestyle". The results can be found [here](assets/images/bs1977-pycodestyle.png)
 
