@@ -41,6 +41,7 @@ Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment o
       * [***Sign Up***](#sign-up)
       * [***Log In***](#log-in)
       * [***Log Out***](#log-out)
+    * [***404 Page***](#404-page)
 1. [**Future-Enhancements**](#future-enhancements)
 1. [**Testing Phase**](#testing-phase)
 1. [**Deployment**](#deployment)
@@ -455,6 +456,12 @@ Here is how the pages display on an iPhone SE:
 ![Screenshot of logout success small screen](docs/images/home-logout-success-small.png)
 
 <hr>
+
+### **404 Page**
+
+A 404 page was added to catch instances when the User may have mis-typed a URL, or if content has been removed from the site. The 404 page features text dislaying the content is not available and features a back button:
+
+[Screenshot of 404 page](docs/images/404.png)
 
 ## **Future-Enhancements**
 ​
