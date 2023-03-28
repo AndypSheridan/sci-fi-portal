@@ -28,6 +28,7 @@ Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment o
 1. [**Features**](#features)
     * [***Admin Page***](#admin-page)
     * [***Navbar***](#navbar)
+    * [***Social Media and Email Links***](#social-media-and-email-links)
     * [***Home Page***](#home-page)
     * [***Books Page***](#books-page)
     * [***Book Detail Page***](#book-detail-page)
