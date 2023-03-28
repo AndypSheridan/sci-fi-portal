@@ -41,8 +41,9 @@ Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment o
       * [***Sign Up***](#sign-up)
       * [***Log In***](#log-in)
       * [***Log Out***](#log-out)
-    * [***404 Page***](#404-page)
+    * [***Defensive Programming***](#defensive-programming)
     * [***User Authentication***](#user-authentication)
+    * [***404 Page***](#404-page)
 1. [**Future-Enhancements**](#future-enhancements)
 1. [**Testing Phase**](#testing-phase)
 1. [**Deployment**](#deployment)
@@ -342,6 +343,8 @@ Here is how the page displays on an iPhone SE:
 
 ![Screenshot of authors page small screen](docs/images/authors-small.png)
 
+<hr>
+
 
 ### Author Detail Page
 
@@ -355,6 +358,8 @@ The aim of this page is to introduce the User to new authors who might appeal to
 Here is how the page displays on an iPhone SE:
 
 ![Screenshot of author detail page small screen](docs/images/author-det-small.png)
+
+<hr>
 
 ### About Page
 
@@ -370,6 +375,7 @@ Here is how the page displays on an iPhone SE:
 ![Screenshot of about page small screen](docs/images/about-small.png)
 
 <hr>
+
 
 ### Profile Page
 
@@ -393,6 +399,7 @@ Here is how the page displays on an iPhone SE:
 ![Screenshot of profile page form small screen](docs/images/profile-form-small.png)
 
 <hr>
+
 
 ## Allauth Account Pages
 
@@ -421,6 +428,8 @@ Here is how the page displays on an iPhone SE:
 
 ![Screenshot of signup small screen](docs/images/signup-small.png)
 
+<hr>
+
 #### Log In
 
 Existing Users can log in by clicking the Log In button on the Home Page. This will bring them to the Log In Page:
@@ -437,6 +446,8 @@ Here is how the page displays on an iPhone SE:
 
 ![Screenshot of login small screen](docs/images/login-small.png)
 ![Screenshot of login error small screen](docs/images/login-error-small.png)
+
+<hr>
 
 
 #### Log Out
@@ -458,11 +469,33 @@ Here is how the pages display on an iPhone SE:
 
 <hr>
 
+
+## **Defensive Programming**
+
+In order to avoid the User unintentionally deleting their own content, some simple defensive programming was implemented. If a User is logged in and clicks delete on one of their reviews, they will be prompted for confirmation they want to do so here:
+
+![Screenshot of delete page](docs/images/delete-book.png)
+
+
+<hr>
+
+### User Authentication
+
+All pages feature User Authentication meaning that a User must be logged in to view all site content. This encourages Users to signup as well as preventing malicious attempts to edit or delete content. If a user knows or guesses a correct URL without being logged in they will encounter this screen:
+
+![Screenshot of authentication](docs/images/user-authentication.png)
+
+
+<hr>
+
 ### **404 Page**
 
 A 404 page was added to catch instances when the User may have mis-typed a URL, or if content has been removed from the site. The 404 page features text dislaying the content is not available and features a back button:
 
-[Screenshot of 404 page](docs/images/404.png)
+![Screenshot of 404 page](docs/images/404.png)
+
+
+<hr>
 
 ## **Future-Enhancements**
 ​
