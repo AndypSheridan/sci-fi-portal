@@ -282,7 +282,7 @@ The above instance again flags issue to do with cookies and Cloudinary which I f
 
 ### **HTML**
 
-The code for all pages was run through the W3C HTML Markup Validation Service. Ultimately several pages needed to be entered as text due to the User Authentication features used across the site. This meant having to remove the Jinja templating language as it resulted in errors in any instance where it was still present in the code.
+The code for all pages was run through the [W3C HTML Markup Validation Service](https://validator.w3.org/). Ultimately several pages needed to be entered as text due to the User Authentication features used across the site. This meant having to remove the Jinja templating language as it resulted in errors in any instance where it was still present in the code.
 
 Results from the validation can be seen below:
 
@@ -339,6 +339,16 @@ Results from the validation can be seen below:
 ![Log Out page HTML validation](docs/validation/sfp-logout-html-validation.png)
 
 
+<hr>
+
+### ***CSS***
+
+The custom CSS code was passed through the [W3C Jigsaw Validator](https://jigsaw.w3.org/css-validator/). The result can be seen below:
+
+![CSS Validation Result](docs/validation/sfp-css-certificate.png)
+
+
+<hr>
 
 
 
