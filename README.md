@@ -143,7 +143,7 @@ The final site adheres fairly closely to the initial images. I dropped the fixed
 
 I used [DrawSQL](https://drawsql.app)​ to help visualise my database tables. See the image below:
 
-![Database Schema](docs/data-model/sfportal-der-diagram.png)
+![Database Schema](docs/data-model/sfp-drawsql-erd.png)
 
 Unfortunately, the site did not provide adequate field type values but it was intrumental in helping create the Entity Relationship Diagram.
 
