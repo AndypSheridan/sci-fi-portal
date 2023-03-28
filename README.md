@@ -79,7 +79,7 @@ Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment o
 * People who are fans of Science Fiction books.
 * People who are fans of the genre in general.
 * People looking to share their own reading experiences from within the genre.
-* People looking for a an online book-club which is easy to sign up to and easy to navigate.
+* People looking for an online book-club which is easy to sign up to and easy to navigate.
 * People who would like to comment on other reviews in order to discuss these books.
 * People seeking future reading inspiration.
 * People who are new to the genre and would like to engage with the community.
