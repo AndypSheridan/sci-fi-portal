@@ -1,5 +1,6 @@
 # Testing
 
+* [**Testing Overview**](#testing-overview)
 * [**Bugs**](#bugs)
 * [**Lighthouse**](#lighthouse)
   * [**Home Page**](#home-page)
@@ -51,6 +52,20 @@
   * [**Python / Django**](#python--django)
 * [**User Story Testing**](user-story-testing)
 
+
+<hr>
+
+## **Testing Overview**
+
+At the time of writing this is the largest project I had undertaken so I felt the testing process needed to be as thorough as possible. The Sci-Portal was tested on a variety of devices including a MacBook Pro 2021, a MacBook Air 2020, an iPad Air 2020, iPhone 12, iPhone SE, Dell Desktop with 24" Screen, Kindle Fire and a Samsung Galaxy Tablet.
+
+The majority of User testing was conducted by myself, however I enlisted the help of family and several work colleagues, essentially to try to break the site.
+
+All buttons and links were clicked multiple times to test they functioned as expected. Multiple test reviews were created, edited and deleted to check the efficacy of the CRUD (create, read, update and delete) functionality across the site.
+
+Inevitably there were bugs and these are outlined and summarised below.
+
+Full details of manual testing can be found on this page.
 
 <hr>
 
