@@ -128,10 +128,13 @@ I used [Figma](https://www.figma.com) to help guide my design process for this p
 * [Book / Author Detail Page](docs/wireframes/sfp-detail-wireframe.png)
 * [User Account Page](docs/wireframes/sfp-account-wireframe.png)
 * [Submit Review Page](docs/wireframes/sfp-submit-review-wireframe.png)
+* [Edit Review Page](docs/wireframes/sfp-edit-book-wireframe.png)
+* [Delete Review Page](docs/wireframes/sfp-delete-book-wireframe.png)
+* [Search Results Page](docs/wireframes/sfp-search-wireframe.png)
 
-The final site adheres fairly closely to the initial images. I dropped the fixed-bottom footer as it interfered with site content on some devices. I moved the social media and email links to the tight side of the navbar where they worked better anyway.
 
-The edit, delete and search result pages do not have images here as they are either simple forms or last-minute additions.
+The final site adheres fairly closely to the initial images. I dropped the fixed-bottom footer as it interfered with site content on some devices. I moved the social media and email links to the right side of the navbar where they worked better anyway.
+
 
 <hr>
 
