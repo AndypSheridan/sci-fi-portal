@@ -288,6 +288,26 @@ or a solid heart if the user has liked it:
 
 The User can like or unlike a review.
 
+<hr>
+
+### **Add Book Page**
+
+If a User clicks 'Submit a Review' they are taken to the Add Book Page:
+
+![Screenshot of Add Book Page 1](docs/images/add-book-1.png)
+![Screenshot of Add Book Page 2](docs/images/add-book-2.png)
+
+The User must provide information for all fields in the form other than providing an image, rating and sub-genre. There are default values for the latter three but the User can still alter them.
+
+Any mandatory form fields that are left blank will result in the following prompt:
+
+![Screenshot of Add Book Form errors](docs/images/add-book-form-errors.png)
+
+Upon successful submission of the form, the User is redirected to the Books Page and a message is displayed.
+
+
+<hr>
+
 ***Comments***
 
 Comments can be viewed below the reviews. This displays the User posting the comment, the date and time as well as the comment itself:
