@@ -44,7 +44,7 @@ h4 {
 
 .text-purple-large {
     color: #f13bf1;
-    font-size: larger;
+    font-size: 1rem;
 }
 
 .text-small {
@@ -156,7 +156,7 @@ a.nav-link.active {
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
-a:hover {
+.navbar a:hover {
     box-shadow: inset 100px 0 0 0 #6C91BF;
     color: #FFF;
 }
@@ -177,6 +177,10 @@ a:hover {
 }
 
 /* Link styling and effects */
+
+a {
+    color: #FFF;
+}
 
 .book-link {
     text-decoration: none;
