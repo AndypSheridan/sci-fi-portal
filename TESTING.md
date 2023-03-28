@@ -420,12 +420,48 @@ The final errors displayed also related line length. I was unsure how to remedy 
 * Solution 🔍: Add 'number_of_likes' to BookAdmin list display in admin.py
 * Verdict ✅: Test passed.
 
+#### As an Unregistered Site User I can:
 
-#### As a Site User I can:
+* User Story 📖: Easily determine the purpose of the site in order to see if I want to sign up to it.
+* Test 🧪: Navigating to the Home Page I was presented with a simple, but attractive Home Page welcoming me to the site and a brief description that it was an online community devoted to Science Fiction literature
+* Result 🏆: I found the appearance appealing and wanted to sign up.
+* Verdict ✅: Test passed.
+
+* User Story 📖: Register for an account in order to view and interact with content on the site.
+* Test 🧪: Navigating to the Home Page I clicked the 'Register' button and was taken to the Sign Up Page. I tried entering invalid information and the Usernames I already knew existed.
+* Result 🏆: Invalid data was not accepted, nor were dupliacted Usernames. I was informed if passwords were too short or obvious. When the valid data was passed, registration was successful and I was logged in and redirected to the Home Page.
+* Verdict ✅: Test passed.
+
+#### As a Registered Site User I can:
 
 * User Story 📖: View Book Reviews.
 * Test 🧪: Logging in as a Test User, I navigated to the Books Section of the site to see a list of Book Reviews. I clicked on each review in order to view more details and the review itself.
 * Result 🏆: The list of Books displayed in a paginated list of 6 as intended. When clicking on each review, I was able to view more about the Book and read the User's Book Review.
+* Verdict ✅: Test passed.
+
+* User Story 📖: Create Book Reviews.
+* Test 🧪: Logging in as a Test User, I navigated to the Books Section of the site to see a list of Book Reviews. I clicked on the 'Submit Review' button and completed the form on the 'Add Book' page. I completed the form and uploaded an image.
+* Result 🏆: Upon submission of the form, a message informed me the Review had been submitted for approval by the Admin. When logging in as Admin and approving the Review, it displayed on the Books page as intended.
+* Verdict ✅: Test passed.
+
+* User Story 📖: Comment on other users' posts in order to interact with the community.
+* Test 🧪: Logging in as a Test User, I navigated to the Books Section of the site to see a list of Book Reviews. On the Book Detail page, I added a comment using the form at the bottom of the page and clicked 'Submit'. A message provided feedback and informed me the comment must be approved by the Admin.
+* Result 🏆: Logging in as the Admin, I was able to approve the comment and it displayed on the corresponding Book Detail page as intended.
+* Verdict ✅: Test passed.
+
+* User Story 📖: Like or unlike posts and comments in order to interact with the site content.
+* Test 🧪: Logging in as a Test User, I navigated to the Books Section of the site to see a list of Book Reviews. On the Book Detail page, I clicked the 'Like' button.
+* Result 🏆: The outline heart icon changed to a solid red heart. If I clicked the button again, it reverted to the previous state.
+* Verdict ✅: Test passed.
+
+* User Story 📖: Add to and / or update my profile in order to keep my account up-to-date.
+* Test 🧪: Logging in as a Test User, I navigated to the Profile Page and saw that the User Profile had been created automatically when registering. A card and hidden form were both pre-populated with the information I provided when registering. I completed the form and clicked 'Update' at the bottom of the page. 
+* Result 🏆: Feedback was provided by a message informing me that the profile had been updated and the corresponding information was displayed in the card.
+* Verdict ✅: Test passed.
+
+* User Story 📖: Upload a profile image in order to express myself within the community.
+* Test 🧪: On the Profile Page, I clicked the 'Edit Profile' button and added an image using the field in the form.
+* Result 🏆: Feedback was provided by a message informing me that the profile had been updated and the corresponding photograph was displayed in the card.
 * Verdict ✅: Test passed.
 
 
