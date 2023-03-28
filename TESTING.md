@@ -436,7 +436,7 @@ The final errors displayed also related line length. I was unsure how to remedy 
 
 * User Story 📖: Easily Log In to my account.
 * Test 🧪: When logged out, I navigated to the Home Page and clicked the Log In button on the page.
- * Result 🏆: I entered my details and clicked the Log In button to be redirected to the full Home Page. In subsequent visits, my devices had auto-filled the login fields and this provided an even smoother login experience.
+* Result 🏆: I entered my details and clicked the Log In button to be redirected to the full Home Page. In subsequent visits, my devices had auto-filled the login fields and this provided an even smoother login experience.
 * Verdict ✅: Test passed.
 
  
@@ -480,8 +480,15 @@ The final errors displayed also related line length. I was unsure how to remedy 
 * Result 🏆: Feedback was provided by a message informing me that the profile had been updated and the corresponding photograph was displayed in the card.
 * Verdict ✅: Test passed.
 
+* User Story 📖: Easily Log Out of my account.
+* Test 🧪: When logged in, I navigated to 'Log Out' in the Navbar or Hamburger Menu (depending on the device).
+* Result 🏆:  Clicking the Log Out link took me to the Log Out page where I was prompted for confirmation I wanted to do so. Upon clicking the button I was logged out and redirected to the logged-out version of the Home Page. A message informed me I had successfully logged out.
+* Verdict ✅: Test passed.
 
-<br>
+
+<hr>
+
+## Addditional Testing
 
 * Implementation 🏭: Check the input validation was working as expected.
 * Test 🧪: Invalid inputs and types were entered multiple times at all possible opportunities.
