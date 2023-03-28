@@ -413,6 +413,19 @@ The final errors displayed also related line length. I was unsure how to remedy 
 * Result 🏆: The comment was approved and posted to the relevant Book Review.
 * Verdict ✅: Test passed.
 
+* User Story 📖: View the number of likes on a post or comment in order to see which is the most popular.
+* Test 🧪: Logging in as the Admin, I checked the Books list for the 'number of likes' field.
+* Result 🏆: The field was not present.
+* Verdict ❌: Test failed.
+* Solution 🔍: Add 'number_of_likes' to BookAdmin list display in admin.py
+* Verdict ✅: Test passed.
+
+* User Story 📖: Approve or disapprove comments in order to filter out objectionable content.
+* Test 🧪: Logging in as a Test User, I added a comment to a Book Review. The confirmation message informed me the comment must be approved by the Admin. When I logged into the Admin panel, I was able to approve the comment or choose not to.
+* Result 🏆: The comment was approved and posted to the relevant Book Review.
+* Verdict ✅: Test passed.
+
+
 <br>
 
 * Implementation 🏭: Check the input validation was working as expected.
