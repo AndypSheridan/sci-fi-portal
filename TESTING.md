@@ -215,6 +215,36 @@ The above instance again flags issue to do with cookies and Cloudinary which I f
 
 ![Add Book page mobile lighthouse](docs/validation/submit-review-lighthouse-mobile.png)
 
+### Edit Book Page
+
+*Desktop*
+
+![Edit Book page desktop lighthouse](docs/validation/edit-book-lighthouse.png)
+
+*Mobile*
+
+![Edit Book page mobile lighthouse](docs/validation/edit-review-lighthouse-mobile.png)
+
+### Delete Book Page
+
+*Desktop*
+
+![Delete Book page desktop lighthouse](docs/validation/delete-lighthouse.png)
+
+*Mobile*
+
+![Delete Book page mobile lighthouse](docs/validation/delete-lighthouse-mobile.png)
+
+### Search Results Page
+
+*Desktop*
+
+![Search Results page desktop lighthouse](docs/validation/search-lighthouse.png)
+
+*Mobile*
+
+![Search Results page mobile lighthouse](docs/validation/search-lighthouse-mobile.png)
+
 <hr>
 
 
