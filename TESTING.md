@@ -1,3 +1,56 @@
+# Testing
+
+* [**Functionality**](#functionality)
+* [**Bugs**](#bugs)
+* [**Lighthouse**](#lighthouse)
+  * [**Home Page**](#home)
+    * [*Desktop*](#home-desktop)
+    * [*Mobile*](#home-mobile)
+  * [**Books Page**](#books)
+    * [*Desktop*](#books-desktop)
+    * [*Mobile*](#books-mobile)
+  * [**Authors Page**](#authors)
+    * [*Desktop*](#authors-desktop)
+    * [*Mobile*](#authors-mobile)
+  * [**About Page**](#about)
+    * [*Desktop*](#about-desktop)
+    * [*Mobile*](#about-mobile)
+  * [**Profile Page**](#profile)
+    * [*Desktop*](#profile-desktop)
+    * [*Mobile*](#profile-mobile)
+  * [**Book Detail**](#book-detail)
+    * [*Desktop*](#book-detail-desktop)
+    * [*Mobile*](#book-detail-mobile)
+  * [**Author Detail**](#author-detail)
+    * [*Desktop*](#author-detail-desktop)
+    * [*Mobile*](#author-detail-mobile)
+  * [**Add Book Page**](#add-book-page)
+    * [*Desktop*](#add-book-desktop)
+    * [*Mobile*](#add-book-mobile)
+  * [**Edit Book Page**](#edit-book-page)
+    * [*Desktop*](#edit-book-desktop)
+    * [*Mobile*](#edit-book-mobile)
+  * [**Delete Book**](#delete-book-page)
+    * [*Desktop*](#delete-book-desktop)
+    * [*Mobile*](#delete-book-mobile)
+  * [**Search Results Page**](#search-results-page)
+    * [*Desktop*](#search-results-desktop)
+    * [*Mobile*](#search-results-mobile)
+  * [**Sign Up Page**](#sign-up-page)
+    * [*Desktop*](#signup-desktop)
+    * [*Mobile*](#signup-mobile)
+  * [**Log In Page**](#login-page)
+    * [*Desktop*](#login-desktop)
+    * [*Mobile*](#login-mobile)
+  * [**Log Out Page**](#logout-page)
+    * [*Desktop*](#logout-desktop)
+    * [*Mobile*](#logout-mobile)
+
+
+
+
+
+
 **Functionality**
 
 * Implementation 🏭: I wanted to make sure the game performed as expected from start to finish.
