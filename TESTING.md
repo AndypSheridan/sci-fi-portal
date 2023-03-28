@@ -47,6 +47,8 @@
 * [**Validation**](#validation)
   * [**HTML**](#html)
   * [**CSS**](#css)
+  * [**JavaScript**](#javascript)
+  * [**Python / Django**](#python--django)
 * [**User Story Testing**](user-story-testing)
 
 
@@ -349,6 +351,35 @@ The custom CSS code was passed through the [W3C Jigsaw Validator](https://jigsaw
 
 
 <hr>
+
+### ***JavaScript***
+
+Although there is very little JavaScript in this code, I ran it through the [JSHint Validation Service](https://jshint.com/). The result can be seen below:
+
+![JS Validation Result](docs/validation/sfp-js-validation.png)
+
+
+<hr>
+
+### ***Python / Django ***
+
+The PEP8 Online Validator was down when creating this project, however I added a PEP8 validator to my workspace by running the command: "pip3 install pycodestyle". The validator identified the errors in the following files:
+
+![PycodeStyle Results views.py](docs/validation/views-py-errors.png)
+
+
+This highlights an error in line length which I was unable to rectify without breaking the code. I decided against changing it.
+
+![PycodeStyle Results settings.py](docs/validation/settings-py-errors.png)
+
+
+Again there are issues with line length but I was reluctant to change anything in this file. I surmised that as this was the default code, it was better to leave it in place.
+
+![PycodeStyle Results env.py](docs/validation/env-py-errors.png)
+
+The final errors displayed also related line length. I was unsure how to remedy this without compromising the code in the env.py file so overlooked this too.
+
+
 
 
 
