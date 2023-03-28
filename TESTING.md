@@ -393,25 +393,35 @@ The final errors displayed also related line length. I was unsure how to remedy 
 * Result 🏆: The Book status was updated as intended
 * Verdict ✅: Test passed.
 
+<br>
+
 * User Story 📖: Add to, or remove from, the Authors section in order to keep content fresh and relevant
 * Test 🧪: The admin panel was used to add or remove authors along with date of birth, bios, images and famous works.
 * Result 🏆: Creating and deleting authors functioned as intended.
 * Verdict ✅: Test passed.
+
+<br>
 
 * User Story 📖: Delete a User account in order remove Users who do not respect who do not respect others in the community.
 * Test 🧪: The delete User option was selected from the dropdown menu in the admin panel in order to delete Test Users
 * Result 🏆: Users were deleted as intended.
 * Verdict ✅: Test passed.
 
+<br>
+
 * User Story 📖: Approve or disapprove book reviews in order to check their content is appropriate.
 * Test 🧪: Logging in as a Test User, I added a Book Review using the front end method. The Review did not appear in the Books page as the default setting was 'Draft'. By logging in as the Admin, I was able to set the status to 'Published' using the drop down menu.
 * Result 🏆: The Book Review was approved and published as intended.
 * Verdict ✅: Test passed.
 
+<br>
+
 * User Story 📖: Approve or disapprove comments in order to filter out objectionable content.
 * Test 🧪: Logging in as a Test User, I added a comment to a Book Review. The confirmation message informed me the comment must be approved by the Admin. When I logged into the Admin panel, I was able to approve the comment or choose not to.
 * Result 🏆: The comment was approved and posted to the relevant Book Review.
 * Verdict ✅: Test passed.
+
+<br>
 
 * User Story 📖: View the number of likes on a post or comment in order to see which is the most popular.
 * Test 🧪: Logging in as the Admin, I checked the Books list for the 'number of likes' field.
@@ -420,6 +430,8 @@ The final errors displayed also related line length. I was unsure how to remedy 
 * Solution 🔍: Add 'number_of_likes' to BookAdmin list display in admin.py
 * Verdict ✅: Test passed.
 
+<hr>
+
 #### As an Unregistered Site User I can:
 
 * User Story 📖: Easily determine the purpose of the site in order to see if I want to sign up to it.
@@ -427,58 +439,80 @@ The final errors displayed also related line length. I was unsure how to remedy 
 * Result 🏆: I found the appearance appealing and wanted to sign up.
 * Verdict ✅: Test passed.
 
+<br>
+
 * User Story 📖: Register for an account in order to view and interact with content on the site.
 * Test 🧪: Navigating to the Home Page I clicked the 'Register' button and was taken to the Sign Up Page. I tried entering invalid information and the Usernames I already knew existed.
 * Result 🏆: Invalid data was not accepted, nor were dupliacted Usernames. I was informed if passwords were too short or obvious. When the valid data was passed, registration was successful and I was logged in and redirected to the Home Page.
 * Verdict ✅: Test passed.
 
+<hr>
+
 #### As a Registered Site User I can:
+
 
 * User Story 📖: Easily Log In to my account.
 * Test 🧪: When logged out, I navigated to the Home Page and clicked the Log In button on the page.
 * Result 🏆: I entered my details and clicked the Log In button to be redirected to the full Home Page. In subsequent visits, my devices had auto-filled the login fields and this provided an even smoother login experience.
 * Verdict ✅: Test passed.
 
- 
+<br>
+
 * User Story 📖: View a list of book posts in order to select one to read.
 * Test 🧪: Logging in as a Test User, I navigated to the Books Section of the site to see a list of Book Reviews. 
 * Result 🏆: The list of Books displayed in a paginated list of 6 as intended.
 * Verdict ✅: Test passed.
+
+<br>
 
 * User Story 📖: Click on a Book Review in order to view all of its content
 * Test 🧪: Logging in as a Test User, I navigated to the Books Section of the site to see a list of Book Reviews. I clicked on each review in order to view more details and the review itself.
 * Result 🏆: When clicking on each review, I was able to view more about the Book and read the User's Book Review.
 * Verdict ✅: Test passed.
 
+<br>
+
 * User Story 📖: Create posts of my own in order to share my review with the community.
 * Test 🧪: Logging in as a Test User, I navigated to the Books Section of the site to see a list of Book Reviews. I clicked on the 'Submit Review' button and completed the form on the 'Add Book' page. I completed the form and uploaded an image.
 * Result 🏆: Upon submission of the form, a message informed me the Review had been submitted for approval by the Admin. When logging in as Admin and approving the Review, it displayed on the Books page as intended.
 * Verdict ✅: Test passed.
+
+<br>
 
 * User Story 📖: Edit or delete my book posts in order to keep my own contributions relevant.
 * Test 🧪: When logged in, 'Edit' and 'Delete' buttons were present on reviews I had written on both the Books and Book Detail pages. Clicking 'Edit' directed me to the 'Edit Review' form which I could update accordingly. If I clicked 'Delete' I was asked for confirmation.
 * Result 🏆: Submitting the Update Review form displayed a message informing me the review had been updated and the new content displayed. Confirming deletion removed the Book Review from the site and database.
 * Verdict ✅: Test passed.
 
+<br>
+
 * User Story 📖: Comment on other users' posts in order to interact with the community.
 * Test 🧪: Logging in as a Test User, I navigated to the Books Section of the site to see a list of Book Reviews. On the Book Detail page, I added a comment using the form at the bottom of the page and clicked 'Submit'. A message provided feedback and informed me the comment must be approved by the Admin.
 * Result 🏆: Logging in as the Admin, I was able to approve the comment and it displayed on the corresponding Book Detail page as intended.
 * Verdict ✅: Test passed.
+
+<br>
 
 * User Story 📖: Like or unlike posts and comments in order to interact with the site content.
 * Test 🧪: Logging in as a Test User, I navigated to the Books Section of the site to see a list of Book Reviews. On the Book Detail page, I clicked the 'Like' button.
 * Result 🏆: The outline heart icon changed to a solid red heart. If I clicked the button again, it reverted to the previous state.
 * Verdict ✅: Test passed.
 
+<br>
+
 * User Story 📖: Add to and / or update my profile in order to keep my account up-to-date.
 * Test 🧪: Logging in as a Test User, I navigated to the Profile Page and saw that the User Profile had been created automatically when registering. A card and hidden form were both pre-populated with the information I provided when registering. I completed the form and clicked 'Update' at the bottom of the page. 
 * Result 🏆: Feedback was provided by a message informing me that the profile had been updated and the corresponding information was displayed in the card.
 * Verdict ✅: Test passed.
 
+<br>
+
 * User Story 📖: Upload a profile image in order to express myself within the community.
 * Test 🧪: On the Profile Page, I clicked the 'Edit Profile' button and added an image using the field in the form.
 * Result 🏆: Feedback was provided by a message informing me that the profile had been updated and the corresponding photograph was displayed in the card.
 * Verdict ✅: Test passed.
+
+<br>
 
 * User Story 📖: Easily Log Out of my account.
 * Test 🧪: When logged in, I navigated to 'Log Out' in the Navbar or Hamburger Menu (depending on the device).
@@ -490,41 +524,8 @@ The final errors displayed also related line length. I was unsure how to remedy 
 
 ## Addditional Testing
 
-* Implementation 🏭: Check the input validation was working as expected.
-* Test 🧪: Invalid inputs and types were entered multiple times at all possible opportunities.
-* Result 🏆: The validation worked well. There were no occasions when it was possible to enter an invalid input.
-* Verdict ✅: Test passed.
 
-<br>
-
-* Implementation 🏭: I wanted to make sure the game performed as expected from start to finish.
-* Test 🧪: I played the game on a local terminal and on Heroku over thirty times.
-* Result 🏆: The game worked as anticipated with no errors.
-* Verdict ✅: Test passed.
-
-<br>
-
-* Implementation 🏭: Check the game ends as expected and offers the play again option upon completion.
-* Test 🧪: I played the game multiple times, winning and losing. I selected play again and quit at random.
-* Result 🏆: The game worked as anticipated with no errors.
-* Verdict ✅: Test passed.
-<br>
 ​
-
-| Checked | User Story |
-| :-------: | ---------- |
-| test | test|
-
-
-| Checked | **use a text editor within the admin panel** so that **I can create a job description in a way that is clear and appeals to the eye when creating a job post** |
-| ------- | -------- |
-| &check; | Can add a job post successfully from the admin panel using the summer note editor |
-
-| Checked | ...**Log into a user interface** so that **I can easily manage data via a user interface** |
-|:-------:|:--------|
-| &check; | Can Log in to admin panel successfully |
-| &check; | Changes to any data are reflected in the database |
-
 <hr>
 
 Back to [README](/README.md)
