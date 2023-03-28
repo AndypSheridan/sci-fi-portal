@@ -169,6 +169,7 @@ a:hover {
 
 .search-results:hover {
     color: #f13bf1;
+    box-shadow: none;
 }
 
 .navbar-text {
