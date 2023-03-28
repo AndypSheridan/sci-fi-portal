@@ -380,20 +380,37 @@ Again there are issues with line length but I was reluctant to change anything i
 The final errors displayed also related line length. I was unsure how to remedy this without compromising the code in the env.py file so overlooked this too.
 
 
+<hr>
 
+## **Manual Testing**
 
+### User Stories
 
+#### As a Site Admin I can:
 
+* User Story 📖: Create draft Book posts in order to publish them at a later time
+* Test 🧪: The admin panel was used to create Test Book Reviews and set the status to either draft or published
+* Result 🏆: The Book status was updated as intended
+* Verdict ✅: Test passed.
 
-* The PEP8 Online Validator was down when creating this project, however I added a PEP8 validator to my workspace by running the command: "pip3 install pycodestyle". The results can be found [here](assets/images/bs1977-pycodestyle.png)
+* User Story 📖: Add to, or remove from, the Authors section in order to keep content fresh and relevant
+* Test 🧪: The admin panel was used to add or remove authors along with date of birth, bios, images and famous works.
+* Result 🏆: Creating and deleting authors functioned as intended.
+* Verdict ✅: Test passed.
 
-* The validator flags a number of minor warnings, all of which are related to the use of the ASCII art used in the start screen, win screen and lose screen functions. In my final mentor session, I was informed these are inconsequential and can essentially be ignored as they do not affect the program itself.
+* User Story 📖: Delete a User account in order remove Users who do not respect who do not respect others in the community.
+* Test 🧪: The delete User option was selected from the dropdown menu in the admin panel in order to delete Test Users
+* Result 🏆: Users were deleted as intended.
+* Verdict ✅: Test passed.
 
-**Functionality**
+* User Story 📖: Approve or disapprove book reviews in order to check their content is appropriate.
+* Test 🧪: Logging in as a Test User, I added a Book Review using the front end method. The Review did not appear in the Books page as the default setting was 'Draft'. By logging in as the Admin, I was able to set the status to 'Published' using the drop down menu.
+* Result 🏆: The Book Review was approved and published as intended.
+* Verdict ✅: Test passed.
 
-* Implementation 🏭: I wanted to make sure the game performed as expected from start to finish.
-* Test 🧪: I played the game on a local terminal and on Heroku over thirty times.
-* Result 🏆: The game worked as anticipated with no errors.
+* User Story 📖: Approve or disapprove comments in order to filter out objectionable content.
+* Test 🧪: Logging in as a Test User, I added a comment to a Book Review. The confirmation message informed me the comment must be approved by the Admin. When I logged into the Admin panel, I was able to approve the comment or choose not to.
+* Result 🏆: The comment was approved and posted to the relevant Book Review.
 * Verdict ✅: Test passed.
 
 <br>
@@ -419,14 +436,20 @@ The final errors displayed also related line length. I was unsure how to remedy 
 <br>
 ​
 
+| Checked | User Story |
+| :-------: | ---------- |
+| test | test|
 
-| Checked | ...**use a text editor within the admin panel** so that **I can create a job description in a way that is clear and appeals to the eye when creating a job post** |
-|:-------:|:--------|
+
+| Checked | **use a text editor within the admin panel** so that **I can create a job description in a way that is clear and appeals to the eye when creating a job post** |
+| ------- | -------- |
 | &check; | Can add a job post successfully from the admin panel using the summer note editor |
 
 | Checked | ...**Log into a user interface** so that **I can easily manage data via a user interface** |
 |:-------:|:--------|
 | &check; | Can Log in to admin panel successfully |
 | &check; | Changes to any data are reflected in the database |
+
+<hr>
 
 Back to [README](/README.md)
