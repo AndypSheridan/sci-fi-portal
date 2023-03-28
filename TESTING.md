@@ -125,8 +125,35 @@ The Lighthouse test results for all major pages can be found below. The Mobile s
 
 *Desktop*
 
-![Home page desktop lighthouse](docs/validation/)
+![Home page desktop lighthouse](docs/validation/index-lighthouse.png)
 
+*Mobile*
+
+![Home page mobile lighthouse](docs/validation/index-lighthouse-mobile.png)
+
+### Books Page
+
+*Desktop*
+
+![Books page desktop lighthouse](docs/validation/books-lighthouse-1.png)
+
+*Mobile*
+
+![Books page mobile lighthouse](docs/validation/books-lighthouse-mobile.png)
+
+### Authors Page
+
+*Desktop*
+
+![Authors page desktop lighthouse](docs/validation/authors-lighthouse.png)
+
+The lower 'best practice' score is as a result of the following which is a cookie issue related to Cloudinary:
+
+![Best practice score](docs/validation/authors-lighthouse-bp.png)
+
+*Mobile*
+
+![Authors page mobile lighthouse](docs/validation/authors-lighthouse-mobile.png)
 
 <hr>
 
