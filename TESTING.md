@@ -169,15 +169,31 @@ The lower 'best practice' score is as a result of the following which is a cooki
 
 *Desktop*
 
-![Authors page desktop lighthouse](docs/validation/authors-lighthouse.png)
-
-The lower 'best practice' score is as a result of the following which is a cookie issue related to Cloudinary:
-
-![Best practice score](docs/validation/authors-lighthouse-bp.png)
+![Profile page desktop lighthouse](docs/validation/profile-lighthouse.png)
 
 *Mobile*
 
-![Authors page mobile lighthouse](docs/validation/authors-lighthouse-mobile.png)
+![Authors page mobile lighthouse](docs/validation/profile-lighthouse-mobile.png)
+
+### Book Detail Page
+
+*Desktop*
+
+![Book Detail page desktop lighthouse](docs/validation/book-detail-lighthouse1.png)
+
+The reasons for the reduced 'best practices' score can be seen below:
+
+![Book detail best practice lighthouse](docs/validation/book-detail-lighthouse-bp.png)
+
+In the above instance, the image proportions are as intended and I found no lack of clarity during testing.
+
+![Book detail best practice lighthouse 2](docs/validation/book-detail-lighthouse-bp-2.png)
+
+The above instance again flags issue to do with cookies and Cloudinary which I felt were beyond my control given the time constraints. They do not affect the performance or appearance of the page.
+
+*Mobile*
+
+![Book Detail page mobile lighthouse](docs/validation/book-detail-lighthouse-mobile.png)
 
 <hr>
 
