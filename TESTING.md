@@ -434,14 +434,30 @@ The final errors displayed also related line length. I was unsure how to remedy 
 
 #### As a Registered Site User I can:
 
-* User Story 📖: View Book Reviews.
-* Test 🧪: Logging in as a Test User, I navigated to the Books Section of the site to see a list of Book Reviews. I clicked on each review in order to view more details and the review itself.
-* Result 🏆: The list of Books displayed in a paginated list of 6 as intended. When clicking on each review, I was able to view more about the Book and read the User's Book Review.
+* User Story 📖: Easily Log In to my account.
+* Test 🧪: When logged out, I navigated to the Home Page and clicked the Log In button on the page.
+ * Result 🏆: I entered my details and clicked the Log In button to be redirected to the full Home Page. In subsequent visits, my devices had auto-filled the login fields and this provided an even smoother login experience.
 * Verdict ✅: Test passed.
 
-* User Story 📖: Create Book Reviews.
+ 
+* User Story 📖: View a list of book posts in order to select one to read.
+* Test 🧪: Logging in as a Test User, I navigated to the Books Section of the site to see a list of Book Reviews. 
+* Result 🏆: The list of Books displayed in a paginated list of 6 as intended.
+* Verdict ✅: Test passed.
+
+* User Story 📖: Click on a Book Review in order to view all of its content
+* Test 🧪: Logging in as a Test User, I navigated to the Books Section of the site to see a list of Book Reviews. I clicked on each review in order to view more details and the review itself.
+* Result 🏆: When clicking on each review, I was able to view more about the Book and read the User's Book Review.
+* Verdict ✅: Test passed.
+
+* User Story 📖: Create posts of my own in order to share my review with the community.
 * Test 🧪: Logging in as a Test User, I navigated to the Books Section of the site to see a list of Book Reviews. I clicked on the 'Submit Review' button and completed the form on the 'Add Book' page. I completed the form and uploaded an image.
 * Result 🏆: Upon submission of the form, a message informed me the Review had been submitted for approval by the Admin. When logging in as Admin and approving the Review, it displayed on the Books page as intended.
+* Verdict ✅: Test passed.
+
+* User Story 📖: Edit or delete my book posts in order to keep my own contributions relevant.
+* Test 🧪: When logged in, 'Edit' and 'Delete' buttons were present on reviews I had written on both the Books and Book Detail pages. Clicking 'Edit' directed me to the 'Edit Review' form which I could update accordingly. If I clicked 'Delete' I was asked for confirmation.
+* Result 🏆: Submitting the Update Review form displayed a message informing me the review had been updated and the new content displayed. Confirming deletion removed the Book Review from the site and database.
 * Verdict ✅: Test passed.
 
 * User Story 📖: Comment on other users' posts in order to interact with the community.
