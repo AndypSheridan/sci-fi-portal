@@ -42,6 +42,7 @@ Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment o
       * [***Log In***](#log-in)
       * [***Log Out***](#log-out)
     * [***404 Page***](#404-page)
+    * [***User Authentication***](#user-authentication)
 1. [**Future-Enhancements**](#future-enhancements)
 1. [**Testing Phase**](#testing-phase)
 1. [**Deployment**](#deployment)
@@ -473,6 +474,14 @@ There are a number of areas with scope for future improvement. This project has 
 * A community page for User who opt in to have their profiles diplayed publicly.
 * The serach function to be updated to display results in the new categories.
 * Using the Google Books API to retrieve book information. I did explore this option before the inception of the project but decided against including it due to time constraints.
+
+<hr>
+
+## User Authentication
+
+All pages feature User Authentication meaning that a User must be logged in to view all site content. This encourages Users to signup as well as preventing malicious attempts to edit or delete content. If a user knows or guesses a correct URL without being logged in they will encounter this screen:
+
+[Screenshot of authentication](docs/images/user-authentication.png)
 
 <hr>
 
