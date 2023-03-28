@@ -155,6 +155,30 @@ The lower 'best practice' score is as a result of the following which is a cooki
 
 ![Authors page mobile lighthouse](docs/validation/authors-lighthouse-mobile.png)
 
+### About Page
+
+*Desktop*
+
+![About page desktop lighthouse](docs/validation/about-lighthouse.png)
+
+*Mobile*
+
+![About page mobile lighthouse](docs/validation/about-lighthouse-mobile.png)
+
+### Profile Page
+
+*Desktop*
+
+![Authors page desktop lighthouse](docs/validation/authors-lighthouse.png)
+
+The lower 'best practice' score is as a result of the following which is a cookie issue related to Cloudinary:
+
+![Best practice score](docs/validation/authors-lighthouse-bp.png)
+
+*Mobile*
+
+![Authors page mobile lighthouse](docs/validation/authors-lighthouse-mobile.png)
+
 <hr>
 
 
