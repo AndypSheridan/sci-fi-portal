@@ -26,6 +26,7 @@ Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment o
       * [***Typography***](#typography)
 1. [**Agile Development**](#agile-development)
 1. [**Features**](#features)
+    * [***Admin Page***](#admin-page)
     * [***Navbar***](#navbar)
     * [***Home Page***](#home-page)
     * [***Books Page***](#books-page)
@@ -179,6 +180,14 @@ I used Github projects to create and track issues and User Stories. The Agile pr
 # **Features**
 
 ## **Site Navigation**
+
+### **Admin Page**
+
+The Admin page was setup almost immediately. This was crucial as it provided the initial means of adding test data and users to the project.
+
+![Screenshot of admin page](docs/images/admin.png)
+
+<hr>
 
 ### **Navbar**
 ​
