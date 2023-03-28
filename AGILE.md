@@ -21,7 +21,7 @@ I used a [Smartsheet](https://www.smartsheet.com) template to help plan my sprin
 
 ![Sprint Planning 2](docs/agile/sprint-planning2.png)
 
-I used the Github's [project board](https://github.com/users/AndypSheridan/projects/2) to create and track issues and User Stories. I then integrated these within my Smartsheet template.
+I used the Github [project board](https://github.com/users/AndypSheridan/projects/2) to create and track issues and User Stories. I then integrated these within my Smartsheet template.
 
 This proved instrumental in keeping me focused on tasks and creating the necessary features for the project. As this was my first solo experience of using Github projects, I found that on several occasions I underestimated or overstimated the amount of time and/or tasks for each particular sprint but, on the whole, the schedule worked well.
 

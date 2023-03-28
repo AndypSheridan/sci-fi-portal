@@ -32,6 +32,7 @@ Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment o
     * [***Home Page***](#home-page)
     * [***Books Page***](#books-page)
     * [***Book Detail Page***](#book-detail-page)
+    * [***Add Book Page***](#book-detail-page)
     * [***Edit Book Page***](#edit-book-page)
     * [***Delete Book Page***](#delete-book-page)
     * [***Authors Page***](#authors-page)
@@ -156,7 +157,7 @@ After researching various options for this project, I opted for the color scheme
 
 ![Colour Palette](docs/images/colour-palette.png)
 
-The contrast scores for the colours in this palette can be seen below. I used [contrast-grid](https://contrast-grid.eightshapes.com/) to generate this chart.
+The contrast scores for all the colours used across the project can be seen below. I used [contrast-grid](https://contrast-grid.eightshapes.com/) to generate this chart.
 
 ![Colour Palette Contrast Scores](docs/images/contrast-checker.png)
 
@@ -278,6 +279,7 @@ This dislays a larger image of the book - if uploaded, the book title, author, r
 ***Likes***
 
 The like button has two states: a [Font Awesome](https://fontawesome.com/) heart outline if the user has not liked the review:
+<br>
 ![Screenshot of unliked](docs/images/book-likes-before.png)
 
 or a solid heart if the user has liked it:
@@ -313,7 +315,7 @@ If the User clicks edit on the Books or Book Detail page then they are directed 
 ![Screenshot of edit book](docs/images/book-edit-1.png)
 ![Screenshot of edit book](docs/images/book-edit-2.png)
 
-A User is only allowed to edit or delete an admin-approved review that they have posted. If these conditions are met, the edit book page will display a form pre-populated with the existing data from the initial review. This can be edited or updated. The primary reason for doing so would be to edit typos pr perhaps add an image they couldn't find before.
+A User is only allowed to edit or delete an admin-approved review that they have posted. If these conditions are met, the edit book page will display a form pre-populated with the existing data from the initial review. This can be edited or updated. The primary reasons for doing so would be to edit typos pr perhaps add an image they couldn't find before.
 
 Upon submission of the form, the User will be redirected to the Books page and shown a success message:
 
