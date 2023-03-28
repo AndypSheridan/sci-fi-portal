@@ -473,7 +473,7 @@ Here is how the pages display on an iPhone SE:
 
 ## **Messages**
 
-User feedback is provided in the shape of success messages. These messages will be displayed in the following situations:
+User feedback is provided in the shape of success messages with the aim of providing a more involved User Experience. These messages are dismissable by clicking the 'x' and will be displayed in the following situations:
 
 **Successful Login**
 
