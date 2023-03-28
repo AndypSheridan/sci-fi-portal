@@ -205,6 +205,16 @@ The above instance again flags issue to do with cookies and Cloudinary which I f
 
 ![Author Detail page mobile lighthouse](docs/validation/author-detail-lighthouse-mobile.png)
 
+### Add Book Page
+
+*Desktop*
+
+![Add Book page desktop lighthouse](docs/validation/submit-review-lighthouse.png)
+
+*Mobile*
+
+![Add Book page mobile lighthouse](docs/validation/submit-review-lighthouse-mobile.png)
+
 <hr>
 
 
