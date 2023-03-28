@@ -45,6 +45,10 @@
   * [**Log Out Page**](#logout-page)
     * [*Desktop*](#logout-desktop)
     * [*Mobile*](#logout-mobile)
+* [**Validation**](#validation)
+  * [**HTML**](#html)
+  * [**CSS**](#css)
+* [**User Story Testing**](user-story-testing)
 
 
 
