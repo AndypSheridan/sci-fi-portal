@@ -173,7 +173,7 @@ The lower 'best practice' score is as a result of the following which is a cooki
 
 *Mobile*
 
-![Authors page mobile lighthouse](docs/validation/profile-lighthouse-mobile.png)
+![Profile page mobile lighthouse](docs/validation/profile-lighthouse-mobile.png)
 
 ### Book Detail Page
 
@@ -194,6 +194,16 @@ The above instance again flags issue to do with cookies and Cloudinary which I f
 *Mobile*
 
 ![Book Detail page mobile lighthouse](docs/validation/book-detail-lighthouse-mobile.png)
+
+### Author Detail Page
+
+*Desktop*
+
+![Author Detail page desktop lighthouse](docs/validation/author-detail-lighthouse.png)
+
+*Mobile*
+
+![Author Detail page mobile lighthouse](docs/validation/author-detail-lighthouse-mobile.png)
 
 <hr>
 
