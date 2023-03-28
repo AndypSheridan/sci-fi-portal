@@ -41,6 +41,7 @@ Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment o
       * [***Sign Up***](#sign-up)
       * [***Log In***](#log-in)
       * [***Log Out***](#log-out)
+    * [***Messages***](#messages)
     * [***Defensive Programming***](#defensive-programming)
     * [***User Authentication***](#user-authentication)
     * [***404 Page***](#404-page)
@@ -467,8 +468,43 @@ Here is how the pages display on an iPhone SE:
 ![Screenshot of logout small screen](docs/images/logout-small.png)
 ![Screenshot of logout success small screen](docs/images/home-logout-success-small.png)
 
+
 <hr>
 
+## **Messages**
+
+User feedback is provided in the shape of success messages. These messages will be displayed in the following situations:
+
+**Successful Login**
+
+![Succesful login message](docs/images/login-success.png)
+
+**Successful Update Profile**
+
+![Succesful update profile](docs/images/profile-success.png)
+
+**Successful Add Book Review**
+
+![Succesful add book message](docs/images/add-book-success.png)
+
+**Successful Edit Book Review**
+
+![Succesful edit review message](docs/images/edit-success.png)
+
+**Successful Delete Book Review**
+
+![Succesful login message](docs/images/delete-success.png)
+
+**Successful Comment Submission**
+
+![Succesful Comment Submission message](docs/images/comment-success.png)
+
+**Successful Logout**
+
+![Succesful logout message](docs/images/logout-success.png)
+
+
+<hr>
 
 ## **Defensive Programming**
 
