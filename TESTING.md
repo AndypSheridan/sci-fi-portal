@@ -245,6 +245,36 @@ The above instance again flags issue to do with cookies and Cloudinary which I f
 
 ![Search Results page mobile lighthouse](docs/validation/search-lighthouse-mobile.png)
 
+### Signup Page
+
+*Desktop*
+
+![Signup page desktop lighthouse](docs/validation/signup-lighthouse.png)
+
+*Mobile*
+
+![Signup page mobile lighthouse](docs/validation/signup-lighthouse-mobile.png)
+
+### Login Page
+
+*Desktop*
+
+![Log in page desktop lighthouse](docs/validation/login-lighthouse.png)
+
+*Mobile*
+
+![Log in page mobile lighthouse](docs/validation/login-lighthouse-mobile.png)
+
+### Logout Page
+
+*Desktop*
+
+![Log out page desktop lighthouse](docs/validation/logout-lighthouse.png)
+
+*Mobile*
+
+![Log out page mobile lighthouse](docs/validation/logout-lighthouse-mobile.png)
+
 <hr>
 
 
