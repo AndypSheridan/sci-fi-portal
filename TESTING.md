@@ -1,6 +1,5 @@
 # Testing
 
-* [**Functionality**](#functionality)
 * [**Bugs**](#bugs)
 * [**Lighthouse**](#lighthouse)
   * [**Home Page**](#home)
@@ -51,9 +50,92 @@
 * [**User Story Testing**](user-story-testing)
 
 
+<hr>
+
+## **Bugs**
+​
+The following bugs were identified during user testing:
+
+* 🐞 - When running the search function, it would display results from books which had not yet been published and therefore resulted in an error.
+* ⚒️ - Whilst the search function worked as intended, I had not set a specific condition for which results could be displayed.
+* ✅ - Added an if statement that would only display results if the Book status was set to published.
+
+<br>
+
+* 🐞 - Logging in would redirect the User to the Books page.
+* ⚒️ - This was what I had set the login redirect to do during the initial stages of the project before the inception of the Search Function.
+* ✅ - Adjust login redirect in settings.py
+
+​<br>
+
+* 🐞 - An error message was displayed when submitting the 'add book' form after setting the 'created_by' field to hidden.
+* ⚒️ - The field was removed so that Users could not submit reviews as other Users. This meant the field, which is required, would be empty and thus result in the error and the form failing to submit.
+* ✅ - Used some simple JavaScript code to pre-populate the 'created_by' field with the logged-in User id.
+
+<br>
+
+* 🐞 - The front end method for Users to add Book or Profile images did not work.
+* ⚒️ - Lack of familiarity with, and knowledge of the Cloudinary platform.
+* ✅ - Researched the various methods to upload and save images to Cloudinary and add Cloudinary fields to forms.
+
+<br>
+
+* 🐞 - Error messages displayed after creating the UserProfile class.
+* ⚒️ - As the UserProfile class was added after several Users had already been created, no profiles were linked to their accounts.
+* ✅ - Used the Admin page to assign profiles to Users by using the drop-down menu.
+
+<br>
+
+* 🐞 - When setting debug=False in settings.py, and removing DISABLE_COLLECTSTATIC from Heroku Config Vars, project would not deploy.
+* ⚒️ - Heroku failed to collect static files due to a conflict between Whitenoise and Cloudinary.
+* ✅ - Removed Whitenoise and ran the deployment again.
+
+<br>
+
+* 🐞 - Initial deployment of Django app failed.
+* ⚒️ - There was a typo in the settings.py file.
+* ✅ - Corrected typo.
+
+<br>
+
+* 🐞 - Users were unable to register without providing a valid email address, something I did not deem necessary for this project.
+* ⚒️ - Email was set to required in settings.py.
+* ✅ - Adjusted the settings to remove the need for an email address. The User can still choose to provide one if they wish.
+
+<br>
+
+* 🐞 - Lighthouse scores for some pages were poor.
+* ⚒️ - There were several reasons for reduced performance but the main one seemed to eminate from an issue with jQuery.
+* ✅ - Removed jQuery from the app.
 
 
+<hr>
 
+## **Unfixed Bugs**
+
+* At this stage, there are no known unfixed bugs.
+
+<hr>
+
+## Lighthouse**
+
+The Lighthouse test results for all major pages can be found below. The Mobile scores are generally lower in terms of performance with the reason being some issues with the Bootstrap CDN and the images used. The majority of these images were already compressed to what I felt was an acceptable limit. Some of the lower scores are as a result of the Cloudinary integration and issues with cookies which I feel were beyond my control here.
+
+### Home Page
+
+*Desktop*
+
+![Home page desktop lighthouse](docs/validation/)
+
+
+<hr>
+
+
+**Validators**
+
+* The PEP8 Online Validator was down when creating this project, however I added a PEP8 validator to my workspace by running the command: "pip3 install pycodestyle". The results can be found [here](assets/images/bs1977-pycodestyle.png)
+
+* The validator flags a number of minor warnings, all of which are related to the use of the ASCII art used in the start screen, win screen and lose screen functions. In my final mentor session, I was informed these are inconsequential and can essentially be ignored as they do not affect the program itself.
 
 **Functionality**
 
@@ -84,54 +166,7 @@
 * Verdict ✅: Test passed.
 <br>
 ​
-**Validators**
 
-* The PEP8 Online Validator was down when creating this project, however I added a PEP8 validator to my workspace by running the command: "pip3 install pycodestyle". The results can be found [here](assets/images/bs1977-pycodestyle.png)
-
-* The validator flags a number of minor warnings, all of which are related to the use of the ASCII art used in the start screen, win screen and lose screen functions. In my final mentor session, I was informed these are inconsequential and can essentially be ignored as they do not affect the program itself.
-
-​
-​
-## **Bugs**
-​
-The following bugs were identified during user testing:
-
-* 🐞 - When running the game it was possible for the user and CPU to place ships so that they overlapped.
-* ⚒️ - There were errors in the check_ship_placement method of the code.
-* ✅ - I made adjustments to the method to prevent any overlap.
-
-<br>
-
-* 🐞 - It was possible for both player and CPU to place ships off the board.
-* ⚒️ - There was an error in the populate_boards method.
-* ✅ - The entire method was re-written to take into account zero indexing.
-
-​<br>
-
-* 🐞 - Upon re-writing the populate boards method, ship x and y coordinates were reversed so ships did not orient correctly.
-* ⚒️ - There was an error with the for loop in the nested if statement in the populate boards method.
-* ✅ - I reversed the values for row and column and this fixed the bug.
-
-<br>
-
-* 🐞 - The original SCSS background worked well on a MacBook Pro but caused huge lag and unplayable game quality on some devices.
-* ⚒️ - The SCSS was too CPU intensive on some devices.
-* ✅ - I used a different background animation which was more subtle but works on all devices in testing.
-
-<br>
-
-* 🐞 - The game was printing too much text for the size of the terminal so the screen was overloaded with information.
-* ⚒️ - There is a lot of information to deliver to the user and it all displayed at once which could be overwhelming.
-* ✅ - Imported the os and time libraries so I could clear the terminal before delivering the next stage of the game, time was used to slow down printing to the terminal and also simulate computer thinking.
-
-
-<br>
-
-## **Unfixed Bugs**
-
-* At this stage, there are no known unfixed bugs.
-
-<hr>
 
 | Checked | ...**use a text editor within the admin panel** so that **I can create a job description in a way that is clear and appeals to the eye when creating a job post** |
 |:-------:|:--------|
