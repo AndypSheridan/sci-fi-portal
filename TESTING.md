@@ -420,9 +420,12 @@ The final errors displayed also related line length. I was unsure how to remedy 
 * Solution 🔍: Add 'number_of_likes' to BookAdmin list display in admin.py
 * Verdict ✅: Test passed.
 
-* User Story 📖: Approve or disapprove comments in order to filter out objectionable content.
-* Test 🧪: Logging in as a Test User, I added a comment to a Book Review. The confirmation message informed me the comment must be approved by the Admin. When I logged into the Admin panel, I was able to approve the comment or choose not to.
-* Result 🏆: The comment was approved and posted to the relevant Book Review.
+
+#### As a Site User I can:
+
+* User Story 📖: View Book Reviews.
+* Test 🧪: Logging in as a Test User, I navigated to the Books Section of the site to see a list of Book Reviews. I clicked on each review in order to view more details and the review itself.
+* Result 🏆: The list of Books displayed in a paginated list of 6 as intended. When clicking on each review, I was able to view more about the Book and read the User's Book Review.
 * Verdict ✅: Test passed.
 
 
