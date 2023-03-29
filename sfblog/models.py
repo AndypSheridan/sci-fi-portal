@@ -14,6 +14,10 @@ SUBGENRES = (
 
 
 class Author(models.Model):
+    """
+    Author Model for creation of new featured
+    authors in Authors section.
+    """
     name = models.CharField(max_length=60, unique=True)
     slug = models.SlugField(max_length=60, unique=True)
     residence = models.CharField(max_length=60)
@@ -33,6 +37,10 @@ class Author(models.Model):
 
 
 class Book(models.Model):
+    """
+    Main Book model allows User to add Book Reviews,
+    Book data and upload images via Cloudinary.
+    """
     title = models.CharField(max_length=100)
     slug = models.SlugField(max_length=100, unique=True, null=True)
     author = models.CharField(max_length=50)
@@ -68,6 +76,9 @@ class Book(models.Model):
 
 
 class Comment(models.Model):
+    """
+    Allows User to comment on Book Reviews
+    """
     book = models.ForeignKey(
         Book, on_delete=models.CASCADE, related_name="comments")
     name = models.CharField(max_length=60)
@@ -84,6 +95,11 @@ class Comment(models.Model):
 
 
 class UserProfile(models.Model):
+    """
+    Extends User model.
+    Allows User to add further information in
+    addition to that required for Registration.
+    """
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     bio = models.TextField(null=True)
     user_image = CloudinaryField('image', default='placeholder')
