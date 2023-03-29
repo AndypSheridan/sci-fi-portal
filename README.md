@@ -514,7 +514,16 @@ Here is how the pages display on an iPhone SE:
 
 ### **Links**
 
-I used two different effects for the links in the project. 
+I used two different effects for the links in the project. One is a custom CSS effect where a white box-shadow slides from left to right across the link. The feature can be seen on the [site](https://sci-fi-portal.herokuapp.com/)
+
+The second effect present is another custom CSS effect which changes the text-colour when it is hovered over. Generally there is no text decoration for the links as I felt the underline did not work well with either font.
+
+### **Buttons**
+
+I used Bootstrap buttons across the project. The button colours follow the colour scheme of the site, other than the 'edit' and 'delete' book buttons which use the default Bootstrap primary and danger colours in order to stand out.
+
+
+<hr>
 
 ## **Messages**
 
