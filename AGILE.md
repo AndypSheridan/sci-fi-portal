@@ -1,16 +1,17 @@
 # Agile Methodologies
 
 * **Agile Methodologies**
-  * [Overview](overview)
-  * [Sprint Notes](sprint-notes)
-    * [Sprint 1](sprint-1)
-    * [Sprint 2](sprint-2)
-    * [Sprint 3](sprint-3)
-    * [Sprint 4](sprint-4)
-    * [Sprint 5](sprint-5)
-    * [Sprint 6](sprint-6)
-    * [Sprint 7](sprint-7)
-  * [Epics](epics)
+  * [Overview](#overview)
+  * [Sprint Notes](#sprint-notes)
+    * [Sprint 1](#sprint-1)
+    * [Sprint 2](#sprint-2)
+    * [Sprint 3](#sprint-3)
+    * [Sprint 4](#sprint-4)
+    * [Sprint 5](#sprint-5)
+    * [Sprint 6](#sprint-6)
+    * [Sprint 7](#sprint-7)
+  * [Epics](#epics)
+  * [Learning Outcomes](#learning-outcomes)
 
 <hr>
 
@@ -86,7 +87,46 @@ This was another week-long sprint. With all User Stories working as intended, th
 
 ## **Epics**
 
+As I developed my Epics, it became clear that my initial planning could have been better organised and using the Epics would have helped keep my project more focused. For example, I could have added Developer Tasks and further User Stories that needed to be completed in order to have a more centralised platform to refer to. Although the project was completed successfully and on time, I still feel compelled to take better advantage of the features that Github offers when it comes to my next project.
 
+This project was divided into four Epics, using Github Milestones. The User Stories were then each assigned an Epic:
+
+![Epics Summary](docs/agile/sfp-epics.png)
+
+<br>
+
+### 1. CRUD Functionality
+
+It was crucial to ensure CRUD functionality so all CRUD-related User Stories were linked to this milestone:
+
+![CRUD Epic Summary](docs/agile/sfp-crud-epic.png)
+<br>
+
+### 2. Admin
+
+All Admin-related User Stories were linked to this milestone:
+
+![Admin Epic Summary](docs/agile/sfp-epic-admin.png)
+<br>
+
+### 3. Account and Authentication
+
+All Account and Authentication-related User Stories were linked to this milestone:
+
+![Account Epic Summary](docs/agile/sfp-epic-account.png)
+<br>
+
+### 4. Presentation
+
+Presentation-related User Stories were linked to this milestone.
+
+![Presentation Epic Summary](docs/agile/sfp-epic-presentation.png)
+<br>
+<hr>
+
+## Learning Outcomes
+
+I have enjoyed this project and it has been a wonderful learning experience. I think this first attempt using Agile methodologies has set me on a course I look forward to refining and developing continually. For future projects I intend to document all Developer Tasks, Sprints and User Stories within the Github. User Stories can be more detailed and comprehensive.
 
 
 <hr>
