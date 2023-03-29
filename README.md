@@ -44,7 +44,7 @@ Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment o
       * [***Log In***](#log-in)
       * [***Log Out***](#log-out)
     * [***Messages***](#messages)
-    * [***Defensive Programming***](#defensive-programming)
+    * [***Defensive Design***](#defensive-design)
     * [***User Authentication***](#user-authentication)
     * [***404 Page***](#404-page)
 1. [**Future-Enhancements**](#future-enhancements)
@@ -560,9 +560,9 @@ User feedback is provided in the shape of success messages with the aim of provi
 
 <hr>
 
-## **Defensive Programming**
+## **Defensive Design**
 
-In order to avoid the User unintentionally deleting their own content, some simple defensive programming was implemented. If a User is logged in and clicks delete on one of their reviews, they will be prompted for confirmation they want to do so here:
+In order to avoid the User unintentionally deleting their own content, some simple defensive design programming was implemented. If a User is logged in and clicks delete on one of their reviews, they will be prompted for confirmation they want to do so here:
 
 ![Screenshot of delete page](docs/images/delete-book.png)
 
