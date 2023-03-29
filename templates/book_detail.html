@@ -69,6 +69,7 @@ Book Detail
                         <div class="row">
                             <div class="col-4">
 
+                                <!-- Likes -->
                                 {% if user.is_authenticated %}
                                 <form action="{% url 'book_like' book.slug %}" method="POST" class="d-inline">
                                     {% csrf_token %}
