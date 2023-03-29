@@ -122,7 +122,7 @@ The following bugs were identified during user testing:
 <br>
 
 * Bug 🐞 - Lighthouse scores for some pages were poor.
-* Cause ⚒️ - There were several reasons for reduced performance but the main one seemed to eminate from an issue with jQuery.
+* Cause ⚒️ - There were several reasons for reduced performance but the main one seemed to emanate from an issue with jQuery.
 * ✅ - Removed jQuery from the app.
 
 
@@ -458,7 +458,7 @@ The final errors displayed also related line length. I was unsure how to remedy 
 
 * User Story 📖: Register for an account in order to view and interact with content on the site.
 * Test 🧪: Navigating to the Home Page I clicked the 'Register' button and was taken to the Sign Up Page. I tried entering invalid information and the Usernames I already knew existed.
-* Result 🏆: Invalid data was not accepted, nor were dupliacted Usernames. I was informed if passwords were too short or obvious. When the valid data was passed, registration was successful and I was logged in and redirected to the Home Page.
+* Result 🏆: Invalid data was not accepted, nor were duplicated Usernames. I was informed if passwords were too short or obvious. When the valid data was passed, registration was successful and I was logged in and redirected to the Home Page.
 * Verdict ✅: Test passed.
 
 <hr>
@@ -537,7 +537,7 @@ The final errors displayed also related line length. I was unsure how to remedy 
 
 <hr>
 
-## **Addditional Testing**
+## **Additional Testing**
 
 * Aim 🎯: Test 404 Page.
 * Test 🧪: When logged in, I added the URL of a page of a deleted Book Review. 
