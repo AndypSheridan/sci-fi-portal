@@ -73,56 +73,56 @@ Full details of manual testing can be found on this page.
 ​
 The following bugs were identified during user testing:
 
-* 🐞 - When running the search function, it would display results from books which had not yet been published and therefore resulted in an error.
-* ⚒️ - Whilst the search function worked as intended, I had not set a specific condition for which results could be displayed.
-* ✅ - Added an if statement that would only display results if the Book status was set to published.
+* Bug 🐞 - When running the search function, it would display results from books which had not yet been published and therefore resulted in an error.
+* Cause ⚒️ - Whilst the search function worked as intended, I had not set a specific condition for which results could be displayed.
+* Resolution ✅ - Added an if statement that would only display results if the Book status was set to published.
 
 <br>
 
-* 🐞 - Logging in would redirect the User to the Books page.
-* ⚒️ - This was what I had set the login redirect to do during the initial stages of the project before the inception of the Search Function.
-* ✅ - Adjust login redirect in settings.py
+* Bug 🐞 - Logging in would redirect the User to the Books page.
+* Cause ⚒️ - This was what I had set the login redirect to do during the initial stages of the project before the inception of the Search Function.
+* Resolution ✅ - Adjust login redirect in settings.py
 
 ​<br>
 
-* 🐞 - An error message was displayed when submitting the 'add book' form after setting the 'created_by' field to hidden.
-* ⚒️ - The field was removed so that Users could not submit reviews as other Users. This meant the field, which is required, would be empty and thus result in the error and the form failing to submit.
-* ✅ - Used some simple JavaScript code to pre-populate the 'created_by' field with the logged-in User id.
+* Bug 🐞 - An error message was displayed when submitting the 'add book' form after setting the 'created_by' field to hidden.
+* Cause ⚒️ - The field was removed so that Users could not submit reviews as other Users. This meant the field, which is required, would be empty and thus result in the error and the form failing to submit.
+* Resolution ✅ - Used some simple JavaScript code to pre-populate the 'created_by' field with the logged-in User id.
 
 <br>
 
-* 🐞 - The front end method for Users to add Book or Profile images did not work.
-* ⚒️ - Lack of familiarity with, and knowledge of the Cloudinary platform.
-* ✅ - Researched the various methods to upload and save images to Cloudinary and add Cloudinary fields to forms.
+* Bug 🐞 - The front end method for Users to add Book or Profile images did not work.
+* Cause ⚒️ - Lack of familiarity with, and knowledge of the Cloudinary platform.
+* Resolution ✅ - Researched the various methods to upload and save images to Cloudinary and add Cloudinary fields to forms.
 
 <br>
 
-* 🐞 - Error messages displayed after creating the UserProfile class.
-* ⚒️ - As the UserProfile class was added after several Users had already been created, no profiles were linked to their accounts.
-* ✅ - Used the Admin page to assign profiles to Users by using the drop-down menu.
+* Bug 🐞 - Error messages displayed after creating the UserProfile class.
+* Cause ⚒️ - As the UserProfile class was added after several Users had already been created, no profiles were linked to their accounts.
+* Resolution ✅ - Used the Admin page to assign profiles to Users by using the drop-down menu.
 
 <br>
 
-* 🐞 - When setting debug=False in settings.py, and removing DISABLE_COLLECTSTATIC from Heroku Config Vars, project would not deploy.
-* ⚒️ - Heroku failed to collect static files due to a conflict between Whitenoise and Cloudinary.
-* ✅ - Removed Whitenoise and ran the deployment again.
+* Bug 🐞 - When setting debug=False in settings.py, and removing DISABLE_COLLECTSTATIC from Heroku Config Vars, project would not deploy.
+* Cause ⚒️ - Heroku failed to collect static files due to a conflict between Whitenoise and Cloudinary.
+* Resolution ✅ - Removed Whitenoise and ran the deployment again.
 
 <br>
 
-* 🐞 - Initial deployment of Django app failed.
-* ⚒️ - There was a typo in the settings.py file.
+* Bug 🐞 - Initial deployment of Django app failed.
+* Cause ⚒️ - There was a typo in the settings.py file.
 * ✅ - Corrected typo.
 
 <br>
 
-* 🐞 - Users were unable to register without providing a valid email address, something I did not deem necessary for this project.
-* ⚒️ - Email was set to required in settings.py.
+* Bug 🐞 - Users were unable to register without providing a valid email address, something I did not deem necessary for this project.
+* Cause ⚒️ - Email was set to required in settings.py.
 * ✅ - Adjusted the settings to remove the need for an email address. The User can still choose to provide one if they wish.
 
 <br>
 
-* 🐞 - Lighthouse scores for some pages were poor.
-* ⚒️ - There were several reasons for reduced performance but the main one seemed to eminate from an issue with jQuery.
+* Bug 🐞 - Lighthouse scores for some pages were poor.
+* Cause ⚒️ - There were several reasons for reduced performance but the main one seemed to eminate from an issue with jQuery.
 * ✅ - Removed jQuery from the app.
 
 
