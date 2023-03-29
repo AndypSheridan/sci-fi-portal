@@ -27,9 +27,9 @@ I used a [Smartsheet](https://www.smartsheet.com) template to help plan my sprin
 
 I used the Github [project board](https://github.com/users/AndypSheridan/projects/2) to create and track issues and User Stories. I then integrated these within my Smartsheet template.
 
-This proved instrumental in keeping me focused on tasks and creating the necessary features for the project. As this was my first experience of using Github projects, I found that on several occasions I underestimated or overstimated the amount of time and/or tasks for each particular sprint but, on the whole, the schedule worked well. Using the Milestones feature I created Epics in Github and to these I added my User Stories, although I had already begun work on the by this point. I also created labels for the project was extremely helpful when it came to prioritising requirements for the project. 
+This proved instrumental in keeping me focused on tasks and creating the necessary features for the project. As this was my first experience of using Github projects, I found that on several occasions I underestimated or overestimated the amount of time and/or tasks for each particular sprint but, on the whole, the schedule worked well. Using the Milestones feature I created Epics in Github and to these I added my User Stories, although I had already begun work on the by this point. I also created labels for the project was extremely helpful when it came to prioritising requirements for the project. 
 
-It has been a steep learning curve, and I felt that my plan was continually evolving rather than being something I rigidly adhered to. On refelction, I consider this to be a good thing in some repects.
+It has been a steep learning curve, and I felt that my plan was continually evolving rather than being something I rigidly adhered to. On reflection, I consider this to be a good thing in some respects.
 
 I have outlined a brief summary of these below:
 
@@ -69,7 +69,7 @@ Sprint 4 took slightly longer than expected. The purpose of this was to add all 
 * March 7-14 2023
   * Enable CRUD functionality where necessary, add User profile
 
-I allowed a week for sprint 5. The purpose was to add all site content, navigation and ensure CRUD functionality worked in all instances where the admin or user needed it. These included adding a comment or review and editing or deleting a review. Initially I was ahead of schedule, but progress was significanty disrupted when it came to adding a user profile so this meant the sprint was not finished until the 15th March.
+I allowed a week for sprint 5. The purpose was to add all site content, navigation and ensure CRUD functionality worked in all instances where the admin or user needed it. These included adding a comment or review and editing or deleting a review. Initially I was ahead of schedule, but progress was significantly disrupted when it came to adding a user profile so this meant the sprint was not finished until the 15th March.
 
 ### *Sprint 6*
 

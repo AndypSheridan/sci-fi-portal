@@ -5,7 +5,7 @@
 ### Setting up a basic Django project and deploying to Heroku 
 
 * [**Deployment**](#deployment)
-    * [***Iniial Deployment***](#initial-deployment)
+    * [***Initial Deployment***](#initial-deployment)
     * [***Create Repository***](#create-repository)
     * [***Setting up the Workspace***](#setting-up-the-workspace-to-be-done-locally-via-the-console-of-your-chosen-editor)
     * [***Deploying an app to Heroku***](#deploying-an-app-to-heroku)
@@ -61,7 +61,7 @@ For the purposes of this project I used ([ElephantSQL](https://www.elephantsql.c
     * Click "Create new instance"
 1. Set up your plan:
     * Give your project a name (commonly the name of your project)
-    * Selet the Tiny Turtle (Free) plan
+    * Select the Tiny Turtle (Free) plan
     * Tag fields can be left blank
 1. Select the nearest location:
     * For me, this was Ireland.
@@ -214,7 +214,7 @@ These steps assume you have a Cloudinary account and are logged in.
 
 1. In **Heroku** for use via the console.
 
-    * Deploy content manually through Heroku. In this instance the deployment method was Github on th emain branch
+    * Deploy content manually through Heroku. In this instance the deployment method was Github on the main branch
 Log in to Heroku via the console and enter your details.
 
 
