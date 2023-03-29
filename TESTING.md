@@ -50,7 +50,8 @@
   * [**CSS**](#css)
   * [**JavaScript**](#javascript)
   * [**Python / Django**](#python--django)
-* [**User Story Testing**](user-story-testing)
+* [**User Story Testing**](#user-story-testing)
+* [**Additional Testing**](#additional-testing)
 
 
 <hr>
