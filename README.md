@@ -9,7 +9,7 @@ The Sci-Fi Portal is designed with the aim of creating a platform for an online 
 
 ![Am I Responsive Screenshot](docs/images/am-i-responsive.png)
 
-Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment of the site.
+Click [here](https://sci-fi-portal.herokuapp.com/) to view the final deployment of the site.
 
 <hr>
 
@@ -22,7 +22,7 @@ Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment o
       * [***User Stories***](#user-stories)
     * [***Wireframes***](#wireframes)
     * [***Database Schema***](#database-schema)
-    * [***Color Scheme***](#color-scheme)
+    * [***Colour Scheme***](#color-scheme)
     * [***Typography***](#typography)
 1. [**Agile Development**](#agile-development)
 1. [**Features**](#features)
@@ -65,10 +65,10 @@ Click [here](https://sci-fi-portal.herokuapp.com/) to see the final deployment o
 * To provide users with a platform to keep track of their own reading within the genre.
 * Deliver an accessible and easy to navigate site for users on desktop and mobile devices.
 * Provide registered users with the opportunity share their own sci-fi experiences and to Create, Read, Update or Delete book reviews on the site.
-* Provide users with an opportunity to gain future reading inspiration by browing the book reviews and featured authors.
+* Provide users with an opportunity to gain future reading inspiration by browsing the book reviews and featured authors.
 * Offer users the opportunity to interact and engage with others by liking and commenting on reviews by other users.
 * Ensure provision of safe content as reviews and comments must be approved by the admin.
-* Enhance the user experience by using an integrated search function for those trying to find a specific book or author.
+* Enhance the user experience by implementing an integrated search function for those trying to find a specific book or author.
 * Offer users the opportunity to provide more information about themselves by adding to their user profile.
 * Deliver to the user a comprehensive explanation and rationale behind the site through a clear and concise About page. 
 
@@ -145,7 +145,7 @@ I used [DrawSQL](https://drawsql.app)​ to help visualise my database tables. S
 
 ![Database Schema](docs/data-model/sfp-drawsql-erd.png)
 
-Unfortunately, the site did not provide adequate field type values but it was intrumental in helping create the Entity Relationship Diagram.
+Unfortunately, the site did not provide adequate field type values but it was instrumental in helping create the Entity Relationship Diagram.
 
 The exact models used in the project can be viewed [here](docs/data-model/sfp-data-models.png).
 
@@ -153,7 +153,7 @@ The exact models used in the project can be viewed [here](docs/data-model/sfp-da
 
 ### **Colour Scheme:**
 ​
-After researching various options for this project, I opted for the color scheme below:
+After researching various options for this project, I opted for the colour scheme below:
 
 ![Colour Palette](docs/images/colour-palette.png)
 
@@ -219,7 +219,7 @@ To display properly on smaller screens, I used a Bootstrap hamburger menu:
 ### Social Media and Email Links
 
 The social media and email icons are situated on the right of the Navbar. The Social Media links are functional and will open in a new tab. 
-**NOTE:** There is no actual Social Media for this site at the time of writing.
+**NOTE:** There is no actual Social Media Content for this site at the time of writing.
 
 The email icon opens the default email application with the recipient being a test email address for the site.
 
@@ -272,7 +272,7 @@ Upon clicking on a review in the Books Page, the User is taken to the Book Detai
 ![Screenshot of book detail page](docs/images/book-detail1.png)
 ![Screenshot of book detail page](docs/images/book-detail-2.png)
 
-This dislays a larger image of the book - if uploaded, the book title, author, review rating and synopsis. The User review is situated below and there is also the opportunity for a User to edit or delete their own reviews. Users can also like or unlike reviews as well as see the number of both:
+This displays a larger image of the book - if uploaded, the book title, author, review rating and synopsis. The User review is situated below and there is also the opportunity for a User to edit or delete their own reviews. Users can also like or unlike reviews as well as see the number of both:
 
 ![Screenshot of book detail edit/delete/likes/comments page](docs/images/book-detail-likes.png)
 
@@ -527,35 +527,35 @@ I used Bootstrap buttons across the project. The button colours follow the colou
 
 ## **Messages**
 
-User feedback is provided in the shape of success messages with the aim of providing a more involved User Experience. These messages are dismissable by clicking the 'x' and will be displayed in the following situations:
+User feedback is provided in the shape of success messages with the aim of providing a more involved User Experience. These messages are dismissible by clicking the 'x' and will be displayed in the following situations:
 
 **Successful Login**
 
-![Succesful login message](docs/images/login-success.png)
+![Successful login message](docs/images/login-success.png)
 
 **Successful Update Profile**
 
-![Succesful update profile](docs/images/profile-success.png)
+![Successful update profile](docs/images/profile-success.png)
 
 **Successful Add Book Review**
 
-![Succesful add book message](docs/images/add-book-success.png)
+![Successful add book message](docs/images/add-book-success.png)
 
 **Successful Edit Book Review**
 
-![Succesful edit review message](docs/images/edit-success.png)
+![Successful edit review message](docs/images/edit-success.png)
 
 **Successful Delete Book Review**
 
-![Succesful login message](docs/images/delete-success.png)
+![Successful login message](docs/images/delete-success.png)
 
 **Successful Comment Submission**
 
-![Succesful Comment Submission message](docs/images/comment-success.png)
+![Successful Comment Submission message](docs/images/comment-success.png)
 
 **Successful Logout**
 
-![Succesful logout message](docs/images/logout-success.png)
+![Successful logout message](docs/images/logout-success.png)
 
 
 <hr>
@@ -580,7 +580,7 @@ All pages feature User Authentication meaning that a User must be logged in to v
 
 ### **404 Page**
 
-A custom 404 page was added to catch instances when the User may have mis-typed a URL, or if content has been removed from the site. The 404 page features text dislaying the content is not available and features a back button:
+A custom 404 page was added to catch instances when the User may have mis-typed a URL, or if content has been removed from the site. The 404 page features text displaying the content is not available and features a back button:
 
 ![Screenshot of 404 page](docs/images/404.png)
 
@@ -603,8 +603,8 @@ There are a number of areas with scope for future improvement. This project has 
 * Adding movies and games to fit into a 'Categories' drop-down menu.
 * The option for Users to add to the Authors section.
 * User images to be added to comments and book reviews.
-* A community page for User who opt in to have their profiles diplayed publicly.
-* The serach function to be updated to display results in the new categories.
+* A community page for User who opt in to have their profiles displayed publicly.
+* The search function to be updated to display results in the new categories.
 * Using the Google Books API to retrieve book information. I did explore this option before the inception of the project but decided against including it due to time constraints.
 
 <hr>
@@ -663,7 +663,7 @@ The following software and tech was used:
 * All book images are from [Amazon UK](https://www.amazon.co.uk/)
 * All background images came from a free trial subscription to [Shutterstock](https://www.shutterstock.com/)
 * All author images and bios are from [Wikipedia](https://www.wikipedia.org/) other than:
-  * N.K. Jemisin: bio and image from [author webiste](https://nkjemisin.com/)
+  * N.K. Jemisin: bio and image from [author website](https://nkjemisin.com/)
   * Adrian Tchaikovsky: bio taken from [author website](https://adriantchaikovsky.com/)
 ​
 <hr>
