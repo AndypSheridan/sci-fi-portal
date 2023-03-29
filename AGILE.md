@@ -17,7 +17,7 @@
 
 ## **Overview**
 
-This was my first project developing a project using Agile and I encountered challenges and some confusion along the way. The first challenge was the plethora of information I had absorbed in a short space of time. I was attempting to apply a number of Agile methods and use various different platforms to help: 
+This was my first attempt at developing a project using Agile Methodologies and I encountered challenges, and some occasional confusion, along the way. The first challenge was the plethora of information I had absorbed in a short space of time. I was attempting to apply a number of Agile methods and use various different platforms to help the planning process: 
 
 I used a [Smartsheet](https://www.smartsheet.com) template to help plan my sprints for this project:
 
@@ -27,9 +27,9 @@ I used a [Smartsheet](https://www.smartsheet.com) template to help plan my sprin
 
 I used the Github [project board](https://github.com/users/AndypSheridan/projects/2) to create and track issues and User Stories. I then integrated these within my Smartsheet template.
 
-This proved instrumental in keeping me focused on tasks and creating the necessary features for the project. As this was my first experience of using Github projects, I found that on several occasions I underestimated or overstimated the amount of time and/or tasks for each particular sprint but, on the whole, the schedule worked well. I created Epics in Github and to these I added my User Stories, although I had already begun work on the by this point.
+This proved instrumental in keeping me focused on tasks and creating the necessary features for the project. As this was my first experience of using Github projects, I found that on several occasions I underestimated or overstimated the amount of time and/or tasks for each particular sprint but, on the whole, the schedule worked well. Using the Milestones feature I created Epics in Github and to these I added my User Stories, although I had already begun work on the by this point. I also created labels for the project was extremely helpful when it came to prioritising requirements for the project. 
 
-It has been a steep learning curve, and I felt that my plan was continually evolving rather than being something I rigidly adhered to. 
+It has been a steep learning curve, and I felt that my plan was continually evolving rather than being something I rigidly adhered to. On refelction, I consider this to be a good thing in some repects.
 
 I have outlined a brief summary of these below:
 
@@ -126,7 +126,7 @@ Presentation-related User Stories were linked to this milestone.
 
 ## Learning Outcomes
 
-I have enjoyed this project and it has been a wonderful learning experience. I think this first attempt using Agile methodologies has set me on a course I look forward to refining and developing continually. For future projects I intend to document all Developer Tasks, Sprints and User Stories within the Github. User Stories can be more detailed and comprehensive.
+I have enjoyed this project and it has been a wonderful learning experience. I think this first attempt using Agile methodologies has set me on a course I look forward to refining and developing continually. For future projects, I intend to better document all Developer Tasks, Sprints and User Stories within Github Projects.
 
 
 <hr>
