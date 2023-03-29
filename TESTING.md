@@ -57,7 +57,7 @@
 
 ## **Testing Overview**
 
-At the time of writing this is the largest project I had undertaken so I felt the testing process needed to be as thorough as possible. The Sci-Portal was tested on a variety of devices including a MacBook Pro 2021, a MacBook Air 2020, an iPad Air 2020, iPhone 12, iPhone SE, Dell Desktop with 24" Screen, Kindle Fire and a Samsung Galaxy Tablet.
+At the time of writing this is the largest project I had undertaken so I felt the testing process needed to be as thorough as possible. The Sci-Portal was tested on a variety of devices including a MacBook Pro 2021, a MacBook Air 2020, an iPad Air 2020, iPhone 12, iPhone SE, Dell Desktop with 24" Screen, Kindle Fire and a Samsung Galaxy Tablet. The browsers used were Chrome, Safari and Edge.
 
 The majority of User testing was conducted by myself, however I enlisted the help of family and several work colleagues, essentially to try to break the site or help me identify bugs and areas for improvement.
 
@@ -134,7 +134,7 @@ The following bugs were identified during user testing:
 
 <hr>
 
-## Lighthouse**
+## **Lighthouse**
 
 The Lighthouse test results for all major pages can be found below. The Mobile scores are generally lower in terms of performance with the reason being some issues with the Bootstrap CDN and the images used. The majority of these images were already compressed to what I felt was an acceptable limit. Some of the lower scores are as a result of the Cloudinary integration and issues with cookies which I feel were beyond my control here.
 
@@ -376,7 +376,7 @@ Although there is very little JavaScript in this code, I ran it through the [JSH
 
 <hr>
 
-### ***Python / Django ***
+### ***Python / Django***
 
 The PEP8 Online Validator was down when creating this project, however I added a PEP8 validator to my workspace by running the command: "pip3 install pycodestyle". The validator identified the errors in the following files:
 
@@ -537,12 +537,14 @@ The final errors displayed also related line length. I was unsure how to remedy 
 
 <hr>
 
-## Addditional Testing
+## **Addditional Testing**
 
 * Aim 🎯: Test 404 Page.
 * Test 🧪: When logged in, I added the URL of a page of a deleted Book Review. 
 * Result 🏆:  The custom 404 page was displayed.
 * Verdict ✅: Test passed.
+
+<br>
 
 * Aim 🎯: Test 500 Page.
 * Test 🧪: When logged out, I pasted the URL of the Profile, Edit and Delete pages into the browser.
